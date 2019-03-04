@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: lightgray;
+}
+
+/*#avatarWindow {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  background-image: url('./Images/Outfits_HD.png');
+  background-position: -950px -1520px;
+  position: relative;
+  top: 50px;
+}*/
+
+/*#avatarBody {
+  position: absolute;
+  background-color: green;
+  width: 120px;
+  height: 200px;
+  left: 50px;
+}*/
+
+/*.frontarm_lowerhalf {
+  -ms-transform: scaleY(-1) rotate(-85deg);
+  -webkit-transform: scaleY(-1) rotate(-85deg); 
+  transform: scaleY(-1) rotate(-105deg); 
+  top: 110px;
+  left: -40px;
+  z-index: 90;
+  position: absolute;
+}
+
+.frontarm_upperhalf {
+  -ms-transform: scaleY(-1) rotate(100deg);
+  -webkit-transform: scaleY(-1) rotate(100deg); 
+  transform: scaleY(-1) rotate(65deg); 
+  top: 60px;
+  left: -35px;
+  z-index: 80;
+  position: absolute;
+}
+
+.chest {
+  -ms-transform: scaleX(-1) rotate(0deg);
+  -webkit-transform: scaleX(-1) rotate(0deg); 
+  transform: scaleX(-1) rotate(0deg); 
+  z-index: 50;
+  left: 0px;
+  top: 50px;
+  position: absolute;
+}
+
+.crotch {
+  z-index: 40;
+  left: 0px;
+  top: 90px;
+  position: absolute;
+}
+
+.backarm_upperhalf {
+  -ms-transform: scaleY(-1) rotate(100deg);
+  -webkit-transform: scaleY(-1) rotate(100deg); 
+  transform: scaleY(-1) rotate(100deg); 
+  top: 60px;
+  left: 25px;
+  z-index: 20;
+  position: absolute;
+}
+
+.backarm_lowerhalf {
+  -ms-transform: scaleY(-1) rotate(-85deg);
+  -webkit-transform: scaleY(-1) rotate(-85deg); 
+  transform: scaleY(-1) rotate(-85deg); 
+  top: 110px;
+  left: 40px;
+  z-index: 30;
+  position: absolute;
+}*/
+
+#atlas02, #atlas03, #atlas04, #atlas05, #atlas06, #atlas07, #atlas08 {
+  width: 200%;
+  background-color: green;
+  height: auto;
+  position: relative;
+  float: left;
+  top: 400px;/**/
+}
+
+#outfit1, #outfit2, #outfit3, #outfit4, #outfit5, #outfit6, #outfit7, #outfit8, #outfit9, #outfit10, #outfit11, #outfit12, #outfit13, #outfit14, #outfit15, #outfit16, #outfit42 {
+  position: relative;
+  width: 150px;
+  padding: 0 0 15px 10px;
+  float: left;
+  background-color: beige;
+}
+
+
+
+#guy {
+  /*background-image: url('./Images/guy2.jpeg');*/
+  width: 169px;
+  height: 338px;
+  position: absolute;
+  z-index: 1;
+}
+
+#guy2 {
+  background-image: url('./Images/guy2.jpeg');
+  width: 169px;
+  height: 338px;
+  position: absolute;
+  z-index: 1;
+  left: 200px;
+}
+
+#lady {
+  background-image: url('./Images/lady.jpeg');
+  width: 169px;
+  height: 338px;
+  position: relative;
+}
