@@ -1,0 +1,165 @@
+/*$arm_top: 65px;
+
+$leg_top: 200px;
+
+$headtorso_left: 43px;
+
+$arm_upperhalf_top: 45px;
+
+$arm_lowerhalf_top: 90px;
+*/
+
+
+
+#vaultSuit {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	
+	left: 500px;
+	z-index: 60;
+	opacity: 1
+}
+
+#vaultSuit2 {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	
+	left: 400px;
+	z-index: 60;
+	opacity: 1
+}
+
+#vs_frontArm, #vs_head, #vs_torso, #vs_frontLeg, #vs_trunk, #vs_backLeg, #vs_backArm {
+	position: absolute;
+}
+
+#vs_frontArm {
+	top: 65px;
+	z-index: 70;
+}
+
+#vs_head {
+	left: 43px;
+	top: 7px;
+	z-index: 60;
+}
+
+#vs_torso {
+	left: 47px;
+	top: 85px;
+	z-index: 50;
+}
+
+#vs_frontLeg {
+	left: 25px;
+	top: 195px;
+	z-index: 40;
+}
+
+#vs_trunk {
+	left: 45px;
+	top: 85px;
+	z-index: 30;
+}
+
+#vs_backLeg {
+	left: 63px;
+	top: 195px;
+	z-index: 20;
+}
+
+#vs_backArm {
+	top: 65px;
+	left: 83px;
+	z-index: 10;
+}
+
+
+
+#outfit42_frontarm_upperhalf {
+	top: 45px;
+	position: absolute;
+	transform: scaleX(-1) rotate(-105deg); /* Standard syntax */
+	z-index: 1;
+}
+
+#outfit42_frontarm_lowerhalf {
+	left: 9px;
+	top: 90px;
+	position: absolute;
+	transform: scaleY(-1) rotate(84deg); /* Standard syntax */
+	z-index: 99;
+}
+
+#outfit42_frontleg_upperhalf {
+	top: 4px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-95deg); /* Standard syntax */
+	z-index: 99;
+}
+
+#outfit42_frontleg_lowerhalf {
+	top: 50px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-110deg); /* Standard syntax */
+	z-index: 1;
+}
+
+#outfit42_frontleg_foot {
+	left: 10px;
+	top: 92px;
+	position: absolute;
+	transform: scaleY(-1) rotate(180deg); /* Standard syntax */
+}
+
+#outfit42_head {
+
+}
+
+#outfit42_chest {
+	position: absolute;
+	z-index: 99;
+}
+
+#outfit42_crotch {
+	left: 3px;
+	top: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#outfit42_backleg_upperhalf {
+	position: absolute;
+	transform: scaleX(-1) rotate(-95deg); /* Standard syntax */
+	z-index: 99;
+}
+
+#outfit42_backleg_lowerhalf {
+	top: 50px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-90deg); /* Standard syntax */
+	z-index: 1;
+}
+
+#outfit42_backleg_foot {
+	left: 25px;
+	top: 94px;
+	position: absolute;
+}
+
+#outfit42_backarm_upperhalf {
+	top: 45px;
+	position: absolute;
+	transform: scaleY(1) rotate(-125deg); /* Standard syntax */
+	z-index: 1;
+}
+
+#outfit42_backarm_lowerhalf {
+	left: 10px;
+	top: 90px;
+	position: absolute;
+	transform: scaleY(1) rotate(70deg); /* Standard syntax */
+	z-index: 99;
+}
