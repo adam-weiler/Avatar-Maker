@@ -10,6 +10,62 @@ $arm_lowerhalf_top: 90px;
 */
 
 
+$backleg_upperhalf_width: 105px;
+$backleg_upperhalf_height: 65px;
+
+$backleg_lowerhalf_width: 87px;
+$backleg_lowerhalf_height: 60px;
+
+$foot_width: 60px;
+$foot_height: 55px;
+
+$frontleg_upperhalf_width: 100px;
+$frontleg_upperhalf_height: 60px;
+
+$frontleg_lowerhalf_width: 87px;
+$frontleg_lowerhalf_height: 55px;
+
+$chest_width: 100px;
+$chest_height: 120px;
+
+$crotch_width: 90px;
+$crotch_height: 90px;
+
+$backarm_lowerhalf_width: 80px;
+$backarm_lowerhalf_height: 50px;
+
+$backarm_upperhalf_width: 90px;
+$backarm_upperhalf_height: 50px;
+
+$frontarm_lowerhalf_width: 85px;
+$frontarm_lowerhalf_height: 55px;
+
+$frontarm_upperhalf_width: 110px;
+$frontarm_upperhalf_height: 60px;
+
+
+
+$leg_upperhalf_x: -75px;
+$leg_lowerhalf_x: -185px;
+$foot_x: -295px;
+$chest_x: -120px;
+$crotch_x: -230px;
+$arm_lowerhalf_x: -320px;
+$arm_upperhalf_x: -405px;
+
+$backleg_y: -5px;
+$frontleg_y: -70px;
+$chest_y: -135px;
+$crotch_y: -160px;
+$backarm_y: -140px;
+$frontarm_y: -190px;
+
+$outfit_right_x: 512px;
+$outfit3_y: 256px;
+$outfit5_y: 512px;
+$outfit7_y: 768px;
+
+
 
 #vaultSuit {
 	position: absolute;
@@ -21,16 +77,7 @@ $arm_lowerhalf_top: 90px;
 	opacity: 1
 }
 
-#vaultSuit2 {
-	position: absolute;
-	width: 500px;
-	height: 500px;
-	
-	left: 400px;
-	z-index: 60;
-	opacity: 1
-}
-
+/*This is the Vault Suit limbs.*/
 #vs_frontArm, #vs_head, #vs_torso, #vs_frontLeg, #vs_trunk, #vs_backLeg, #vs_backArm {
 	position: absolute;
 }
@@ -78,88 +125,162 @@ $arm_lowerhalf_top: 90px;
 
 
 
-#outfit42_frontarm_upperhalf {
-	top: 45px;
-	position: absolute;
-	transform: scaleX(-1) rotate(-105deg); /* Standard syntax */
-	z-index: 1;
-}
 
-#outfit42_frontarm_lowerhalf {
-	left: 9px;
+
+
+.vs_frontarm_lowerhalf {
+  /**/
+  	left: 9px;
 	top: 90px;
 	position: absolute;
 	transform: scaleY(-1) rotate(84deg); /* Standard syntax */
 	z-index: 99;
 }
 
-#outfit42_frontleg_upperhalf {
-	top: 4px;
+.vs_frontarm_upperhalf {
+/*  width: $frontarm_upperhalf_width;
+  height: $frontarm_upperhalf_height;
+  background-position: ($arm_upperhalf_x - $outfit_right_x) $frontarm_y;*/
+  	top: 45px;
+	position: absolute;
+	transform: scaleX(-1) rotate(-105deg); /* Standard syntax */
+	z-index: 1;
+}
+
+.vs_chest {
+/*  	  width: $chest_width;
+  height: $chest_height;*/
+  /*background-position: $chest_x $chest_y;*/
+  background-position: ($chest_x - $outfit_right_x) $chest_y;
+  transform: scaleX(-1); /* Standard syntax */
+  	position: absolute;
+	z-index: 99;
+}
+
+
+
+.vs_fronthem {
+/*  	  width: $chest_width;
+  height: $chest_height;*/
+  /*background-position: $chest_x $chest_y;*/
+  background-position: ($chest_x - $outfit_right_x) $chest_y;
+  transform: scaleX(-1); /* Standard syntax */
+  	position: absolute;
+	z-index: 50;
+	top: 80px;
+	left: -27px;
+}
+
+.vs_backhem {
+/*  	  width: $chest_width;
+  height: $chest_height;*/
+  /*background-position: $chest_x $chest_y;*/
+  background-position: ($chest_x - $outfit_right_x) $chest_y;
+  transform: scaleX(-1); /* Standard syntax */
+  	position: absolute;
+	z-index: 1;
+	top: 80px;
+	left: 55px;
+}
+
+
+
+
+.vs_frontleg_upperhalf {
+/*	width: $frontleg_upperhalf_width;
+  	height: $frontleg_upperhalf_height;
+  background-position: ($leg_upperhalf_x - $outfit_right_x) $frontleg_y;*/
+  
+  	top: 4px;
 	position: absolute;
 	transform: scaleY(-1) rotate(-95deg); /* Standard syntax */
 	z-index: 99;
 }
 
-#outfit42_frontleg_lowerhalf {
-	top: 50px;
+
+.vs_frontleg_lowerhalf {
+/*  width: $frontleg_lowerhalf_width;
+  height: $frontleg_lowerhalf_height;
+  background-position: ($leg_lowerhalf_x - $outfit_right_x) $frontleg_y;*/
+
+		top: 50px;
 	position: absolute;
 	transform: scaleY(-1) rotate(-110deg); /* Standard syntax */
 	z-index: 1;
 }
 
-#outfit42_frontleg_foot {
-	left: 10px;
+
+.vs_frontleg_foot {
+/*		width: $foot_width;
+  	height: $foot_height;
+  background-position: ($foot_x - $outfit_right_x) $backleg_y;*/
+
+  	left: 10px;
 	top: 92px;
 	position: absolute;
 	transform: scaleY(-1) rotate(180deg); /* Standard syntax */
-}
-
-#outfit42_head {
 
 }
 
-#outfit42_chest {
-	position: absolute;
-	z-index: 99;
-}
+.vs_crotch {
+/*  width: $crotch_width;
+  height: $crotch_height;
+  background-position: ($crotch_x - $outfit_right_x) $crotch_y;*/
 
-#outfit42_crotch {
-	left: 3px;
+  	left: 3px;
 	top: 50px;
 	position: absolute;
 	z-index: 1;
 }
 
-#outfit42_backleg_upperhalf {
-	position: absolute;
+.vs_backleg_upperhalf {
+/*  width: $backleg_upperhalf_width;
+  height: $backleg_upperhalf_height;
+  background-position: ($leg_upperhalf_x - $outfit_right_x) $backleg_y;*/
+  	position: absolute;
 	transform: scaleX(-1) rotate(-95deg); /* Standard syntax */
 	z-index: 99;
 }
 
-#outfit42_backleg_lowerhalf {
-	top: 50px;
+.vs_backleg_lowerhalf {
+/*	  width: $backleg_lowerhalf_width;
+  height: $backleg_lowerhalf_height;
+  background-position: ($leg_lowerhalf_x - $outfit_right_x) $backleg_y;*/
+  	top: 50px;
 	position: absolute;
 	transform: scaleY(-1) rotate(-90deg); /* Standard syntax */
 	z-index: 1;
 }
 
-#outfit42_backleg_foot {
-	left: 25px;
+.vs_backleg_foot {
+/*	  width: $foot_width;
+  height: $foot_height;
+  background-position: ($foot_x - $outfit_right_x) ($frontleg_y + 10);*/
+  	left: 25px;
 	top: 94px;
 	position: absolute;
+	transform: scaleY(-1) rotate(180deg); /* Standard syntax */
 }
 
-#outfit42_backarm_upperhalf {
+.vs_backarm_lowerhalf {
+/*	  width: $backarm_lowerhalf_width;
+  height: $backarm_lowerhalf_height;
+  background-position: ($arm_lowerhalf_x - $outfit_right_x) $backarm_y;*/
+  	left: 10px;
+	top: 90px;
+	position: absolute;
+	transform: scaleY(1) rotate(70deg); /* Standard syntax */
+	z-index: 99;
+}
+
+.vs_backarm_upperhalf {
+/*
+  width: $backarm_upperhalf_width;
+  height: $backarm_upperhalf_height;
+  background-position: ($arm_lowerhalf_x - $outfit_right_x) $backarm_y;*/
 	top: 45px;
 	position: absolute;
 	transform: scaleY(1) rotate(-125deg); /* Standard syntax */
 	z-index: 1;
 }
 
-#outfit42_backarm_lowerhalf {
-	left: 10px;
-	top: 90px;
-	position: absolute;
-	transform: scaleY(1) rotate(70deg); /* Standard syntax */
-	z-index: 99;
-}
