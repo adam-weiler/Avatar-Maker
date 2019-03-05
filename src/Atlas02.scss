@@ -1,9 +1,8 @@
 .atlas02 {
   background-image: url('./Images/atlas02.png');
   background-repeat: no-repeat;
-  border: 1px solid black;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  //border: 1px solid black;
+
 }
 
 
@@ -253,13 +252,13 @@ $outfit7_y: 768px;
   background-position: $foot_x (($frontleg_y + 10) - $outfit3_y);
 }
 
-#outfit3_back_robe {
+#outfit3_back_hem {
   width: 50px;
   height: 115px;
   background-position: -365px (-5px - $outfit3_y);
 }
 
-#outfit3_front_robe {
+#outfit3_front_hem {
   width: 80px;
   height: 115px;
   background-position: -420px (-5px - $outfit3_y);
@@ -538,81 +537,97 @@ $outfit7_y: 768px;
   width: $backleg_upperhalf_width;
   height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfit7_y);
+
 }
 
 #outfit7_backleg_lowerhalf {
   width: $backleg_lowerhalf_width;
   height: $backleg_lowerhalf_height;
   background-position: $leg_lowerhalf_x ($backleg_y - $outfit7_y);
+
 }
 
 #outfit7_backleg_foot {
   width: $foot_width;
   height: $foot_height;
   background-position: $foot_x ($backleg_y - $outfit7_y);
-  ;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
 }
 
 #outfit7_frontleg_upperhalf {
   width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfit7_y);
-  ;
+
 }
 
 #outfit7_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
   background-position: $leg_lowerhalf_x ($frontleg_y - $outfit7_y);
-  ;
+
 }
 
 #outfit7_frontleg_foot {
   width: $foot_width;
   height: $foot_height;
   background-position: $foot_x (($frontleg_y + 10) - $outfit7_y);
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #outfit7_head {
   width: 95px;
   height: 105px;
   background-position: -15px (-150px - $outfit7_y);
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #outfit7_chest {
   width: $chest_width;
   height: $chest_height;
   background-position: $chest_x ($chest_y - $outfit7_y);
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #outfit7_crotch {
   width: $crotch_width;
   height: $crotch_height;
   background-position: $crotch_x ($crotch_y - $outfit7_y);
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #outfit7_backarm_lowerhalf {
   width: $backarm_lowerhalf_width;
   height: $backarm_lowerhalf_height;
   background-position: $arm_lowerhalf_x ($backarm_y - $outfit7_y);
+
 }
 
 #outfit7_backarm_upperhalf {
   width: $backarm_upperhalf_width;
   height: $backarm_upperhalf_height;
   background-position: $arm_upperhalf_x ($backarm_y - $outfit7_y);
+
 }
 
 #outfit7_frontarm_lowerhalf {
   width: $frontarm_lowerhalf_width;
   height: $frontarm_lowerhalf_height;
   background-position: $arm_lowerhalf_x ($frontarm_y - $outfit7_y);
+
 }
 
 #outfit7_frontarm_upperhalf {
   width: $frontarm_upperhalf_width;
   height: $frontarm_upperhalf_height;
   background-position: $arm_upperhalf_x ($frontarm_y - $outfit7_y);
+
 }
 
 /* Outfit 8 - Tenpenny's Suit */
