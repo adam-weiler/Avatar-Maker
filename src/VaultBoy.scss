@@ -1,0 +1,167 @@
+$arm_top: 65px;
+
+$leg_top: 195px;
+
+$arm_upperhalf_top: 48px;
+
+$arm_lowerhalf_top: 95px;
+
+#vaultBoy {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	left: -8px;
+	z-index: 50;
+	opacity: 1;
+}
+
+/*This is Vault Boy's limbs.*/
+#vb_frontArm, #vb_head, #vb_frontLeg, #vb_torso, #vb_trunk, #vb_backLeg, #vb_backArm {
+	position: absolute;
+}
+
+#vb_frontArm {
+	top: $arm_top;
+	z-index: 69;
+}
+
+#vb_head {
+	left: 43px;
+	top: 7px;
+	z-index: 59;
+}
+
+#vb_torso {
+	left: 47px;
+	top: 85px;
+	z-index: 49;
+}
+
+#vb_frontLeg {
+	left: 25px;
+	top: $leg_top;
+	z-index: 39;
+}
+
+#vb_trunk {
+	left: 47px;
+	top: 85px;
+	z-index: 29;
+}
+
+#vb_backLeg {
+	left: 60px;
+	top: $leg_top;
+	z-index: 19;
+}
+
+#vb_backArm {
+	top: $arm_top;
+	left: 83px;
+	z-index: 9;
+}
+
+
+
+/* This is Vault Boy's skin. */
+#outfit7_frontarm_upperhalf {
+	top: $arm_upperhalf_top;
+	position: absolute;
+	transform: scaleY(-1) rotate(-105deg); 
+	z-index: 1;
+}
+
+#outfit7_frontarm_lowerhalf {
+	left: 7px;
+	top: $arm_lowerhalf_top;
+	position: absolute;
+	transform: scaleY(-1) rotate(85deg); 
+	z-index: 99;
+}
+
+#outfit7_frontleg_upperhalf {
+	position: absolute;
+	transform: scaleY(-1) rotate(-90deg); 
+	z-index: 99;
+}
+
+#outfit7_frontleg_lowerhalf {
+	top: 50px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-105deg); 
+	z-index: 1;
+}
+
+#outfit7_frontleg_foot {
+	left: 15px;
+	top: 95px;
+	position: absolute;
+	transform: scaleY(-1) rotate(190deg); 
+}
+
+#outfit7_head {
+
+}
+
+#outfit7_chest {
+	position: absolute;
+	z-index: 99;
+}
+
+#outfit7_crotch {
+	left: 3px;
+	top: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#outfit7_backleg_upperhalf {
+	position: absolute;
+	transform: scaleY(1) rotate(-90deg); 
+	z-index: 99;
+}
+
+#outfit7_backleg_lowerhalf {
+	left: 5px;
+	top: 50px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-90deg); 
+	z-index: 1;
+}
+
+#outfit7_backleg_foot {
+	left: 30px;
+	top: 90px;
+	position: absolute;
+}
+
+#outfit7_backarm_upperhalf {
+	top: $arm_upperhalf_top;
+	position: absolute;
+	transform: scaleY(1) rotate(-125deg); 
+	z-index: 1;
+}
+
+#outfit7_backarm_lowerhalf {
+	left: 10px;
+	top: $arm_lowerhalf_top;
+	position: absolute;
+	transform: scaleY(1) rotate(70deg); 
+	z-index: 99;
+}
+
+#outfit7_backarm_handopen {
+	left: 18px;
+	top: 138px;
+	position: absolute;
+	transform: scaleX(-1) rotate(-90deg); 
+	z-index: 50;
+}
+
+#outfit7_frontarm_handopen {
+	left: 18px;
+	top: 138px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-90deg); 
+	z-index: 50;
+}
