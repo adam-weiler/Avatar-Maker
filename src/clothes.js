@@ -37,9 +37,6 @@ export const clothes = [ //An array of each Shirt's ID, name, and each piece
     atlas: '02',
     name: 'Tenpenny\'s suit'
   },
-
-
-
   {
     id: 'outfit9',
     atlas: '03',
@@ -82,10 +79,52 @@ export const clothes = [ //An array of each Shirt's ID, name, and each piece
     name: 'Ex Con\'s outfit'
   },
   {
+    id: 'outfit17',
+    atlas: '04',
+    name: 'Confessor Cromwell\'s rags',
+    hem: 1
+  },
+  {
+    id: 'outfit18',
+    atlas: '04',
+    name: 'Elf outfit',
+    hem: 1
+  },
+  {
+    id: 'outfit19',
+    atlas: '04',
+    name: 'Motorcyle jacket'
+  },
+  {
+    id: 'outfit20',
+    atlas: '04',
+    name: 'Business suit'
+  },
+  {
+    id: 'outfit21',
+    atlas: '04',
+    name: 'Bowling shirt'
+  },
+  {
+    id: 'outfit22',
+    atlas: '04',
+    name: 'Rad Suspenders'
+  },
+  {
+    id: 'outfit23',
+    atlas: '04',
+    name: 'Pre-War Intellectual'
+  },
+  {
+    id: 'outfit24',
+    atlas: '04',
+    name: 'Sci-fi fan outfit'
+  },
+  {
     id: 'outfit41',
     atlas: '07',
     name: 'Minutemen uniform',
-      hem: 1
+    hem: 1
   },
   {
     id: 'outfit42',
@@ -121,6 +160,6 @@ export const clothes = [ //An array of each Shirt's ID, name, and each piece
     id: 'outfit48',
     atlas: '07',
     name: 'Pilgrim outfit',
-      hem: 1
+    hem: 1
   }
 ];

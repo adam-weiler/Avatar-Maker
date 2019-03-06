@@ -82,16 +82,16 @@ body {
   position: absolute;
 }*/
 
-#atlas02, #atlas03, #atlas04, #atlas05, #atlas06, #atlas07, #atlas08 {
-  width: 200%;
+#atlas02, #atlas03, #atlas04, #atlas05, #atlas06, #atlas07, #atlas08 { /* This is the outfit closet; user will not see. */
+  width: 100%;
   background-color: green;
   height: auto;
   position: relative;
   float: left;
-  top: 400px;/**/
+  top: 400px;
 }
 
-#outfit1, #outfit2, #outfit3, #outfit4, #outfit5, #outfit6, #outfit7, #outfit8, #outfit9, #outfit10, #outfit11, #outfit12, #outfit13, #outfit14, #outfit15, #outfit16, #outfit42 {
+#outfit1, #outfit2, #outfit3, #outfit4, #outfit5, #outfit6, #outfit7, #outfit8, #outfit9, #outfit10, #outfit11, #outfit12, #outfit13, #outfit14, #outfit15, #outfit16, #outfit42 { /* This is the outfit closet; user will not see. */
   position: relative;
   width: 150px;
   padding: 0 0 15px 10px;
@@ -101,16 +101,19 @@ body {
 
 
 
-#guy {
-  /*background-image: url('./Images/guy2.jpeg');*/
-  width: 169px;
-  height: 338px;
+#guy35 {
+  
+  width: 200px;
+ height: auto;
   position: absolute;
-  z-index: 1;
+  z-index: 99;
+  left: 490px;
+  top: 195px;
+  opacity: 0;
 }
 
-#guy2 {
-  background-image: url('./Images/guy2.jpeg');
+#guy42 {
+  background-image: url('./Images/guy42.jpeg');
   width: 169px;
   height: 338px;
   position: absolute;

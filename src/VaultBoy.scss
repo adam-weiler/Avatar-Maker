@@ -1,10 +1,5 @@
-$arm_top: 65px;
+@import 'mixins';
 
-$leg_top: 195px;
-
-$arm_upperhalf_top: 48px;
-
-$arm_lowerhalf_top: 95px;
 
 #vaultBoy {
 	position: absolute;
@@ -18,6 +13,7 @@ $arm_lowerhalf_top: 95px;
 /*This is Vault Boy's limbs.*/
 #vb_frontArm, #vb_head, #vb_frontLeg, #vb_torso, #vb_trunk, #vb_backLeg, #vb_backArm {
 	position: absolute;
+
 }
 
 #vb_frontArm {
@@ -29,6 +25,8 @@ $arm_lowerhalf_top: 95px;
 	left: 43px;
 	top: 7px;
 	z-index: 59;
+	  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #vb_torso {
@@ -38,7 +36,7 @@ $arm_lowerhalf_top: 95px;
 }
 
 #vb_frontLeg {
-	left: 25px;
+	left: 28px;
 	top: $leg_top;
 	z-index: 39;
 }
@@ -50,24 +48,22 @@ $arm_lowerhalf_top: 95px;
 }
 
 #vb_backLeg {
-	left: 60px;
-	top: $leg_top;
+	left: 65px;
+	top: $leg_top - 10;
 	z-index: 19;
 }
 
 #vb_backArm {
 	top: $arm_top;
-	left: 83px;
+	left: 74px;
 	z-index: 9;
 }
-
-
 
 /* This is Vault Boy's skin. */
 #outfit7_frontarm_upperhalf {
 	top: $arm_upperhalf_top;
 	position: absolute;
-	transform: scaleY(-1) rotate(-105deg); 
+	transform: scaleY(-1) rotate(75deg);
 	z-index: 1;
 }
 
@@ -75,37 +71,98 @@ $arm_lowerhalf_top: 95px;
 	left: 7px;
 	top: $arm_lowerhalf_top;
 	position: absolute;
-	transform: scaleY(-1) rotate(85deg); 
+	transform: scaleY(-1) rotate(85deg);
 	z-index: 99;
 }
 
+#outfit7_frontarm_handopen {
+	left: 18px;
+	top: $arm_hand_top;
+	position: absolute;
+	transform: scaleY(-1) rotate(-90deg);
+	z-index: 50;
+}
+
+#outfit7_backarm_upperhalf {
+	top: $arm_upperhalf_top;
+	position: absolute;
+	transform: scaleY(1) rotate(75deg);
+	z-index: 1;
+}
+
+#outfit7_backarm_lowerhalf {
+	left: 17px;
+	top: $arm_lowerhalf_top;
+	position: absolute;
+	transform: scaleY(1) rotate(70deg);
+	z-index: 99;
+}
+
+#outfit7_backarm_handopen {
+	left: 29px;
+	top: $arm_hand_top;
+	position: absolute;
+	transform: scaleX(-1) rotate(-90deg);
+	z-index: 50;
+}
+
+
 #outfit7_frontleg_upperhalf {
 	position: absolute;
-	transform: scaleY(-1) rotate(-90deg); 
+	transform: scaleY(-1) rotate(-90deg);
 	z-index: 99;
 }
 
 #outfit7_frontleg_lowerhalf {
-	top: 50px;
+	top: 55px;
 	position: absolute;
-	transform: scaleY(-1) rotate(-105deg); 
-	z-index: 1;
+	transform: scaleY(-1) rotate(-105deg);
+	z-index: 50;
 }
 
 #outfit7_frontleg_foot {
-	left: 15px;
+	left: 11px;
 	top: 95px;
 	position: absolute;
-	transform: scaleY(-1) rotate(190deg); 
+	transform: scaleX(1) scaleY(-1) rotate(180deg);
+	z-index: 1;
+
 }
 
-#outfit7_head {
+#outfit7_backleg_upperhalf {
+	position: absolute;
+	transform: scaleY(-1) rotate(95deg);
+	z-index: 99;
+}
 
+#outfit7_backleg_lowerhalf {
+	left: 5px;
+	top: 55px;
+	position: absolute;
+	transform: scaleY(-1) rotate(-105deg);
+	z-index: 50;
+}
+
+#outfit7_backleg_foot {
+	left: 22px;
+	top: 95px;
+	position: absolute;
+	
+	z-index: 1;
+	  -webkit-transform: scaleX(-1);
+  transform: scaleX(1) scaleY(-1) rotate(180deg);
+}
+
+
+#outfit7_head {
+	
 }
 
 #outfit7_chest {
 	position: absolute;
 	z-index: 99;
+	  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #outfit7_crotch {
@@ -113,55 +170,12 @@ $arm_lowerhalf_top: 95px;
 	top: 50px;
 	position: absolute;
 	z-index: 1;
+	  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  
 }
 
-#outfit7_backleg_upperhalf {
-	position: absolute;
-	transform: scaleY(1) rotate(-90deg); 
-	z-index: 99;
-}
 
-#outfit7_backleg_lowerhalf {
-	left: 5px;
-	top: 50px;
-	position: absolute;
-	transform: scaleY(-1) rotate(-90deg); 
-	z-index: 1;
-}
 
-#outfit7_backleg_foot {
-	left: 30px;
-	top: 90px;
-	position: absolute;
-}
 
-#outfit7_backarm_upperhalf {
-	top: $arm_upperhalf_top;
-	position: absolute;
-	transform: scaleY(1) rotate(-125deg); 
-	z-index: 1;
-}
 
-#outfit7_backarm_lowerhalf {
-	left: 10px;
-	top: $arm_lowerhalf_top;
-	position: absolute;
-	transform: scaleY(1) rotate(70deg); 
-	z-index: 99;
-}
-
-#outfit7_backarm_handopen {
-	left: 18px;
-	top: 138px;
-	position: absolute;
-	transform: scaleX(-1) rotate(-90deg); 
-	z-index: 50;
-}
-
-#outfit7_frontarm_handopen {
-	left: 18px;
-	top: 138px;
-	position: absolute;
-	transform: scaleY(-1) rotate(-90deg); 
-	z-index: 50;
-}

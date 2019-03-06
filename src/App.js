@@ -8,12 +8,14 @@ import Button from './Button.js'; //A component that generates a "Previous" or "
 // import Atlas03 from './Images/atlas03_2.png'; //8 outfits.
 import Atlas07 from './Images/atlas07.png'; //8 outfits.
 // import Atlas18 from './Images/atlas18.png'; //63 hands & gloves, 9 hats, 3 masks.
+import Guy35 from './Images/guy35.jpeg';
 
 import './App.css';
 import './VaultBoy.scss'; //SASS sheet for VaultBoy body.
 import './VaultSuit.scss'; //SASS sheet for VaultBoy body.
 import './Atlas02.scss'; //SASS sheet for Atlas02 sprites.
 import './Atlas03.scss'; //SASS sheet for Atlas03 sprites.
+import './Atlas04.scss'; //SASS sheet for Atlas04 sprites.
 import './Atlas07.scss'; //SASS sheet for Atlas07 sprites.
 import './Atlas18.scss'; //SASS sheet for Atlas07 sprites.
 
@@ -59,28 +61,22 @@ class App extends Component {
     }
 
     render() {
-
-
-        // if (clothes[this.state.current_shirt]['hem']) {
-        //     console.log("That's a hem!")
-        // }
-
-
     return (
       <div className="App">
             <h1>Current Outfit:</h1>
-            <p>Current Shirt: #:{this.state.current_shirt} -- 
+            <p>Current Shirt: #{this.state.current_shirt}: -- 
             id: {clothes[this.state.current_shirt]['id']} -- 
             atlas: {clothes[this.state.current_shirt]['atlas']} -- 
             name: {clothes[this.state.current_shirt]['name']} shirt
             hem: {clothes[this.state.current_shirt]['hem']}
             </p>
 
-            <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Previous" clicker={this.handleClick} />
-            <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Next" clicker={this.handleClick} />
+            <p>Current Pants: #{this.state.current_pants}: -- id: {clothes[this.state.current_pants]['id']} -- atlas: {clothes[this.state.current_pants]['atlas']} -- name: {clothes[this.state.current_pants]['name']} pants</p>
+            
+            <p>Total Number of Shirts, and Pants: {clothes.length}</p>
+            
 
-
-        <div id="guy"></div>
+        <img id="guy35" src={Guy35} alt="Hey!"/>
 
         <div id="vaultSuit"> {/*Vault Suit and Vault Boy*/}
             <div id="vs_frontArm">
@@ -96,17 +92,14 @@ class App extends Component {
                 
 
 
-{(() => {
-    if (clothes[this.state.current_shirt]['hem']) {
-                    return <div className='vs_hem'>
-                    <div className={'vs_fronthem atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_front_hem'}></div>
-                    <div className={'vs_backhem atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_back_hem'}></div>
-                    </div>
-
-                }
-
-
-})()}
+                {(() => {
+                    if (clothes[this.state.current_shirt]['hem']) {
+                        return <div className='vs_hem'>
+                                    <div className={'vs_fronthem atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_front_hem'}></div>
+                                    <div className={'vs_backhem atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_back_hem'}></div>
+                                </div>
+                    }
+                })()}
 
 
 
@@ -171,9 +164,6 @@ class App extends Component {
             <div className="atlas02" id="outfit7_backarm_upperhalf"></div>
             <div className="atlas18" id="outfit7_backarm_handopen"></div>
         </div>
-
-
-
 </div>
 
             {/*<p><div className={'atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_lowerhalf'}></div></p>
@@ -183,10 +173,7 @@ class App extends Component {
                         <p><div className={'atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_backarm_upperhalf'}></div></p>*/}
             <br/>
 
-            <p>Current Pants: #:{this.state.current_pants} -- id: {clothes[this.state.current_pants]['id']} -- atlas: {clothes[this.state.current_pants]['atlas']} -- name: {clothes[this.state.current_pants]['name']} pants</p>
 
-            <Button id={this.state.current_pants} outfitStyle="current_pants" label="Previous" clicker={this.handleClick} />
-            <Button id={this.state.current_pants} outfitStyle="current_pants" label="Next" clicker={this.handleClick} />
 
             {/*<p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_upperhalf'}></div></p>
                         <p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_lowerhalf'}></div></p>
@@ -195,10 +182,13 @@ class App extends Component {
                         <p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_upperhalf'}></div></p>
                         <p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_lowerhalf'}></div></p>
                         <p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_foot'}></div></p>*/}
+
+
+            <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Previous" clicker={this.handleClick} />
+            <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Next" clicker={this.handleClick} />
             <br/>
-            <p>Total Number of Shirts, and Pants: {clothes.length}</p>
-
-
+            <Button id={this.state.current_pants} outfitStyle="current_pants" label="Previous" clicker={this.handleClick} />
+            <Button id={this.state.current_pants} outfitStyle="current_pants" label="Next" clicker={this.handleClick} />
 
 
 
