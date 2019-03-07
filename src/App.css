@@ -82,7 +82,7 @@ body {
   position: absolute;
 }*/
 
-#atlas02, #atlas03, #atlas04, #atlas05, #atlas06, #atlas07, #atlas08 { /* This is the outfit closet; user will not see. */
+#closet02, #closet03, #closet04, #closet05, #closet06, #closet07, #closet08 { /* This is the outfit closet; user will not see. */
   width: 100%;
   background-color: green;
   height: auto;
@@ -91,12 +91,17 @@ body {
   top: 400px;
 }
 
-#outfit1, #outfit2, #outfit3, #outfit4, #outfit5, #outfit6, #outfit7, #outfit8, #outfit9, #outfit10, #outfit11, #outfit12, #outfit13, #outfit14, #outfit15, #outfit16, #outfit42 { /* This is the outfit closet; user will not see. */
+#outfit1, #outfit2, #outfit3, #outfit4, #outfit5, #outfit6, #outfit7, #outfit8, 
+#outfit9, #outfit10, #outfit11, #outfit12, #outfit13, #outfit14, #outfit15, #outfit16, 
+#outfit17, #outfit18, #outfit19, #outfit20, #outfit21, #outfit22, #outfit23, #outfit24, 
+#outfit41, #outfit42, #outfit43, #outfit44, #outfit45, #outfit46, #outfit47, #outfit48
+ { /* This is the outfit closet; user will not see. */
   position: relative;
   width: 150px;
   padding: 0 0 15px 10px;
   float: left;
   background-color: beige;
+
 }
 
 
@@ -107,6 +112,7 @@ body {
  height: auto;
   position: absolute;
   z-index: 99;
+    z-index: 1;
   left: 490px;
   top: 195px;
   opacity: 0;

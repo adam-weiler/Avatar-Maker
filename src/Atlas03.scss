@@ -73,73 +73,73 @@
 #outfit10_backleg_upperhalf {
   width: $backleg_upperhalf_width;
   height: $backleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) $backleg_y;
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $backleg_y;
 }
 
 #outfit10_backleg_lowerhalf {
   width: $backleg_lowerhalf_width;
   height: $backleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) $backleg_y;
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) $backleg_y;
 }
 
 #outfit10_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) $backleg_y;
+  background-position: ($foot_x - $outfit_BDFH_x) $backleg_y;
 }
 
 #outfit10_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) $frontleg_y;
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $frontleg_y;
 }
 
 #outfit10_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) $frontleg_y;
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) $frontleg_y;
 }
 
 #outfit10_frontleg_foot {
   width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) ($frontleg_y + 10);
+  background-position: ($foot_x - $outfit_BDFH_x) ($frontleg_y + 10);
 }
 
 #outfit10_chest {
   width: $chest_width;
   height: $chest_height;
-  background-position: ($chest_x - $outfit_right_x) $chest_y;
+  background-position: ($chest_x - $outfit_BDFH_x) $chest_y;
 }
 
 #outfit10_crotch {
   width: $crotch_width;
   height: $crotch_height;
-  background-position: ($crotch_x - $outfit_right_x) $crotch_y;
+  background-position: ($crotch_x - $outfit_BDFH_x) $crotch_y;
 }
 
 #outfit10_backarm_lowerhalf {
   width: $backarm_lowerhalf_width;
   height: $backarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) $backarm_y;
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) $backarm_y;
 }
 
 #outfit10_backarm_upperhalf {
   width: $backarm_upperhalf_width;
   height: $backarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) $backarm_y;
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) $backarm_y;
 }
 
 #outfit10_frontarm_lowerhalf {
   width: $frontarm_lowerhalf_width;
   height: $frontarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) $frontarm_y;
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) $frontarm_y;
 }
 
 #outfit10_frontarm_upperhalf {
   width: $frontarm_upperhalf_width;
   height: $frontarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) $frontarm_y;
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) $frontarm_y;
 }
 
 
@@ -160,19 +160,19 @@
 #outfit11_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: $foot_x ($backleg_y - $outfitC_y);;
+  background-position: $foot_x ($backleg_y - $outfitC_y);
 }
 
 #outfit11_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);;
+  background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);
 }
 
 #outfit11_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitC_y);;
+  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitC_y);
 }
 
 #outfit11_frontleg_foot {
@@ -223,73 +223,73 @@
 #outfit12_backleg_upperhalf {
   width: $backleg_upperhalf_width;
   height: $backleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) ($backleg_y - $outfitC_y);
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
 #outfit12_backleg_lowerhalf {
   width: $backleg_lowerhalf_width;
   height: $backleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) ($backleg_y - $outfitC_y);
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
 #outfit12_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) ($backleg_y - $outfitC_y);;
+  background-position: ($foot_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
 #outfit12_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) ($frontleg_y - $outfitC_y);;
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitC_y);
 }
 
 #outfit12_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) ($frontleg_y - $outfitC_y);;
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitC_y);
 }
 
 #outfit12_frontleg_foot {
   width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) (($frontleg_y + 10) - $outfitC_y);
+  background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitC_y);
 }
 
 #outfit12_chest {
   width: $chest_width;
   height: $chest_height;
-  background-position: ($chest_x - $outfit_right_x) ($chest_y - $outfitC_y);
+  background-position: ($chest_x - $outfit_BDFH_x) ($chest_y - $outfitC_y);
 }
 
 #outfit12_crotch {
   width: $crotch_width;
   height: $crotch_height;
-  background-position: ($crotch_x - $outfit_right_x) ($crotch_y - $outfitC_y);
+  background-position: ($crotch_x - $outfit_BDFH_x) ($crotch_y - $outfitC_y);
 }
 
 #outfit12_backarm_lowerhalf {
   width: $backarm_lowerhalf_width;
   height: $backarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) ($backarm_y - $outfitC_y);
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitC_y);
 }
 
 #outfit12_backarm_upperhalf {
   width: $backarm_upperhalf_width;
   height: $backarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) ($backarm_y - $outfitC_y);
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitC_y);
 }
 
 #outfit12_frontarm_lowerhalf {
   width: $frontarm_lowerhalf_width;
   height: $frontarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) ($frontarm_y - $outfitC_y);
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitC_y);
 }
 
 #outfit12_frontarm_upperhalf {
   width: $frontarm_upperhalf_width;
   height: $frontarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) ($frontarm_y - $outfitC_y);
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitC_y);
 }
 
 
@@ -310,19 +310,19 @@
 #outfit13_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: $foot_x ($backleg_y - $outfitE_y);;
+  background-position: $foot_x ($backleg_y - $outfitE_y);
 }
 
 #outfit13_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);;
+  background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);
 }
 
 #outfit13_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitE_y);;
+  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitE_y);
 }
 
 #outfit13_frontleg_foot {
@@ -332,15 +332,15 @@
 }
 
 #outfit13_back_hem {
-  width: 50px;
-  height: 115px;
-  background-position: -365px (-5px - $outfitE_y);
+  width: $back_hem_width;
+  height: $hem_height;
+  background-position: $back_hem_x (-5px - $outfitE_y);
 }
 
 #outfit13_front_hem {
-  width: 80px;
-  height: 115px;
-  background-position: -420px (-5px - $outfitE_y);
+  width: $front_hem_width;
+  height: $hem_height;
+  background-position: $front_hem_x (-5px - $outfitE_y);
 }
 
 #outfit13_chest {
@@ -385,73 +385,73 @@
 #outfit14_backleg_upperhalf {
   width: $backleg_upperhalf_width;
   height: $backleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) ($backleg_y - $outfitE_y);
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
 #outfit14_backleg_lowerhalf {
   width: $backleg_lowerhalf_width;
   height: $backleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) ($backleg_y - $outfitE_y);
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
 #outfit14_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) ($backleg_y - $outfitE_y);;
+  background-position: ($foot_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
 #outfit14_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) ($frontleg_y - $outfitE_y);;
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
 }
 
 #outfit14_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) ($frontleg_y - $outfitE_y);;
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
 }
 
 #outfit14_frontleg_foot {
   width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) (($frontleg_y + 10) - $outfitE_y);
+  background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitE_y);
 }
 
 #outfit14_chest {
   width: $chest_width;
   height: $chest_height;
-  background-position: ($chest_x - $outfit_right_x) ($chest_y - $outfitE_y);
+  background-position: ($chest_x - $outfit_BDFH_x) ($chest_y - $outfitE_y);
 }
 
 #outfit14_crotch {
   width: $crotch_width;
   height: $crotch_height;
-  background-position: ($crotch_x - $outfit_right_x) ($crotch_y - $outfitE_y);
+  background-position: ($crotch_x - $outfit_BDFH_x) ($crotch_y - $outfitE_y);
 }
 
 #outfit14_backarm_lowerhalf {
   width: $backarm_lowerhalf_width;
   height: $backarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) ($backarm_y - $outfitE_y);
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitE_y);
 }
 
 #outfit14_backarm_upperhalf {
   width: $backarm_upperhalf_width;
   height: $backarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) ($backarm_y - $outfitE_y);
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitE_y);
 }
 
 #outfit14_frontarm_lowerhalf {
   width: $frontarm_lowerhalf_width;
   height: $frontarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) ($frontarm_y - $outfitE_y);
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitE_y);
 }
 
 #outfit14_frontarm_upperhalf {
   width: $frontarm_upperhalf_width;
   height: $frontarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) ($frontarm_y - $outfitE_y);
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitE_y);
 }
 
 
@@ -472,19 +472,19 @@
 #outfit15_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: $foot_x ($backleg_y - $outfitG_y);;
+  background-position: $foot_x ($backleg_y - $outfitG_y);
 }
 
 #outfit15_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: $leg_upperhalf_x ($frontleg_y - $outfitG_y);;
+  background-position: $leg_upperhalf_x ($frontleg_y - $outfitG_y);
 }
 
 #outfit15_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitG_y);;
+  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitG_y);
 }
 
 #outfit15_frontleg_foot {
@@ -535,65 +535,65 @@
 #outfit16_backleg_upperhalf {
   width: $backleg_upperhalf_width;
   height: $backleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) ($backleg_y - $outfitG_y);
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
 #outfit16_backleg_lowerhalf {
   width: $backleg_lowerhalf_width;
   height: $backleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) ($backleg_y - $outfitG_y);
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
 #outfit16_backleg_foot {
 	width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) ($backleg_y - $outfitG_y);;
+  background-position: ($foot_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
 #outfit16_frontleg_upperhalf {
 	width: $frontleg_upperhalf_width;
   height: $frontleg_upperhalf_height;
-  background-position: ($leg_upperhalf_x - $outfit_right_x) ($frontleg_y - $outfitG_y);;
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
 }
 
 #outfit16_frontleg_lowerhalf {
   width: $frontleg_lowerhalf_width;
   height: $frontleg_lowerhalf_height;
-  background-position: ($leg_lowerhalf_x - $outfit_right_x) ($frontleg_y - $outfitG_y);;
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
 }
 
 #outfit16_frontleg_foot {
   width: $foot_width;
   height: $foot_height;
-  background-position: ($foot_x - $outfit_right_x) (($frontleg_y + 10) - $outfitG_y);
+  background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitG_y);
 }
 
 #outfit16_chest {
   width: $chest_width;
   height: $chest_height;
-  background-position: ($chest_x - $outfit_right_x) ($chest_y - $outfitG_y);
+  background-position: ($chest_x - $outfit_BDFH_x) ($chest_y - $outfitG_y);
 }
 
 #outfit16_crotch {
   width: $crotch_width;
   height: $crotch_height;
-  background-position: ($crotch_x - $outfit_right_x) ($crotch_y - $outfitG_y);
+  background-position: ($crotch_x - $outfit_BDFH_x) ($crotch_y - $outfitG_y);
 }
 
 #outfit16_backarm_upperhalf {
   width: $backarm_upperhalf_width;
   height: $backarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) ($backarm_y - $outfitG_y);
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitG_y);
 }
 
 #outfit16_frontarm_lowerhalf {
   width: $frontarm_lowerhalf_width;
   height: $frontarm_lowerhalf_height;
-  background-position: ($arm_lowerhalf_x - $outfit_right_x) ($frontarm_y - $outfitG_y);
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitG_y);
 }
 
 #outfit16_frontarm_upperhalf {
   width: $frontarm_upperhalf_width;
   height: $frontarm_upperhalf_height;
-  background-position: ($arm_upperhalf_x - $outfit_right_x) ($frontarm_y - $outfitG_y);
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitG_y);
 }

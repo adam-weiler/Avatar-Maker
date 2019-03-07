@@ -13,7 +13,6 @@
 /*This is Vault Boy's limbs.*/
 #vb_frontArm, #vb_head, #vb_frontLeg, #vb_torso, #vb_trunk, #vb_backLeg, #vb_backArm {
 	position: absolute;
-
 }
 
 #vb_frontArm {
@@ -22,100 +21,87 @@
 }
 
 #vb_head {
-	left: 43px;
-	top: 7px;
+	left: $head_left;
+	top: $head_top;
 	z-index: 59;
-	  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
 }
 
 #vb_torso {
-	left: 47px;
-	top: 85px;
+	left: $torso_left;
+	top: $torso_top;
 	z-index: 49;
 }
 
 #vb_frontLeg {
-	left: 28px;
+	left: $frontleg_left;
 	top: $leg_top;
 	z-index: 39;
 }
 
 #vb_trunk {
-	left: 47px;
-	top: 85px;
+	left: $trunk_left;
+	top: $trunk_top;
 	z-index: 29;
 }
 
 #vb_backLeg {
-	left: 65px;
+	left: $backleg_left;
 	top: $leg_top - 10;
 	z-index: 19;
 }
 
 #vb_backArm {
 	top: $arm_top;
-	left: 74px;
+	left: $backarm_left;
 	z-index: 9;
 }
 
+
+
 /* This is Vault Boy's skin. */
-#outfit7_frontarm_upperhalf {
-	top: $arm_upperhalf_top;
+#outfit7_frontarm_lowerhalf, #outfit7_frontarm_upperhalf, #outfit7_frontarm_handopen, #outfit7_backarm_upperhalf, #outfit7_backarm_lowerhalf, #outfit7_backarm_handopen, #outfit7_frontleg_upperhalf, #outfit7_frontleg_lowerhalf, #outfit7_frontleg_foot, #outfit7_backleg_upperhalf, #outfit7_backleg_lowerhalf, #outfit7_backleg_foot, #outfit7_chest, #outfit7_crotch {
 	position: absolute;
-	transform: scaleY(-1) rotate(75deg);
-	z-index: 1;
 }
 
 #outfit7_frontarm_lowerhalf {
-	left: 7px;
+	left: $frontarm_lowerhalf_left;
 	top: $arm_lowerhalf_top;
-	position: absolute;
 	transform: scaleY(-1) rotate(85deg);
 	z-index: 99;
+}
+
+#outfit7_frontarm_upperhalf {
+	top: $arm_upperhalf_top;
+	transform: scaleY(-1) rotate(75deg);
+	z-index: 1;
 }
 
 #outfit7_frontarm_handopen {
 	left: 18px;
 	top: $arm_hand_top;
-	position: absolute;
 	transform: scaleY(-1) rotate(-90deg);
 	z-index: 50;
 }
 
-#outfit7_backarm_upperhalf {
-	top: $arm_upperhalf_top;
-	position: absolute;
-	transform: scaleY(1) rotate(75deg);
-	z-index: 1;
+#outfit7_head {
+	
 }
 
-#outfit7_backarm_lowerhalf {
-	left: 17px;
-	top: $arm_lowerhalf_top;
-	position: absolute;
-	transform: scaleY(1) rotate(70deg);
+#outfit7_chest {
 	z-index: 99;
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
 }
-
-#outfit7_backarm_handopen {
-	left: 29px;
-	top: $arm_hand_top;
-	position: absolute;
-	transform: scaleX(-1) rotate(-90deg);
-	z-index: 50;
-}
-
 
 #outfit7_frontleg_upperhalf {
-	position: absolute;
 	transform: scaleY(-1) rotate(-90deg);
 	z-index: 99;
 }
 
 #outfit7_frontleg_lowerhalf {
 	top: 55px;
-	position: absolute;
 	transform: scaleY(-1) rotate(-105deg);
 	z-index: 50;
 }
@@ -123,14 +109,19 @@
 #outfit7_frontleg_foot {
 	left: 11px;
 	top: 95px;
-	position: absolute;
-	transform: scaleX(1) scaleY(-1) rotate(180deg);
+	transform:  scaleY(-1) rotate(180deg);
 	z-index: 1;
+}
 
+#outfit7_crotch {
+	left: 3px;
+	top: 50px;
+	z-index: 1;
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
 }
 
 #outfit7_backleg_upperhalf {
-	position: absolute;
 	transform: scaleY(-1) rotate(95deg);
 	z-index: 99;
 }
@@ -138,44 +129,34 @@
 #outfit7_backleg_lowerhalf {
 	left: 5px;
 	top: 55px;
-	position: absolute;
 	transform: scaleY(-1) rotate(-105deg);
 	z-index: 50;
 }
 
 #outfit7_backleg_foot {
 	left: 22px;
-	top: 95px;
-	position: absolute;
-	
+	top: 95px;	
 	z-index: 1;
-	  -webkit-transform: scaleX(-1);
-  transform: scaleX(1) scaleY(-1) rotate(180deg);
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(1) scaleY(-1) rotate(180deg);
 }
 
-
-#outfit7_head {
-	
+#outfit7_backarm_upperhalf {
+	top: $arm_upperhalf_top;
+	transform: scaleY(1) rotate(75deg);
+	z-index: 1;
 }
 
-#outfit7_chest {
-	position: absolute;
+#outfit7_backarm_lowerhalf {
+	left: 17px;
+	top: $arm_lowerhalf_top;
+	transform: scaleY(1) rotate(70deg);
 	z-index: 99;
-	  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
-#outfit7_crotch {
-	left: 3px;
-	top: 50px;
-	position: absolute;
-	z-index: 1;
-	  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  
+#outfit7_backarm_handopen {
+	left: 29px;
+	top: $arm_hand_top;
+	transform: scaleX(-1) rotate(-90deg);
+	z-index: 50;
 }
-
-
-
-
-
