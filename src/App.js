@@ -6,23 +6,26 @@ import Button from './Button.js'; //A component that generates a "Previous" or "
 
 // import Atlas02 from './Images/atlas02.png'; //7 outfits, male skintone.
 // import Atlas03 from './Images/atlas03_2.png'; //8 outfits.
-import Atlas07 from './Images/atlas07.png'; //8 outfits.
+//import Atlas07 from './Images/atlas07.png'; //8 outfits.
 // import Atlas18 from './Images/atlas18.png'; //63 hands & gloves, 9 hats, 3 masks.
 import Guy35 from './Images/guy35.jpeg';
 
 import './App.css';
 import './VaultBoy.scss'; //SASS sheet for VaultBoy body.
 import './VaultSuit.scss'; //SASS sheet for VaultBoy body.
-import './Atlas02.scss'; //SASS sheet for Atlas02 sprites.
-import './Atlas03.scss'; //SASS sheet for Atlas03 sprites.
-import './Atlas04.scss'; //SASS sheet for Atlas04 sprites.
-import './Atlas07.scss'; //SASS sheet for Atlas07 sprites.
-import './Atlas18.scss'; //SASS sheet for Atlas07 sprites.
+import './Atlas01.scss'; //SASS sheet for VG, VB Face sprites.
+import './Atlas02.scss'; //SASS sheet for VB Outfits, VB skintone sprites.
+import './Atlas03.scss'; //SASS sheet for VB Outfits sprites.
+import './Atlas04.scss'; //SASS sheet for VB Outfits sprites.
+import './Atlas07.scss'; //SASS sheet for VB Outfits sprites.
+import './Atlas17.scss'; //SASS sheet for VB Hair, Hats, and Masks sprites.
+import './Atlas18.scss'; //SASS sheet for VG, VB Hands, Gloves, Hats, and Masks sprites.
 
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            current_hair: 0, //This stores the current hair array id.
             current_shirt: 0, //This stores the current shirt array id.
             current_pants: 0 //This stores the current pants array id.
         }
@@ -90,8 +93,6 @@ class App extends Component {
             <div id="vs_torso">
                 <div className={'vs_chest atlas' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_chest'}></div>
                 
-
-
                 {(() => {
                     if (clothes[this.state.current_shirt]['hem']) {
                         return <div className='vs_hem'>
@@ -100,12 +101,6 @@ class App extends Component {
                                 </div>
                     }
                 })()}
-
-
-
-                
-
-
             </div>
 
             <div id="vs_frontLeg">
@@ -136,6 +131,8 @@ class App extends Component {
         </div>
 
         <div id="vb_head">
+            <div className="atlas17 yellow" id="vb_hair1"></div>
+            <div className="atlas01" id="vb_face5"></div>
             <div className="atlas02" id="outfit7_head"></div>
         </div>
 
@@ -184,6 +181,9 @@ class App extends Component {
                         <p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_foot'}></div></p>*/}
 
 
+            <Button id={this.state.current_shirt} outfitStyle="current_hair" label="Previous" clicker={this.handleClick} />
+            <Button id={this.state.current_shirt} outfitStyle="current_hair" label="Next" clicker={this.handleClick} />
+            <br/>
             <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Previous" clicker={this.handleClick} />
             <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Next" clicker={this.handleClick} />
             <br/>
@@ -259,7 +259,7 @@ class App extends Component {
 
 
 
-        <div id="atlas02">
+    <div id="closet02">
             {/* */}
             <div id="outfit1">1 Advanced BoS uniform
                     <div className="atlas02" id="outfit1_backleg_upperhalf"></div>
@@ -317,8 +317,8 @@ class App extends Component {
                     <div className="atlas02" id="outfit3_frontarm_lowerhalf"></div>
                     <div className="atlas02" id="outfit3_frontarm_upperhalf"></div>
 
-                     <div className="atlas02" id="outfit3_back_robe"></div>
-                    <div className="atlas02" id="outfit3_front_robe"></div>
+                     <div className="atlas02" id="outfit3_back_hem"></div>
+                    <div className="atlas02" id="outfit3_front_hem"></div>
                     </div>
 
             <div id="outfit4">Outfit 4 - BOS uniform
@@ -419,9 +419,9 @@ class App extends Component {
                     <div className="atlas02" id="outfit8_frontarm_lowerhalf"></div>
                     <div className="atlas02" id="outfit8_frontarm_upperhalf"></div>
                  </div>
-            </div>
+    </div>
 
-            <div id="atlas03">
+    <div id="closet03">
                 <div id="outfit9">Outfit 9 - (That's a Nice Shirt)
                     <div className="atlas03" id="outfit9_backleg_upperhalf"></div>
                     <div className="atlas03" id="outfit9_backleg_lowerhalf"></div>
@@ -434,10 +434,8 @@ class App extends Component {
                         <div className="atlas03" id="outfit9_chest"></div>
                         <div className="atlas03" id="outfit9_crotch"></div>
 
-                        {/*<div className="atlas03" id="outfit9_backarm_lowerhalf"></div>*/}
                         <div className="atlas03" id="outfit9_backarm_upperhalf"></div>
 
-                    {/*<div className="atlas03" id="outfit9_frontarm_lowerhalf"></div>*/}
                     <div className="atlas03" id="outfit9_frontarm_upperhalf"></div>
                     </div>
 
@@ -516,8 +514,8 @@ class App extends Component {
                     <div className="atlas03" id="outfit13_frontarm_lowerhalf"></div>
                     <div className="atlas03" id="outfit13_frontarm_upperhalf"></div>
 
-                             <div className="atlas03" id="outfit13_back_robe"></div>
-                    <div className="atlas03" id="outfit13_front_robe"></div>
+                     <div className="atlas03" id="outfit13_back_hem"></div>
+                    <div className="atlas03" id="outfit13_front_hem"></div>
                     </div>
 
                 <div id="outfit14">Outfit 14 - (Combat Armor)
@@ -575,36 +573,331 @@ class App extends Component {
 
                 <div className="atlas03" id="outfit16_frontarm_lowerhalf"></div>
                 <div className="atlas03" id="outfit16_frontarm_upperhalf"></div>
-            </div>
+                </div>
+    </div>
 
-            <div id="atlas07">
-                <div id="outfit42">outfit42 - Raider armor
+    <div id="closet04">
+                <div id="outfit17">Outfit 17 - Confessor Cromwell
+                    <div className="atlas04" id="outfit17_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit17_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit17_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit17_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit17_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit17_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit17_chest"></div>
+                        <div className="atlas04" id="outfit17_crotch"></div>
+
+                        <div className="atlas04" id="outfit17_backarm_lowerhalf"></div>
+                        <div className="atlas04" id="outfit17_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit17_frontarm_lowerhalf"></div>
+                    <div className="atlas04" id="outfit17_frontarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit17_back_hem"></div>
+                    <div className="atlas04" id="outfit17_front_hem"></div>
+                    
+                    
+                    </div>
+
+                <div id="outfit18">Outfit 18 - Elf outfit ----
+                    <div className="atlas04" id="outfit18_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit18_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit18_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit18_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit18_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit18_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit18_chest"></div>
+                        <div className="atlas04" id="outfit18_crotch"></div>
+
+                        <div className="atlas04" id="outfit18_backarm_lowerhalf"></div>
+                        <div className="atlas04" id="outfit18_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit18_frontarm_lowerhalf"></div>
+                    <div className="atlas04" id="outfit18_frontarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit18_back_hem"></div>
+                    <div className="atlas04" id="outfit18_front_hem"></div>
+
+                    </div>
+
+                <div id="outfit19">Outfit 19 - Motorcycle Jacket
+                    <div className="atlas04" id="outfit19_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit19_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit19_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit19_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit19_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit19_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit19_chest"></div>
+                        <div className="atlas04" id="outfit19_crotch"></div>
+
+                        <div className="atlas04" id="outfit19_backarm_lowerhalf"></div>
+                        <div className="atlas04" id="outfit19_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit19_frontarm_lowerhalf"></div>
+                    <div className="atlas04" id="outfit19_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit20">Outfit 20 - Business Suit
+                    <div className="atlas04" id="outfit20_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit20_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit20_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit20_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit20_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit20_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit20_chest"></div>
+                        <div className="atlas04" id="outfit20_crotch"></div>
+
+                        <div className="atlas04" id="outfit20_backarm_lowerhalf"></div>
+                        <div className="atlas04" id="outfit20_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit20_frontarm_lowerhalf"></div>
+                    <div className="atlas04" id="outfit20_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit21">Outfit 21 - (Rad Suspenders)
+                    <div className="atlas04" id="outfit21_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit21_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit21_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit21_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit21_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit21_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit21_chest"></div>
+                        <div className="atlas04" id="outfit21_crotch"></div>
+
+                        <div className="atlas04" id="outfit21_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit21_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit22">Outfit 22 - (Pre-War Intellectual)
+                    <div className="atlas04" id="outfit22_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit22_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit22_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit22_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit22_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit22_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit22_chest"></div>
+                        <div className="atlas04" id="outfit22_crotch"></div>
+
+                        <div className="atlas04" id="outfit22_backarm_lowerhalf"></div>
+                        <div className="atlas04" id="outfit22_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit22_frontarm_lowerhalf"></div>
+                    <div className="atlas04" id="outfit22_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit23">Outfit 23 - (Sci-fi fan outfit)
+                    <div className="atlas04" id="outfit23_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit23_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit23_backleg_foot"></div>
+
+                        <div className="atlas04" id="outfit23_frontleg_upperhalf"></div>
+                        <div className="atlas04" id="outfit23_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit23_frontleg_foot"></div>
+
+                        <div className="atlas04" id="outfit23_chest"></div>
+                        <div className="atlas04" id="outfit23_crotch"></div>
+
+                        <div className="atlas04" id="outfit23_backarm_lowerhalf"></div>
+                        <div className="atlas04" id="outfit23_backarm_upperhalf"></div>
+
+                    <div className="atlas04" id="outfit23_frontarm_lowerhalf"></div>
+                    <div className="atlas04" id="outfit23_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit24">Outfit 24 - (Ex Con's outfit)
+                    <div className="atlas04" id="outfit24_backleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit24_backleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit24_backleg_foot"></div>
+
+                    <div className="atlas04" id="outfit24_frontleg_upperhalf"></div>
+                    <div className="atlas04" id="outfit24_frontleg_lowerhalf"></div>
+                    <div className="atlas04" id="outfit24_frontleg_foot"></div>
+
+                    <div className="atlas04" id="outfit24_chest"></div>
+                    <div className="atlas04" id="outfit24_crotch"></div>
+
+                    <div className="atlas04" id="outfit24_backarm_upperhalf"></div>
+
+                <div className="atlas04" id="outfit24_frontarm_upperhalf"></div>
+        </div>
+
+    </div>
+
+    <div id="closet07">
+                <div id="outfit41">Outfit 41 - Minutemen uniform
+                    <div className="atlas07" id="outfit41_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit41_backleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit41_backleg_foot"></div>
+
+                        <div className="atlas07" id="outfit41_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit41_frontleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit41_frontleg_foot"></div>
+
+                        <div className="atlas07" id="outfit41_chest"></div>
+                        <div className="atlas07" id="outfit41_crotch"></div>
+
+                        <div className="atlas07" id="outfit41_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit41_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit41_frontarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit41_frontarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit41_back_hem"></div>
+                    <div className="atlas07" id="outfit41_front_hem"></div>
+                    </div>
+
+                <div id="outfit42">Outfit 42 - Raider armor
                     <div className="atlas07" id="outfit42_backleg_upperhalf"></div>
                     <div className="atlas07" id="outfit42_backleg_lowerhalf"></div>
                     <div className="atlas07" id="outfit42_backleg_foot"></div>
 
-                    <div className="atlas07" id="outfit42_frontleg_upperhalf"></div>
-                    <div className="atlas07" id="outfit42_frontleg_lowerhalf"></div>
+                        <div className="atlas07" id="outfit42_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit42_frontleg_lowerhalf"></div>
                     <div className="atlas07" id="outfit42_frontleg_foot"></div>
 
-                    <div className="atlas07" id="outfit42_chest"></div>
-                    <div className="atlas07" id="outfit42_crotch"></div>
+                        <div className="atlas07" id="outfit42_chest"></div>
+                        <div className="atlas07" id="outfit42_crotch"></div>
 
-                    <div className="atlas07" id="outfit42_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit42_backarm_lowerhalf"></div>
+                        
 
                     <div className="atlas07" id="outfit42_frontarm_lowerhalf"></div>
                     <div className="atlas07" id="outfit42_frontarm_upperhalf"></div>
-                </div>
-            </div>
+                    </div>
+
+                <div id="outfit43">Outfit 43 - T-60 power armor
+                    <div className="atlas07" id="outfit43_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit43_backleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit43_backleg_foot"></div>
+
+                        <div className="atlas07" id="outfit43_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit43_frontleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit43_frontleg_foot"></div>
+
+                        <div className="atlas07" id="outfit43_chest"></div>
+                        <div className="atlas07" id="outfit43_crotch"></div>
+
+                        <div className="atlas07" id="outfit43_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit43_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit43_frontarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit43_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit44">Outfit 44 - X-01 Mk VI power armor
+                    <div className="atlas07" id="outfit44_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit44_backleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit44_backleg_foot"></div>
+
+                        <div className="atlas07" id="outfit44_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit44_frontleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit44_frontleg_foot"></div>
+
+                        <div className="atlas07" id="outfit44_chest"></div>
+                        <div className="atlas07" id="outfit44_crotch"></div>
+
+                        <div className="atlas07" id="outfit44_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit44_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit44_frontarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit44_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit45">Outfit 45 - T-45 power armor
+                    <div className="atlas07" id="outfit45_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit45_backleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit45_backleg_foot"></div>
+
+                        <div className="atlas07" id="outfit45_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit45_frontleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit45_frontleg_foot"></div>
+
+                        <div className="atlas07" id="outfit45_chest"></div>
+                        <div className="atlas07" id="outfit45_crotch"></div>
+
+                        <div className="atlas07" id="outfit45_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit45_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit45_frontarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit45_frontarm_upperhalf"></div>
+
+                    </div>
+
+                <div id="outfit46">Outfit 46 - (T-51 power armor)
+                    <div className="atlas07" id="outfit46_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit46_backleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit46_backleg_foot"></div>
+
+                        <div className="atlas07" id="outfit46_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit46_frontleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit46_frontleg_foot"></div>
+
+                        <div className="atlas07" id="outfit46_chest"></div>
+                        <div className="atlas07" id="outfit46_crotch"></div>
+
+                        <div className="atlas07" id="outfit46_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit46_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit46_frontarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit46_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit47">Outfit 47 - (Nightwear)
+                    <div className="atlas07" id="outfit47_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit47_backleg_lowerhalf"></div>
+                    
+
+                        <div className="atlas07" id="outfit47_frontleg_upperhalf"></div>
+                        <div className="atlas07" id="outfit47_frontleg_lowerhalf"></div>
+                    
+
+                        <div className="atlas07" id="outfit47_chest"></div>
+                        <div className="atlas07" id="outfit47_crotch"></div>
+
+                        <div className="atlas07" id="outfit47_backarm_lowerhalf"></div>
+                        <div className="atlas07" id="outfit47_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit47_frontarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit47_frontarm_upperhalf"></div>
+                    </div>
+
+                <div id="outfit48">Outfit 48 - Pilgrim's outfit
+                    <div className="atlas07" id="outfit48_backleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit48_backleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit48_backleg_foot"></div>
+
+                    <div className="atlas07" id="outfit48_frontleg_upperhalf"></div>
+                    <div className="atlas07" id="outfit48_frontleg_lowerhalf"></div>
+                    <div className="atlas07" id="outfit48_frontleg_foot"></div>
+
+                    <div className="atlas07" id="outfit48_chest"></div>
+                    <div className="atlas07" id="outfit48_crotch"></div>
+
+                    <div className="atlas07" id="outfit48_backarm_lowerhalf"></div>
+                    <div className="atlas07" id="outfit48_backarm_upperhalf"></div>
+
+                    <div className="atlas07" id="outfit48_frontarm_lowerhalf"></div>
+                <div className="atlas07" id="outfit48_frontarm_upperhalf"></div>
+
+                                    <div className="atlas07" id="outfit48_back_hem"></div>
+                    <div className="atlas07" id="outfit48_front_hem"></div>
+    </div>
+
+
         </div>
-        
-        <img src={Atlas07} alt="Hey!"/>
-
-
-
-        {/*
-                <img src={Atlas02} />*/}
-        <a href="./Images/">Hey</a>
       </div>
     );
   }
