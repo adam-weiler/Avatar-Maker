@@ -1,0 +1,36 @@
+@import 'mixins';
+
+.atlas17 {
+  background-image: url('./Images/atlas17_2.png');
+  background-repeat: no-repeat;
+
+  //border: 1px solid black;
+}
+
+#vb_mask7 /* Dead Bear Mask */ {
+	left: -10px;
+	top: -10px;
+  width: 120px;
+  height: 115px;
+  background-position: -845px -800px;
+  z-index: 99;
+  position: absolute;
+}
+
+#vb_hair1 {
+	left: 1px;
+	top: -9px;
+  width: 100px;
+  height: 100px;
+  background-position: -515px -140px;
+  z-index: 99;
+  position: absolute;
+}
+
+.yellow {
+	filter: brightness(90%) sepia(100%) hue-rotate(-340deg) saturate(700%) contrast(1);
+}
+
+.blue {
+	filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+}
