@@ -1,0 +1,101 @@
+@import 'mixins';
+
+.atlas01 {
+  background-image: url('./Images/atlas01_2.png');
+  background-repeat: no-repeat;
+
+  //border: 1px solid black;
+}
+
+#face1 /* Girl ghoul */ {
+  width: 95px;
+  height: 105px;
+  background-position: -18px -660px;
+  z-index: 50;
+  position: absolute;
+}
+
+
+
+
+#vb_face1 {
+	width: 95px;
+  	height: 105px;
+  	background-position: -878px -36px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face2 {
+	width: 95px;
+  	height: 105px;
+  	background-position: -878px -150px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face3 {
+	width: 95px;
+  	height: 105px;
+  	background-position: -878px -260px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face4 {
+	width: 95px;
+  	height: 105px;
+  	background-position: -878px -370px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face5 {
+	width: 95px;
+  	height: 105px;
+  	background-position: (-878px - 20) -590px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face6 {
+	width: 95px;
+  	height: 105px;
+  	background-position: (-878px - 20) -702px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face7 {
+	width: 95px;
+  	height: 105px;
+  	background-position: (-878px - 20) -810px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#vb_face8 {
+	width: 95px;
+  	height: 105px;
+  	background-position: (-878px - 20) -924px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+
+
+#vb_face9 {
+ 	width: 95px;
+  	height: 105px;
+  	background-position: -672px -922px;
+  	z-index: 50;
+  	position: absolute;
+}
+
+#face12 /*Not sure if right number. */ {
+  width: 100px;
+  height: 100px;
+  background-position: -860px -150px;
+  z-index: 50;
+  position: absolute;
+}
