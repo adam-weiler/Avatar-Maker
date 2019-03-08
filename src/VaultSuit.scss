@@ -18,7 +18,9 @@ $arm_lowerhalf_top: 90px;
 	
 	left: 500px;
 	z-index: 60;
-	opacity: 1
+	opacity: 1;
+	//border: black 1px solid;
+	
 }
 
 /*This is the Vault Suit limbs.*/
@@ -73,27 +75,27 @@ $arm_lowerhalf_top: 90px;
 	position: absolute;
 }
 
-.vs_frontarm_lowerhalf {
+/*.vs_frontarm_lowerhalf {
   	left: $frontarm_lowerhalf_left;
 	top: $arm_lowerhalf_top;
 	transform: scaleY(-1) rotate(85deg);
 	z-index: 99;
-}
+}*/
 
-.vs_frontarm_upperhalf {
+/*.vs_frontarm_upperhalf {
   	top: $arm_upperhalf_top;
 	transform: scaleY(-1) rotate(75deg);
 	z-index: 1;
-}
+}*/
 
-.vs_chest {
+/*.vs_chest {
   	background-position: ($chest_x - $outfit_BDFH_x) $chest_y;
   	transform: scaleX(-1);
 	z-index: 99;
-}
+}*/
 
 .vs_fronthem {
-	top: 80px;
+	top: $hem_top;
 	left: -27px;
  	background-position: ($chest_x - $outfit_BDFH_x) $chest_y;
  	transform: scaleX(-1);
@@ -101,66 +103,69 @@ $arm_lowerhalf_top: 90px;
 }
 
 .vs_backhem {
-	top: 80px;
+	top: $hem_top;
 	left: 55px;
   	background-position: ($chest_x - $outfit_BDFH_x) $chest_y;
   	transform: scaleX(-1);
 	z-index: 1;
 }
 
-.vs_frontleg_upperhalf {
+/*.vs_frontleg_upperhalf {
 	transform: scaleY(-1) rotate(-90deg);
 	z-index: 99;
-}
+}*/
 
-.vs_frontleg_lowerhalf {
-	top: 55px;
+/*.vs_frontleg_lowerhalf {
+	top: $leg_lowerhalf_top;
 	transform: scaleY(-1) rotate(-105deg);
 	z-index: 50;
-}
+}*/
 
-.vs_frontleg_foot {
-  	left: 11px;
-	top: 95px;
+/*.vs_frontleg_foot {
+	left: $frontleg_foot_left;
+	top: $foot_top;
 	transform: scaleY(-1) rotate(180deg);
 	z-index: 1;
-}
+}*/
 
-.vs_crotch {
-  	left: 3px;
-	top: 50px;
+/*.vs_crotch {
+  	left: $crotch_left;
+	top: $crotch_top;
 	z-index: 1;
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
-}
+}*/
 
-.vs_backleg_upperhalf {
-	transform: scaleX(-1) rotate(-95deg);
+/*.vs_backleg_upperhalf {
+	transform: scaleY(-1) rotate(95deg);
 	z-index: 99;
-}
+}*/
 
-.vs_backleg_lowerhalf {
-  	top: 50px;
-	transform: scaleY(-1) rotate(-90deg);
-	z-index: 1;
-}
+/*.vs_backleg_lowerhalf {
+  	left: $leg_lowerhalf_left;
+	top: $leg_lowerhalf_top;
+	transform: scaleY(-1) rotate(-105deg);
+	z-index: 50;
+}*/
 
-.vs_backleg_foot {
-  	left: 25px;
-	top: 94px;
-	transform: scaleY(-1) rotate(180deg);
-}
+/*.vs_backleg_foot {
+	left: 22px;
+	top: 95px;	
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(1) scaleY(-1) rotate(180deg);
+  	z-index: 1;
+}*/
 
-.vs_backarm_lowerhalf {
-  	left: 10px;
-	top: 90px;
+/*.vs_backarm_lowerhalf {
+	left: 17px;
+	top: $arm_lowerhalf_top;
 	transform: scaleY(1) rotate(70deg);
 	z-index: 99;
-}
+}*/
 
-.vs_backarm_upperhalf {
+/*.vs_backarm_upperhalf {
 	top: 43px;
 	transform: scaleX(-1) rotate(96deg);
 	z-index: 1;
-}
+}*/
 

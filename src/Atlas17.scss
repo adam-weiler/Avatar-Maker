@@ -7,6 +7,111 @@
   //border: 1px solid black;
 }
 
+
+#vb_hair1 {
+  background-position: $vb_hair1_x $vb_hairB_y;
+}
+
+#vb_hair2 {
+  background-position: $vb_hair1_x $vb_hairC_y;
+}
+
+#vb_hair3 {
+  background-position: $vb_hair1_x $vb_hairD_y;
+}
+
+#vb_hair4 {
+  background-position: $vb_hair1_x $vb_hairE_y;
+}
+
+#vb_hair5 {
+  background-position: $vb_hair1_x $vb_hairF_y;
+}
+
+#vb_hair6 {
+  background-position: $vb_hair1_x $vb_hairG_y;
+}
+
+#vb_hair7 {
+  background-position: $vb_hair1_x $vb_hairH_y;
+}
+
+#vb_hair8 {
+  background-position: $vb_hair1_x $vb_hairI_y;
+}
+
+#vb_hair9 {
+  background-position: ($vb_hair2_x - 22) $vb_hairA_y;
+}
+
+#vb_hair10 {
+  background-position: $vb_hair2_x $vb_hairB_y;
+}
+
+#vb_hair11 {
+  background-position: $vb_hair2_x $vb_hairC_y;
+}
+
+#vb_hair12 {
+  background-position: $vb_hair2_x $vb_hairD_y;
+}
+
+#vb_hair13 {
+  background-position: $vb_hair2_x $vb_hairE_y;
+}
+
+#vb_hair14 {
+  background-position: ($vb_hair2_x + 2) ($vb_hairF_y + 2);
+}
+
+#vb_hair15 {
+  background-position: $vb_hair2_x $vb_hairG_y;
+}
+
+#vb_hair16 {
+  background-position: $vb_hair2_x ($vb_hairH_y + 4);
+}
+
+#vb_hair17 {
+  background-position: $vb_hair2_x ($vb_hairI_y + 6);
+}
+
+#vb_hair18 { /* Kindof Samie */
+  background-position: ($vb_hair3_x - 21) $vb_hairA_y;
+}
+
+#vb_hair19 { /* Kindof Samie */
+  background-position: $vb_hair3_x ($vb_hairB_y - 20);
+}
+
+#vb_hair20 {
+  background-position: $vb_hair3_x ($vb_hairC_y - 17);
+}
+
+#vb_hair21 { /* Also kindof Samie */
+  background-position: $vb_hair3_x ($vb_hairD_y - 17);
+}
+
+#vb_hair22 { /* Also kindof Samie */
+  background-position: $vb_hair3_x ($vb_hairE_y - 17);
+}
+
+#vb_hair23 {
+  background-position: ($vb_hair3_x - 2) ($vb_hairF_y - 14);
+}
+
+#vb_hair24 {
+  background-position: ($vb_hair3_x - 2) ($vb_hairG_y - 11);
+}
+
+#vb_hair25 {
+  background-position: ($vb_hair3_x) ($vb_hairH_y - 16);
+}
+
+
+
+
+
 #vb_mask7 /* Dead Bear Mask */ {
 	left: -10px;
 	top: -10px;
@@ -17,15 +122,7 @@
   position: absolute;
 }
 
-#vb_hair1 {
-	left: 1px;
-	top: -9px;
-  width: 100px;
-  height: 100px;
-  background-position: -515px -140px;
-  z-index: 99;
-  position: absolute;
-}
+
 
 .yellow {
 	filter: brightness(90%) sepia(100%) hue-rotate(-340deg) saturate(700%) contrast(1);
@@ -33,4 +130,12 @@
 
 .blue {
 	filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+}
+
+.white {
+  filter: contrast(160%) hue-rotate(90deg);
+}
+
+.black {
+  filter: brightness(0.25);
 }

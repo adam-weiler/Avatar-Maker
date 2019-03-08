@@ -65,14 +65,14 @@
 	position: absolute;
 }
 
-#outfit7_frontarm_lowerhalf {
+#outfit7_frontarm_lowerhalf, .vs_frontarm_lowerhalf {
 	left: $frontarm_lowerhalf_left;
 	top: $arm_lowerhalf_top;
 	transform: scaleY(-1) rotate(85deg);
 	z-index: 99;
 }
 
-#outfit7_frontarm_upperhalf {
+#outfit7_frontarm_upperhalf, .vs_frontarm_upperhalf {
 	top: $arm_upperhalf_top;
 	transform: scaleY(-1) rotate(75deg);
 	z-index: 1;
@@ -85,70 +85,72 @@
 	z-index: 50;
 }
 
+.vb_hair {
+	left: -4px;
+  	top: -15px;
+  	width: 110px;
+  	height: 110px;
+  	position: absolute;
+  	z-index: 99;
+}
+
 #outfit7_head {
 	
 }
 
-#outfit7_chest {
-	z-index: 99;
+#outfit7_chest, .vs_chest {
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
+  	z-index: 99;
 }
 
-#outfit7_frontleg_upperhalf {
+#outfit7_frontleg_upperhalf, .vs_frontleg_upperhalf {
 	transform: scaleY(-1) rotate(-90deg);
 	z-index: 99;
 }
 
-#outfit7_frontleg_lowerhalf {
-	top: 55px;
+#outfit7_frontleg_lowerhalf, .vs_frontleg_lowerhalf {
+	top: $leg_lowerhalf_top;
 	transform: scaleY(-1) rotate(-105deg);
 	z-index: 50;
 }
 
-#outfit7_frontleg_foot {
-	left: 11px;
-	top: 95px;
-	transform:  scaleY(-1) rotate(180deg);
+#outfit7_frontleg_foot, .vs_frontleg_foot {
+	left: $frontleg_foot_left;
+	top: $foot_top;
+	transform: scaleY(-1) rotate(180deg);
 	z-index: 1;
 }
 
-#outfit7_crotch {
-	left: 3px;
-	top: 50px;
-	z-index: 1;
+#outfit7_crotch, .vs_crotch {
+	left: $crotch_left;
+	top: $crotch_top;
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
+  	z-index: 1;
 }
 
-#outfit7_backleg_upperhalf {
+#outfit7_backleg_upperhalf, .vs_backleg_upperhalf {
 	transform: scaleY(-1) rotate(95deg);
 	z-index: 99;
 }
 
-#outfit7_backleg_lowerhalf {
-	left: 5px;
-	top: 55px;
+#outfit7_backleg_lowerhalf, .vs_backleg_lowerhalf {
+	left: $leg_lowerhalf_left;
+	top: $leg_lowerhalf_top;
 	transform: scaleY(-1) rotate(-105deg);
 	z-index: 50;
 }
 
-#outfit7_backleg_foot {
-	left: 22px;
-	top: 95px;	
-	z-index: 1;
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(1) scaleY(-1) rotate(180deg);
-}
-
-#outfit7_backarm_upperhalf {
-	top: $arm_upperhalf_top;
-	transform: scaleY(1) rotate(75deg);
+#outfit7_backleg_foot, .vs_backleg_foot {
+	left: $backleg_foot_left;
+	top: $foot_top;
+	transform: scaleY(-1) rotate(180deg);
 	z-index: 1;
 }
 
-#outfit7_backarm_lowerhalf {
-	left: 17px;
+#outfit7_backarm_lowerhalf, .vs_backarm_lowerhalf {
+	left: $backarm_lowerhalf_left;
 	top: $arm_lowerhalf_top;
 	transform: scaleY(1) rotate(70deg);
 	z-index: 99;
@@ -159,4 +161,10 @@
 	top: $arm_hand_top;
 	transform: scaleX(-1) rotate(-90deg);
 	z-index: 50;
+}
+
+#outfit7_backarm_upperhalf, .vs_backarm_upperhalf {
+	top: $arm_upperhalf_top;
+	transform: scaleY(1) rotate(75deg);
+	z-index: 1;
 }
