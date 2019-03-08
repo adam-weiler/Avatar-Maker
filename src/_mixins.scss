@@ -30,11 +30,29 @@ $trunk_top: 85px;
 
 /* These control each individual piece of Vault Boy or Vault Suit. */
 /* Affects VaultBoy.scss and VaultSuit.scss */
+/* Arms */
 $frontarm_lowerhalf_left: 7px;
-
 $arm_lowerhalf_top: 88px; 		  /* outfit0_ */
 $arm_upperhalf_top: 40px;		  /* outfit0_ */
 $arm_hand_top: 128px; 			  /* outfit0_ */
+
+$backarm_lowerhalf_left: 17px;
+
+/* Hems - But not all outfits have hems. */
+$hem_top: 80px;
+
+/* Legs and Feet */
+$leg_lowerhalf_top: 55px;
+$frontleg_foot_left: 11px;
+$foot_top: 95px;
+$leg_lowerhalf_left: 5px;
+$backleg_foot_left: 22px;
+
+
+
+/* Crotch */
+$crotch_left: 3px;
+$crotch_top: 50px;
 
 
 
@@ -69,6 +87,24 @@ $hem_height: 115px;				  /* outfit0_back_hem, outfit0_front_hem */
 $back_hem_x: -365px;			  /* outfit0_back_hem */
 $front_hem_width: 80px;			  /* outfit0_front_hem */
 $front_hem_x: -420px;			  /* outfit0_front_hem */
+
+/* Hair */
+$vb_hair1_x: -279px;			  /* Affects 1st column of hairstyles. */
+$vb_hair2_x: -395px;			  /* Affects 2nd column of hairstyles. */
+$vb_hair3_x: -509px;			  /* Affects 3rd column of hairstyles. */
+
+$vb_hairA_y: -910px;			/* Affects 9th row of hairstyles. */
+$vb_hairB_y: -780px;			/* Affects 8th row of hairstyles. */
+$vb_hairC_y: -670px;			/* Affects 7th row of hairstyles. */
+$vb_hairD_y: -560px;			/* Affects 6th row of hairstyles. */
+$vb_hairE_y: -450px;			/* Affects 5th row of hairstyles. */
+$vb_hairF_y: -340px;			/* Affects 4th row of hairstyles. */
+$vb_hairG_y: -230px;			/* Affects 3rd row of hairstyles. */
+$vb_hairH_y: -120px;			/* Affects 2nd row of hairstyles. */
+$vb_hairI_y: -10px;				/* Affects 1st row of hairstyles. */
+
+
+
 
 /* Chest */
 $chest_width: 100px;			  /* outfit0_chest */
