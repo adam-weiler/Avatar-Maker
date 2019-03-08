@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import { clothes } from './clothes'; //A JSON file that contains data about shirts
+import { clothes } from './clothes'; //A JSON file that contains data about shirts & pants.
+import { malehair } from './malehair'; //A JSON file that contains data about male hairstyles.
 
 import Button from './Button.js'; //A component that generates a "Previous" or "Next" button.
 
@@ -33,15 +34,16 @@ class App extends Component {
     }
 
 
-    handleClick(outfitStyle, label) { //This method triggers when the user clicks "Prev" or "Next" buttons.
+    handleClick(outfitStyle, arrayLength, label) { //This method triggers when the user clicks "Prev" or "Next" buttons.
         console.log("outfitStyle: ", outfitStyle);
+        console.log("arrayLength: ", arrayLength);
         console.log("label: ", label);
 
         let ourClothes = this.state[outfitStyle]; //Temporarily stores the current_shirt or current_pants.
 
         if (label === "Next") { //If user clicked "Next" button.
             console.log("Next - ", ourClothes);
-            if (ourClothes < clothes.length -1) { //If ourClothes is less than number of items in clothes array, add 1.
+            if (ourClothes < arrayLength -1) { //If ourClothes is less than number of items in clothes array, add 1.
                 ourClothes = ourClothes + 1;
             } else { //Otherwise, go back to 0.
                 ourClothes = 0;
@@ -51,7 +53,7 @@ class App extends Component {
         if (label === "Previous") { //If user clicked "Previous" button.
             console.log("Prev", ourClothes);
             if (ourClothes === 0) { //If ourClothes is 0, go to end of clothes array.
-                ourClothes = clothes.length -1;
+                ourClothes = arrayLength -1;
             } else { //Otherwise, subtract 1.
                 ourClothes = ourClothes - 1;
             }
@@ -70,11 +72,13 @@ class App extends Component {
             <p>Current Shirt: #{this.state.current_shirt}: -- 
             id: {clothes[this.state.current_shirt]['id']} -- 
             atlas: {clothes[this.state.current_shirt]['atlas']} -- 
-            name: {clothes[this.state.current_shirt]['name']} shirt
+            name: {clothes[this.state.current_shirt]['name']} shirt --
             hem: {clothes[this.state.current_shirt]['hem']}
             </p>
 
             <p>Current Pants: #{this.state.current_pants}: -- id: {clothes[this.state.current_pants]['id']} -- atlas: {clothes[this.state.current_pants]['atlas']} -- name: {clothes[this.state.current_pants]['name']} pants</p>
+
+            <p>Current Hair: #{this.state.current_hair}: -- id: {malehair[this.state.current_hair]['id']} -- atlas: {malehair[this.state.current_hair]['atlas']} -- name: {malehair[this.state.current_hair]['name']} hairstyle</p>
             
             <p>Total Number of Shirts, and Pants: {clothes.length}</p>
             
@@ -131,7 +135,7 @@ class App extends Component {
         </div>
 
         <div id="vb_head">
-            <div className="atlas17 yellow" id="vb_hair1"></div>
+            <div className={'vb_hair atlas' + malehair[this.state.current_hair]['atlas'] + ' bleack'} id={'vb_' + malehair[this.state.current_hair]['id']}></div>
             <div className="atlas01" id="vb_face5"></div>
             <div className="atlas02" id="outfit7_head"></div>
         </div>
@@ -181,14 +185,14 @@ class App extends Component {
                         <p><div className={'atlas' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_foot'}></div></p>*/}
 
 
-            <Button id={this.state.current_shirt} outfitStyle="current_hair" label="Previous" clicker={this.handleClick} />
-            <Button id={this.state.current_shirt} outfitStyle="current_hair" label="Next" clicker={this.handleClick} />
+            <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={malehair.length} label="Previous" clicker={this.handleClick} />
+            <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={malehair.length} label="Next" clicker={this.handleClick} />
             <br/>
-            <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Previous" clicker={this.handleClick} />
-            <Button id={this.state.current_shirt} outfitStyle="current_shirt" label="Next" clicker={this.handleClick} />
+            <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Previous" clicker={this.handleClick} />
+            <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Next" clicker={this.handleClick} />
             <br/>
-            <Button id={this.state.current_pants} outfitStyle="current_pants" label="Previous" clicker={this.handleClick} />
-            <Button id={this.state.current_pants} outfitStyle="current_pants" label="Next" clicker={this.handleClick} />
+            <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Previous" clicker={this.handleClick} />
+            <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Next" clicker={this.handleClick} />
 
 
 
