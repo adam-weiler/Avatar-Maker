@@ -2,17 +2,18 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair1', //For hairstyles, append #vb_ to find id of div. 
     atlas: '17', //Append to atlas to find class.
-    name: 'Professor' //Show name in textbox.
+    name: 'Tunnel Snake' //Show name in textbox.
+    /* Alternatively 'Professor'. */
   },
   {
     id: 'hair2',
     atlas: '17',
-    name: '#2'
+    name: '#2' 		/* NAME ME!! */
   },
   {
     id: 'hair3',
     atlas: '17',
-    name: '#3'
+    name: 'Clean Cut'
   },
   {
     id: 'hair4',
@@ -22,7 +23,7 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair5',
     atlas: '17',
-    name: 'Urban Ranger'
+    name: 'Sarge' /* Alternatively 'Urban Ranger'. */
   },
   {
     id: 'hair6',
@@ -37,7 +38,7 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair8',
     atlas: '17',
-    name: '#8'
+    name: '#8' 		/* NAME ME!! */
   },
   {
     id: 'hair9',
@@ -47,22 +48,22 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair10',
     atlas: '17',
-    name: '#10'
+    name: 'Warhawk'
   },
   {
     id: 'hair11',
     atlas: '17',
-    name: '#11'
+    name: 'Waster'
   },
   {
     id: 'hair12',
     atlas: '17',
-    name: '#12'
+    name: '#12'		 /* NAME ME!! */
   },
   {
     id: 'hair13',
     atlas: '17',
-    name: '#13'
+    name: '#13'		 /* NAME ME!! */
   },
   {
     id: 'hair14',
@@ -77,7 +78,7 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair16',
     atlas: '17',
-    name: '#16'
+    name: '#16'		 /* NAME ME!! */
   },
   {
     id: 'hair17',
@@ -87,7 +88,7 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair18',
     atlas: '17',
-    name: 'Heavyweight'
+    name: 'Buzzcut' /* Alternatively 'Heavyweight'. */
   },
   {
     id: 'hair19',
@@ -97,7 +98,7 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
   {
     id: 'hair20',
     atlas: '17',
-    name: '#20'
+    name: 'Smooth Wave'
   },
   {
     id: 'hair21',
