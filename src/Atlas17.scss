@@ -124,18 +124,3 @@
 
 
 
-.yellow {
-	filter: brightness(90%) sepia(100%) hue-rotate(-340deg) saturate(700%) contrast(1);
-}
-
-.blue {
-	filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
-}
-
-.white {
-  filter: contrast(160%) hue-rotate(90deg);
-}
-
-.black {
-  filter: brightness(0.25);
-}

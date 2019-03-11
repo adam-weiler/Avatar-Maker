@@ -600,6 +600,7 @@
   width: $crotch_width;
   height: $crotch_height;
   background-position: ($crotch_x - $outfit_BDFH_x) ($crotch_y - $outfitG_y);
+  transform: scaleX(1);
 }
 
 #outfit8_backarm_lowerhalf {

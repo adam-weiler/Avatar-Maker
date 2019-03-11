@@ -4,98 +4,154 @@
   background-image: url('./Images/atlas01_2.png');
   background-repeat: no-repeat;
 
-  //border: 1px solid black;
+  border: 1px solid black;
 }
 
-#face1 /* Girl ghoul */ {
+
+.vb_beard {
+    position: absolute;
+}
+
+
+
+#facezz /* Girl ghoul */ {
   width: 95px;
   height: 105px;
   background-position: -18px -660px;
-  z-index: 50;
+  z-index: 49;
   position: absolute;
 }
 
-
-
-
-#vb_face1 {
+#vb_face1 { /* Dead Male */
 	width: 95px;
   	height: 105px;
   	background-position: -878px -36px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face2 {
+#vb_face2 { /* Anguish Male */
 	width: 95px;
   	height: 105px;
   	background-position: -878px -150px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face3 {
+#vb_face3 { /* Playful Male */
 	width: 95px;
   	height: 105px;
   	background-position: -878px -260px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face4 {
+#vb_face4 { /* Angry Male */
 	width: 95px;
   	height: 105px;
   	background-position: -878px -370px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face5 {
+#vb_face5 { /* Really Happy Male */
 	width: 95px;
   	height: 105px;
   	background-position: (-878px - 20) -590px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face6 {
+#vb_face6 { /* Sad Male */
 	width: 95px;
   	height: 105px;
   	background-position: (-878px - 20) -702px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face7 {
+#vb_face7 { /* Happy Male */
 	width: 95px;
   	height: 105px;
   	background-position: (-878px - 20) -810px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#vb_face8 {
+#vb_face8 { /* Praying Male */
 	width: 95px;
   	height: 105px;
   	background-position: (-878px - 20) -924px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
 
 
-#vb_face9 {
+#vb_facesdf { /* Ghoul Male */
  	width: 95px;
   	height: 105px;
   	background-position: -672px -922px;
-  	z-index: 50;
+  	z-index: 49;
   	position: absolute;
 }
 
-#face12 /*Not sure if right number. */ {
-  width: 100px;
-  height: 100px;
-  background-position: -860px -150px;
-  z-index: 50;
-  position: absolute;
+
+
+#vb_beard1 { /* Clean Shavenly */
+}
+
+
+
+
+
+
+#vb_beard9 { /* Facial Feature 11 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -554px -478px;
+    z-index: 50;
+}
+
+
+#vb_beard10 { /* Facial Feature 2 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -533px -285px;
+    z-index: 50;
+}
+
+
+#vb_beard11 { /* Facial Feature 4 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -533px -174px;
+    z-index: 50;
+}
+
+
+
+#vb_beard12 { /* Facial Feature 6 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -536px -63px;
+    z-index: 50;
+}
+
+
+
+
+#facial_feature1 { /* Facial Feature 19 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -765px -36px;
+    z-index: 50;
+}
+
+#facial_feature8 { /* Facial Feature 18 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -650px -36px;
+    z-index: 50;
+    position: absolute;
 }
