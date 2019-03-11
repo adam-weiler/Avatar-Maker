@@ -1,0 +1,105 @@
+@import 'mixins';
+
+.mysterious {
+  background-image: url('./Images/mysterious.png');
+  background-repeat: no-repeat;
+  //border: 1px solid black;
+}
+
+/* Outfit 57 - Mysterious Stranger */
+#outfit57_backleg_upperhalf {
+  width: $backleg_upperhalf_width;
+  height: $backleg_upperhalf_height;
+  background-position: $leg_upperhalf_x $backleg_y;
+}
+
+#outfit57_backleg_lowerhalf {
+  width: $backleg_lowerhalf_width;
+  height: $backleg_lowerhalf_height;
+  background-position: $leg_lowerhalf_x $backleg_y;
+}
+
+#outfit57_backleg_foot {
+  width: $foot_width;
+  height: $foot_height;
+  background-position: $foot_x $backleg_y;
+}
+
+#outfit57_frontleg_upperhalf {
+  width: $frontleg_upperhalf_width;
+  height: $frontleg_upperhalf_height;
+  background-position: $leg_upperhalf_x $frontleg_y;
+}
+
+#outfit57_frontleg_lowerhalf {
+  width: $frontleg_lowerhalf_width;
+  height: $frontleg_lowerhalf_height;
+  background-position: $leg_lowerhalf_x $frontleg_y;
+}
+
+#outfit57_frontleg_foot {
+  width: $foot_width;
+  height: $foot_height;
+  background-position: $foot_x ($frontleg_y + 10);
+}
+
+#outfit57_back_hem {
+  width: $back_hem_width;
+  height: $hem_height;
+  background-position: $back_hem_x 0;
+}
+
+#outfit57_front_hem {
+  width: $front_hem_width;
+  height: $hem_height;
+  background-position: $front_hem_x 0;
+}
+
+#outfit57_head 
+	/*#vs_head */
+	{
+  width: 125px;
+  height: 130px;
+  background-position: 0px -135px;
+  background-image: url('./Images/mysterious.png');
+  z-index: 99;
+  transform: scaleX(-1);
+  left: $head_left - 15;
+  top: $head_top - 17;
+}
+
+#outfit57_chest {
+  width: $chest_width;
+  height: $chest_height;
+  background-position: $chest_x $chest_y;
+}
+
+#outfit57_crotch {
+  width: $crotch_width;
+  height: $crotch_height;
+  background-position: $crotch_x $crotch_y;
+}
+
+#outfit57_backarm_lowerhalf {
+  width: $backarm_lowerhalf_width;
+  height: $backarm_lowerhalf_height;
+  background-position: $arm_lowerhalf_x $backarm_y;
+}
+
+#outfit57_backarm_upperhalf {
+  width: $backarm_upperhalf_width;
+  height: $backarm_upperhalf_height;
+  background-position: $arm_upperhalf_x $backarm_y;
+}
+
+#outfit57_frontarm_lowerhalf {
+  width: $frontarm_lowerhalf_width;
+  height: $frontarm_lowerhalf_height;
+  background-position: $arm_lowerhalf_x $frontarm_y;
+}
+
+#outfit57_frontarm_upperhalf {
+  width: $frontarm_upperhalf_width;
+  height: $frontarm_upperhalf_height;
+  background-position: $arm_upperhalf_x $frontarm_y;
+}
