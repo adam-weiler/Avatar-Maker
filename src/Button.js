@@ -4,7 +4,8 @@ import './Button.css';
 
 const Button = ({ outfitStyle, arrayLength, label, clicker }) => {
 	return (
-		<div className="right-button" onClick={() => clicker(outfitStyle, arrayLength, label)}>{label}
+		<div className="prevNextButton" onClick={() => clicker(outfitStyle, arrayLength, label)}>
+		{label === 'Previous'? "◀": "▶" }
 		</div>
 	);
 }
