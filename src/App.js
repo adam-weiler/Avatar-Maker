@@ -26,6 +26,7 @@ import './Atlas02.scss'; //SASS sheet for VB Outfits, VB skintone sprites.
 import './Atlas03.scss'; //SASS sheet for VB Outfits sprites.
 import './Atlas04.scss'; //SASS sheet for VB Outfits sprites.
 import './Atlas05.scss'; //SASS sheet for VB Outfits sprites.
+import './Atlas06.scss'; //SASS sheet for VB Outfits sprites.
 import './Atlas07.scss'; //SASS sheet for VB Outfits sprites.
 import './Atlas17.scss'; //SASS sheet for VB Hair, Hats, and Masks sprites.
 import './Atlas18.scss'; //SASS sheet for VG, VB Hands, Gloves, Hats, and Masks sprites.
@@ -40,8 +41,8 @@ class App extends Component {
             current_hair: 0, //This stores the current hair's id in the array.
             current_hair_colour: 0, //This stores the current hair_colour's id in the array.
             current_beard: 0, //This stores the current beard's id in the array.
-            current_shirt: 22, //This stores the current shirt's id in the array.
-            current_pants: 22 //This stores the current pants' id in the array.
+            current_shirt: 29, //This stores the current shirt's id in the array.
+            current_pants: 29 //This stores the current pants' id in the array.
         }
         this.handleClick = this.handleClick.bind(this); //This method is for "Prev" and "Next" buttons.
     }
