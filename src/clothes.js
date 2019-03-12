@@ -169,6 +169,50 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
 
 
   {
+    id: 'outfit33',
+    atlas: 'atlas06',
+    name: 'Metal armor'
+  },
+  {
+    id: 'outfit34',
+    atlas: 'atlas06',
+    name: 'Military fatigues'
+  },
+  {
+    id: 'outfit35',
+    atlas: 'atlas06',
+    name: 'Lifeguard outfit'
+  },
+  {
+    id: 'outfit36',
+    atlas: 'atlas06',
+    name: 'Sheriff\'s duster',
+    hem: 1
+  },
+  {
+    id: 'outfit37',
+    atlas: 'atlas06',
+    name: '??'
+  },
+  {
+    id: 'outfit38',
+    atlas: 'atlas06',
+    name: 'Lab coat'
+  },
+  {
+    id: 'outfit39',
+    atlas: 'atlas06',
+    name: 'Institute jumper'
+  },
+  {
+    id: 'outfit40',
+    atlas: 'atlas06',
+    name: 'Vault Suit'
+  },
+
+
+
+  {
     id: 'outfit41',
     atlas: 'atlas07',
     name: 'Minutemen uniform',
