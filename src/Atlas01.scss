@@ -101,42 +101,87 @@
 #vb_beard1 { /* Clean Shavenly */
 }
 
+#vb_beard2 { /* Pointed beard */
+    width: 95px;
+    height: 105px;
+    background-position: -647px -145px;
+    z-index: 50;
+    position: absolute;
+}
 
+#vb_beard3 { /* Chin strap */
+    width: 95px;
+    height: 105px;
+    background-position: -650px -258px;
+    z-index: 50;
+    position: absolute;
+}
 
+#vb_beard4 { /* Goatee */
+    width: 95px;
+    height: 105px;
+    background-position: -649px -369px;
+    z-index: 50;
+    position: absolute;
+}
 
+/* #vb_beard5 { //Pointed Beard & Glasses  ; Better as a Facial Feature.
+    width: 95px;
+    height: 105px;
+    background-position: -666px -589px;
+    z-index: 50;
+    position: absolute;
+}*/
 
-
-#vb_beard9 { /* Facial Feature 11 in-game. */
+#vb_beard5 { /* Facial Feature 6 in-game. */
   width: 95px;
     height: 105px;
-    background-position: -554px -478px;
+    background-position: -536px -63px;
     z-index: 50;
 }
 
-
-#vb_beard10 { /* Facial Feature 2 in-game. */
-  width: 95px;
-    height: 105px;
-    background-position: -533px -285px;
-    z-index: 50;
-}
-
-
-#vb_beard11 { /* Facial Feature 4 in-game. */
+#vb_beard6 { /* Facial Feature 4 in-game. */
   width: 95px;
     height: 105px;
     background-position: -533px -174px;
     z-index: 50;
 }
 
-
-
-#vb_beard12 { /* Facial Feature 6 in-game. */
+#vb_beard7 { /* Facial Feature 2 in-game. */
   width: 95px;
     height: 105px;
-    background-position: -536px -63px;
+    background-position: -533px -285px;
     z-index: 50;
 }
+
+#vb_beard8 { /* Facial Feature 11 in-game. */
+  width: 95px;
+    height: 105px;
+    background-position: -554px -478px;
+    z-index: 50;
+}
+
+#vb_beard9 { /* Skinnier goatee */
+  width: 95px;
+    height: 105px;
+    background-position: -554px -592px;
+    z-index: 50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

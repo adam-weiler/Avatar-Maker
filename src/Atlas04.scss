@@ -8,8 +8,6 @@
 
 /* outfit17 - Confessor Cromwell's rags */
 #outfit17_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x $backleg_y;
 }
 
@@ -26,8 +24,6 @@
 }
 
 #outfit17_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x $frontleg_y;
 }
 
@@ -95,8 +91,6 @@
 
 /* outfit18 - Elf outfit */
 #outfit18_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $backleg_y;
 }
 
@@ -113,8 +107,6 @@
 }
 
 #outfit18_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $frontleg_y;
 }
 
@@ -182,8 +174,6 @@
 
 /* Outfit 19 - Motorcyle jacket */
 #outfit19_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitC_y);
 }
 
@@ -200,8 +190,6 @@
 }
 
 #outfit19_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);
 }
 
@@ -257,8 +245,6 @@
 
 /* Outfit 20 - Business suit */
 #outfit20_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
@@ -275,8 +261,6 @@
 }
 
 #outfit20_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitC_y);
 }
 
@@ -332,8 +316,6 @@
 
 /* Outfit 21 - Bowling shirt */
 #outfit21_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitE_y);
 }
 
@@ -350,8 +332,6 @@
 }
 
 #outfit21_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);
 }
 
@@ -395,8 +375,6 @@
 
 /* Outfit 22 - Rad Suspenders */
 #outfit22_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
@@ -413,8 +391,6 @@
 }
 
 #outfit22_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
 }
 
@@ -470,8 +446,6 @@
 
 /* Outfit 23 - Pre-War Intellectual */
 #outfit23_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitG_y);
 }
 
@@ -488,8 +462,6 @@
 }
 
 #outfit23_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitG_y);
 }
 
@@ -545,8 +517,6 @@
 
 /* Outfit 24 - Sci-fi fan outfit */
 #outfit24_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
@@ -563,8 +533,6 @@
 }
 
 #outfit24_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
 }
 

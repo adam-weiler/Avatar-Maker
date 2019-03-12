@@ -141,10 +141,18 @@ $arm_lowerhalf_top: 90px;
   	transform: scaleX(-1);
 }*/
 
-/*.vs_backleg_upperhalf {
-	transform: scaleY(-1) rotate(95deg);
+.vs_backleg_upperhalf, .vs_frontleg_upperhalf {
+  width: $backleg_upperhalf_width;
+  height: $backleg_upperhalf_height;
+
+/*	transform: scaleY(-1) rotate(95deg);
 	z-index: 99;
-}*/
+*/}
+
+.vs_backleg_lowerhalf, .vs_frontleg_lowerhalf {
+	width: $backleg_lowerhalf_width;
+  	height: $backleg_lowerhalf_height;
+}
 
 /*.vs_backleg_lowerhalf {
   	left: $leg_lowerhalf_left;

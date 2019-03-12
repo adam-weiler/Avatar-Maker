@@ -8,8 +8,6 @@
 
 /* Outfit 41 - Minutemen uniform */
 #outfit41_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x $backleg_y;
 }
 
@@ -26,8 +24,6 @@
 }
 
 #outfit41_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x $frontleg_y;
 }
 
@@ -95,8 +91,6 @@
 
 /* Outfit 42 - Raider armor */
 #outfit42_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $backleg_y;
 }
 
@@ -113,8 +107,6 @@
 }
 
 #outfit42_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $frontleg_y;
 }
 
@@ -163,8 +155,6 @@
 
 /* Outfit43 - T-60 power armor */
 #outfit43_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitC_y);
 }
 
@@ -181,8 +171,6 @@
 }
 
 #outfit43_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);
 }
 
@@ -238,8 +226,6 @@
 
 /* Outfit 44 - X-01 Mk VI power armor */
 #outfit44_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
@@ -256,8 +242,6 @@
 }
 
 #outfit44_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitC_y);
 }
 
@@ -313,8 +297,6 @@
 
 /* Outfit 45 - T-45 power armor */
 #outfit45_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitE_y);
 }
 
@@ -331,8 +313,6 @@
 }
 
 #outfit45_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);
 }
 
@@ -388,8 +368,6 @@
 
 /* Outfit 46 - T-51 power armor */
 #outfit46_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
@@ -406,8 +384,6 @@
 }
 
 #outfit46_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
 }
 
@@ -462,9 +438,7 @@
 
 
 /* Outfit 47 - Nightwear */
-#outfit47_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
+#outfit47_backleg_upperhalf {  
   background-position: $leg_upperhalf_x ($backleg_y - $outfitG_y);
 }
 
@@ -475,8 +449,6 @@
 }
 
 #outfit47_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitG_y);
 }
 
@@ -526,8 +498,6 @@
 
 /* Outfit 48 - Pilgrim outfit */
 #outfit48_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
@@ -544,8 +514,6 @@
 }
 
 #outfit48_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
 }
 

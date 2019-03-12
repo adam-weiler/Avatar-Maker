@@ -8,8 +8,6 @@
 
 /* Outfit1 - Advanced BoS uniform */
 #outfit1_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x $backleg_y;
 }
 
@@ -26,8 +24,6 @@
 }
 
 #outfit1_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x $frontleg_y;
 }
 
@@ -83,8 +79,6 @@
 
 /* Outfit2 - Expert BoS uniform */
 #outfit2_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $backleg_y;
 }
 
@@ -101,8 +95,6 @@
 }
 
 #outfit2_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $frontleg_y;
 }
 
@@ -158,8 +150,6 @@
 
 /* Outfit3 - Clergy outfit */
 #outfit3_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitC_y);
 }
 
@@ -176,8 +166,6 @@
 }
 
 #outfit3_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);
 }
 
@@ -245,8 +233,6 @@
 
 /* Outfit 4 - BOS uniform */
 #outfit4_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
@@ -263,8 +249,6 @@
 }
 
 #outfit4_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitC_y);
 }
 
@@ -320,8 +304,6 @@
 
 /* Outfit 5 - Baseball uniform */
 #outfit5_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitE_y);
 }
 
@@ -338,8 +320,6 @@
 }
 
 #outfit5_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);
 }
 
@@ -399,8 +379,6 @@
 
 /* Outfit 6 - Battle armor */
 #outfit6_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
@@ -417,8 +395,6 @@
 }
 
 #outfit6_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
 }
 
@@ -555,8 +531,6 @@
 
 /* Outfit 8 - Tenpenny's Suit */
 #outfit8_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
@@ -573,8 +547,6 @@
 }
 
 #outfit8_frontleg_upperhalf {
-  width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
 }
 

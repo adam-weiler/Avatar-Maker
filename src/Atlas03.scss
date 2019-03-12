@@ -8,8 +8,6 @@
 
 /* outfit9 - That's a Nice Shirt! */
 #outfit9_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x $backleg_y;
 }
 
@@ -26,8 +24,6 @@
 }
 
 #outfit9_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x $frontleg_y;
 }
 
@@ -71,8 +67,6 @@
 
 /* outfit10 - Sweater Vest with Tie */
 #outfit10_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $backleg_y;
 }
 
@@ -89,8 +83,6 @@
 }
 
 #outfit10_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) $frontleg_y;
 }
 
@@ -146,8 +138,6 @@
 
 /* Outfit 11 - Sweater Vest */
 #outfit11_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitC_y);
 }
 
@@ -164,8 +154,6 @@
 }
 
 #outfit11_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);
 }
 
@@ -221,8 +209,6 @@
 
 /* Outfit 12 - Flight Suit */
 #outfit12_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitC_y);
 }
 
@@ -239,8 +225,6 @@
 }
 
 #outfit12_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitC_y);
 }
 
@@ -296,8 +280,6 @@
 
 /* Outfit 13 - Autumn's uniform */
 #outfit13_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitE_y);
 }
 
@@ -314,8 +296,6 @@
 }
 
 #outfit13_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);
 }
 
@@ -383,8 +363,6 @@
 
 /* Outfit 14 - Combat armor */
 #outfit14_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
 }
 
@@ -401,8 +379,6 @@
 }
 
 #outfit14_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
 }
 
@@ -458,8 +434,6 @@
 
 /* Outfit 15 - Tunnel Snake's Outfit */
 #outfit15_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($backleg_y - $outfitG_y);
 }
 
@@ -476,8 +450,6 @@
 }
 
 #outfit15_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: $leg_upperhalf_x ($frontleg_y - $outfitG_y);
 }
 
@@ -533,8 +505,6 @@
 
 /* Outfit 16 - Ex Con's outfit */
 #outfit16_backleg_upperhalf {
-  width: $backleg_upperhalf_width;
-  height: $backleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
 }
 
@@ -551,8 +521,6 @@
 }
 
 #outfit16_frontleg_upperhalf {
-	width: $frontleg_upperhalf_width;
-  height: $frontleg_upperhalf_height;
   background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
 }
 
