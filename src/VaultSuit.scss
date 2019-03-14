@@ -11,18 +11,22 @@ $arm_upperhalf_top: 45px;
 $arm_lowerhalf_top: 90px;
 */
 
-#vaultSuit {
+#avatarWindow {
 	margin: 25px;
+
 	position: relative;
 	width: 200px;
 	height: 350px;
 	
-	//left: 500px;
+	/*//left: 500px;*/
 	z-index: 60;
-	opacity: 1;
-	//border: black 1px solid;
+	/*opacity: 1;*/
+	/*//border: black 1px solid;*/
 	background: transparentize(#083d42, 0.2);
 	float: left;
+	
+	width: 300px;
+	text-align: center;
 	background: white;
 }
 
@@ -76,6 +80,18 @@ $arm_lowerhalf_top: 90px;
 /* This is each piece of Vault Suit. */
 .vs_frontarm_lowerhalf, .vs_frontarm_upperhalf, .vs_chest, .vs_fronthem, .vs_backhem, .vs_frontleg_upperhalf, .vs_frontleg_lowerhalf, .vs_frontleg_foot, .vs_crotch, .vs_backleg_upperhalf, .vs_backleg_lowerhalf, .vs_backleg_foot, .vs_backarm_lowerhalf, .vs_backarm_upperhalf {
 	position: absolute;
+}
+
+.vs_hat {
+	width: 120px;
+  	height: 114px;
+  	position: absolute;
+  		left: -110px;
+	top: 10px;
+	z-index: 99;
+	position: absolute;
+	background-color: rgba(255,0,0,.5);
+	transform: scaleX(-1);
 }
 
 /*.vs_frontarm_lowerhalf {
