@@ -4,6 +4,7 @@ import { clothes } from './clothes'; //A JSON file that contains data about Shir
 import { malehair } from './malehair'; //A JSON file that contains data about Male Hairstyles.
 import { hair_colours } from './hair_colours'; //A JSON file that contains data about hair Colours.
 import { facial_hair } from './facial_hair'; //A JSON file that contains data about Facial Hair.
+import { male_hats } from './male_hats'; //A JSON file that contains data about Hats for Vault Boy.
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
@@ -14,25 +15,27 @@ import Button from './Button.js'; //A component that generates a "Previous" or "
 // import Atlas03 from './Images/atlas03_2.png'; //8 outfits.
 //import Atlas07 from './Images/atlas07.png'; //8 outfits.
 // import Atlas18 from './Images/atlas18.png'; //63 hands & gloves, 9 hats, 3 masks.
-import Guy35 from './Images/guy35.jpeg';
-import iphoto from './Images/iphoto.PNG';
+// import Guy35 from './Images/guy35.jpeg';
+// import iphoto from './Images/iphoto.PNG';
 import logo from './Images/Fallout_Shelter_logo.png'
 
 import './App.css';
-import './VaultBoy.scss'; //SASS sheet for VaultBoy body.
-import './VaultSuit.scss'; //SASS sheet for VaultBoy body.
-import './Atlas01.scss'; //SASS sheet for VG, VB Face sprites.
-import './Atlas02.scss'; //SASS sheet for VB Outfits, VB skintone sprites.
-import './Atlas03.scss'; //SASS sheet for VB Outfits sprites.
-import './Atlas04.scss'; //SASS sheet for VB Outfits sprites.
-import './Atlas05.scss'; //SASS sheet for VB Outfits sprites.
-import './Atlas06.scss'; //SASS sheet for VB Outfits sprites.
-import './Atlas07.scss'; //SASS sheet for VB Outfits sprites.
-import './Atlas17.scss'; //SASS sheet for VB Hair, Hats, and Masks sprites.
-import './Atlas18.scss'; //SASS sheet for VG, VB Hands, Gloves, Hats, and Masks sprites.
-import './hairColours.scss'; //SASS sheet for hair colours.
-import './Mysterious.scss'; //SASS sheet for Mysterious Stranger sprites.
-import './FeralGhoul.scss'; //SASS sheet for Feral Ghoul sprites.
+import './VaultBoy.scss'; //SASS for VaultBoy body.
+import './VaultSuit.scss'; //SASS for VaultBoy body.
+import './Atlas01.scss'; //SASS for VG, VB Face.
+import './Atlas02.scss'; //SASS for VB Outfits, VB skintone sprites.
+import './Atlas03.scss'; //SASS for VB Outfits.
+import './Atlas04.scss'; //SASS for VB Outfits.
+import './Atlas05.scss'; //SASS for VB Outfits.
+import './Atlas06.scss'; //SASS for VB Outfits.
+import './Atlas07.scss'; //SASS for VB Outfits.
+import './Atlas08.scss'; //SASS for VB Outfits.
+import './Atlas17.scss'; //SASS for VB Hair, Hats, and Masks.
+import './Atlas18.scss'; //SASS for VG, VB Hands, Gloves, Hats, and Masks.
+import './Atlas21.scss'; //SASS for Objects and Hats.
+import './hairColours.scss'; //SASS for hair colours.
+import './Mysterious.scss'; //SASS for Mysterious Stranger Outfit.
+import './FeralGhoul.scss'; //SASS for Feral Ghoul.
 
 class App extends Component {
     constructor(props) {
@@ -41,8 +44,9 @@ class App extends Component {
             current_hair: 0, //This stores the current hair's id in the array.
             current_hair_colour: 0, //This stores the current hair_colour's id in the array.
             current_beard: 0, //This stores the current beard's id in the array.
-            current_shirt: 29, //This stores the current shirt's id in the array.
-            current_pants: 29 //This stores the current pants' id in the array.
+            current_hat: 0, //This stores the current Hat's id in the array.
+            current_shirt: 45, //This stores the current shirt's id in the array.
+            current_pants: 45 //This stores the current pants' id in the array.
         }
         this.handleClick = this.handleClick.bind(this); //This method is for "Prev" and "Next" buttons.
     }
@@ -81,6 +85,9 @@ class App extends Component {
     render() {
     return (
       <div className="App">
+
+      <div id="icloud"></div>
+
             {/* 
             <p>Total Number of Shirts, and Pants: {clothes.length}</p>
             <p>Total Number of Male Hair: {malehair.length}</p>
@@ -93,13 +100,18 @@ class App extends Component {
                 <h1>Avatar Maker</h1>
             </div>
 
-            <div id="vaultSuit"> {/*Vault Suit and Vault Boy*/}
+            <div id="avatarWindow"> {/*Vault Suit and Vault Boy*/}
+            <div id="vaultBoy">
                 <div id="vs_frontArm">
                     <div className={'vs_frontarm_lowerhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_lowerhalf'}></div>
                     <div className={'vs_frontarm_upperhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_upperhalf'}></div>
                 </div>
 
                 <div id="vs_head">
+                    <div className={'vs_hat ' 
+                        + male_hats[this.state.current_hat]['atlas']} 
+                        id={'vs_hat' + male_hats[this.state.current_hat]['id']}>
+                    </div>
                 </div>
 
                 <div id="vs_torso">
@@ -144,11 +156,10 @@ class App extends Component {
 
                 <div id="vb_head">
                     <div className={'vb_hair ' 
-                    + malehair[this.state.current_hair]['atlas'] 
-                    + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
-                    id={'vb_' + malehair[this.state.current_hair]['id']}>
+                        + malehair[this.state.current_hair]['atlas'] 
+                        + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
+                        id={'vb_' + malehair[this.state.current_hair]['id']}>
                     </div>
-
 
                     <div className={'vb_beard atlas01 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
 
@@ -186,8 +197,20 @@ class App extends Component {
                     <div className="atlas18" id="outfit7_backarm_handopen"></div>
                 </div>
             </div>
+            </div>
 
             <div id="allButtons">
+                <div className="buttonsRow">
+                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Previous" clicker={this.handleClick} />
+                    <div className="prevNextType">Shirt {this.state.current_shirt + 1}</div>
+                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Next" clicker={this.handleClick} />
+                <br/>{/*<FontAwesomeIcon icon={faLink} />*/}
+                </div>
+                <div className="buttonsRow">
+                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Previous" clicker={this.handleClick} />
+                    <div className="prevNextType">Pants {this.state.current_pants + 1}</div>
+                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Next" clicker={this.handleClick} />
+                </div>
                 <div className="buttonsRow">
                     <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={malehair.length} label="Previous" clicker={this.handleClick} />
                     <div className="prevNextType">Hairstyle {this.state.current_hair + 1}</div>
@@ -204,19 +227,21 @@ class App extends Component {
                     <Button id={this.state.current_beard} outfitStyle="current_beard" arrayLength={facial_hair.length} label="Next" clicker={this.handleClick} />
                 </div>
                 <div className="buttonsRow">
-                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Previous" clicker={this.handleClick} />
-                    <div className="prevNextType">Shirt {this.state.current_shirt + 1}</div>
-                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Next" clicker={this.handleClick} />
-                <br/>{/*<FontAwesomeIcon icon={faLink} />*/}
-                </div>
-                <div className="buttonsRow">
-                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Previous" clicker={this.handleClick} />
-                    <div className="prevNextType">Pants {this.state.current_pants + 1}</div>
-                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Next" clicker={this.handleClick} />
+                    <Button id={this.state.current_hat} outfitStyle="current_hat" arrayLength={male_hats.length} label="Previous" clicker={this.handleClick} />
+                    <div className="prevNextType">Hat {this.state.current_hat + 1}</div>
+                    <Button id={this.state.current_hat} outfitStyle="current_hat" arrayLength={male_hats.length} label="Next" clicker={this.handleClick} />
                 </div>
             </div>
 
             <div id="displaySelections">
+                <div className="displayRow">
+                    <div className="styleType">Shirt:</div>
+                    <div className="styleType">{clothes[this.state.current_shirt]['name']}</div>
+                </div>
+                <div className="displayRow">
+                    <div className="styleType">Pants:</div>
+                    <div className="styleType">{clothes[this.state.current_pants]['name']}</div>
+                </div>
                 <div className="displayRow">
                     <div className="styleType">Hairstyle:</div>
                     <div className="styleType">{malehair[this.state.current_hair]['name']}</div>
@@ -230,12 +255,8 @@ class App extends Component {
                     <div className="styleType">{facial_hair[this.state.current_beard]['name']}</div>
                 </div>
                 <div className="displayRow">
-                    <div className="styleType">Shirt:</div>
-                    <div className="styleType">{clothes[this.state.current_shirt]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="styleType">Pants:</div>
-                    <div className="styleType">{clothes[this.state.current_pants]['name']}</div>
+                    <div className="styleType">Hat:</div>
+                    <div className="styleType">{male_hats[this.state.current_hat]['name']}</div>
                 </div>
             </div>
 
