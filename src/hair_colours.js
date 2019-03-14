@@ -2,11 +2,11 @@ export const hair_colours = [ //An array of each Colour hairstyle's ID and name.
   /* The first 21 colours appear in Fallout Shelter. */
   {
     id: 'colour1', //For hairstyles, append #vb_ to find id of div. 
-    name: '#1' //Show name in textbox.
+    name: 'Tan' //Show name in textbox.
   },
   {
     id: 'colour2',
-    name: '#2' 		/* NAME ME!! */
+    name: 'Reddish Brown'
   },
   {
     id: 'colour3',
@@ -14,43 +14,43 @@ export const hair_colours = [ //An array of each Colour hairstyle's ID and name.
   },
   {
     id: 'colour4',
-    name: '#4'    /* NAME ME!! */
+    name: 'Brownish gray'
   },
   {
     id: 'colour5',
-    name: '#5'    /* NAME ME!! */
+    name: 'Deep gray'
   },
   {
     id: 'colour6',
-    name: 'White'    /* Old Longfellow from FO4. */
+    name: 'Silver-white'
   },
   {
     id: 'colour7',
-    name: '#7'    /* NAME ME!! */
+    name: 'Light blonde'
   },
   {
     id: 'colour8',
-    name: '#8'    /* NAME ME!! */
+    name: 'Medium gray'
   },
   {
     id: 'colour9',
-    name: '#9'    /* NAME ME!! */
+    name: 'Natural brown'
   },
   {
     id: 'colour10',
-    name: '#10'    /* NAME ME!! */
+    name: 'Light yellow'
   },
   {
     id: 'colour11',
-    name: '#11'    /* NAME ME!! */
+    name: 'Light orange'
   },
   {
     id: 'colour12',
-    name: '#12'    /* NAME ME!! */
+    name: 'Reddish orange'
   },
   {
     id: 'colour13',
-    name: '#13'    /* NAME ME!! */
+    name: 'White'
   },
   {
     id: 'colour14',
@@ -58,11 +58,11 @@ export const hair_colours = [ //An array of each Colour hairstyle's ID and name.
   },
   {
     id: 'colour15',
-    name: '#15'    /* NAME ME!! */
+    name: 'Orange'
   },
   {
     id: 'colour16',
-    name: '#16'    /* NAME ME!! */
+    name: 'Yellow'
   },
   {
     id: 'colour17',
