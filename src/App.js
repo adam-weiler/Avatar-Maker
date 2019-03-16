@@ -20,8 +20,9 @@ import Button from './Button.js'; //A component that generates a "Previous" or "
 import logo from './Images/Fallout_Shelter_logo.png'
 
 import './App.css';
+import './FalloutBoy.scss'; //SASS for shared VaultBoy & VaultSuit classes..
 import './VaultBoy.scss'; //SASS for VaultBoy body.
-import './VaultSuit.scss'; //SASS for VaultBoy body.
+import './VaultSuit.scss'; //SASS for VaultSuit body.
 import './Atlas01.scss'; //SASS for VG, VB Face.
 import './Atlas02.scss'; //SASS for VB Outfits, VB skintone sprites.
 import './Atlas03.scss'; //SASS for VB Outfits.
@@ -41,12 +42,12 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            current_hair: 0, //This stores the current hair's id in the array.
+            current_hair: 6, //This stores the current hair's id in the array.
             current_hair_colour: 0, //This stores the current hair_colour's id in the array.
-            current_beard: 0, //This stores the current beard's id in the array.
+            current_beard: 7, //This stores the current beard's id in the array.
             current_hat: 0, //This stores the current Hat's id in the array.
-            current_shirt: 45, //This stores the current shirt's id in the array.
-            current_pants: 45 //This stores the current pants' id in the array.
+            current_shirt: 8, //This stores the current shirt's id in the array.
+            current_pants: 8 //This stores the current pants' id in the array.
         }
         this.handleClick = this.handleClick.bind(this); //This method is for "Prev" and "Next" buttons.
     }
@@ -78,6 +79,8 @@ class App extends Component {
 
         this.setState({
             [outfitStyle]: ourClothes //Updates current_shirt or current_pants with new value.
+                    // current_shirt: ourClothes,
+                    // current_pants: ourClothes
         });
         console.log ([outfitStyle] + ":" + ourClothes);
     }
@@ -86,7 +89,7 @@ class App extends Component {
     return (
       <div className="App">
 
-      <div id="icloud"></div>
+      <div id="Guy9"></div>
 
             {/* 
             <p>Total Number of Shirts, and Pants: {clothes.length}</p>
@@ -101,100 +104,104 @@ class App extends Component {
             </div>
 
             <div id="avatarWindow"> {/*Vault Suit and Vault Boy*/}
-            <div id="vaultBoy">
-                <div id="vs_frontArm">
-                    <div className={'vs_frontarm_lowerhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_lowerhalf'}></div>
-                    <div className={'vs_frontarm_upperhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_upperhalf'}></div>
-                </div>
+            <div id="falloutBoy">
+                <div id="vaultSuit">
+                    <div id="vs_frontArm">
+                        <div className={'vs_frontarm_lowerhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_lowerhalf'}></div>
+                        <div className={'vs_frontarm_upperhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_frontarm_upperhalf'}></div>
+                    </div>
 
-                <div id="vs_head">
-                    <div className={'vs_hat ' 
-                        + male_hats[this.state.current_hat]['atlas']} 
-                        id={'vs_hat' + male_hats[this.state.current_hat]['id']}>
+                    <div id="vs_head">
+                        <div className={'vs_hat ' 
+                            + male_hats[this.state.current_hat]['atlas']} 
+                            id={'vs_hat' + male_hats[this.state.current_hat]['id']}>
+                        </div>
+                    </div>
+
+                    <div id="vs_torso">
+                        <div className={'vs_chest ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_chest'}></div>
+                        
+                        {(() => {
+                            if (clothes[this.state.current_shirt]['hem']) {
+                                return <div className='vs_hem'>
+                                            <div className={'vs_fronthem ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_front_hem'}></div>
+                                            <div className={'vs_backhem ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_back_hem'}></div>
+                                        </div>
+                            }
+                        })()}
+                    </div>
+
+                    <div id="vs_frontLeg">
+                        <div className={'vs_frontleg_upperhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_upperhalf'}></div>
+                        <div className={'vs_frontleg_lowerhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_lowerhalf'}></div>
+                        <div className={'vs_frontleg_foot ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_foot'}></div>
+                    </div>
+
+                    <div id="vs_trunk">
+                        <div className={'vs_crotch ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_crotch'}></div>
+                    </div>
+
+                    <div id="vs_backLeg">
+                        <div className={'vs_backleg_upperhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_upperhalf'}></div>
+                        <div className={'vs_backleg_lowerhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_lowerhalf'}></div>
+                        <div className={'vs_backleg_foot ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_foot'}></div>
+                    </div>
+
+                    <div id="vs_backArm">
+                        <div className={'vs_backarm_lowerhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_backarm_lowerhalf'}></div>
+                        <div className={'vs_backarm_upperhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_backarm_upperhalf'}></div>
                     </div>
                 </div>
 
-                <div id="vs_torso">
-                    <div className={'vs_chest ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_chest'}></div>
-                    
-                    {(() => {
-                        if (clothes[this.state.current_shirt]['hem']) {
-                            return <div className='vs_hem'>
-                                        <div className={'vs_fronthem ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_front_hem'}></div>
-                                        <div className={'vs_backhem ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_back_hem'}></div>
-                                    </div>
-                        }
-                    })()}
-                </div>
-
-                <div id="vs_frontLeg">
-                    <div className={'vs_frontleg_upperhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_upperhalf'}></div>
-                    <div className={'vs_frontleg_lowerhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_lowerhalf'}></div>
-                    <div className={'vs_frontleg_foot ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_frontleg_foot'}></div>
-                </div>
-
-                <div id="vs_trunk">
-                    <div className={'vs_crotch ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_crotch'}></div>
-                </div>
-
-                <div id="vs_backLeg">
-                    <div className={'vs_backleg_upperhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_upperhalf'}></div>
-                    <div className={'vs_backleg_lowerhalf ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_lowerhalf'}></div>
-                    <div className={'vs_backleg_foot ' + clothes[this.state.current_pants]['atlas']} id={clothes[this.state.current_pants]['id'] + '_backleg_foot'}></div>
-                </div>
-
-                <div id="vs_backArm">
-                    <div className={'vs_backarm_lowerhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_backarm_lowerhalf'}></div>
-                    <div className={'vs_backarm_upperhalf ' + clothes[this.state.current_shirt]['atlas']} id={clothes[this.state.current_shirt]['id'] + '_backarm_upperhalf'}></div>
-                </div>
-
-                <div id="vb_frontArm">
-                    <div className="atlas02" id="outfit7_frontarm_lowerhalf"></div>
-                    <div className="atlas02" id="outfit7_frontarm_upperhalf"></div>
-                    <div className="atlas18" id="outfit7_frontarm_handopen"></div>
-                </div>
-
-                <div id="vb_head">
-                    <div className={'vb_hair ' 
-                        + malehair[this.state.current_hair]['atlas'] 
-                        + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
-                        id={'vb_' + malehair[this.state.current_hair]['id']}>
+                <div id="vaultBoy">
+                    <div id="vb_frontArm">
+                        <div className="atlas02" id="vb_frontarm_lowerhalf"></div>
+                        <div className="atlas02" id="vb_frontarm_upperhalf"></div>
+                        <div className="vb_frontarm_hand atlas18" id="vb_frontarm_handopen"></div>
                     </div>
 
-                    <div className={'vb_beard atlas01 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
+                    <div id="vb_head">
+                        <div className={'vb_hair ' 
+                            + malehair[this.state.current_hair]['atlas'] 
+                            + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
+                            id={'vb_' + malehair[this.state.current_hair]['id']}>
+                        </div>
 
-                    id={'vb_beard' + facial_hair[this.state.current_beard]['id']}>
+                        <div className={'vb_beard atlas01 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
+
+                        id={'vb_beard' + facial_hair[this.state.current_beard]['id']}>
+                        </div>
+
+
+                        <div className="vb_face atlas01" id="vb_face5"></div>
+                        <div className="atlas02" id="outfit7_head"></div>
                     </div>
 
+                    <div id="vb_torso">
+                        <div className="atlas02" id="vb_chest"></div> 
+                    </div>
 
-                    <div className="atlas01" id="vb_face5"></div>
-                    <div className="atlas02" id="outfit7_head"></div>
-                </div>
+                    <div id="vb_frontLeg">
+                        <div className="atlas02" id="vb_frontleg_upperhalf"></div>
+                        <div className="atlas02" id="vb_frontleg_lowerhalf"></div>
+                        <div className="atlas02" id="vb_frontleg_foot"></div>
+                    </div>
 
-                <div id="vb_torso">
-                    <div className="atlas02" id="outfit7_chest"></div> 
-                </div>
+                    <div id="vb_trunk">
+                        <div className="atlas02" id="vb_crotch"></div>
+                    </div>
 
-                <div id="vb_frontLeg">
-                    <div className="atlas02" id="outfit7_frontleg_upperhalf"></div>
-                    <div className="atlas02" id="outfit7_frontleg_lowerhalf"></div>
-                    <div className="atlas02" id="outfit7_frontleg_foot"></div>
-                </div>
+                    <div id="vb_backLeg">
+                        <div className="atlas02" id="vb_backleg_upperhalf"></div>
+                        <div className="atlas02" id="vb_backleg_lowerhalf"></div>
+                        <div className="atlas02" id="vb_backleg_foot"></div>
+                    </div>
 
-                <div id="vb_trunk">
-                    <div className="atlas02" id="outfit7_crotch"></div>
-                </div>
-
-                <div id="vb_backLeg">
-                    <div className="atlas02" id="outfit7_backleg_upperhalf"></div>
-                    <div className="atlas02" id="outfit7_backleg_lowerhalf"></div>
-                    <div className="atlas02" id="outfit7_backleg_foot"></div>
-                </div>
-
-                <div id="vb_backArm">
-                    <div className="atlas02" id="outfit7_backarm_lowerhalf"></div>
-                    <div className="atlas02" id="outfit7_backarm_upperhalf"></div>
-                    <div className="atlas18" id="outfit7_backarm_handopen"></div>
+                    <div id="vb_backArm">
+                        <div className="atlas02" id="vb_backarm_lowerhalf"></div>
+                        <div className="atlas02" id="vb_backarm_upperhalf"></div>
+                        <div className="vb_backarm_hand atlas18" id="vb_backarm_handopen"></div>
+                    </div>
                 </div>
             </div>
             </div>
