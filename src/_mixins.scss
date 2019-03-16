@@ -1,91 +1,24 @@
-
-
-
-
-
-
 /* These control the group of Vault Boy's limbs. */
-/* Affects VaultBoy.scss and VaultSuit.scss */
-/* Arms */
-$arm_top: 67px; 				  /* vb_frontArm, vs_frontArm, */
-$backarm_left: 74px;
-
-/* Head */
-$head_left: 43px;				  /* vb_head */
-$head_top: 7px; 				  /* vb_head */
-
-/* Torso */
-$torso_left: 47px; 				  /* vb_torso, vs_torso */
-$torso_top: 85px; 				  /* vb_torso vs_torso */
-
-/* Legs */
-$leg_top: 198px; 				  /* vb_frontLeg, vs_frontLeg */
-$frontleg_left: 25px;
-$backleg_left: 65px;
-
-$trunk_left: 45px;
-$trunk_top: 85px;
-
-
-
-/* These control each individual piece of Vault Boy or Vault Suit. */
-/* Affects VaultBoy.scss and VaultSuit.scss */
-/* Arms */
-$frontarm_lowerhalf_left: 7px;
-$arm_lowerhalf_top: 88px; 		  /* outfit0_ */
-$arm_upperhalf_top: 40px;		  /* outfit0_ */
-$arm_hand_top: 128px; 			  /* outfit0_ */
-
-$backarm_lowerhalf_left: 17px;
-
-/* Hems - But not all outfits have hems. */
-$hem_top: 80px;
-
-/* Legs and Feet */
-$leg_lowerhalf_top: 55px;
-$frontleg_foot_left: 11px;
-$foot_top: 95px;
-$leg_lowerhalf_left: 5px;
-$backleg_foot_left: 22px;
-
-
-
-/* Crotch */
-$crotch_left: 3px;
-$crotch_top: 50px;
-
+/* Affects FalloutBoy.scss, VaultSuit.scss, and VaultBoy.scss. */
+/* None */
 
 
 
 
 /* These control each individual piece of Vault Boy or Vault Suit. */
-/* Affects each Atlas.scss */
+/* Affects FalloutBoy.scss, VaultSuit.scss, VaultBoy.scss, and each Atlas. */
 /* Legs and Feet */
-$backleg_upperhalf_width: 105px;  /* outfit0_backleg_upperhalf */
-$backleg_upperhalf_height: 65px;  /* outfit0_backleg_upperhalf */
 $leg_upperhalf_x: -75px;		  /* outfit0_backleg_upperhalf */
 $backleg_y: -5px; 				  /* outfit0_backleg_upperhalf, outfit0_backleg_lowerhalf, outfit0_backleg_foot */
 
-$backleg_lowerhalf_width: 87px;	  /* outfit0_backleg_lowerhalf */
-$backleg_lowerhalf_height: 60px;  /* outfit0_backleg_lowerhalf */
 $leg_lowerhalf_x: -185px;		  /* outfit0_backleg_lowerhalf */
 
-$foot_width: 60px;				  /* outfit0_backleg_foot, outfit0_frontleg_foot */
-$foot_height: 55px;				  /* outfit0_backleg_foot, outfit0_frontleg_foot */
 $foot_x: -295px;				  /* outfit0_backleg_foot, outfit0_frontleg_foot */
 
-$frontleg_upperhalf_width: 100px; /* outfit0__frontleg_upperhalf */
-$frontleg_upperhalf_height: 60px; /* outfit0__frontleg_upperhalf */
 $frontleg_y: -70px;				  /* outfit0_frontleg_upperhalf, outfit0_frontleg_lowerhalf */
 
-$frontleg_lowerhalf_width: 87px;  /* outfit0_frontleg_lowerhalf */
-$frontleg_lowerhalf_height: 55px; /* outfit0_frontleg_lowerhalf */
-
 /* Hems - But not all outfits have hems. */
-$back_hem_width: 50px;			  /* outfit0_back_hem */
-$hem_height: 115px;				  /* outfit0_back_hem, outfit0_front_hem */
 $back_hem_x: -365px;			  /* outfit0_back_hem */
-$front_hem_width: 80px;			  /* outfit0_front_hem */
 $front_hem_x: -420px;			  /* outfit0_front_hem */
 
 /* Hair */
@@ -93,47 +26,31 @@ $vb_hair1_x: -279px;			  /* Affects 1st column of hairstyles. */
 $vb_hair2_x: -395px;			  /* Affects 2nd column of hairstyles. */
 $vb_hair3_x: -509px;			  /* Affects 3rd column of hairstyles. */
 
-$vb_hairA_y: -910px;			/* Affects 9th row of hairstyles. */
-$vb_hairB_y: -780px;			/* Affects 8th row of hairstyles. */
-$vb_hairC_y: -670px;			/* Affects 7th row of hairstyles. */
-$vb_hairD_y: -560px;			/* Affects 6th row of hairstyles. */
-$vb_hairE_y: -450px;			/* Affects 5th row of hairstyles. */
-$vb_hairF_y: -340px;			/* Affects 4th row of hairstyles. */
-$vb_hairG_y: -230px;			/* Affects 3rd row of hairstyles. */
-$vb_hairH_y: -120px;			/* Affects 2nd row of hairstyles. */
-$vb_hairI_y: -10px;				/* Affects 1st row of hairstyles. */
-
-
-
+$vb_hairA_y: -910px;			  /* Affects 9th row of hairstyles. */
+$vb_hairB_y: -780px;			  /* Affects 8th row of hairstyles. */
+$vb_hairC_y: -670px;			  /* Affects 7th row of hairstyles. */
+$vb_hairD_y: -560px;			  /* Affects 6th row of hairstyles. */
+$vb_hairE_y: -450px;			  /* Affects 5th row of hairstyles. */
+$vb_hairF_y: -340px;			  /* Affects 4th row of hairstyles. */
+$vb_hairG_y: -230px;			  /* Affects 3rd row of hairstyles. */
+$vb_hairH_y: -120px;			  /* Affects 2nd row of hairstyles. */
+$vb_hairI_y: -10px;				  /* Affects 1st row of hairstyles. */
 
 /* Chest */
-$chest_width: 100px;			  /* outfit0_chest */
-$chest_height: 120px;			  /* outfit0_chest */
 $chest_x: -120px;			 	  /* outfit0_chest */
 $chest_y: -135px;				  /* outfit0_chest */
 
 /* Crotch */
-$crotch_width: 90px;			  /* outfit0_crotch */
-$crotch_height: 90px;			  /* outfit0_crotch */
 $crotch_x: -230px;				  /* outfit0_crotch */
 $crotch_y: -160px;				  /* outfit0_crotch */
 
 /* Arms and Hands */
-$backarm_lowerhalf_width: 80px;	  /* outfit0__backarm_lowerhalf */
-$backarm_lowerhalf_height: 50px;  /* outfit0_backarm_lowerhalf */
 $arm_lowerhalf_x: -320px;		  /* outfit0_backarm_lowerhalf, outfit0_frontarm_lowerhalf */
 $backarm_y: -140px;	  			  /* outfit0_backarm_lowerhalf, outfit0_backarm_upperhalf */
 
-$backarm_upperhalf_width: 90px;	  /* outfit0_backarm_upperhalf */
-$backarm_upperhalf_height: 50px;  /* outfit0_backarm_upperhalf */
 $arm_upperhalf_x: -405px;	 	  /* outfit0_backarm_upperhalf, outfit0_frontarm_upperhalf */
 
-$frontarm_lowerhalf_width: 85px;  /* outfit0_frontarm_lowerhalf */
-$frontarm_lowerhalf_height: 55px; /* outfit0_frontarm_lowerhalf */
 $frontarm_y: -190px;			  /* outfit0_frontarm_lowerhalf, outfit0_frontarm_upperhalf */
-
-$frontarm_upperhalf_width: 110px; /* outfit0_frontarm_upperhalf */
-$frontarm_upperhalf_height: 60px; /* outfit0_frontarm_upperhalf */
 
 $outfit_BDFH_x: 512px;			/* Affects every 2nd, 4th, 6th, and 8th outfit in each atlas. */
 $outfitC_y: 256px;				/* Affects every 3rd outfit in each atlas. */
