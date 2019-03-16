@@ -1,18 +1,13 @@
-.atlas18 {
-  background-image: url('./Images/atlas18.png');
-  background-repeat: no-repeat;
-
-  //border: 1px solid black;
-}
+@import 'mixins';
 
 /* Outfit 7 - Male Hands Open */
-#outfit7_backarm_handopen {
+#vb_backarm_handopen {
   width: 65px;
   height: 55px;
   background-position: -150px -145px
 }
 
-#outfit7_frontarm_handopen {
+#vb_frontarm_handopen {
   width: 65px;
   height: 55px;
   background-position: -145px -200px
