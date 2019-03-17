@@ -37,17 +37,18 @@ import './Atlas21.scss'; //SASS for Objects and Hats.
 import './hairColours.scss'; //SASS for hair colours.
 import './Mysterious.scss'; //SASS for Mysterious Stranger Outfit.
 import './FeralGhoul.scss'; //SASS for Feral Ghoul.
+import './JustForTesting.scss'; //SASS for Feral Ghoul.
 
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            current_hair: 6, //This stores the current hair's id in the array.
+            current_hair: 16, //This stores the current hair's id in the array.
             current_hair_colour: 0, //This stores the current hair_colour's id in the array.
-            current_beard: 7, //This stores the current beard's id in the array.
+            current_beard: 0, //This stores the current beard's id in the array.
             current_hat: 0, //This stores the current Hat's id in the array.
-            current_shirt: 8, //This stores the current shirt's id in the array.
-            current_pants: 8 //This stores the current pants' id in the array.
+            current_shirt: 38, //This stores the current shirt's id in the array.
+            current_pants: 38 //This stores the current pants' id in the array.
         }
         this.handleClick = this.handleClick.bind(this); //This method is for "Prev" and "Next" buttons.
     }
@@ -89,7 +90,7 @@ class App extends Component {
     return (
       <div className="App">
 
-      <div id="Guy9"></div>
+      <div id="Guy39?"></div>
 
             {/* 
             <p>Total Number of Shirts, and Pants: {clothes.length}</p>
@@ -161,11 +162,21 @@ class App extends Component {
                     </div>
 
                     <div id="vb_head">
-                        <div className={'vb_hair ' 
-                            + malehair[this.state.current_hair]['atlas'] 
-                            + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
-                            id={'vb_' + malehair[this.state.current_hair]['id']}>
-                        </div>
+                    {(() => {
+                            if (!male_hats[this.state.current_hat]['disable_hair']) { //Checks for flag where current_hat disables hairstyle.
+                                return <div className={'vb_hair ' 
+                                            + malehair[this.state.current_hair]['atlas'] 
+                                            + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
+                                            id={'vb_' + malehair[this.state.current_hair]['id']}>
+                                        </div>
+                            } else { //There is a flag to disable hairstyle.
+                                if (male_hats[this.state.current_hat]['disable_hair'] === .5) { //Checks if flag says to partially disable hairstyle.
+                                    return <div className={'vb_hair atlas17 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
+                                            id='vb_hair13'>
+                                        </div>
+                                } //Else, flag says to completely disable hairstyle. There is no hair div.
+                            }
+                        })()}
 
                         <div className={'vb_beard atlas01 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
 
