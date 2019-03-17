@@ -41,15 +41,16 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
     name: '#8' 		/* NAME ME!! */
   },
   {
-    id: 'hair9',
-    atlas: 'atlas17',
-    name: 'Combover?'
-  },
-  {
     id: 'hair10',
     atlas: 'atlas17',
     name: 'Warhawk?'
   },
+  {
+    id: 'hair9',
+    atlas: 'atlas17',
+    name: 'Combover?'
+  },
+
   {
     id: 'hair11',
     atlas: 'atlas17',
@@ -116,14 +117,14 @@ export const malehair = [ //An array of each Male hairstyle's ID, Atlas file, na
     name: 'Heavyweight' /* Alternatively 'Bootcamp'. */
   },
   {
-    id: 'hair24',
-    atlas: 'atlas17',
-    name: 'Bad Hair Day?'
-  },
-  {
     id: 'hair25',
     atlas: 'atlas17',
     name: 'Casual Kempt?'
+  },
+  {
+    id: 'hair24',
+    atlas: 'atlas17',
+    name: 'Bad Hair Day?'
   },
   {
     id: 'hair26',
