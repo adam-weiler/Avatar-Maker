@@ -52,7 +52,7 @@
 
 #vs_head, #vb_head {
 	left: 43px;
-	top: 7px;
+	top: 5px;
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
 }
@@ -63,7 +63,7 @@
 }
 
 #vs_frontLeg, #vb_frontLeg {
-	left: 25px;
+	left: 27px;
 	top: 198px;
 }
 
@@ -79,7 +79,7 @@
 
 #vs_backArm, #vb_backArm {
 	left: 76px;
-	top: 67px;
+	top: 70px;
 }
 
 
@@ -87,7 +87,7 @@
 /* These classes are for each piece of Vault Suit and Vault Boy's. */
 .vs_frontarm_lowerhalf, #vb_frontarm_lowerhalf {
 	left: 7px;
-	top: 88px;
+	top: 92px;
 	width: 85px;
   	height: 55px;
   	transform: scaleY(-1) rotate(85deg);
@@ -108,8 +108,8 @@
 }
 
 .vs_hat, #vb_mask {
-	left: -105px;
-	top: -20px;
+	left: -108px;
+	top: -10px;
 	width: 115px;
   	height: 115px;
 		/*background-color: rgba(255,0,0,.5);*/
@@ -144,11 +144,10 @@
 
 .vs_frontleg_foot, #vb_frontleg_foot {
 	left: 11px;
-	top: 95px;
+	top: 101px;
 	width: 60px;
   	height: 55px;
   		transform: scaleY(-1) rotate(180deg);
-	z-index: 1;
 }
 
 .vs_crotch, #vb_crotch {
@@ -158,7 +157,6 @@
 	height: 90px;
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
-  	z-index: 1;
 }
 
 .vs_backleg_upperhalf, #vb_backleg_upperhalf {
@@ -171,7 +169,7 @@
 
 .vs_backleg_lowerhalf, #vb_backleg_lowerhalf {
 	left: 5px;
-	top: 55px;
+	top: 60px;
 	width: 87px;
   	height: 60px;
 	transform: scaleY(-1) rotate(-105deg);
@@ -179,19 +177,18 @@
 
 .vs_backleg_foot, #vb_backleg_foot {
 	left: 22px;
-	top: 95px;
+	top: 101px;
 	width: 60px;
   	height: 55px;
   		transform: scaleY(-1) rotate(180deg);
-	z-index: 1;
 }
 
 .vs_backarm_lowerhalf, #vb_backarm_lowerhalf {
-	left: 24px;
-	top: 90px;
+	left: 20px;
+	top: 84px;
   	width: 80px;
   	height: 50px;
-	transform: scaleY(-1) rotate(-70deg);
+	transform: scaleY(-1) rotate(-85deg);
 }
 
 .vs_backarm_upperhalf, #vb_backarm_upperhalf {
@@ -203,7 +200,7 @@
 }
 
 .vs_backarm_glove, .vb_backarm_hand {
-	left: 35px;
-	top: 128px;
+	left: 28px;
+	top: 126px;
 	transform: scaleX(-1) rotate(-81deg);
 }

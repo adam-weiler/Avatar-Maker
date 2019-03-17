@@ -1,170 +1,123 @@
 @import 'mixins';
 
+#vaultBoy { /* Don't give z-index. */
 
-#vaultBoy {
-	position: absolute;
-	width: 500px;
-	height: 500px;
-	left: -8px;
-	z-index: 50;
-	opacity: 1;
-}
-
-/*This is Vault Boy's limbs.*/
-#vb_frontArm, #vb_head, #vb_frontLeg, #vb_torso, #vb_trunk, #vb_backLeg, #vb_backArm {
-	position: absolute;
 }
 
 #vb_frontArm {
-	top: $arm_top;
-	z-index: 69;
+	z-index: 59;
 }
 
 #vb_head {
-	left: $head_left;
-	top: $head_top;
-	z-index: 59;
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(-1);
+	z-index: 69;
 }
 
 #vb_torso {
-	left: $torso_left;
-	top: $torso_top;
 	z-index: 49;
 }
 
 #vb_frontLeg {
-	left: $frontleg_left;
-	top: $leg_top;
 	z-index: 39;
 }
 
 #vb_trunk {
-	left: $trunk_left;
-	top: $trunk_top;
 	z-index: 29;
 }
 
 #vb_backLeg {
-	left: $backleg_left;
-	top: $leg_top - 10;
 	z-index: 19;
 }
 
 #vb_backArm {
-	top: $arm_top;
-	left: $backarm_left;
 	z-index: 9;
 }
 
 
-
 /* This is Vault Boy's skin. */
-#outfit7_frontarm_lowerhalf, #outfit7_frontarm_upperhalf, #outfit7_frontarm_handopen, #outfit7_backarm_upperhalf, #outfit7_backarm_lowerhalf, #outfit7_backarm_handopen, #outfit7_frontleg_upperhalf, #outfit7_frontleg_lowerhalf, #outfit7_frontleg_foot, #outfit7_backleg_upperhalf, #outfit7_backleg_lowerhalf, #outfit7_backleg_foot, #outfit7_chest, #outfit7_crotch {
+#vb_frontarm_lowerhalf, #vb_frontarm_upperhalf, .vb_frontarm_hand, #vb_mask, .vb_hair, .vb_beard, .vb_face, #vb_chest, #vb_frontleg_upperhalf, #vb_frontleg_lowerhalf, #vb_frontleg_foot, #vb_crotch, #vb_backleg_upperhalf, #vb_backleg_lowerhalf, #vb_backleg_foot, #vb_backarm_upperhalf, #vb_backarm_lowerhalf, .vb_backarm_hand {
 	position: absolute;
 }
 
-#outfit7_frontarm_lowerhalf, .vs_frontarm_lowerhalf {
-	left: $frontarm_lowerhalf_left;
-	top: $arm_lowerhalf_top;
-	transform: scaleY(-1) rotate(85deg);
-	z-index: 99;
+#vb_frontarm_lowerhalf {
+	z-index: 62;
 }
 
-#outfit7_frontarm_upperhalf, .vs_frontarm_upperhalf {
-	top: $arm_upperhalf_top;
-	transform: scaleY(-1) rotate(75deg);
-	z-index: 1;
+#vb_frontarm_upperhalf {
+	z-index: 61;
 }
 
-#outfit7_frontarm_handopen {
-	left: 18px;
-	top: $arm_hand_top;
-	transform: scaleY(-1) rotate(-90deg);
-	z-index: 50;
+#vb_frontarm_hand {
+	z-index: 60;
+}
+
+#vb_mask {
+	z-index: 75;
 }
 
 .vb_hair {
-	left: -4px;
-  	top: -15px;
+	left: -3px;
+  	top: -10px;
   	width: 110px;
   	height: 110px;
-  	position: absolute;
-  	z-index: 99;
+	z-index: 74;
 }
 
-#outfit7_head {
-	
+.vb_beard {
+	/*left: -4px;*/
+	left: 0px;
+	top: 0px;
+	width: 95px;
+    height: 105px;
+	z-index: 73;
+	/*background-color: rgba(255,255,255,1);*/
 }
 
-#outfit7_chest, .vs_chest {
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(-1);
-  	z-index: 99;
+.vb_face {
+	left: -1px;
+	top: 0px;
+	z-index: 72;
 }
 
-#outfit7_frontleg_upperhalf, .vs_frontleg_upperhalf {
-	transform: scaleY(-1) rotate(-90deg);
-	z-index: 99;
-}
-
-#outfit7_frontleg_lowerhalf, .vs_frontleg_lowerhalf {
-	top: $leg_lowerhalf_top;
-	transform: scaleY(-1) rotate(-105deg);
+#vb_chest {
 	z-index: 50;
 }
 
-#outfit7_frontleg_foot, .vs_frontleg_foot {
-	left: $frontleg_foot_left;
-	top: $foot_top;
-	transform: scaleY(-1) rotate(180deg);
-	z-index: 1;
+#vb_frontleg_upperhalf {
+	z-index: 42;
 }
 
-#outfit7_crotch, .vs_crotch {
-	left: $crotch_left;
-	top: $crotch_top;
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(-1);
-  	z-index: 1;
+#vb_frontleg_lowerhalf {
+	z-index: 41;
 }
 
-#outfit7_backleg_upperhalf, .vs_backleg_upperhalf {
-	transform: scaleY(-1) rotate(95deg);
-	z-index: 99;
+#vb_frontleg_foot {
+	z-index: 40;
 }
 
-#outfit7_backleg_lowerhalf, .vs_backleg_lowerhalf {
-	left: $leg_lowerhalf_left;
-	top: $leg_lowerhalf_top;
-	transform: scaleY(-1) rotate(-105deg);
-	z-index: 50;
+#vb_crotch {
+	z-index: -30;
 }
 
-#outfit7_backleg_foot, .vs_backleg_foot {
-	left: $backleg_foot_left;
-	top: $foot_top;
-	transform: scaleY(-1) rotate(180deg);
-	z-index: 1;
+#vb_backleg_upperhalf {
+	z-index: 22;
 }
 
-#outfit7_backarm_lowerhalf, .vs_backarm_lowerhalf {
-	left: $backarm_lowerhalf_left;
-	top: $arm_lowerhalf_top;
-	transform: scaleY(1) rotate(70deg);
-	z-index: 99;
+#vb_backleg_lowerhalf {
+	z-index: 21;
 }
 
-#outfit7_backarm_handopen {
-	left: 29px;
-	top: $arm_hand_top;
-	transform: scaleX(-1) rotate(-90deg);
-	z-index: 50;
+#vb_backleg_foot {
+	z-index: 20;
 }
 
-#outfit7_backarm_upperhalf, .vs_backarm_upperhalf {
-	top: $arm_upperhalf_top;
-	transform: scaleY(1) rotate(75deg);
-	z-index: 1;
+#vb_backarm_lowerhalf {
+	z-index: 12;
+}
+
+#vb_backarm_upperhalf {
+	z-index: 11;
+}
+
+#vb_backarm_hand {
+	z-index: 10;
 }

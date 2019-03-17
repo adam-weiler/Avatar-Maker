@@ -1,20 +1,24 @@
 @import 'mixins';
 
+.vb_hair {
+  /*background-color: rgba(0,0,0,.3);*/
+}
+
 /* Vault Boy Hairstyles */
 #vb_hair1 {
-  background-position: $vb_hair1_x $vb_hairB_y;
+  background-position: $vb_hair1_x ($vb_hairB_y - 4);
 }
 
 #vb_hair2 {
-  background-position: $vb_hair1_x $vb_hairC_y;
+  background-position: $vb_hair1_x ($vb_hairC_y - 4);
 }
 
 #vb_hair3 {
-  background-position: $vb_hair1_x $vb_hairD_y;
+  background-position: $vb_hair1_x ($vb_hairD_y - 2);
 }
 
 #vb_hair4 {
-  background-position: $vb_hair1_x $vb_hairE_y;
+  background-position: ($vb_hair1_x - 2) ($vb_hairE_y - 2);
 }
 
 #vb_hair5 {
@@ -33,16 +37,17 @@
   background-position: $vb_hair1_x $vb_hairI_y;
 }
 
-#vb_hair9 {
-  background-position: ($vb_hair2_x - 22) $vb_hairA_y;
+#vb_hair9 { /* Ballding */
+  background-position: ($vb_hair2_x - 20) ($vb_hairA_y - 3);
 }
 
 #vb_hair10 {
-  background-position: $vb_hair2_x $vb_hairB_y;
+  background-position: ($vb_hair2_x + 1) ($vb_hairB_y - 7);
 }
 
 #vb_hair11 {
-  background-position: $vb_hair2_x $vb_hairC_y;
+  top: -14px; /* Not enough room to remap. */
+  background-position: $vb_hair2_x ($vb_hairC_y);
 }
 
 #vb_hair12 {
@@ -54,7 +59,8 @@
 }
 
 #vb_hair14 {
-  background-position: ($vb_hair2_x + 2) ($vb_hairF_y + 2);
+  top: -4px;
+  background-position: ($vb_hair2_x + 2) ($vb_hairF_y - 4);
 }
 
 #vb_hair15 {
@@ -62,19 +68,21 @@
 }
 
 #vb_hair16 {
-  background-position: $vb_hair2_x ($vb_hairH_y + 4);
+  left: -7px;
+  background-position: ($vb_hair2_x + 4) ($vb_hairH_y + 4);
 }
 
 #vb_hair17 {
-  background-position: $vb_hair2_x ($vb_hairI_y + 6);
+  left: 0px;
+  background-position: ($vb_hair2_x - 2) ($vb_hairI_y + 2);
 }
 
 #vb_hair18 { /* Kindof Samie */
-  background-position: ($vb_hair3_x - 21) $vb_hairA_y;
+  background-position: ($vb_hair3_x - 21) ($vb_hairA_y - 3);
 }
 
 #vb_hair19 { /* Kindof Samie */
-  background-position: $vb_hair3_x ($vb_hairB_y - 20);
+  background-position: $vb_hair3_x ($vb_hairB_y - 22);
 }
 
 #vb_hair20 {
@@ -82,19 +90,21 @@
 }
 
 #vb_hair21 { /* Also kindof Samie */
-  background-position: $vb_hair3_x ($vb_hairD_y - 17);
+  background-position: $vb_hair3_x ($vb_hairD_y - 24);
 }
 
 #vb_hair22 { /* Also kindof Samie */
-  background-position: $vb_hair3_x ($vb_hairE_y - 17);
+  background-position: $vb_hair3_x ($vb_hairE_y - 23);
 }
 
 #vb_hair23 {
-  background-position: ($vb_hair3_x - 2) ($vb_hairF_y - 14);
+  background-position: ($vb_hair3_x - 2) ($vb_hairF_y - 19);
 }
 
 #vb_hair24 {
-  background-position: ($vb_hair3_x - 2) ($vb_hairG_y - 11);
+  left: -11px;
+  width: 120px;
+  background-position: ($vb_hair3_x + 6) ($vb_hairG_y - 11);
 }
 
 #vb_hair25 {
@@ -104,116 +114,176 @@
 
 
 
+
+.vs_hat {
+  /*background-color: rgba(255,0,0,.3);*/
+}
+
 /* Vault Boy Hats */
 #vs_hat1 { /* Metal armor */
-  background-position: -869px -910px;
+  left: -105px;
+  top: -16px;
+  background-position: -870px -910px;
 }
 
 #vs_hat2 { /* Mascot head */
-  background-position: -846px -802px;
+  left: -106px;
+  top: -12px;
   width: 120px;
+  background-position: -845px -800px;
 }
 
 #vs_hat3 { /* Military fatigues */
-  background-position: -850px -688px;
+  left: -105px;
+  top: -13px;
+  background-position: -850px -685px;
 }
 
 #vs_hat4 { /* Professor outfit */
-  background-position: -850px -580px;
+  left: -95px;
+  top: -18px;
+  height: 110px;
+  background-position: -850px -580px; /* Needs to be very close to top edge. */
 }
 
 #vs_hat5 { /* Ninja outfit */
-  background-position: -850px -466px;
+  left: -104px;
+  top: -8px;
+  background-position: -850px -466px; /* Needs to be very close to bottom edge. */
 }
 
-#vs_hat6 { /* Comedian outfit */
-  background-position: -850px -360px;
-}
+    #vs_hat6 { /* Comedian outfit */
+      background-position: -850px -360px;
+    }
 
 #vs_hat7 { /* T-51 power armor */
+    left: -107px;
+    top: -5px;
   background-position: -850px -250px;
 }
 
 #vs_hat8 { /* T-60 power armor */
-  background-position: -850px -140px;
+    left: -105px;
+    top: -7px;
+  background-position: -850px -139px;
 }
 
 #vs_hat9 { /* X-01 Mk VI power armor */
-  background-position: -850px -30px;
+  left: -105px;
+  top: -10px;
+  background-position: -850px -25px;
 }
 
 #vs_hat10 { /* Wasteland gear */
-  background-position: -755px -916px;
+  left: -108px;
+  top: -5px;
+  background-position: -755px -915px;
 }
 
 #vs_hat11 { /* Ghost costume */
-  background-position: -730px -803px;
+  left: -112px;
+  top: -8px;
+  background-position: -730px -800px;
 }
 
 #vs_hat12 { /* Shower cap */
-  background-position: -730px -690px;
+    left: -110px;
+    top: -11px;
+  background-position: -730px -689px;
 }
 
 #vs_hat13 { /* Surgery bandages */
-  background-position: -730px -581px;
+    left: -108px;
+    top: -12px;
+  background-position: -730px -579px;
+  height: 113px;
 }
 
 #vs_hat14 { /* Horror fan outfit */
-  background-position: -730px -480px;
+  left: -108px;
+  top: -6px;
+  background-position: -730px -475px;
 }
 
 #vs_hat15 { /* Medieval ruler outfit */
+  left: -102px;
+  top: -28px;
   background-position: -735px -350px;
 }
 
 #vs_hat16 { /* Knight armor */
-  background-position: -735px -243px;
+  left: -105px;
+  top: -21px;
+  background-position: -735px -240px;
 }
 
 #vs_hat17 { /* Lifeguard outfit */
-  background-position: -735px -123px;
+  top: -25px;
+  left: -105px;
+  background-position: -735px -125px;
 }
 
 #vs_hat18 { /* Wrestler outfit */
-  background-position: -730px -23px;
+  top: -16px;
+  background-position: -730px -20px;
 }
 
 #vs_hat19 { /* Cat ears */
+  left: -105px;
+  top: -13px;
   background-position: -640px -910px;
 }
 
 #vs_hat20 { /* Baseball uniform */
-  background-position: -625px -798px;
+  top: -20px;
+  left: -105px;
+  background-position: -620px -795px;
 }
 
 #vs_hat21 { /* Nobility outfit */
-  background-position: -625px -690px;
+  left: -98px;
+  top: -16px;
+  background-position: -625px -685px;
 }
 
 #vs_hat22 { /* Combat armor */
+  left: -100px;
+  top: -16px;
   background-position: -625px -575px;
 }
 
 #vs_hat23 { /* Sheriff's duster */
-  background-position: -615px -465px;
+  left: -103px;
+  top: -15px;
+  background-position: -620px -465px;
 }
 
 #vs_hat24 { /* Elf outfit */
-  background-position: -615px -358px;
+  left: -90px;
+  top: -10px;
+  height: 111px;
+  background-position: -620px -358px;
 }
 
 #vs_hat25 { /* Radiation suit */
-  background-position: -615px -246px;
+  left: -104px;
+  top: -4px;
+  height: 120px;
+  background-position: -620px -240px;
 }
 
-#vs_hat26 { /* Sci-fi fan outfit */
-  background-position: -615px -126px;
-}
+      #vs_hat26 { /* Sci-fi fan outfit */
+        background-position: -615px -126px;
+      }
 
-#vs_hat27 { /* Spock ears */
+#vs_hat27 { /* Sports fan outfit */
+  left: -109px;
+  top: -14px;
   background-position: -615px -26px;
 }
 
 #vs_hat28 { /* Aviator cap */
+  left: -102px;
+  top: -16px;
   background-position: -505px -25px;
 }

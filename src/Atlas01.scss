@@ -93,18 +93,21 @@
 
 
 #vb_beard1 { /* Clean Shavenly */
+  width: 0px; /* To avoid weird ghosting images. */
+  height: 0px;
 }
 
-#vb_beard2 { /* Pointed beard */
+#vb_beard2 { /* Facial Feature 14 in-game. */
     background-position: -647px -145px;
 }
 
-#vb_beard3 { /* Chin strap */
+#vb_beard3 { /* Facial Feature 13 in-game. */
     background-position: -650px -258px;
 }
 
-#vb_beard4 { /* Goatee */
-    background-position: -649px -369px;
+#vb_beard4 { /* Facial Feature 12 in-game. */
+    background-position: -648px -368px;
+    /*background-color: red;*/
 }
 
 /* #vb_beard5 { //Pointed Beard & Glasses  ; Better as a Facial Feature.
@@ -116,7 +119,7 @@
 }*/
 
 #vb_beard5 { /* Facial Feature 6 in-game. */
-    background-position: -536px -63px;
+    background-position: -534px -61px;
 }
 
 #vb_beard6 { /* Facial Feature 4 in-game. */
@@ -124,35 +127,35 @@
 }
 
 #vb_beard7 { /* Facial Feature 2 in-game. */
-    background-position: -533px -285px;
+    background-position: -532px -283px;
 }
 
 #vb_beard8 { /* Facial Feature 11 in-game. */
     background-position: -554px -478px;
 }
 
-#vb_beard9 { /* Skinnier goatee */
+#vb_beard9 { /* Facial Feature 10 in-game. */
     background-position: -554px -592px;
 }
 
-#vb_beard10 { /* Pointy Beard */
+#vb_beard10 { /* Facial Feature 9 in-game. */
     background-position: -556px -702px;
 }
 
-#vb_beard11 { /* Cowboy Beard */
-    background-position: -550px -810px;
+#vb_beard11 { /* Facial Feature 8 in-game. */
+    background-position: -555px -811px;
 }
 
-#vb_beard12 { /* Garbage Beard */
-    background-position: -552px -918px;
+#vb_beard12 { /* Facial Feature 7 in-game. */
+    background-position: -555px -924px;
 }
 
-#vb_beard13 { /* */
-    background-position: -420px -62px;
+#vb_beard13 { /* Facial Feature 5 in-game. */
+    background-position: -419px -61px;
 }
 
-#vb_beard14 { /* Another Cowboy beard*/
-    background-position: -420px -174px;
+#vb_beard14 { /* Facial Feature 3 in-game. */
+    background-position: -418px -170px;
 }
 
 
