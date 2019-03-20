@@ -1,135 +1,89 @@
-.App {
-  text-align: center;
-}
-
 body {
-  background-color: lightgray;
-}
-
-/*#avatarWindow {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
-  border: 1px solid black;
-  width: 500px;
-  height: 500px;
-  background-image: url('./Images/Outfits_HD.png');
-  background-position: -950px -1520px;
+  text-align: center;
+  background-color: lightgray;
+  background-image: url('./Images/metal_background.jpg');
+}
+
+.App {
+  top: 2em;
   position: relative;
-  top: 50px;
-}*/
-
-/*#avatarBody {
-  position: absolute;
-  background-color: green;
-  width: 120px;
-  height: 200px;
-  left: 50px;
-}*/
-
-/*.frontarm_lowerhalf {
-  -ms-transform: scaleY(-1) rotate(-85deg);
-  -webkit-transform: scaleY(-1) rotate(-85deg); 
-  transform: scaleY(-1) rotate(-105deg); 
-  top: 110px;
-  left: -40px;
-  z-index: 90;
-  position: absolute;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  width: 800px;
+  background-color: rgb(0, 0, 0, 0.9);
+  min-height: 1200px;
+  padding: 15px 35px;
+  color: #00ff2b;
 }
 
-.frontarm_upperhalf {
-  -ms-transform: scaleY(-1) rotate(100deg);
-  -webkit-transform: scaleY(-1) rotate(100deg); 
-  transform: scaleY(-1) rotate(65deg); 
-  top: 60px;
-  left: -35px;
-  z-index: 80;
-  position: absolute;
+#logo {
+  margin: 25px;
 }
 
-.chest {
-  -ms-transform: scaleX(-1) rotate(0deg);
-  -webkit-transform: scaleX(-1) rotate(0deg); 
-  transform: scaleX(-1) rotate(0deg); 
-  z-index: 50;
-  left: 0px;
-  top: 50px;
-  position: absolute;
+#logo img {
+  max-width: 300px;
+  height:auto;
+  background-color: #FFF;
+  padding: 25px;
 }
 
-.crotch {
-  z-index: 40;
-  left: 0px;
-  top: 90px;
-  position: absolute;
-}
-
-.backarm_upperhalf {
-  -ms-transform: scaleY(-1) rotate(100deg);
-  -webkit-transform: scaleY(-1) rotate(100deg); 
-  transform: scaleY(-1) rotate(100deg); 
-  top: 60px;
-  left: 25px;
-  z-index: 20;
-  position: absolute;
-}
-
-.backarm_lowerhalf {
-  -ms-transform: scaleY(-1) rotate(-85deg);
-  -webkit-transform: scaleY(-1) rotate(-85deg); 
-  transform: scaleY(-1) rotate(-85deg); 
-  top: 110px;
-  left: 40px;
-  z-index: 30;
-  position: absolute;
-}*/
-
-#closet02, #closet03, #closet04, #closet05, #closet06, #closet07, #closet08 { /* This is the outfit closet; user will not see. */
-  width: 100%;
-  background-color: green;
-  height: auto;
-  position: relative;
-  float: left;
-  top: 400px;
-}
-
-#outfit1, #outfit2, #outfit3, #outfit4, #outfit5, #outfit6, #outfit7, #outfit8, 
-#outfit9, #outfit10, #outfit11, #outfit12, #outfit13, #outfit14, #outfit15, #outfit16, 
-#outfit17, #outfit18, #outfit19, #outfit20, #outfit21, #outfit22, #outfit23, #outfit24, 
-#outfit41, #outfit42, #outfit43, #outfit44, #outfit45, #outfit46, #outfit47, #outfit48
- { /* This is the outfit closet; user will not see. */
-  position: relative;
-  width: 150px;
-  padding: 0 0 15px 10px;
-  float: left;
-  background-color: beige;
-
+#logo h1 {
+  margin: 0;
 }
 
 
-
-#guy35 {
-  
-  width: 200px;
- height: auto;
-  position: absolute;
-  z-index: 99;
-    z-index: 1;
-  left: 490px;
-  top: 195px;
-  opacity: 0;
+.atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas17, .atlas18, .atlas21 {
+  background-repeat: no-repeat;
 }
 
-#guy42 {
-  background-image: url('./Images/guy42.jpeg');
-  width: 169px;
-  height: 338px;
-  position: absolute;
-  z-index: 1;
-  left: 200px;
+.atlas01 {
+  background-image: url('./Images/atlas01_2.png');
 }
 
-#lady {
-  background-image: url('./Images/lady.jpeg');
-  width: 169px;
-  height: 338px;
-  position: relative;
+.atlas02 {
+  background-image: url('./Images/atlas02.png');
+}
+
+.atlas03 {
+  background-image: url('./Images/atlas03_2.png');
+}
+
+.atlas04 {
+  background-image: url('./Images/atlas04.png');
+}
+
+.atlas05 {
+  background-image: url('./Images/atlas05.png');
+}
+
+.atlas06 {
+  background-image: url('./Images/atlas06.png');
+}
+
+.atlas07 {
+  background-image: url('./Images/atlas07.png');
+ }
+
+.atlas08 {
+  background-image: url('./Images/atlas08.png');
+}
+
+.atlas17 {
+  background-image: url('./Images/atlas17_2.png');
+}
+
+.atlas18 {
+  background-image: url('./Images/atlas18.png');
+}
+
+.atlas21 {
+  background-image: url('./Images/atlas21.png');
 }
