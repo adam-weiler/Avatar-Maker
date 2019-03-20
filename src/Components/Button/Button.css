@@ -5,16 +5,17 @@
 }
 
 #allButtons {
+	margin: 25px;
 	padding: 16px 8px;
-	position: absolute;
+	position: relative;
 	border: 3px #16ce15 solid;
 	/*background: rgb(3,27,1, .6);*/
 	background: rgb(13,66,8, .8);
 	color: #00ff2b;
-	right: 0px;
+	float: right;
 }
 
-.buttonsRow, .displayRow {
+.buttonsRow {
 	height: 80px;
 	position: relative;
 	display: flex;
@@ -46,19 +47,33 @@
 }
 
 #displaySelections {
-	top: 550px;
-	width: 380px;
+	margin: 10px 25px;
+		width: 350px;
 	padding: 16px 8px;
-	position: absolute;
+	position: relative;
 	border: 3px #16ce15 solid;
 	background: rgb(13,66,8, .8);
 	color: #00ff2b;
-	font-size: 25px;
+	font-size: 20px;
 	right: 0px;
+	float: right;
+}
+
+.displayRow {
+	height: 60px;
+	position: relative;
+	display: flex;
+    align-items: center;
+}
+
+.labelType {
+	width: 35%;
+	position: relative;
+	text-align: right;
+	font-weight: bold;
 }
 
 .styleType {
-	width: 50%;
-	float: right;
+	width: 65%;
 	position: relative;
 }
