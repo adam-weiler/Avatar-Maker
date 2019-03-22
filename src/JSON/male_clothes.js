@@ -1,6 +1,6 @@
-export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and Hem (if available).
+export const male_clothes = [ //An array of each Shirt's ID, Atlas file, name, and Hem (if available).
   {
-    id: 'outfit1', //For shirts, append _frontarm_lowerhalf, _frontarm_upperhalf, _chest, _backarm_lowerhalf, _backarm_upperhalf to find id of each div. 
+    id: 'outfit1', //For shirts or pants, append _frontarm_lowerhalf, _frontarm_upperhalf, _chest, _backarm_lowerhalf, _backarm_upperhalf to find id of each div. 
                    //For pants, append _frontleg_upperhalf, _frontleg_lowerhalf, _frontleg_foot, _crotch, _backleg_upperhalf, _backleg_lowerhalf, _backleg_foot to find id of each class.
                    //For hats, append ??
     atlas: 'atlas02', //Append to atlas to find class.
@@ -66,7 +66,7 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
   {
     id: 'outfit14',
     atlas: 'atlas03',
-    name: 'Combat Armor'
+    name: 'Combat armor'
   },
   {
     id: 'outfit15',
@@ -120,9 +120,6 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
     atlas: 'atlas04',
     name: 'Sci-fi fan outfit'
   },
-
-
-
   {
     id: 'outfit25',
     atlas: 'atlas05',
@@ -138,12 +135,12 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
     atlas: 'atlas05',
     name: 'Formal wear'
   },
-  // {
-  //   id: 'outfit28',
-  //   atlas: 'atlas05',
-  //   name: 'Ghost costume',
-  //   hem: 1
-  // },
+  {
+    id: 'outfit28',
+    atlas: 'atlas05',
+    name: 'Ghost costume',
+    hem: 1
+  },
   {
     id: 'outfit29',
     atlas: 'atlas05',
@@ -158,16 +155,14 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
   {
     id: 'outfit31',
     atlas: 'atlas05',
-    name: 'Radiation suit'
+    name: 'Radiation suit',
+    hem: 1
   },
   {
     id: 'outfit32',
     atlas: 'atlas05',
     name: 'Eulogy Jones\' suit'
   },
-
-
-
   {
     id: 'outfit33',
     atlas: 'atlas06',
@@ -192,12 +187,14 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
   {
     id: 'outfit37',
     atlas: 'atlas06',
-    name: '??'
+    name: 'Medieval ruler outfit',
+    hem: 1
   },
   {
     id: 'outfit38',
     atlas: 'atlas06',
-    name: 'Lab coat'
+    name: 'Lab coat',
+    hem: 1
   },
   {
     id: 'outfit39',
@@ -209,9 +206,6 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
     atlas: 'atlas06',
     name: 'Vault Suit'
   },
-
-
-
   {
     id: 'outfit41',
     atlas: 'atlas07',
@@ -253,6 +247,53 @@ export const clothes = [ //An array of each Shirt's ID, Atlas file, name, and He
     atlas: 'atlas07',
     name: 'Pilgrim outfit',
     hem: 1
+  },
+  {
+    id: 'outfit49',
+    atlas: 'atlas08',
+    name: 'Swimsuit'
+  },
+  {
+    id: 'outfit50',
+    atlas: 'atlas08',
+    name: 'Synth armor'
+  },
+  {
+    id: 'outfit51',
+    atlas: 'atlas08',
+    name: 'Skeleton costume'
+  },
+  {
+    id: 'outfit52-A',
+    atlas: 'atlas08',
+    name: 'Wasteland medic'
+  },
+      // {
+      //   id: 'outfit52-B',
+      //   atlas: 'atlas08',
+      //   name: 'Surgeon outfit',
+      // },
+  {
+    id: 'outfit53',
+    atlas: 'atlas08',
+    name: 'Junior officer uniform'
+  },
+  {
+    id: 'outfit54',
+    atlas: 'atlas08',
+    name: 'Initiate robe',
+    hem: 1
+  },
+  {
+    id: 'outfit55',
+    atlas: 'atlas08',
+    name: 'Merc Gear',
+    hem: 1
+  },
+  {
+    id: 'outfit56',
+    atlas: 'atlas08',
+    name: 'Santa suit'
   },
   {
     id: 'outfit57',
