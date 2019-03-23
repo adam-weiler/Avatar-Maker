@@ -1,4 +1,4 @@
-@import 'mixins';
+@import './mixins';
 
 .vb_beard {
     position: absolute;
@@ -15,6 +15,9 @@
   z-index: 49;
   position: absolute;
 }
+
+
+
 
 #vb_face1 { /* Dead Male */
 	width: 95px;
@@ -157,14 +160,6 @@
 #vb_beard14 { /* Facial Feature 3 in-game. */
     background-position: -418px -170px;
 }
-
-
-
-
-
-
-
-
 
 
 
