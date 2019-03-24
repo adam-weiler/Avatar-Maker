@@ -179,11 +179,11 @@
   background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitC_y);
 }
 
-#outfit28_back_hem {
+#outfit28_backhem {
   background-position: ($back_hem_x - $outfit_BDFH_x) (10 - $outfitC_y);
 }
 
-#outfit28_front_hem {
+#outfit28_fronthem {
   background-position: ($front_hem_x - $outfit_BDFH_x) (10 - $outfitC_y);
 }
 
@@ -196,6 +196,7 @@
 }
 
 #outfit28_backarm_lowerhalf {
+  left: 24px; /* Adjust weird shape sleeves. */
   background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitC_y);
 }
 
@@ -242,11 +243,11 @@
   background-position: $chest_x ($chest_y - $outfitE_y);
 }
 
-#outfit29_back_hem {
+#outfit29_backhem {
   background-position: $back_hem_x (-5px - $outfitE_y);
 }
 
-#outfit29_front_hem {
+#outfit29_fronthem {
   background-position: $front_hem_x (-5px - $outfitE_y);
 }
 
@@ -352,11 +353,11 @@
   background-position: $chest_x ($chest_y - $outfitG_y);
 }
 
-#outfit31_back_hem {
+#outfit31_backhem {
   background-position: $back_hem_x (-5px - $outfitG_y);
 }
 
-#outfit31_front_hem {
+#outfit31_fronthem {
   background-position: $front_hem_x (-5px - $outfitG_y);
 }
 
