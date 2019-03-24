@@ -124,7 +124,7 @@
   background-position: $crotch_x ($crotch_y - $outfitC_y);
 }
 
-#outfit35_frontarm_lowerhalf, #outfit35_frontarm_upperhalf { /* No sleeves */
+#outfit35_backarm_lowerhalf, #outfit35_backarm_upperhalf, #outfit35_frontarm_lowerhalf, #outfit35_frontarm_upperhalf { /* No sleeves */
   width: 0;
   height: 0;
 }
@@ -156,11 +156,11 @@
   background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitC_y);
 }
 
-#outfit36_back_hem {
+#outfit36_backhem {
   background-position: ($back_hem_x - $outfit_BDFH_x) (10 - $outfitC_y);
 }
 
-#outfit36_front_hem {
+#outfit36_fronthem {
   background-position: ($front_hem_x - $outfit_BDFH_x) (10 - $outfitC_y);
 }
 
@@ -222,11 +222,11 @@
   background-position: $chest_x ($chest_y - $outfitE_y);
 }
 
-#outfit37_back_hem {
+#outfit37_backhem {
   background-position: $back_hem_x (-5px - $outfitE_y);
 }
 
-#outfit37_front_hem {
+#outfit37_fronthem {
   background-position: $front_hem_x (-5px - $outfitE_y);
 }
 
@@ -281,11 +281,11 @@
   background-position: ($chest_x - $outfit_BDFH_x) ($chest_y - $outfitE_y);
 }
 
-#outfit38_back_hem {
+#outfit38_backhem {
   background-position: ($back_hem_x - $outfit_BDFH_x) (10 - $outfitE_y);
 }
 
-#outfit38_front_hem {
+#outfit38_fronthem {
   background-position: ($front_hem_x - $outfit_BDFH_x) (10 - $outfitE_y);
 }
 
