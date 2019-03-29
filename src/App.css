@@ -19,7 +19,7 @@ body {
   text-align: center;
   width: 800px;
   background-color: rgb(0, 0, 0, 0.9);
-  min-height: 1200px;
+  min-height: 1490px;
   padding: 15px 35px;
   color: #00ff2b;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 
-.atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas17, .atlas18, .atlas21 {
+.atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas17, .atlas18, .atlas21 {
   background-repeat: no-repeat;
 }
 
@@ -74,6 +74,10 @@ body {
 
 .atlas08 {
   background-image: url('./Images/atlas08.png');
+}
+
+.atlas09 {
+  background-image: url('./Images/atlas09.png');
 }
 
 .atlas17 {

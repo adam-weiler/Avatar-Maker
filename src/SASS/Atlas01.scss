@@ -1,4 +1,4 @@
-@import './mixins';
+@import 'mixins';
 
 .vb_beard {
     position: absolute;
@@ -85,13 +85,7 @@
 
 
 
-#vb_facesdf { /* Ghoul Male */
- 	width: 95px;
-  	height: 105px;
-  	background-position: -672px -922px;
-  	z-index: 49;
-  	position: absolute;
-}
+
 
 
 
@@ -113,13 +107,7 @@
     /*background-color: red;*/
 }
 
-/* #vb_beard5 { //Pointed Beard & Glasses  ; Better as a Facial Feature.
-    width: 95px;
-    height: 105px;
-    background-position: -666px -589px;
-    z-index: 50;
-    position: absolute;
-}*/
+// #vb_beard5 or #feature12 //Pointed Beard & Glasses ; Unnecessary.
 
 #vb_beard5 { /* Facial Feature 6 in-game. */
     background-position: -534px -61px;
@@ -171,17 +159,88 @@
 
 
 
-#facial_feature1 { /* Facial Feature 19 in-game. */
-  width: 95px;
-    height: 105px;
-    background-position: -765px -36px;
+#feature1 { /* Cheek Forehead Scars */
+    background-position: -763px -36px;
+    z-index: 10;
+}
+
+#feature2 { /* Round Goggles */
+    background-position: -762px -147px;
+    z-index: 50;
+
+}
+
+#feature3 { /* Monocle */
+    background-position: -763px -258px;
+    z-index: 50;
+
+}
+
+#feature4 { /* Square Goggles */
+    background-position: -765px -368px;
+    z-index: 90;
+}
+
+#feature5 { /* Wrinkles */
+    background-position: -785px -479px;
+    z-index: 10;
+}
+
+#feature6 { /* Thief mask */
+    background-position: -784px -590px;
     z-index: 50;
 }
 
-#facial_feature8 { /* Facial Feature 18 in-game. */
-  width: 95px;
-    height: 105px;
-    background-position: -650px -36px;
-    z-index: 50;
-    position: absolute;
+#feature7 { /* Skull makeup */
+    background-position: -784px -702px;
+    z-index: 10;
 }
+
+#feature8 { /* Nick Fury scar */
+    background-position: -782px -812px;
+    z-index: 10;
+}
+
+#feature9 { /* Tyrion scar */
+    background-position: -783px -920px;
+    z-index: 10;
+}
+
+
+
+#feature10 { /* Raider black makeup */
+    background-position: -649px -36px;
+    z-index: 10;
+    // or 50
+}
+
+#feature11 { /* Fairy makeup */
+    background-position: -669px -479px;
+    z-index: 10;
+}
+
+/* #vb_beard5 or #feature12 { //Pointed Beard & Glasses ; Unnecessary.
+    background-position: -670px -591px;
+}*/
+
+#feature13 { /* Regular glasses */
+    background-position: -669px -702px;
+    z-index: 90;
+}
+
+#feature14 { /* Big round glasses */
+    background-position: -669px -813px;
+    z-index: 90;
+}
+
+#feature15 { /* Ghoul face */
+    background-position: -671px -922px;
+    z-index: 50;
+}
+
+#feature16 { /* Clown nose */
+    background-position: -416px -284px;
+    z-index: 50;
+}
+
+/* The rest of the Male Features are in Atlas17. */

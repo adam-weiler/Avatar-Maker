@@ -25,11 +25,11 @@
   background-position: $foot_x ($frontleg_y + 10);
 }
 
-#outfit17_back_hem {
+#outfit17_backhem {
   background-position: $back_hem_x 0;
 }
 
-#outfit17_front_hem {
+#outfit17_fronthem {
   background-position: $front_hem_x 0;
 }
 
@@ -84,11 +84,11 @@
   background-position: ($foot_x - $outfit_BDFH_x) ($frontleg_y + 10);
 }
 
-#outfit18_back_hem {
+#outfit18_backhem {
   background-position: ($back_hem_x - $outfit_BDFH_x) 0;
 }
 
-#outfit18_front_hem {
+#outfit18_fronthem {
   background-position: ($front_hem_x - $outfit_BDFH_x) 0;
 }
 

@@ -133,6 +133,7 @@
 }
 
 #outfit11_backarm_lowerhalf {
+  left: 22px;
   background-position: $arm_lowerhalf_x ($backarm_y - $outfitC_y);
 }
 
@@ -226,11 +227,11 @@
   background-position: $foot_x (($frontleg_y + 10) - $outfitE_y);
 }
 
-#outfit13_back_hem {
+#outfit13_backhem {
   background-position: $back_hem_x (-5px - $outfitE_y);
 }
 
-#outfit13_front_hem {
+#outfit13_fronthem {
   background-position: $front_hem_x (-5px - $outfitE_y);
 }
 

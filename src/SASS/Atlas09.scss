@@ -1,0 +1,60 @@
+@import 'mixins';
+
+
+
+
+
+/* Outfit 59 - Female Body */
+#vg_backleg_upperhalf {
+  background-position: $leg_upperhalf_x ($backleg_y - $outfitC_y);
+}
+
+#vg_backleg_lowerhalf {
+  background-position: $leg_lowerhalf_x ($backleg_y - $outfitC_y);
+}
+
+#vg_backleg_foot {
+  background-position: $foot_x ($backleg_y - $outfitC_y);
+}
+
+#vg_frontleg_upperhalf {
+  background-position: $leg_upperhalf_x ($frontleg_y - $outfitC_y);
+}
+
+#vg_frontleg_lowerhalf {
+  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitC_y);
+}
+
+#vg_frontleg_foot {
+  background-position: $foot_x (($frontleg_y + 10) - $outfitC_y);
+}
+
+    #vg_head {
+      width: 95px;
+      height: 105px;
+      background-position: -15px (-150px - $outfitC_y);
+    }
+
+#vg_chest {
+  background-position: $chest_x ($chest_y - $outfitC_y);
+}
+
+#vg_crotch {
+  background-position: $crotch_x ($crotch_y - $outfitC_y);
+}
+
+#vg_backarm_lowerhalf {
+  background-position: $arm_lowerhalf_x ($backarm_y - $outfitC_y);
+}
+
+#vg_backarm_upperhalf {
+  background-position: $arm_upperhalf_x ($backarm_y - $outfitC_y);
+}
+
+#vg_frontarm_lowerhalf {
+  background-position: $arm_lowerhalf_x ($frontarm_y - $outfitC_y);
+}
+
+#vg_frontarm_upperhalf {
+  background-position: $arm_upperhalf_x ($frontarm_y - $outfitC_y);
+}

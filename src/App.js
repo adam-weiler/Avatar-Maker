@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
 
 /* All JSON files. */
-import { male_clothes } from './JSON/male_clothes'; //Contains data about Shirts & Pants.
-import { male_hair } from './JSON/male_hair'; //Contains data about Male Hairstyles.
+import { male_clothes } from './JSON/Male/male_clothes'; //Contains data about Shirts & Pants for Vault Boy.
+import { male_headwear } from './JSON/Male/male_headwear'; //Contains data about Headwear for Vault Boy.
+import { male_hair } from './JSON/Male/male_hair'; //Contains data about Male Hairstyles.
+import { male_features } from './JSON/Male/male_features'; //Contains data about Features for Vault Boy.
+import { male_beards } from './JSON/Male/male_beards'; //Contains data about Male Facial Hair.
+import { male_gloves } from './JSON/Male/male_gloves'; //Contains data about Gloves for Vault Boy.
+
+
+import { female_clothes } from './JSON/Female/female_clothes'; //Contains data about Shirts & Pants for Vault Girl.
+
+
+
+
 import { all_races } from './JSON/all_races'; //Contains data about skincolor.
 import { hair_colours } from './JSON/hair_colours'; //Contains data about hair Colours.
-import { facial_hair } from './JSON/facial_hair'; //Contains data about Facial Hair.
-import { male_headwear } from './JSON/male_headwear'; //Contains data about Headwear for Vault Boy.
-import { male_gloves } from './JSON/male_gloves'; //Contains data about Gloves for Vault Boy.
-import { male_features } from './JSON/male_features'; //Contains data about Features for Vault Boy.
+import { genders } from './JSON/genders'; //Contains data about Genders.
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faDice } from '@fortawesome/free-solid-svg-icons';
+// import { faLink } from '@fortawesome/free-solid-svg-icons';
 
+
+import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js';
 import LimbSegment from './Components/LimbSegment/LimbSegment.js'; //A component that generates a segment for each Limb.
 import Button from './Components/Button/Button.js'; //A component that generates a "Previous" or "Next" button.
 import GenderRaceAge from './Components/GenderRaceAge/GenderRaceAge.js'; //A component that generates a "Previous" or "Next" button.
@@ -20,31 +31,15 @@ import GenderRaceAge from './Components/GenderRaceAge/GenderRaceAge.js'; //A com
 import logo from './Images/Fallout_Shelter_logo.png'
 
 import './App.css';
-import './SASS/FalloutBoy.scss'; //SASS for shared VaultBoy & VaultSuit classes..
-import './SASS/VaultBoy.scss'; //SASS for VaultBoy body.
-import './SASS/VaultSuit.scss'; //SASS for VaultSuit body.
-import './SASS/allRaces.scss'; //SASS for skincolors.
-import './SASS/Atlas01.scss'; //SASS for VG, VB Face.
-import './SASS/Atlas02.scss'; //SASS for VB Outfits, VB skintone sprites.
-import './SASS/Atlas03.scss'; //SASS for VB Outfits.
-import './SASS/Atlas04.scss'; //SASS for VB Outfits.
-import './SASS/Atlas05.scss'; //SASS for VB Outfits.
-import './SASS/Atlas06.scss'; //SASS for VB Outfits.
-import './SASS/Atlas07.scss'; //SASS for VB Outfits.
-import './SASS/Atlas08.scss'; //SASS for VB Outfits.
-import './SASS/Atlas17.scss'; //SASS for VB Hair, Headwear, and Facial Features.
-import './SASS/Atlas18.scss'; //SASS for VG, VB Hands, Gloves, Headwear, and Facial Features.
-import './SASS/Atlas21.scss'; //SASS for Objects and Headwear.
-import './SASS/hairColours.scss'; //SASS for hair colours.
-import './SASS/Mysterious.scss'; //SASS for Mysterious Stranger Outfit.
-import './SASS/FeralGhoul.scss'; //SASS for Feral Ghoul.
+
+
 import './JustForTesting.scss'; //SASS for testing purposes.
 
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            current_gender: "male", //Initially loads Vault-Boy.
+            current_gender: 0, //Initially loads Vault-Boy, 0.
             current_race: 1, //Stores Skintone id. Initially loads Caucasian skintone, 1.
             current_headwear: 0, //Stores current Headwear id. Initially loads no headwear, 0.
             current_feature: 0, //Stores current Facial Feature id. Initially loads no feature, 0.
@@ -56,7 +51,8 @@ class App extends Component {
             current_pants: 7 //Stores current Pants id. Initally loads Vaultsuit, 38
         }
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
-        this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender and Race selections buttons.
+        this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selections button.
+        this.handleRandomClick = this.handleRandomClick.bind(this); //This method is for Random button.
     }
 
     handleOptionClick(outfitStyle, arrayLength, label) { //This method triggers when the user clicks "Prev" or "Next" buttons.
@@ -92,12 +88,12 @@ class App extends Component {
         console.log ([outfitStyle] + ":" + ourStyle);
     }
 
-    handleGenderClick(gender) {
+    handleGenderClick(gender) { //This method triggers when the user clicks on the "Gender" button.
         console.log("Current Gender: ", gender);
 
         //let ourGender = this.state.current_gender; //Temporarily stores the current_gender.
 
-        let ourGender = (gender === "male" ? "female" : "male");
+        let ourGender = (gender === 0 ? 1 : 0); //If gender is male, switch to female. Otherwise, switch to male.
 
         this.setState({
             current_gender: ourGender //Updates current_gender with new value.
@@ -105,7 +101,30 @@ class App extends Component {
         console.log ("New gender: " + ourGender);
     }
 
+
+    handleRandomClick() { //This method triggers when the user clicks the "Random" button.
+    	function getRandom (maxVal) { //Gets a random value between 0 and length of array.
+    		return Math.floor((Math.random() * maxVal) + 0);
+    	}
+
+    	this.setState({
+            current_gender: 0,
+            current_race: getRandom(all_races.length),
+            current_headwear: getRandom(male_headwear.length),
+            current_feature: getRandom(male_features.length),
+            current_hair: getRandom(male_hair.length),
+            current_hair_colour: getRandom(hair_colours.length),
+            current_beard: getRandom(male_beards.length),
+            current_shirt: getRandom(male_clothes.length),
+            current_gloves: getRandom(male_gloves.length),
+            current_pants: getRandom(male_clothes.length)
+        });
+    }
+
     render() {
+
+
+
     return (
       <div className="App">
 
@@ -116,7 +135,7 @@ class App extends Component {
             <p>Total Number of Shirts, and Pants: {clothes.length}</p>
             <p>Total Number of Male Hair: {male_hair.length}</p>
             <p>Total Number of Hair Colours: {hair_colours.length}</p> 
-            <p>Total Number of Facial Hair: {facial_hair.length}</p> 
+            <p>Total Number of Facial Hair: {male_beards.length}</p> 
             */}
 
             <div id="logo">
@@ -124,151 +143,7 @@ class App extends Component {
                 <h1>Avatar Maker</h1>
             </div>
 
-            <div id="avatarWindow"> {/*Vault Suit and Vault Boy*/}
-                <div id="falloutBoy">
-                    <div id="vaultSuit">
-                        <div id="vs_frontArm">
-                            <LimbSegment limbClass="vs_frontarm_lowerhalf" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_frontarm_lowerhalf"} />
-                            <LimbSegment limbClass="vs_frontarm_upperhalf" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_frontarm_upperhalf"} />
-	                        {(() => {
-	                            if (this.state.current_gloves > 0) { //Checks if there is any gloves selected. Ifso, returns a div for the front-arm glove.
-	                                return <LimbSegment limbClass="vs_frontarm_glove" atlas={male_gloves[this.state.current_gloves]['atlas']} limbId={"vb_frontarm_" + male_gloves[this.state.current_gloves]['id']} />
-
-								} //Else, there is no front-arm glove div.
-                        	})()}
-                        </div>
-
-						{(() => {
-                            if (this.state.current_headwear > 0 || this.state.current_feature > 0) {
-                                return <div id="vs_head">
-
-                        {(() => {
-                            if (this.state.current_headwear > 0) { //Checks if there is any headwear selected. Ifso, returns a div for the hat.
-                                return <LimbSegment limbClass="vs_hat" atlas={male_headwear[this.state.current_headwear]['atlas']} limbId={male_headwear[this.state.current_headwear]['id']} />
-                            } //Else, there is no hat div.
-                            })()}
-
-                            {(() => {
-                            if (this.state.current_feature > 0) { //Checks if there is any features selected. Ifso, returns a div for the feature.
-                                return <LimbSegment limbClass="vs_feature" atlas={male_features[this.state.current_feature]['atlas']} limbId={male_features[this.state.current_feature]['id']} />
-                            } //Else, there is no feature div.
-                            
-                        })()}
-                        </div>
-                            }
-
-
-                        })()}
-
-                        <div id="vs_torso">
-                            <LimbSegment limbClass="vs_chest" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_chest"} /> 
-                            {(() => {
-                                if (male_clothes[this.state.current_shirt]['hem']) { //Checks if current_shirt includes a hem. Ifso, returns a div for hem pieces.
-                                    return <div className='vs_hem'>
-                                                <LimbSegment limbClass="vs_fronthem" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_fronthem"} />
-
-												<LimbSegment limbClass="vs_backhem" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_backhem"} />
-                                            </div>
-                                } //Else, there is no hem div.
-                            })()}
-                        </div>
-
-                        <div id="vs_frontLeg">
-                        	<LimbSegment limbClass="vs_frontleg_upperhalf" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_frontleg_upperhalf"} />
-                        	<LimbSegment limbClass="vs_frontleg_lowerhalf" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_frontleg_lowerhalf"} />
-							<LimbSegment limbClass="vs_frontleg_foot" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_frontleg_foot"} />
-                        </div>
-
-                        <div id="vs_trunk">
-                            <LimbSegment limbClass="vs_crotch" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_crotch"} />
-                        </div>
-
-                        <div id="vs_backLeg">
-                            <LimbSegment limbClass="vs_backleg_upperhalf" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_backleg_upperhalf"} />
-                            <LimbSegment limbClass="vs_backleg_lowerhalf" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_backleg_lowerhalf"} />
-                            <LimbSegment limbClass="vs_backleg_foot" atlas={male_clothes[this.state.current_pants]['atlas']} limbId={male_clothes[this.state.current_pants]['id'] + "_backleg_foot"} />
-                        </div>
-
-                        <div id="vs_backArm">
-                        	<LimbSegment limbClass="vs_backarm_lowerhalf" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_backarm_lowerhalf"} />
-                        	<LimbSegment limbClass="vs_backarm_upperhalf" atlas={male_clothes[this.state.current_shirt]['atlas']} limbId={male_clothes[this.state.current_shirt]['id'] + "_backarm_upperhalf"} />
-	                        {(() => {
-	                            if (this.state.current_gloves > 0) { //Checks if there is any gloves selected. Ifso, returns a div for the back-arm glove.
-	                                return <LimbSegment limbClass="vs_backarm_glove" atlas={male_gloves[this.state.current_gloves]['atlas']} limbId={"vb_backarm_" + male_gloves[this.state.current_gloves]['id']} />
-								} //Else, there is no back-arm glove div.
-                        	})()}
-                        </div>
-                    </div>
-
-                    <div id="vaultBoy">
-                        <div id="vb_frontArm">
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_frontarm_lowerhalf"></div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_frontarm_upperhalf"></div>
-                            <div className={'vb_frontarm_hand atlas18 skinColor' + this.state.current_race} id="vb_frontarm_hand2"></div>
-                        </div>
-
-                        <div id="vb_head">
-                        {(() => {
-                                if (!male_headwear[this.state.current_headwear]['disable_hair']) { //Checks for flag where current_headwear disables hairstyle.
-                                    return <div className={'vb_hair ' 
-                                                + male_hair[this.state.current_hair]['atlas'] 
-                                                + ' hair_' + hair_colours[this.state.current_hair_colour]['id']} 
-                                                id={'vb_' + male_hair[this.state.current_hair]['id']}>
-                                            </div>
-                                } else { //There is a flag to disable hairstyle.
-                                    if (male_headwear[this.state.current_headwear]['disable_hair'] === .5) { //Checks if flag says to partially disable hairstyle.
-                                        return <div 
-                                        		className={'vb_hair atlas17 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
-                                                id='vb_hair13'>
-                                            </div>
-                                    } //Else, flag says to completely disable hairstyle. There is no hair div.
-                                }
-                            })()}
-
-                        {(() => {
-                                if (!male_headwear[this.state.current_headwear]['disable_beard']) { //Checks for flag where current_headwear disables beard.
-                                    return <div 
-                                    			className={'vb_beard atlas01 hair_' + hair_colours[this.state.current_hair_colour]['id']} 
-                            					id={'vb_beard' + facial_hair[this.state.current_beard]['id']}>
-                            				</div>
-
-                                } //Else, flag says to completely disable beard. There is no beard div.
-                            })()}
-
-                            <div className="vb_face atlas01" id="vb_face5">
-                                <div id="left_blinkaa"></div>
-                            </div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="outfit7_head"></div>
-                        </div>
-
-                        <div id="vb_torso">
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_chest"></div> 
-                        </div>
-
-                        <div id="vb_frontLeg">
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_frontleg_upperhalf"></div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_frontleg_lowerhalf"></div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_frontleg_foot"></div>
-                        </div>
-
-                        <div id="vb_trunk">
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_crotch"></div>
-                        </div>
-
-                        <div id="vb_backLeg">
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_backleg_upperhalf"></div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_backleg_lowerhalf"></div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_backleg_foot"></div>
-                        </div>
-
-                        <div id="vb_backArm">
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_backarm_lowerhalf"></div>
-                            <div className={'atlas02 skinColor' + this.state.current_race} id="vb_backarm_upperhalf"></div>
-                            <div className={'vb_backarm_hand atlas18 skinColor' + this.state.current_race} id="vb_backarm_hand2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <AvatarWindow currentState={this.state} /> {/*A component that generates the entire AvatarWindow. (VaultSuit and VaultPerson.)*/}
 
             <div id="allButtons">
                 <div className="buttonsRow">
@@ -293,9 +168,9 @@ class App extends Component {
                     <Button id={this.state.current_hair_colour} outfitStyle="current_hair_colour" arrayLength={hair_colours.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
                 <div className="buttonsRow">
-                    <Button id={this.state.current_beard} outfitStyle="current_beard" arrayLength={facial_hair.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_beard} outfitStyle="current_beard" arrayLength={male_beards.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Beard {this.state.current_beard + 1}</div>
-                    <Button id={this.state.current_beard} outfitStyle="current_beard" arrayLength={facial_hair.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_beard} outfitStyle="current_beard" arrayLength={male_beards.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
                 <div className="buttonsRow">
                     <Button id={this.state.current_headwear} outfitStyle="current_headwear" arrayLength={male_headwear.length} label="Previous" clicker={this.handleOptionClick} />
@@ -317,7 +192,7 @@ class App extends Component {
             </div>
 
             <GenderRaceAge gender={this.state.current_gender} race={this.state.current_race}
-raceLength={all_races.length}
+raceLength={all_races.length} handleRandomClick={this.handleRandomClick}
              handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} />
 
             <div id="displaySelections">
@@ -339,7 +214,7 @@ raceLength={all_races.length}
                 </div>
                 <div className="displayRow">
                     <div className="labelType">Beard:</div>
-                    <div className="styleType">{facial_hair[this.state.current_beard]['name']}</div>
+                    <div className="styleType">{male_beards[this.state.current_beard]['name']}</div>
                 </div>
                 <div className="displayRow">
                     <div className="labelType">Headwear:</div>
@@ -358,7 +233,7 @@ raceLength={all_races.length}
            	<div id="genderRaceAgeSelection">
                 <div className="displayRow">
                     <div className="labelType">Gender:</div>
-                    <div className="styleType">{this.state.current_gender}</div>
+                    <div className="styleType">{genders[this.state.current_gender]['name']}</div>
                 </div>
                 <div className="displayRow">
                     <div className="labelType">Race:</div>
