@@ -9,7 +9,7 @@ import './GenderRaceAge.css';
 const GenderRaceAge = ({ gender, race, raceLength, handleRandomClick, handleGenderClick, handleOptionClick }) => {
     return (
         <div id="genderButtons">
-{/*            <div className="buttonsRow">
+            <div className="buttonsRow">
                 <div className="leftCol">Gender:</div>
                 <div className="rightCol">
                     <label class="switch">
@@ -17,7 +17,7 @@ const GenderRaceAge = ({ gender, race, raceLength, handleRandomClick, handleGend
                         <span class="slider round" onClick={() => handleGenderClick(gender)}></span>
                     </label>
                 </div>
-            </div>*/}
+            </div>
 
             <div className="buttonsRow">
                 <Button outfitStyle="current_race" arrayLength={raceLength} label="Previous" clicker={handleOptionClick}/>

@@ -5,9 +5,13 @@ import { male_headwear } from '../../JSON/Male/male_headwear'; //Contains data a
 import { male_hair } from '../../JSON/Male/male_hair'; //Contains data about Male Hairstyles.
 import { male_features } from '../../JSON/Male/male_features'; //Contains data about Features for Vault Boy.
 import { male_beards } from '../../JSON/Male/male_beards'; //Contains data about Male Facial Hair.
+import { male_hands } from '../../JSON/Male/male_hands'; //Contains data about Male Hands.
 
 import { female_hair } from '../../JSON/Female/female_hair'; //Contains data about Female Hairstyles.
-import { female_features } from '../../JSON/Female/female_features'; //Contains data about Features for Vault Boy.
+import { female_features } from '../../JSON/Female/female_features'; //Contains data about Features for Vault Girl.
+import { female_hands } from '../../JSON/Female/female_hands'; //Contains data about Hands for Vault Girl.
+
+
 
 import { all_races } from '../../JSON/all_races'; //Contains data about skincolor.
 import { hair_colours } from '../../JSON/hair_colours'; //Contains data about hair Colours.
@@ -24,24 +28,26 @@ const VaultPerson = ({ currentState }) => {
     const hair = current_gender === 0 ? male_hair : female_hair;
     // const beard = current_gender === 0 ? male_clothes : female_clothes;
 
+    const hands = current_gender === 0 ? male_hands : female_hands;
+
     return (
         <div id="vaultBoy">
             <div id="vb_frontArm">
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id=
                 {genders[current_gender].id + '_frontarm_lowerhalf'}
 ></div>
-                <div className={'atlas02 skinColor' + current_race} id="vb_frontarm_upperhalf"></div>
-                <div className={'vb_frontarm_hand atlas18 skinColor' + current_race} id="vb_frontarm_hand2"></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontarm_upperhalf'}></div>
+                <div className={genders[current_gender].id + '_frontarm_hand atlas18 skinColor' + current_race} id={genders[current_gender].id + '_frontarm_' + hands[0].id}></div>
             </div>
 
-            <div id="vb_head">
+            <div id="vb_hedad">
                 {(() => {
                     if ((!male_headwear[current_headwear].disable_hair) && (!male_features[current_feature].disable_hair)) { //Confirms there is no flag for current _headwear or _feature to disable Hairstyle.
-                        return <div className={'vb_hair ' 
-                                    + male_hair[current_hair].atlas 
-                                    + ' hair_' + hair_colours[current_hair_colour].id} 
-                                    id={'vb_' + male_hair[current_hair].id}>
-                                </div>
+                        // return <div className={'vb_hair ' 
+                        //             + male_hair[current_hair].atlas 
+                        //             + ' hair_' + hair_colours[current_hair_colour].id} 
+                        //             id={'vb_' + male_hair[current_hair].id}>
+                        //         </div>
                     } else { //There is a flag to disable Hairstyle.
                         if ((male_headwear[current_headwear].disable_hair === .5) || (male_features[current_feature].disable_hair === .5)) { //Checks if flag says to partially disable hairstyle.
                             return <div 
@@ -70,35 +76,34 @@ const VaultPerson = ({ currentState }) => {
                     } //Else, there is no feature div.
                 })()}
 
-                <div className="vb_face atlas01" id="vb_face5">
-                </div>
-                <div className={'atlas02 skinColor' + current_race} id="outfit7_head"></div>
+                {/*<div className={genders[current_gender].id + '_face atlas01'} id="vb_face5"></div>*/}
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_head'}></div>
             </div>
             
             <div id="vb_torso">
-                <div className={'atlas02 skinColor' + current_race} id="vb_chest"></div> 
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_chest'}></div> 
             </div>
 
             <div id="vb_frontLeg">
-                <div className={'atlas02 skinColor' + current_race} id="vb_frontleg_upperhalf"></div>
-                <div className={'atlas02 skinColor' + current_race} id="vb_frontleg_lowerhalf"></div>
-                <div className={'atlas02 skinColor' + current_race} id="vb_frontleg_foot"></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontleg_upperhalf'}></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontleg_lowerhalf'}></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontleg_foot'}></div>
             </div>
 
-            <div id="vb_trunk">
-                <div className={'atlas02 skinColor' + current_race} id="vb_crotch"></div>
-            </div>
+            {/*<div id="vb_trunk">
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id="vb_crotch"></div>
+            </div>*/}
 
             <div id="vb_backLeg">
-                <div className={'atlas02 skinColor' + current_race} id="vb_backleg_upperhalf"></div>
-                <div className={'atlas02 skinColor' + current_race} id="vb_backleg_lowerhalf"></div>
-                <div className={'atlas02 skinColor' + current_race} id="vb_backleg_foot"></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backleg_upperhalf'}></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backleg_lowerhalf'}></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backleg_foot'}></div>
             </div>
 
             <div id="vb_backArm">
-                <div className={'atlas02 skinColor' + current_race} id="vb_backarm_lowerhalf"></div>
-                <div className={'atlas02 skinColor' + current_race} id="vb_backarm_upperhalf"></div>
-                <div className={'vb_backarm_hand atlas18 skinColor' + current_race} id="vb_backarm_hand2"></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backarm_lowerhalf'}></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backarm_upperhalf'}></div>
+                <div className={'vb_backarm_hand atlas18 skinColor' + current_race} id={genders[current_gender].id + '_backarm_' + hands[0].id}></div>
             </div>                                    
         </div>
     );

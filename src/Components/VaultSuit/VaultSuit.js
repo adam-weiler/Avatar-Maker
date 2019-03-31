@@ -43,7 +43,7 @@ const VaultSuit = ({ currentState }) => {
             <div id="vs_torso">
                 <LimbSegment limbClass="vs_chest" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_chest"} /> 
                 {(() => {
-                    if (clothes[current_shirt]['hem']) { //Checks if current_shirt includes a hem. Ifso, returns a div for hem pieces.
+                    if (clothes[current_shirt]['hem']) { //Checks if current_shirt includes a hem. Ifso, returns 2 divs for hem pieces.
                         return <div className='vs_hem'>
                                     <LimbSegment limbClass="vs_fronthem" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_fronthem"} />
 
@@ -51,6 +51,14 @@ const VaultSuit = ({ currentState }) => {
                                 </div>
                     } //Else, there is no hem div.
                 })()}
+
+
+                {(() => {
+                    if (clothes[current_shirt]['skirt']) { //Checks if current_shirt includes a skirt. Ifso, returns a div for skirt piece.
+                        return <LimbSegment limbClass="vs_skirt" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_skirt"} />
+                    } //Else, there is no hem div.
+                })()}
+
             </div>
 
             <div id="vs_frontLeg">
@@ -59,9 +67,9 @@ const VaultSuit = ({ currentState }) => {
                 <LimbSegment limbClass="vs_frontleg_foot" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_foot"} />
             </div>
 
-            <div id="vs_trunk">
+{/*            <div id="vs_trunk">
                 <LimbSegment limbClass="vs_crotch" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_crotch"} />
-            </div>
+            </div>*/}
 
             <div id="vs_backLeg">
                 <LimbSegment limbClass="vs_backleg_upperhalf" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_upperhalf"} />
