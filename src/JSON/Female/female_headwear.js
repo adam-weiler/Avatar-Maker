@@ -10,5 +10,5 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
     atlas: 'atlas17',
     name: 'Knight helmet', /* Knight armor */
     disable_hair: 1
-  },
+  }
 ]
