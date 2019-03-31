@@ -296,6 +296,27 @@ export const male_clothes = [ //An array of each Shirt's ID, Atlas file, name, a
     name: 'Santa suit'
   },
   // {
+  //   id: 'outfit61',
+  //   atlas: 'atlas09',
+  //   name: 'Armored vault suit'
+  // },
+  // {
+  //   id: 'outfit62',
+  //   atlas: 'atlas09',
+  //   name: 'Leather armor'
+  // },
+  // {
+  //   id: 'outfit63',
+  //   atlas: 'atlas09',
+  //   name: 'Three Dog\'s outfit'
+  // },
+  // {
+  //   id: 'outfit64',
+  //   atlas: 'atlas09',
+  //   name: 'Treasure hunter gear'
+  // }
+
+  // {
   //   id: 'outfit999',
   //   atlas: 'mysterious',
   //   name: 'Mysterious Stranger',
