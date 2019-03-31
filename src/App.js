@@ -33,22 +33,22 @@ import logo from './Images/Fallout_Shelter_logo.png'
 import './App.css';
 
 
-import './JustForTesting.scss'; //SASS for testing purposes.
+
 
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
             current_gender: 0, //Initially loads Vault-Boy, 0.
-            current_race: 1, //Stores Skintone id. Initially loads Caucasian skintone, 1.
+            current_race: 0, //Stores Skintone id. Initially loads Caucasian skintone, 1.
             current_headwear: 0, //Stores current Headwear id. Initially loads no headwear, 0.
             current_feature: 0, //Stores current Facial Feature id. Initially loads no feature, 0.
-            current_hair: 0, //Stores current Hair id. Initially loads Tunnel Snake, 0.
-            current_hair_colour: 27, //Stores current Hair Colour id. Initially loads Blonde, 27.
+            current_hair: 25, //Stores current Hair id. Initially loads Tunnel Snake, 0.
+            current_hair_colour: 0, //Stores current Hair Colour id. Initially loads Blonde, 27.
             current_beard: 0, //Stores current Beard id. Initially loads no beard, 0.
-            current_shirt: 7, //Stores current Shirt id. Initally loads Vault Suit, 38.
+            current_shirt: 1, //Stores current Shirt id. Initally loads Vault Suit, 38.
             current_gloves: 0, //Stores current Glove id. Initially loads no gloves, 0.
-            current_pants: 7 //Stores current Pants id. Initally loads Vaultsuit, 38
+            current_pants: 1 //Stores current Pants id. Initally loads Vaultsuit, 38
         }
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
         this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selections button.
@@ -96,7 +96,15 @@ class App extends Component {
         let ourGender = (gender === 0 ? 1 : 0); //If gender is male, switch to female. Otherwise, switch to male.
 
         this.setState({
-            current_gender: ourGender //Updates current_gender with new value.
+            current_gender: ourGender, //Updates current_gender with new value.
+            current_headwear: 0,
+            current_feature: 0,
+            current_hair: 0,
+            current_hair_colour: 0,
+            current_beard: 0,
+            current_shirt: 0,
+            current_gloves: 0,
+            current_pants: 0
         });
         console.log ("New gender: " + ourGender);
     }
@@ -109,27 +117,33 @@ class App extends Component {
 
     	this.setState({
             current_gender: 0,
-            current_race: getRandom(all_races.length),
-            current_headwear: getRandom(male_headwear.length),
-            current_feature: getRandom(male_features.length),
-            current_hair: getRandom(male_hair.length),
-            current_hair_colour: getRandom(hair_colours.length),
-            current_beard: getRandom(male_beards.length),
-            current_shirt: getRandom(male_clothes.length),
-            current_gloves: getRandom(male_gloves.length),
-            current_pants: getRandom(male_clothes.length)
+                    current_race: getRandom(all_races.length),
+                    current_headwear: getRandom(male_headwear.length),
+                    current_feature: getRandom(male_features.length),
+                    current_hair: getRandom(male_hair.length),
+                    current_hair_colour: getRandom(hair_colours.length),
+                    current_beard: getRandom(male_beards.length),
+                    current_shirt: getRandom(male_clothes.length),
+                    current_gloves: getRandom(male_gloves.length),
+                    current_pants: getRandom(male_clothes.length)
         });
     }
 
     render() {
 
-
+    const clothes = this.state.current_gender === 0 ? male_clothes : female_clothes;
+    // const headwear = this.state.current_gender === 0 ? male_headwear : female_headwear;
 
     return (
       <div className="App">
 
-      <div id="Guy39?">
-      </div>
+      <div id="Guy39"></div>
+      <div id="Girl3406"></div>
+
+
+
+
+
 
             {/* 
             <p>Total Number of Shirts, and Pants: {clothes.length}</p>
@@ -145,17 +159,29 @@ class App extends Component {
 
             <AvatarWindow currentState={this.state} /> {/*A component that generates the entire AvatarWindow. (VaultSuit and VaultPerson.)*/}
 
+
+
+
+
+
+
+
+
+
+
+
+
             <div id="allButtons">
                 <div className="buttonsRow">
-                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={male_clothes.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Shirt {this.state.current_shirt + 1}</div>
-                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={male_clothes.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_shirt} outfitStyle="current_shirt" arrayLength={clothes.length} label="Next" clicker={this.handleOptionClick} />
                 <br/>{/*<FontAwesomeIcon icon={faLink} />*/}
                 </div>
                 <div className="buttonsRow">
-                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={male_clothes.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Pants {this.state.current_pants + 1}</div>
-                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={male_clothes.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
                 <div className="buttonsRow">
                     <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={male_hair.length} label="Previous" clicker={this.handleOptionClick} />

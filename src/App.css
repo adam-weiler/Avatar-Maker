@@ -40,7 +40,7 @@ body {
 }
 
 
-.atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas17, .atlas18, .atlas21 {
+.atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas10, .atlas17, .atlas18, .atlas21 {
   background-repeat: no-repeat;
 }
 
@@ -78,6 +78,10 @@ body {
 
 .atlas09 {
   background-image: url('./Images/atlas09.png');
+}
+
+.atlas10 {
+  background-image: url('./Images/atlas10.png');
 }
 
 .atlas17 {
