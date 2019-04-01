@@ -19,6 +19,8 @@
 	text-align: center;
 	/*background: white;*/
 	height: 500px;
+
+
 }
 
 #falloutPerson {
@@ -35,28 +37,30 @@
 		border: 1px solid pink;
 		padding: 10px;
 		background-color: white;
+
 }
 
-#vaultSuit, #vaultBoy { /* These divs contain all of VaultSuit, and VaultBoy respectively. */
+#vaultSuit, #vaultPerson { /* These divs contain all of VaultSuit, and VaultBoy respectively. */
 	position: absolute;
 }
 
-/* These IDs are for Vault Suit and Vault Boy's limbs. */
-#vs_frontArm, #vs_head, #vs_torso, #vs_frontLeg, #vs_trunk, #vs_backLeg, #vs_backArm, #vb_frontArm, #vb_head, #vb_frontLeg, #vb_torso, #vb_trunk, #vb_backLeg, #vb_backArm {
+/* These IDs are for Vault Boy's Suit and Vault Boy's limbs. */
+#vbs_frontArm, #vbs_head, #vbs_torso, #vbs_frontLeg, #vbs_trunk, #vbs_backLeg, #vbs_backArm, #vb_frontArm, #vb_head, #vb_frontLeg, #vb_torso, #vb_trunk, #vb_backLeg, #vb_backArm {
 	position: absolute;
 }
 
-/* These IDs are for Vault Girl's limbs. */
-#vg_frontArm, #vg_head, #vg_frontLeg, #vg_torso, #vg_trunk, #vg_backLeg, #vg_backArm {
+/* These IDs are for Vault Girl's Suit and Vault Girl's limbs. */
+#vgs_frontArm, #vgs_head, #vgs_torso, #vgs_frontLeg, #vgs_trunk, #vgs_backLeg, #vgs_backArm, #vg_frontArm, #vg_head, #vg_frontLeg, #vg_torso, #vg_trunk, #vg_backLeg, #vg_backArm {
 	position: absolute;
 }
 
-#vs_frontArm, #vb_frontArm, #vg_frontArm {
+/* These IDs are for Vault Boy's Suit and limbs, Vault Girl's suit and limbs.*/
+#vbs_frontArm, #vb_frontArm, #vgs_frontArm, #vg_frontArm {
 	left: 0px;
 	top: 89px;
 }
 
-#vs_head, #vb_head, #vg_head {
+#vbs_head, #vb_head, #vgs_head, #vg_head {
 	left: 43px;
 	top: 25px;
 	-ms-transform: scaleX(-1);
@@ -64,35 +68,34 @@
   	transform: scaleX(-1);
 }
 
-#vs_torso, #vb_torso, #vg_torso {
+#vbs_torso, #vb_torso, #vgs_torso, #vg_torso {
 	left: 46px;
 	top: 107px;
 }
 
-#vs_frontLeg, #vb_frontLeg, #vg_frontLeg {
+#vbs_frontLeg, #vb_frontLeg, #vgs_frontLeg, #vg_frontLeg {
 	left: 27px;
 	top: 218px;
 }
 
-#vs_trunk, #vb_trunk, #vg_trunk {
+#vbs_trunk, #vb_trunk, #vgs_trunk, #vg_trunk {
 	left: 45px;
 	top: 105px;
 }
 
-#vs_backLeg, #vb_backLeg, #vg_backLeg {
+#vbs_backLeg, #vb_backLeg, #vgs_backLeg, #vg_backLeg {
 	left: 65px;
 	top: 208px;
 }
 
-#vs_backArm, #vb_backArm, #vg_backArm {
+#vbs_backArm, #vb_backArm, #vgs_backArm, #vg_backArm {
 	left: 76px;
 	top: 90px;
 }
 
 
-
-/* These classes are for each piece of Vault Suit and Vault Boy's. */
-.vs_frontarm_lowerhalf, #vb_frontarm_lowerhalf, #vg_frontarm_lowerhalf {
+/* These Classes & IDs are for each of Vault Boy's Suit and body segment, Vault Girl's suit and body segment.*/
+.vbs_frontarm_lowerhalf, #vb_frontarm_lowerhalf, .vgs_frontarm_lowerhalf, #vg_frontarm_lowerhalf {
 	left: 7px;
 	top: 92px;
 	width: 85px;
@@ -102,7 +105,7 @@
   	transform: scaleY(-1) rotate(85deg);
 }
 
-.vs_frontarm_upperhalf, #vb_frontarm_upperhalf, #vg_frontarm_upperhalf {
+.vbs_frontarm_upperhalf, #vb_frontarm_upperhalf, .vgs_frontarm_upperhalf, #vg_frontarm_upperhalf {
 	left: 0px;
 	top: 40px;
   	width: 110px;
@@ -112,7 +115,7 @@
   	transform: scaleY(-1) rotate(75deg);
 }
 
-.vs_frontarm_glove, .vb_frontarm_hand, .vg_frontarm_hand {
+.vbs_frontarm_glove, .vb_frontarm_hand, .vgs_frontarm_glove, .vg_frontarm_hand {
 	left: 21px;
 	top: 128px;
 	width: 65px;
@@ -122,7 +125,7 @@
 	transform: scaleY(-1) rotate(-81deg);
 }
 
-.vs_hat {
+.vbs_hat, .vgs_hat {
 	left: -108px;
 	top: -10px;
 	width: 115px;
@@ -131,16 +134,7 @@
 		/*opacity: .5;*/
 }
 
-.vs_feature {
-	// left: -100px;
-	top: 0px;
-  width: 95px;
-    height: 105px;
-		background-color: rgba(0,0,0,.10);
-		/*opacity: .5;*/
-}
-
-.vs_chest, #vb_chest, #vg_chest {
+.vbs_chest, #vb_chest, .vgs_chest, #vg_chest {
 	left: 0px;
 	top: 0px;
 	width: 100px;
@@ -150,7 +144,7 @@
   	transform: scaleX(-1);
 }
 
-.vs_frontleg_upperhalf, #vb_frontleg_upperhalf, #vg_frontleg_upperhalf {
+.vbs_frontleg_upperhalf, #vb_frontleg_upperhalf, .vgs_frontleg_upperhalf, #vg_frontleg_upperhalf {
 	left: 0px;
 	top: 0px;
 	width: 100px;
@@ -160,7 +154,7 @@
 	transform: scaleY(-1) rotate(-90deg);
 }
 
-.vs_frontleg_lowerhalf, #vb_frontleg_lowerhalf, #vg_frontleg_lowerhalf {
+.vbs_frontleg_lowerhalf, #vb_frontleg_lowerhalf, .vgs_frontleg_lowerhalf, #vg_frontleg_lowerhalf {
 	left: 0px;
 	top: 55px;
 	width: 87px;
@@ -170,7 +164,7 @@
 	transform: scaleY(-1) rotate(-105deg);
 }
 
-.vs_frontleg_foot, #vb_frontleg_foot, #vg_frontleg_foot {
+.vbs_frontleg_foot, #vb_frontleg_foot, .vgs_frontleg_foot, #vg_frontleg_foot {
 	left: 11px;
 	top: 101px;
 	width: 60px;
@@ -180,7 +174,7 @@
   	transform: scaleY(-1) rotate(180deg);
 }
 
-.vs_crotch, #vb_crotch, #vg_crotch {
+.vbs_crotch, #vb_crotch { //Vault Girl does not have crotch segment.
 	left: 3px;
 	top: 50px;
 	width: 90px;
@@ -190,7 +184,7 @@
   	transform: scaleX(-1);
 }
 
-.vs_backleg_upperhalf, #vb_backleg_upperhalf, #vg_backleg_upperhalf {
+.vbs_backleg_upperhalf, #vb_backleg_upperhalf, .vgs_backleg_upperhalf, #vg_backleg_upperhalf {
 	left: 0px;
 	top: 0px;
 	width: 105px;
@@ -200,7 +194,7 @@
   	transform: scaleY(-1) rotate(95deg);
 }
 
-.vs_backleg_lowerhalf, #vb_backleg_lowerhalf, #vg_backleg_lowerhalf {
+.vbs_backleg_lowerhalf, #vb_backleg_lowerhalf, .vgs_backleg_lowerhalf, #vg_backleg_lowerhalf {
 	left: 5px;
 	top: 60px;
 	width: 87px;
@@ -210,7 +204,7 @@
 	transform: scaleY(-1) rotate(-105deg);
 }
 
-.vs_backleg_foot, #vb_backleg_foot, #vg_backleg_foot {
+.vbs_backleg_foot, #vb_backleg_foot, .vgs_backleg_foot, #vg_backleg_foot {
 	left: 22px;
 	top: 101px;
 	width: 60px;
@@ -220,7 +214,7 @@
   	transform: scaleY(-1) rotate(180deg);
 }
 
-.vs_backarm_lowerhalf, #vb_backarm_lowerhalf, #vg_backarm_lowerhalf {
+.vbs_backarm_lowerhalf, #vb_backarm_lowerhalf, .vgs_backarm_lowerhalf, #vg_backarm_lowerhalf {
 	left: 20px;
 	top: 84px;
   	width: 80px;
@@ -230,7 +224,7 @@
 	transform: scaleY(-1) rotate(-85deg);
 }
 
-.vs_backarm_upperhalf, #vb_backarm_upperhalf, #vg_backarm_upperhalf {
+.vbs_backarm_upperhalf, #vb_backarm_upperhalf, .vgs_backarm_upperhalf, #vg_backarm_upperhalf {
 	left: 0px;
 	top: 40px;
   	width: 90px;
@@ -240,7 +234,7 @@
 	transform: scaleY(1) rotate(75deg);
 }
 
-.vs_backarm_glove, .vb_backarm_hand, .vg_backarm_hand {
+.vbs_backarm_glove, .vb_backarm_hand, .vgs_backarm_glove, .vg_backarm_hand {
 	left: 28px;
 	top: 126px;
 	width: 65px;

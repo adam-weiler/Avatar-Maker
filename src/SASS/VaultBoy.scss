@@ -75,18 +75,18 @@
 }
 
 
-#left_blink {
-	left: 0px;
-	top: -20px;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background-color: #ddd2a2;
-}
+// #left_blink {
+// 	left: 0px;
+// 	top: -20px;
+// 	width: 50px;
+// 	height: 50px;
+// 	position: absolute;
+// 	background-color: #ddd2a2;
+// }
 
-#right_blink {
+// #right_blink {
 
-}
+// }
 
 
 
@@ -136,3 +136,20 @@
 }
 
 
+
+
+#Gy39 {
+  /*background-image: url('./screenshots/IMG_3504.PNG');*/
+  background-image: url('../screenshots/Male/Guy39.jpg');
+    width: 215px;
+  height: 420px;
+  position: absolute;
+  left: 125px;
+  top: 294px;
+  z-index: 1000;
+  
+/*  opacity: 0;
+  opacity: 1;
+*/    opacity: .5;
+  background-size: 90%;
+}

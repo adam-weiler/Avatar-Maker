@@ -56,3 +56,47 @@ $outfit_BDFH_x: 512px;			/* Affects every 2nd, 4th, 6th, and 8th outfit in each 
 $outfitC_y: 256px;				/* Affects every 3rd outfit in each atlas. */
 $outfitE_y: 512px;				/* Affects every 5th outfit in each atlas. */
 $outfitG_y: 768px;				/* Affects every 7th outfit in each atlas. */
+
+
+
+
+
+
+
+/* Vault Girl */
+
+//$vg_arm_upperhalf_x: 0px; //Not necessary.
+
+$vg_backleg_foot_x: -120px;
+
+$vg_frontleg_foot_x: -195px;
+
+$vg_backleg_upperhalf_x: -265px;
+
+$vg_frontleg_upperhalf_x: -275px;
+
+$vg_leg_lowerhalf_x: -400px;
+
+$vg_chest_x: -150px;
+
+$vg_backarm_lowerhalf_x: -255px;
+
+$vg_frontarm_lowerhalf_x: -270px;
+
+$vg_skirt_x: -360px;
+
+
+
+//$vg_firstrow_y: 0px; //Not necessary.
+
+$vg_frontarm_upperhalf_y: -50px;
+
+$vg_secondrow_y: -60px; //For frontleg_upperhalf and frontleg_lowerhalf.
+
+$vg_chest_y: -115px;
+
+$vg_backarm_lowerhalf_y: -140px;
+
+$vg_frontarm_lowerhalf_y: -195px;
+
+$vg_skirt_y: -115px;

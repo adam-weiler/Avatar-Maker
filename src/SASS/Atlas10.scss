@@ -1,0 +1,435 @@
+@import 'mixins';
+
+/* Outfit 65 - Vault socialite */
+// #outfit65_backarm_upperhalf {
+//   background-position: 0px 0px;
+// }
+
+#outfit65_backleg_foot {
+  background-position: $vg_backleg_foot_x 0px;
+}
+
+#outfit65_frontleg_foot {
+  background-position: $vg_frontleg_foot_x 0px;
+}
+
+// #outfit65_backleg_upperhalf {
+//   background-position: $vg_backleg_upperhalf_x 0px;
+// }
+
+#outfit65_backleg_lowerhalf {
+    background-position: $vg_leg_lowerhalf_x 0px;
+}
+
+// #outfit65_frontarm_upperhalf {
+//   background-position: 0px $vg_frontarm_upperhalf_y;
+// }
+
+// #outfit65_frontleg_upperhalf {
+//   background-position: $vg_frontleg_upperhalf_x $vg_secondrow_y;
+// }
+
+#outfit65_frontleg_lowerhalf {
+  background-position: $vg_leg_lowerhalf_x $vg_secondrow_y;
+}
+
+#outfit65_chest {
+  background-position: $vg_chest_x $vg_chest_y;
+}
+
+// #outfit65_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitC_y);
+// }
+
+#outfit65_backarm_lowerhalf {
+  background-position: $vg_backarm_lowerhalf_x $vg_backarm_lowerhalf_y;
+}
+
+#outfit65_frontarm_lowerhalf {
+  background-position: $vg_frontarm_lowerhalf_x $vg_frontarm_lowerhalf_y;
+}
+
+#outfit65_skirt {
+  background-position: $vg_skirt_x $vg_skirt_y;
+}
+
+
+
+
+/* Outfit 66 - Rural schoolmarm */
+#outfit66_backarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) 0px;
+}
+
+#outfit66_backleg_foot {
+  background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) 0px;
+}
+
+#outfit66_frontleg_foot {
+  background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) 0px;
+}
+
+// #outfit66_backleg_upperhalf {
+//   background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) 0px;
+// }
+
+#outfit66_backleg_lowerhalf {
+    background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) 0px;
+}
+
+#outfit66_frontarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) $vg_frontarm_upperhalf_y;
+}
+
+// #outfit66_frontleg_upperhalf {
+//   background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) $vg_secondrow_y;
+// }
+
+#outfit66_frontleg_lowerhalf {
+  background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) $vg_secondrow_y;
+}
+
+#outfit66_chest {
+  background-position: ($vg_chest_x - $outfit_BDFH_x + 2) ($vg_chest_y + 1);
+}
+
+// #outfit66_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitC_y);
+// }
+
+#outfit66_backarm_lowerhalf {
+  background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) $vg_backarm_lowerhalf_y;
+}
+
+#outfit66_frontarm_lowerhalf {
+  background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) $vg_frontarm_lowerhalf_y;
+}
+
+#outfit66_skirt {
+  background-position: ($vg_skirt_x - $outfit_BDFH_x) $vg_skirt_y;
+}
+
+
+
+
+/* Outfit 67 - Combat armor */
+#outfit67_backarm_upperhalf {
+  background-position: -2px (-$outfitC_y - 1);
+}
+
+#outfit67_backleg_foot {
+  background-position: $vg_backleg_foot_x (-$outfitC_y);
+}
+
+#outfit67_frontleg_foot {
+  background-position: $vg_frontleg_foot_x (-$outfitC_y);
+}
+
+#outfit67_backleg_upperhalf {
+  background-position: -266px (-$outfitC_y - 2);
+}
+
+#outfit67_backleg_lowerhalf {
+    background-position: $vg_leg_lowerhalf_x (-$outfitC_y - 1);
+}
+
+#outfit67_frontarm_upperhalf {
+  background-position: 0px ($vg_frontarm_upperhalf_y - $outfitC_y - 1);
+}
+
+#outfit67_frontleg_upperhalf {
+  background-position: -276px ($vg_secondrow_y - $outfitC_y - 2);
+}
+
+#outfit67_frontleg_lowerhalf {
+  background-position: -399px ($vg_secondrow_y - $outfitC_y - 2);
+}
+
+#outfit67_chest {
+  background-position: $vg_chest_x ($vg_chest_y - $outfitC_y);
+}
+
+// #outfit67_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitC_y);
+// }
+
+#outfit67_backarm_lowerhalf {
+  background-position: $vg_backarm_lowerhalf_x ($vg_backarm_lowerhalf_y - $outfitC_y);
+}
+
+#outfit67_frontarm_lowerhalf {
+  background-position: $vg_frontarm_lowerhalf_x ($vg_frontarm_lowerhalf_y - $outfitC_y);
+}
+
+
+
+
+/* Outfit 68 - Polka dot sundress */
+// #outfit68_backarm_upperhalf {
+//   background-position: (0px - $outfit_BDFH_x) (-$outfitC_y);
+// }
+
+#outfit68_backleg_foot {
+  background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) (-$outfitC_y);
+}
+
+#outfit68_frontleg_foot {
+  background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) (-$outfitC_y);
+}
+
+// #outfit68_backleg_upperhalf {
+//   background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) (-$outfitC_y);
+// }
+
+#outfit68_backleg_lowerhalf {
+    background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) (-$outfitC_y);
+}
+
+// #outfit68_frontarm_upperhalf {
+//   background-position: (0px - $outfit_BDFH_x) ($vg_frontarm_upperhalf_y - $outfitC_y);
+// }
+
+// #outfit68_frontleg_upperhalf {
+//   background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitC_y);
+// }
+
+#outfit68_frontleg_lowerhalf {
+  background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitC_y);
+}
+
+#outfit68_chest {
+  background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitC_y);
+}
+
+// #outfit68_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitC_y);
+// }
+
+#outfit68_backarm_lowerhalf {
+  background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) ($vg_backarm_lowerhalf_y - $outfitC_y);
+}
+
+#outfit68_frontarm_lowerhalf {
+  background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitC_y);
+}
+
+#outfit68_skirt {
+  background-position: ($vg_skirt_x - $outfit_BDFH_x) ($vg_skirt_y - $outfitC_y);
+}
+
+
+
+
+
+/* Outfit 69 - Expert BoS uniform */
+#outfit69_backarm_upperhalf {
+  background-position: -2px (-$outfitE_y - 1);
+}
+
+#outfit69_backleg_foot {
+  background-position: $vg_backleg_foot_x (-$outfitE_y);
+}
+
+#outfit69_frontleg_foot {
+  background-position: $vg_frontleg_foot_x (-$outfitE_y);
+}
+
+#outfit69_backleg_upperhalf {
+  background-position: -266px (-$outfitE_y - 2);
+}
+
+#outfit69_backleg_lowerhalf {
+    background-position: $vg_leg_lowerhalf_x (-$outfitE_y - 1);
+}
+
+#outfit69_frontarm_upperhalf {
+  background-position: 0px ($vg_frontarm_upperhalf_y - $outfitE_y - 1);
+}
+
+#outfit69_frontleg_upperhalf {
+  background-position: -276px ($vg_secondrow_y - $outfitE_y - 2);
+}
+
+#outfit69_frontleg_lowerhalf {
+  background-position: -399px ($vg_secondrow_y - $outfitE_y - 2);
+}
+
+#outfit69_chest {
+  background-position: $vg_chest_x ($vg_chest_y - $outfitE_y);
+}
+
+// #outfit69_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitE_y);
+// }
+
+#outfit69_backarm_lowerhalf {
+  background-position: $vg_backarm_lowerhalf_x ($vg_backarm_lowerhalf_y - $outfitE_y);
+}
+
+#outfit69_frontarm_lowerhalf {
+  background-position: $vg_frontarm_lowerhalf_x ($vg_frontarm_lowerhalf_y - $outfitE_y);
+}
+
+
+
+
+/* Outfit 70 - ??? outfit */
+#outfit70_backarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) (-$outfitE_y);
+}
+
+#outfit70_backleg_foot {
+  background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) (-$outfitE_y);
+}
+
+#outfit70_frontleg_foot {
+  background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) (-$outfitE_y);
+}
+
+// #outfit70_backleg_upperhalf {
+//   background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) (-$outfitE_y);
+// }
+
+#outfit70_backleg_lowerhalf {
+    background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) (-$outfitE_y);
+}
+
+#outfit70_frontarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) ($vg_frontarm_upperhalf_y - $outfitE_y);
+}
+
+// #outfit70_frontleg_upperhalf {
+//   background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitE_y);
+// }
+
+#outfit70_frontleg_lowerhalf {
+  background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitE_y);
+}
+
+#outfit70_chest {
+  background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitE_y);
+}
+
+// #outfit70_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitE_y);
+// }
+
+#outfit70_backarm_lowerhalf {
+  background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) ($vg_backarm_lowerhalf_y - $outfitE_y);
+}
+
+#outfit70_frontarm_lowerhalf {
+  background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitE_y);
+}
+
+#outfit70_skirt {
+  background-position: ($vg_skirt_x - $outfit_BDFH_x) ($vg_skirt_y - $outfitE_y);
+}
+
+
+
+
+/* Outfit 71 - BoS uniform */
+#outfit71_backarm_upperhalf {
+  background-position: -2px (-$outfitG_y - 1);
+}
+
+#outfit71_backleg_foot {
+  background-position: $vg_backleg_foot_x (-$outfitG_y);
+}
+
+#outfit71_frontleg_foot {
+  background-position: $vg_frontleg_foot_x (-$outfitG_y);
+}
+
+#outfit71_backleg_upperhalf {
+  background-position: -266px (-$outfitG_y - 2);
+}
+
+#outfit71_backleg_lowerhalf {
+    background-position: $vg_leg_lowerhalf_x (-$outfitG_y - 1);
+}
+
+#outfit71_frontarm_upperhalf {
+  background-position: 0px ($vg_frontarm_upperhalf_y - $outfitG_y - 1);
+}
+
+#outfit71_frontleg_upperhalf {
+  background-position: -276px ($vg_secondrow_y - $outfitG_y - 2);
+}
+
+#outfit71_frontleg_lowerhalf {
+  background-position: -399px ($vg_secondrow_y - $outfitG_y - 2);
+}
+
+#outfit71_chest {
+  background-position: $vg_chest_x ($vg_chest_y - $outfitG_y);
+}
+
+// #outfit71_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitG_y);
+// }
+
+#outfit71_backarm_lowerhalf {
+  background-position: $vg_backarm_lowerhalf_x ($vg_backarm_lowerhalf_y - $outfitG_y);
+}
+
+#outfit71_frontarm_lowerhalf {
+  background-position: $vg_frontarm_lowerhalf_x ($vg_frontarm_lowerhalf_y - $outfitG_y);
+}
+
+
+
+
+/* Outfit 72 - Advanced BoS uniform */
+#outfit72_backarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) (-$outfitG_y);
+}
+
+#outfit72_backleg_foot {
+  background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) (-$outfitG_y);
+}
+
+#outfit72_frontleg_foot {
+  background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) (-$outfitG_y);
+}
+
+#outfit72_backleg_upperhalf {
+  background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) (-$outfitG_y);
+}
+
+#outfit72_backleg_lowerhalf {
+    background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) (-$outfitG_y);
+}
+
+#outfit72_frontarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) ($vg_frontarm_upperhalf_y - $outfitG_y);
+}
+
+#outfit72_frontleg_upperhalf {
+  background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitG_y);
+}
+
+#outfit72_frontleg_lowerhalf {
+  background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitG_y);
+}
+
+#outfit72_chest {
+  background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitG_y);
+}
+
+// #outfit72_crotch {
+//   background-position: $crotch_x ($crotch_y - $outfitG_y);
+// }
+
+#outfit72_backarm_lowerhalf {
+  background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) ($vg_backarm_lowerhalf_y - $outfitG_y);
+}
+
+#outfit72_frontarm_lowerhalf {
+  background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitG_y);
+}
+
+#outfit72_skirt {
+  background-position: ($vg_skirt_x - $outfit_BDFH_x) ($vg_skirt_y - $outfitG_y);
+}

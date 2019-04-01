@@ -342,7 +342,7 @@
   background-position: $foot_x (($frontleg_y + 10) - $outfitG_y);
 }
 
-    #outfit7_head {
+    #vb_headshape { /* Please don't rename this! */
       width: 95px;
       height: 105px;
       background-position: -15px (-150px - $outfitG_y);
