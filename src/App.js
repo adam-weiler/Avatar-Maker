@@ -137,8 +137,8 @@ class App extends Component {
     return (
       <div className="App">
 
-      <div id="Guy39"></div>
-      <div id="Girl3406"></div>
+      <div id="eGuy39"></div>
+      <div id="eGirl3543"></div>
 
 
 
@@ -154,7 +154,7 @@ class App extends Component {
 
             <div id="logo">
                 <img src={logo} alt="Fallout Shelter logo" />
-                <h1>Avatar Maker</h1>
+                <h1><div class="text">Avatar Maker</div></h1>
             </div>
 
             <AvatarWindow currentState={this.state} /> {/*A component that generates the entire AvatarWindow. (VaultSuit and VaultPerson.)*/}

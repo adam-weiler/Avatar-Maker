@@ -9,7 +9,11 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: lightgray;
-  background-image: url('./Images/metal_background.jpg');
+  /*background-image: url('./Images/Wiki-background.jpg');*/
+  background-image: url('./Images/atlas_2.jpg');
+  background-repeat: repeat-x;
+  background-color: #151212;
+  cursor: url(Images/Cursors/default.png), auto;
 }
 
 .App {
@@ -23,6 +27,14 @@ body {
   padding: 15px 35px;
   color: #00ff2b;
 }
+
+.text {
+  margin: 0 auto;
+  max-width: 250px;
+  cursor: url(Images/Cursors/text.png), auto;
+}
+
+
 
 #logo {
   margin: 25px;

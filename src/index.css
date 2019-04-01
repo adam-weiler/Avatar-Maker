@@ -100,6 +100,7 @@ code {
 .prevNextButton {
 	width: 80px;
 	font-size: 35px;
+	cursor: url(Images/Cursors/pointer.png), auto;
 }
 
 .btnRandom {
@@ -107,4 +108,5 @@ code {
 	padding: 8px 10px;
 	font-size: 30px;
 	/*border: 1px #16ce15 solid;*/
+	cursor: url(Images/Cursors/pointer.png), auto;
 }
