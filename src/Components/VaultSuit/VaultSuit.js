@@ -9,6 +9,8 @@ import { female_clothes } from '../../JSON/Female/female_clothes'; //Contains da
 import { female_headwear } from '../../JSON/Female/female_headwear'; //Contains data about Headwear for Vault Boy.
 import { female_gloves } from '../../JSON/Female/female_gloves'; //Contains data about Gloves for Vault Boy.
 
+import { genders } from '../../JSON/genders'; //Contains data about Genders.
+
 import LimbSegment from '../LimbSegment/LimbSegment.js'; //A component that generates a segment for each Limb.
 
 // import './GenderRaceAge.css';
@@ -22,67 +24,65 @@ const VaultSuit = ({ currentState }) => {
 
     return (
         <div id="vaultSuit">
-            <div id="vs_frontArm">
-                <LimbSegment limbClass="vs_frontarm_lowerhalf" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_frontarm_lowerhalf"} />
-                <LimbSegment limbClass="vs_frontarm_upperhalf" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_frontarm_upperhalf"} />
+            <div id={genders[current_gender].id + 's_frontArm'}>
+                <LimbSegment limbClass={genders[current_gender].id + 's_frontarm_lowerhalf'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_frontarm_lowerhalf"} />
+                <LimbSegment limbClass={genders[current_gender].id + 's_frontarm_upperhalf'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_frontarm_upperhalf"} />
                 {(() => {
                     if (current_gloves > 0) { //Checks if there is any gloves selected. Ifso, returns a div for the front-arm glove.
-                        return <LimbSegment limbClass="vs_frontarm_glove" atlas={gloves[current_gloves].atlas} limbId={"vb_frontarm_" + gloves[current_gloves].id} />
+                        return <LimbSegment limbClass={genders[current_gender].id + 's_frontarm_glove'} atlas={gloves[current_gloves].atlas} limbId={genders[current_gender].id + 's_frontarm_' + gloves[current_gloves].id} />
                     } //Else, there is no front-arm glove div.
                 })()}
             </div>
 
             {(() => {
                 if (current_headwear > 0) { //Checks if there is any Headwear selected. Ifso, returns a div for the headwear.
-                    return <div id="vs_head">
-                                <LimbSegment limbClass="vs_hat" atlas={headwear[current_headwear].atlas} limbId={headwear[current_headwear].id} />
+                    return <div id={genders[current_gender].id + 's_head'}>
+                                <LimbSegment limbClass={genders[current_gender].id + 's_hat'} atlas={headwear[current_headwear].atlas} limbId={headwear[current_headwear].id} />
                             </div>
                 } //Else, there is no headwear div.
             })()}
 
-            <div id="vs_torso">
-                <LimbSegment limbClass="vs_chest" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_chest"} /> 
+            <div id={genders[current_gender].id + 's_torso'}>
+                <LimbSegment limbClass={genders[current_gender].id + 's_chest'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_chest"} /> 
                 {(() => {
                     if (clothes[current_shirt]['hem']) { //Checks if current_shirt includes a hem. Ifso, returns 2 divs for hem pieces.
-                        return <div className='vs_hem'>
-                                    <LimbSegment limbClass="vs_fronthem" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_fronthem"} />
+                        return <div className={genders[current_gender].id + 's_hem'}>
+                                    <LimbSegment limbClass={genders[current_gender].id + 's_fronthem'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_fronthem"} />
 
-                                    <LimbSegment limbClass="vs_backhem" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_backhem"} />
+                                    <LimbSegment limbClass={genders[current_gender].id + 's_backhem'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_backhem"} />
                                 </div>
                     } //Else, there is no hem div.
                 })()}
 
-
                 {(() => {
                     if (clothes[current_shirt]['skirt']) { //Checks if current_shirt includes a skirt. Ifso, returns a div for skirt piece.
-                        return <LimbSegment limbClass="vs_skirt" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_skirt"} />
+                        return <LimbSegment limbClass="vgs_skirt" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_skirt"} />
                     } //Else, there is no hem div.
                 })()}
-
             </div>
 
-            <div id="vs_frontLeg">
-                <LimbSegment limbClass="vs_frontleg_upperhalf" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_upperhalf"} />
-                <LimbSegment limbClass="vs_frontleg_lowerhalf" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_lowerhalf"} />
-                <LimbSegment limbClass="vs_frontleg_foot" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_foot"} />
+            <div id={genders[current_gender].id + 's_frontLeg'}>
+                <LimbSegment limbClass={genders[current_gender].id + 's_frontleg_upperhalf'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_upperhalf"} />
+                <LimbSegment limbClass={genders[current_gender].id + 's_frontleg_lowerhalf'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_lowerhalf"} />
+                <LimbSegment limbClass={genders[current_gender].id + 's_frontleg_foot'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_foot"} />
             </div>
 
-{/*            <div id="vs_trunk">
-                <LimbSegment limbClass="vs_crotch" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_crotch"} />
-            </div>*/}
+            <div id={genders[current_gender].id + 's_trunk'}>
+                                <LimbSegment limbClass="vbs_crotch" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_crotch"} />
+                            </div>
 
-            <div id="vs_backLeg">
-                <LimbSegment limbClass="vs_backleg_upperhalf" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_upperhalf"} />
-                <LimbSegment limbClass="vs_backleg_lowerhalf" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_lowerhalf"} />
-                <LimbSegment limbClass="vs_backleg_foot" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_foot"} />
+            <div id={genders[current_gender].id + 's_backLeg'}>
+                <LimbSegment limbClass={genders[current_gender].id + 's_backleg_upperhalf'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_upperhalf"} />
+                <LimbSegment limbClass={genders[current_gender].id + 's_backleg_lowerhalf'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_lowerhalf"} />
+                <LimbSegment limbClass={genders[current_gender].id + 's_backleg_foot'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_foot"} />
             </div>
 
-            <div id="vs_backArm">
-                <LimbSegment limbClass="vs_backarm_lowerhalf" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_backarm_lowerhalf"} />
-                <LimbSegment limbClass="vs_backarm_upperhalf" atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_backarm_upperhalf"} />
+            <div id={genders[current_gender].id + 's_backArm'}>
+                <LimbSegment limbClass={genders[current_gender].id + 's_backarm_lowerhalf'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_backarm_lowerhalf"} />
+                <LimbSegment limbClass={genders[current_gender].id + 's_backarm_upperhalf'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_backarm_upperhalf"} />
                 {(() => {
                     if (current_gloves > 0) { //Checks if there is any gloves selected. Ifso, returns a div for the back-arm glove.
-                        return <LimbSegment limbClass="vs_backarm_glove" atlas={gloves[current_gloves].atlas} limbId={"vb_backarm_" + gloves[current_gloves].id} />
+                        return <LimbSegment limbClass={genders[current_gender].id + 's_backarm_glove'} atlas={gloves[current_gloves].atlas} limbId={genders[current_gender].id + 's_backarm_' + gloves[current_gloves].id} />
                     } //Else, there is no back-arm glove div.
                 })()}
             </div>

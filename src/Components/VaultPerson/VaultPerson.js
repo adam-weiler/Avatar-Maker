@@ -31,8 +31,8 @@ const VaultPerson = ({ currentState }) => {
     const hands = current_gender === 0 ? male_hands : female_hands;
 
     return (
-        <div id="vaultBoy">
-            <div id="vb_frontArm">
+        <div id="vaultPerson">
+            <div id={genders[current_gender].id + '_frontArm'}>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id=
                 {genders[current_gender].id + '_frontarm_lowerhalf'}
 ></div>
@@ -40,7 +40,7 @@ const VaultPerson = ({ currentState }) => {
                 <div className={genders[current_gender].id + '_frontarm_hand atlas18 skinColor' + current_race} id={genders[current_gender].id + '_frontarm_' + hands[0].id}></div>
             </div>
 
-            <div id="vb_hedad">
+            <div id={genders[current_gender].id + '_head'}>
                 {(() => {
                     if ((!male_headwear[current_headwear].disable_hair) && (!male_features[current_feature].disable_hair)) { //Confirms there is no flag for current _headwear or _feature to disable Hairstyle.
                         // return <div className={'vb_hair ' 
@@ -71,39 +71,44 @@ const VaultPerson = ({ currentState }) => {
                 {(() => {
                     if (current_feature > 0) { //Checks if there is any Facial Features selected.
                         if (!male_headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
-                            return <LimbSegment limbClass="vs_feature" atlas={male_features[current_feature].atlas} limbId={male_features[current_feature].id} /> //Returns a div for the feature.
+                            return <LimbSegment limbClass="vb_feature" atlas={male_features[current_feature].atlas} limbId={male_features[current_feature].id} /> //Returns a div for the feature.
                     }
                     } //Else, there is no feature div.
                 })()}
 
                 {/*<div className={genders[current_gender].id + '_face atlas01'} id="vb_face5"></div>*/}
-                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_head'}></div>
+                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_headshape'}></div>
             </div>
             
-            <div id="vb_torso">
+            <div id={genders[current_gender].id + '_torso'}>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_chest'}></div> 
             </div>
 
-            <div id="vb_frontLeg">
+            <div id={genders[current_gender].id + '_frontLeg'}>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontleg_upperhalf'}></div>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontleg_lowerhalf'}></div>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_frontleg_foot'}></div>
             </div>
 
-            {/*<div id="vb_trunk">
-                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id="vb_crotch"></div>
-            </div>*/}
 
-            <div id="vb_backLeg">
+            {(() => {
+                if (current_gender === 0) { //Checks for Male gender. Ifso, returns a div for the trunk.
+                    return <div id="vb_trunk">
+                                <div className={genders[current_gender].atlas + ' skinColor' + current_race} id="vb_crotch"></div>
+                            </div>
+                } //Else, there is no trunk div.
+            })()}
+
+            <div id={genders[current_gender].id + '_backLeg'}>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backleg_upperhalf'}></div>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backleg_lowerhalf'}></div>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backleg_foot'}></div>
             </div>
 
-            <div id="vb_backArm">
+            <div id={genders[current_gender].id + '_backArm'}>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backarm_lowerhalf'}></div>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_backarm_upperhalf'}></div>
-                <div className={'vb_backarm_hand atlas18 skinColor' + current_race} id={genders[current_gender].id + '_backarm_' + hands[0].id}></div>
+                <div className={genders[current_gender].id + '_backarm_hand atlas18 skinColor' + current_race} id={genders[current_gender].id + '_backarm_' + hands[0].id}></div>
             </div>                                    
         </div>
     );
