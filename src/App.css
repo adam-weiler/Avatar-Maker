@@ -1,13 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0 auto;
-  text-align: center;
   background-color: lightgray;
   /*background-image: url('./Images/Wiki-background.jpg');*/
   background-image: url('./Images/atlas_2.jpg');
@@ -16,45 +7,31 @@ body {
   cursor: url(Images/Cursors/default.png), auto;
 }
 
-.App {
-  top: 2em;
-  position: relative;
-  margin: 0 auto 40px auto;
-  text-align: center;
-  width: 800px;
-  background-color: rgb(0, 0, 0, 0.9);
-  min-height: 1490px;
-  padding: 15px 35px;
-  color: #00ff2b;
-}
-
-.text {
+.text, .prevNextType, .labelType, .styleType, .genderText {
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 350px;
   cursor: url(Images/Cursors/text.png), auto;
 }
 
-
-
-#logo {
-  margin: 25px;
+@font-face {
+  font-family: monoFonto;
+  src: url('./Fonts/monofonto.ttf');
 }
 
-#logo img {
-  max-width: 300px;
-  height:auto;
-  background-color: #FFF;
-  padding: 25px;
+@font-face {
+  font-family: overseer;
+  src: url('./Fonts/Overseer.otf');
 }
 
-#logo h1 {
-  margin: 0;
+@font-face {
+  font-family: futuraCondensedPT;
+  src: url('./Fonts/futura-condensed-pt-medium-589e44ed1e3a5.woff');
 }
 
 
-.atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas10, .atlas17, .atlas18, .atlas21 {
-  background-repeat: no-repeat;
-}
+
+
+
 
 .atlas01 {
   background-image: url('./Images/atlas01_2.png');
