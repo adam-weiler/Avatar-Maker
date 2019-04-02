@@ -67,9 +67,13 @@ const VaultSuit = ({ currentState }) => {
                 <LimbSegment limbClass={genders[current_gender].id + 's_frontleg_foot'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_frontleg_foot"} />
             </div>
 
-            <div id={genders[current_gender].id + 's_trunk'}>
+            {(() => {
+                if (current_gender === 0) { //Checks for Male gender. Ifso, returns a div for the trunk.
+                    return <div id={genders[current_gender].id + 's_trunk'}>
                                 <LimbSegment limbClass="vbs_crotch" atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_crotch"} />
                             </div>
+                } //Else, there is no trunk div.
+            })()}
 
             <div id={genders[current_gender].id + 's_backLeg'}>
                 <LimbSegment limbClass={genders[current_gender].id + 's_backleg_upperhalf'} atlas={clothes[current_pants].atlas} limbId={clothes[current_pants].id + "_backleg_upperhalf"} />

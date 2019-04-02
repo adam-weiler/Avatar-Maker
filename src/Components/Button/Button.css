@@ -11,7 +11,7 @@
 	margin: 0 auto;
 	width: 190px;
 	float: left;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .displayRow {
@@ -21,17 +21,27 @@
     align-items: center;
 }
 
+.labelType, .styleType {
+	
+}
+
 .labelType {
 	width: 35%;
 	position: relative;
 	text-align: right;
-	font-weight: bold;
+	font-family: monoFonto, 'Roboto Condensed', futuraCondensedPT, 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 .styleType {
 	width: 65%;
 	position: relative;
 	text-transform: capitalize;
+	font-family: 'Roboto Condensed', monoFonto, futuraCondensedPT, 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 25px;
 }
 
 

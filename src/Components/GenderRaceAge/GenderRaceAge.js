@@ -10,7 +10,7 @@ const GenderRaceAge = ({ gender, race, raceLength, handleRandomClick, handleGend
     return (
         <div id="genderButtons">
             <div className="buttonsRow">
-                <div className="leftCol">Gender:</div>
+                <div className="leftCol genderText">Gender:</div>
                 <div className="rightCol">
                     <label class="switch">
                         <input type="checkbox" />
