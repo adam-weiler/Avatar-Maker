@@ -161,8 +161,8 @@
 /*Copied from FalloutPerson - Please go back and delete vgs_ and vg_ classes. */
 /* These IDs are for Vault Boy's Suit and limbs, Vault Girl's suit and limbs.*/
 #vgs_frontArm, #vg_frontArm {
-	left: 0px;
-	top: 89px;
+	left: -2px;
+	top: 88px;
 }
 
 #vgs_head, #vg_head {
@@ -180,7 +180,7 @@
 
 #vgs_frontLeg, #vg_frontLeg {
 	left: 25px;
-	top: 215px;
+	top: 212px;
 }
 
 #vgs_trunk, #vg_trunk {
@@ -189,25 +189,25 @@
 }
 
 #vgs_backLeg, #vg_backLeg {
-	left: 54px;
-	top: 208px;
+	left: 55px;
+	top: 207px;
 }
 
 #vgs_backArm, #vg_backArm {
-	left: 60px;
-	top: 90px;
+	left: 73px;
+	top: 88px;
 }
 
 
 /* These Classes & IDs are for each of Vault Boy's Suit and body segment, Vault Girl's suit and body segment.*/
 .vgs_frontarm_lowerhalf, #vg_frontarm_lowerhalf {
 	left: 10px;
-	top: 85px;
+	top: 86px;
 	width: 85px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(70deg);
-	-webkit-transform: scaleY(-1) rotate(70deg);
-  	transform: scaleY(-1) rotate(75deg);
+  	-ms-transform: scaleY(-1) rotate(84deg);
+	-webkit-transform: scaleY(-1) rotate(84deg);
+  	transform: scaleY(-1) rotate(84deg);
 }
 
 .vgs_frontarm_upperhalf, #vg_frontarm_upperhalf {
@@ -215,19 +215,19 @@
 	top: 35px;
   	width: 110px;
   	height: 60px;
-  	-ms-transform: scaleY(-1) rotate(75deg);
-	-webkit-transform: scaleY(-1) rotate(75deg);
-  	transform: scaleY(-1) rotate(75deg);
+  	-ms-transform: scaleY(-1) rotate(70deg);
+	-webkit-transform: scaleY(-1) rotate(70deg);
+  	transform: scaleY(-1) rotate(70deg);
 }
 
 .vgs_frontarm_glove, .vg_frontarm_hand {
-	left: 17px;
-	top: 130px;
+	left: 33px;
+	top: 124px;
 	width: 65px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(-120deg);
-	-webkit-transform: scaleY(-1) rotate(-120deg);
-	transform: scaleY(-1) rotate(-120deg);
+  	-ms-transform: scaleY(-1) rotate(-90deg);
+	-webkit-transform: scaleY(-1) rotate(-90deg);
+	transform: scaleY(-1) rotate(-90deg);
 }
 
 .vgs_hat {
@@ -263,24 +263,24 @@
 	top: 0px;
 	width: 100px;
   	height: 60px;
-  	-ms-transform: scaleY(-1) rotate(-90deg);
-	-webkit-transform: scaleY(-1) rotate(-90deg);
+  	-ms-transform: scaleY(-1) rotate(-75deg);
+	-webkit-transform: scaleY(-1) rotate(-75deg);
 	transform: scaleY(-1) rotate(-75deg);
 }
 
 .vgs_frontleg_lowerhalf, #vg_frontleg_lowerhalf {
 	left: -3px;
-	top: 55px;
+	top: 60px;
 	width: 87px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(-105deg);
-	-webkit-transform: scaleY(-1) rotate(-105deg);
+  	-ms-transform: scaleY(-1) rotate(-100deg);
+	-webkit-transform: scaleY(-1) rotate(-100deg);
 	transform: scaleY(-1) rotate(-100deg);
 }
 
 .vgs_frontleg_foot, #vg_frontleg_foot {
 	left: 11px;
-	top: 100px;
+	top: 105px;
 	width: 60px;
   	height: 55px;
   	-ms-transform: scaleY(-1) rotate(180deg);
@@ -289,7 +289,7 @@
 }
 
 .vgs_backleg_upperhalf, #vg_backleg_upperhalf {
-	left: 0px;
+	left: 2px;
 	top: 0px;
 	width: 105px;
   	height: 65px;
@@ -300,7 +300,7 @@
 
 .vgs_backleg_lowerhalf, #vg_backleg_lowerhalf {
 	left: 12px;
-	top: 52px;
+	top: 58px;
 	width: 87px;
   	height: 60px;
   	-ms-transform: scaleY(-1) rotate(-105deg);
@@ -309,8 +309,8 @@
 }
 
 .vgs_backleg_foot, #vg_backleg_foot {
-	left: 22px;
-	top: 100px;
+	left: 21px;
+	top: 105px;
 	width: 60px;
   	height: 55px;
   	-ms-transform: scaleY(-1) rotate(180deg);
@@ -319,31 +319,31 @@
 }
 
 .vgs_backarm_lowerhalf, #vg_backarm_lowerhalf {
-	left: 20px;
-	top: 68px;
+	left: 16px;
+	top: 64px;
   	width: 80px;
   	height: 50px;
   	-ms-transform: scaleY(-1) rotate(-70deg);
 	-webkit-transform: scaleY(-1) rotate(-70deg);
-	transform: scaleY(-1) rotate(-70deg);
+	transform: scaleY(-1) rotate(-85deg);
 }
 
-.vgs_backarm_upperhalf, #vg_backarm_upperhalf {
+.vgs_backarm_upperhalf, #vg_backarm_upperhalf { //Backarm is shorter than front arm.
 	left: 0px;
 	top: 40px;
   	width: 90px;
   	height: 50px;
   	-ms-transform: scaleY(-1) rotate(75deg);
 	-webkit-transform: scaleY(-1) rotate(75deg);
-	transform: scaleY(1) rotate(75deg);
+	transform: scaleY(1) rotate(70deg);
 }
 
 .vgs_backarm_glove, .vg_backarm_hand {
-	left: 37px;
-	top: 111px;
+	left: 21px;
+	top: 110px;
 	width: 65px;
   	height: 55px;
   	-ms-transform: scaleY(-1) rotate(-60deg);
 	-webkit-transform: scaleX(-1) rotate(-60deg);
-	transform: scaleX(-1) rotate(-60deg);
+	transform: scaleX(-1) rotate(-80deg);
 }
