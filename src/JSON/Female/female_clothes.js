@@ -1,4 +1,15 @@
 export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name, and Hem (if available).
+    {
+    id: 'outfit72',
+    atlas: 'atlas10',
+    name: 'Advanced BoS uniform'
+  },
+
+
+
+
+
+
   {
     id: 'outfit57', //For shirts or pants, append _frontarm_lowerhalf, _frontarm_upperhalf, _chest, _backarm_lowerhalf, _backarm_upperhalf to find id of each div. 
                    //For pants, append _frontleg_upperhalf, _frontleg_lowerhalf, _frontleg_foot, _crotch, _backleg_upperhalf, _backleg_lowerhalf, _backleg_foot to find id of each class.
@@ -58,11 +69,11 @@ export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name,
     atlas: 'atlas10',
     name: 'BoS uniform'
   },
-  {
-    id: 'outfit72',
-    atlas: 'atlas10',
-    name: 'Advanced BoS uniform'
-  }
+  // {
+  //   id: 'outfit72',
+  //   atlas: 'atlas10',
+  //   name: 'Advanced BoS uniform'
+  // }
 
 
 
