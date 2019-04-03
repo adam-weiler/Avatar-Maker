@@ -1,6 +1,6 @@
-export const male_beards = [ //An array of each Facial Hair's ID and name. There are 14.
+export const male_beards = [ //An array of each Facial Hair's ID and Name. There are 14.
   {
-    id: '1', //For facial hair, append ? to find id of div. 
+    id: '', //For facial hair, append ? to find id of div. 
     name: 'Clean Shavenly' //Show name in textbox.
   },
   {
@@ -53,6 +53,6 @@ export const male_beards = [ //An array of each Facial Hair's ID and name. There
   },
   {
     id: '2',
-    name: 'two'
+    name: 'Van Dyke beard'
   }
 ]
