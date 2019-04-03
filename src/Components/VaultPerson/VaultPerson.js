@@ -5,10 +5,12 @@ import { male_headwear } from '../../JSON/Male/male_headwear'; //Contains data a
 import { male_hair } from '../../JSON/Male/male_hair'; //Contains data about Male Hairstyles.
 import { male_features } from '../../JSON/Male/male_features'; //Contains data about Features for Vault Boy.
 import { male_beards } from '../../JSON/Male/male_beards'; //Contains data about Male Facial Hair.
+import { male_faces } from '../../JSON/Male/male_faces'; //Contains data about Male Faces.
 import { male_hands } from '../../JSON/Male/male_hands'; //Contains data about Male Hands.
 
 import { female_hair } from '../../JSON/Female/female_hair'; //Contains data about Female Hairstyles.
 import { female_features } from '../../JSON/Female/female_features'; //Contains data about Features for Vault Girl.
+import { female_faces } from '../../JSON/Female/female_faces'; //Contains data about Female Faces.
 import { female_hands } from '../../JSON/Female/female_hands'; //Contains data about Hands for Vault Girl.
 
 
@@ -22,11 +24,13 @@ import LimbSegment from '../LimbSegment/LimbSegment.js'; //A component that gene
 // import './GenderRaceAge.css';
 
 const VaultPerson = ({ currentState }) => {
-    const { current_gender, current_race, current_headwear, current_feature, current_hair, current_hair_colour, current_beard } = currentState;
+    const { current_gender, current_race, current_headwear, current_feature, current_hair, current_hair_colour, current_beard, current_face } = currentState;
 
     const feature = current_gender === 0 ? male_features : female_features; //If 0, use male_ ; otherwise use female_
     const hair = current_gender === 0 ? male_hair : female_hair;
     // const beard = current_gender === 0 ? male_clothes : female_clothes;
+
+    const face = current_gender === 0 ? male_faces : female_faces;
 
     const hands = current_gender === 0 ? male_hands : female_hands;
 
@@ -59,7 +63,7 @@ const VaultPerson = ({ currentState }) => {
                 })()}
 
                 {(() => {
-                    if ((!male_headwear[current_headwear].disable_beard) && (!male_features[current_feature].disable_beard)) { //Confirms there is no flag for current _headwear or _feature to disable Beard.
+                    if ((current_beard > 0) && (!male_headwear[current_headwear].disable_beard) && (!male_features[current_feature].disable_beard)) { //Checks if there is any Beard selected. Also confirms there is no flag for current _headwear or _feature to disable Beard.
                         return <div 
                                     className={'vb_beard atlas01 hair_' + hair_colours[current_hair_colour].id} 
                                     id={'vb_beard' + male_beards[current_beard].id}>
@@ -71,12 +75,12 @@ const VaultPerson = ({ currentState }) => {
                 {(() => {
                     if (current_feature > 0) { //Checks if there is any Facial Features selected.
                         if (!male_headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
-                            return <LimbSegment limbClass="vb_feature" atlas={male_features[current_feature].atlas} limbId={male_features[current_feature].id} /> //Returns a div for the feature.
+                            return <LimbSegment limbClass={genders[current_gender].id + '_feature'} atlas={male_features[current_feature].atlas} limbId={genders[current_gender].id + '_' + male_features[current_feature].id} /> //Returns a div for the feature.
                     }
-                    } //Else, there is no feature div.
+                    } //Else, there is no feature div.   clothes[current_pants].id
                 })()}
 
-                {/*<div className={genders[current_gender].id + '_face atlas01'} id="vb_face5"></div>*/}
+                <div className={genders[current_gender].id + '_face atlas01'} id={genders[current_gender].id + '_'  + face[current_face].id}></div>
                 <div className={genders[current_gender].atlas + ' skinColor' + current_race} id={genders[current_gender].id + '_headshape'}></div>
             </div>
             
