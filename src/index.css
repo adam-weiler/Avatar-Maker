@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-.App {
-  top: 2em;
-  position: relative;
-  margin: 0 auto 40px auto;
-  text-align: center;
-  width: 800px;
-  background-color: rgb(0, 0, 0, 0.9);
-  min-height: 1490px;
-  padding: 15px 35px;
-  color: #00ff2b;
-}
-
 body {
   margin: 0 auto;
   padding: 0;
@@ -21,6 +9,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+.App {
+  top: 2em;
+  position: relative;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  width: 800px;
+  /*max-width: 1200px;*/
+  background-color: rgb(0, 0, 0, 0.9);
+  min-height: 1490px;
+  padding: 15px 35px;
+  color: #00ff2b;
 }
 
 .atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas10, .atlas17, .atlas18, .atlas21 {

@@ -4,13 +4,13 @@ body {
   background-image: url('./Images/atlas_2.jpg');
   background-repeat: repeat-x;
   background-color: #151212;
-  cursor: url(Images/Cursors/default.png), auto;
+  cursor: url('./Cursors/default.png'), auto;
 }
 
 .text, .prevNextType, .labelType, .styleType, .genderText {
   margin: 0 auto;
   max-width: 350px;
-  cursor: url(Images/Cursors/text.png), auto;
+  cursor: url('./Cursors/text.png'), auto;
 }
 
 @font-face {
