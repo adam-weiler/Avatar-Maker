@@ -134,6 +134,16 @@
 		/*opacity: .5;*/
 }
 
+.vb_face, .vg_face {
+	left: -1px;
+	top: 0px;
+  	width: 95px;
+    height: 105px;
+    z-index: 49;
+    z-index: 72;
+    	background-color: rgba(0,0,0,.1);
+}
+
 .vbs_chest, #vb_chest, .vgs_chest, #vg_chest {
 	left: 0px;
 	top: 0px;

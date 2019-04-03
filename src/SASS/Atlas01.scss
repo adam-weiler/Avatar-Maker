@@ -1,99 +1,133 @@
 @import 'mixins';
 
-.vb_beard {
-    position: absolute;
-    //border: 1px solid red;
-    //top: 10px;
+/* Male pieces */
+/* Faces */
+#vb_face1 { //Dead
+  background-position: -878px -36px;
+  position: absolute;
 }
 
+#vb_face2 { //Scared
+  background-position: -878px -150px;
+  position: absolute;
+}
 
+#vb_face3 { //Childish
+  background-position: -878px -260px;
+  position: absolute;
+}
 
-#facezz /* Girl ghoul */ {
-  width: 95px;
-  height: 105px;
-  background-position: -18px -660px;
-  z-index: 49;
+#vb_face4 { //Devilish
+  background-position: -878px -370px;
+  position: absolute;
+}
+
+#vb_face5 { //Happy
+  background-position: (-878px - 20) -590px;
+  position: absolute;
+}
+
+#vb_face6 { //Sad
+  background-position: (-878px - 20) -702px;
+  position: absolute;
+}
+
+#vb_face7 { //Smiling
+  background-position: (-878px - 20) -810px;
+  position: absolute;
+}
+
+#vb_face8 { //Tired
+  background-position: (-878px - 20) -924px;
   position: absolute;
 }
 
 
 
-
-#vb_face1 { /* Dead Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: -878px -36px;
-  	z-index: 49;
-  	position: absolute;
+/* Facial Features */
+#vb_feature1 { // Cheek Forehead Scars
+    background-position: -763px -36px;
+    z-index: 10;
 }
 
-#vb_face2 { /* Anguish Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: -878px -150px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature2 { // Round Goggles
+    background-position: -762px -147px;
+    z-index: 50;
 }
 
-#vb_face3 { /* Playful Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: -878px -260px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature3 { //Monocle
+    background-position: -763px -258px;
+    z-index: 50;
 }
 
-#vb_face4 { /* Angry Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: -878px -370px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature4 { //Square Goggles
+    background-position: -765px -368px;
+    z-index: 90;
 }
 
-#vb_face5 { /* Really Happy Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: (-878px - 20) -590px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature5 { //Wrinkles
+    background-position: -785px -479px;
+    z-index: 10;
 }
 
-#vb_face6 { /* Sad Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: (-878px - 20) -702px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature6 { //Thief mask
+    background-position: -784px -590px;
+    z-index: 50;
 }
 
-#vb_face7 { /* Happy Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: (-878px - 20) -810px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature7 { //Skull makeup
+    background-position: -784px -702px;
+    z-index: 10;
 }
 
-#vb_face8 { /* Praying Male */
-	width: 95px;
-  	height: 105px;
-  	background-position: (-878px - 20) -924px;
-  	z-index: 49;
-  	position: absolute;
+#vb_feature8 { //Nick Fury scar
+    background-position: -782px -812px;
+    z-index: 10;
 }
 
-
-
-
-
-
-
-#vb_beard1 { /* Clean Shavenly */
-  width: 0px; /* To avoid weird ghosting images. */
-  height: 0px;
+#vb_feature9 { //Tyrion scar
+    background-position: -783px -920px;
+    z-index: 10;
 }
 
+#vb_feature10 { //Raider black makeup
+    background-position: -649px -36px;
+    z-index: 10; // or 50
+}
+
+#vb_feature11 { //Fairy makeup
+    background-position: -669px -479px;
+    z-index: 10;
+}
+
+/* #vb_beard5 or #feature12 { //Pointed Beard & Glasses ; Unnecessary.
+    background-position: -670px -591px; 
+} */
+
+#vb_feature13 { //Regular glasses
+    background-position: -669px -702px;
+    z-index: 90;
+}
+
+#vb_feature14 { //Big round glasses
+    background-position: -669px -813px;
+    z-index: 90;
+}
+
+#vb_feature15 { //Ghoul face
+    background-position: -671px -922px;
+    z-index: 50;
+}
+
+#vb_feature16 { //Clown nose
+    background-position: -416px -284px;
+    z-index: 50;
+}
+/* The rest of the Male Features are in Atlas17. */
+
+
+
+/* Beards */
 #vb_beard2 { /* Facial Feature 14 in-game. */
     background-position: -647px -145px;
 }
@@ -107,7 +141,7 @@
     /*background-color: red;*/
 }
 
-// #vb_beard5 or #feature12 //Pointed Beard & Glasses ; Unnecessary.
+//#vb_beard5 or #feature12 //Pointed Beard & Glasses ; Unnecessary.
 
 #vb_beard5 { /* Facial Feature 6 in-game. */
     background-position: -534px -61px;
@@ -152,95 +186,63 @@
 
 
 
-
-
-
-
-
-
-
-#feature1 { /* Cheek Forehead Scars */
-    background-position: -763px -36px;
-    z-index: 10;
+/* Female pieces */
+/* Faces */
+#vg_face1 { //Dead
+  background-position: -285px -25px;
+  position: absolute;
 }
 
-#feature2 { /* Round Goggles */
-    background-position: -762px -147px;
-    z-index: 50;
-
+#vg_face2 { //Scared
+  background-position: -285px -155px;
+  position: absolute;
 }
 
-#feature3 { /* Monocle */
-    background-position: -763px -258px;
-    z-index: 50;
-
+#vg_face3 { //Childish
+  background-position: -285px -280px;
+  position: absolute;
 }
 
-#feature4 { /* Square Goggles */
-    background-position: -765px -368px;
-    z-index: 90;
+#vg_face4 { //Devilish
+  background-position: -285px -405px;
+  position: absolute;
 }
 
-#feature5 { /* Wrinkles */
-    background-position: -785px -479px;
-    z-index: 10;
+#vg_face5 { //Happy
+  background-position: -420px -405px;
+  position: absolute;
 }
 
-#feature6 { /* Thief mask */
-    background-position: -784px -590px;
-    z-index: 50;
+#vg_face6 { //Sad
+  background-position: -420px -535px;
+  position: absolute;
 }
 
-#feature7 { /* Skull makeup */
-    background-position: -784px -702px;
-    z-index: 10;
+#vg_face7 { //Smiling
+  background-position: -420px -665px;
+  position: absolute;
 }
 
-#feature8 { /* Nick Fury scar */
-    background-position: -782px -812px;
-    z-index: 10;
+#vg_face8 { //Tired
+  background-position: -420px -795px;
+  position: absolute;
 }
 
-#feature9 { /* Tyrion scar */
-    background-position: -783px -920px;
-    z-index: 10;
+#vg_face9 { //Girl ghoul 
+  background-position: -18px -660px;
 }
 
-
-
-#feature10 { /* Raider black makeup */
-    background-position: -649px -36px;
-    z-index: 10;
-    // or 50
+#vg_face10 { //Panicked ; Pregnant Female scared face.
+  background-position: -420px -920px;
+  position: absolute;
 }
 
-#feature11 { /* Fairy makeup */
-    background-position: -669px -479px;
-    z-index: 10;
-}
+/* Facial Features */
 
-/* #vb_beard5 or #feature12 { //Pointed Beard & Glasses ; Unnecessary.
-    background-position: -670px -591px;
-}*/
 
-#feature13 { /* Regular glasses */
-    background-position: -669px -702px;
-    z-index: 90;
-}
 
-#feature14 { /* Big round glasses */
-    background-position: -669px -813px;
-    z-index: 90;
-}
 
-#feature15 { /* Ghoul face */
-    background-position: -671px -922px;
-    z-index: 50;
-}
 
-#feature16 { /* Clown nose */
-    background-position: -416px -284px;
-    z-index: 50;
-}
 
-/* The rest of the Male Features are in Atlas17. */
+
+

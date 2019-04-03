@@ -159,11 +159,9 @@ $arm_lowerhalf_top: 90px;
 
 
 
-.vb_feature, .vg_feature {
-	// left: -100px;
+.vb_feature, .vg_feature { //Facial Features.
+	left: 0px;
 	top: 0px;
-  width: 95px;
+  	width: 95px;
     height: 105px;
-		background-color: rgba(0,0,0,.10);
-		/*opacity: .5;*/
 }
