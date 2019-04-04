@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import VaultSuit from '../VaultSuit/VaultSuit.js'; //A component that generates the entire Vault Suit outfit. (Shirt, Pants, Headwear, Gloves.)
 import VaultPerson from '../VaultPerson/VaultPerson.js'; //A component that generates the entire Vault Person. (Body, Face, Hair, Features, and Beard.)
 
-		import VaultGirl from '../VaultPerson/VaultGirl.js'; //A component that generates the entire Vault Person. (Body, Face, Hair, Features, and Beard.)
-
 import '../../SASS/Atlas01.scss'; //SASS for VG, VB Face.
 
 /* Vault Boy Outfits */
@@ -46,7 +44,7 @@ const AvatarWindow = ({ currentState }) => {
         <div id="avatarWindow">
             <div id="falloutPerson">
                 <VaultSuit currentState={currentState} />{/**/}
-                 <VaultPerson currentState={currentState} />
+                <VaultPerson currentState={currentState} />
                  {/*<VaultGirl currentState={currentState} />*/}
             </div>
         </div>

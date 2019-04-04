@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 
 /* All JSON files. */
-import { male_headwear } from '../../JSON/Male/male_headwear'; //Contains data about Headwear for Vault Boy.
-import { male_hair } from '../../JSON/Male/male_hair'; //Contains data about Male Hairstyles.
-import { male_features } from '../../JSON/Male/male_features'; //Contains data about Features for Vault Boy.
-import { male_beards } from '../../JSON/Male/male_beards'; //Contains data about Male Facial Hair.
-import { male_faces } from '../../JSON/Male/male_faces'; //Contains data about Male Faces.
-import { male_hands } from '../../JSON/Male/male_hands'; //Contains data about Male Hands.
-
-import { female_hair } from '../../JSON/Female/female_hair'; //Contains data about Female Hairstyles.
-import { female_features } from '../../JSON/Female/female_features'; //Contains data about Features for Vault Girl.
-import { female_faces } from '../../JSON/Female/female_faces'; //Contains data about Female Faces.
-import { female_hands } from '../../JSON/Female/female_hands'; //Contains data about Hands for Vault Girl.
-
-
-
+import { genders } from '../../JSON/genders'; //Contains data about Genders.
 import { all_races } from '../../JSON/all_races'; //Contains data about skincolor.
 import { hair_colours } from '../../JSON/hair_colours'; //Contains data about hair Colours.
-import { genders } from '../../JSON/genders'; //Contains data about Genders.
 
+/* Male JSON files */
+import { male_headwear } from '../../JSON/Male/male_headwear'; //Contains data about Headwear.
+import { male_hair } from '../../JSON/Male/male_hair'; //Contains data about Hairstyles.
+import { male_beards } from '../../JSON/Male/male_beards'; //Contains data about Male Facial Hair.
+import { male_features } from '../../JSON/Male/male_features'; //Contains data about Features.
+import { male_faces } from '../../JSON/Male/male_faces'; //Contains data about Faces.
+import { male_hands } from '../../JSON/Male/male_hands'; //Contains data about Hands. (No gloves.)
+
+/* Female JSON files */
+import { female_headwear } from '../../JSON/Female/female_headwear'; //Contains data about Headwear.
+import { female_hair } from '../../JSON/Female/female_hair'; //Contains data about Hairstyles.
+import { female_features } from '../../JSON/Female/female_features'; //Contains data about Features.
+import { female_faces } from '../../JSON/Female/female_faces'; //Contains data about Faces.
+import { female_hands } from '../../JSON/Female/female_hands'; //Contains data about Hands. (No gloves.)
+
+/* Components */
 import LimbSegment from '../LimbSegment/LimbSegment.js'; //A component that generates a segment for each Limb.
 
 // import './GenderRaceAge.css';
@@ -26,12 +28,11 @@ import LimbSegment from '../LimbSegment/LimbSegment.js'; //A component that gene
 const VaultPerson = ({ currentState }) => {
     const { current_gender, current_race, current_headwear, current_feature, current_hair, current_hair_colour, current_beard, current_face } = currentState;
 
-    const feature = current_gender === 0 ? male_features : female_features; //If 0, use male_ ; otherwise use female_
+    const headwear = current_gender === 0 ? male_headwear : female_headwear;
     const hair = current_gender === 0 ? male_hair : female_hair;
     // const beard = current_gender === 0 ? male_clothes : female_clothes;
-
+    const feature = current_gender === 0 ? male_features : female_features;
     const face = current_gender === 0 ? male_faces : female_faces;
-
     const hands = current_gender === 0 ? male_hands : female_hands;
 
     return (
@@ -46,17 +47,19 @@ const VaultPerson = ({ currentState }) => {
 
             <div id={genders[current_gender].id + '_head'}>
                 {(() => {
-                    if ((!male_headwear[current_headwear].disable_hair) && (!male_features[current_feature].disable_hair)) { //Confirms there is no flag for current _headwear or _feature to disable Hairstyle.
-                        // return <div className={'vb_hair ' 
-                        //             + male_hair[current_hair].atlas 
-                        //             + ' hair_' + hair_colours[current_hair_colour].id} 
-                        //             id={'vb_' + male_hair[current_hair].id}>
-                        //         </div>
+                    if ((!headwear[current_headwear].disable_hair) && (!feature[current_feature].disable_hair)) { //Confirms there is no flag for current _headwear or _feature to disable Hairstyle.
+                        return <div className={genders[current_gender].id + '_hair ' 
+                                    + male_hair[current_hair].atlas 
+                                    + ' hair_' + hair_colours[current_hair_colour].id} 
+                                    id={genders[current_gender].id + '_' + hair[current_hair].id}>
+                                </div>
                     } else { //There is a flag to disable Hairstyle.
-                        if ((male_headwear[current_headwear].disable_hair === .5) || (male_features[current_feature].disable_hair === .5)) { //Checks if flag says to partially disable hairstyle.
+                        if ((headwear[current_headwear].disable_hair === .5) || (feature[current_feature].disable_hair === .5)) { //Checks if flag says to partially disable hairstyle.
                             return <div 
-                                    className={'vb_hair atlas17 hair_' + hair_colours[current_hair_colour].id} 
-                                    id='vb_hair13'>
+                                    className={genders[current_gender].id + '_hair '
+                                    + male_hair[current_hair].atlas 
+                                    + ' hair_' + hair_colours[current_hair_colour].id} 
+                                    id={genders[current_gender].id + '_hair13'}>
                                 </div>
                         } //Else, flag says to completely disable Hairstyle. There is no hair div.
                     }
@@ -68,14 +71,13 @@ const VaultPerson = ({ currentState }) => {
                                     className={'vb_beard atlas01 hair_' + hair_colours[current_hair_colour].id} 
                                     id={'vb_beard' + male_beards[current_beard].id}>
                                 </div>
-
                     } //Else, flag says to completely disable Beard. There is no beard div.
                 })()}
 
                 {(() => {
                     if (current_feature > 0) { //Checks if there is any Facial Features selected.
                         if (!male_headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
-                            return <LimbSegment limbClass={genders[current_gender].id + '_feature'} atlas={male_features[current_feature].atlas} limbId={genders[current_gender].id + '_' + male_features[current_feature].id} /> //Returns a div for the feature.
+                            return <LimbSegment limbClass={genders[current_gender].id + '_feature'} atlas='atlas01' limbId={genders[current_gender].id + '_' + feature[current_feature].id} /> //Returns a div for the feature.
                     }
                     } //Else, there is no feature div.   clothes[current_pants].id
                 })()}

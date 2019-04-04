@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 /* All JSON files. */
+import { genders } from '../../JSON/genders'; //Contains data about Genders.
+
 import { male_clothes } from '../../JSON/Male/male_clothes'; //Contains data about Shirts & Pants for Vault Boy.
 import { male_headwear } from '../../JSON/Male/male_headwear'; //Contains data about Headwear for Vault Boy.
 import { male_gloves } from '../../JSON/Male/male_gloves'; //Contains data about Gloves for Vault Boy.
@@ -9,8 +11,7 @@ import { female_clothes } from '../../JSON/Female/female_clothes'; //Contains da
 import { female_headwear } from '../../JSON/Female/female_headwear'; //Contains data about Headwear for Vault Boy.
 import { female_gloves } from '../../JSON/Female/female_gloves'; //Contains data about Gloves for Vault Boy.
 
-import { genders } from '../../JSON/genders'; //Contains data about Genders.
-
+/* All Components. */
 import LimbSegment from '../LimbSegment/LimbSegment.js'; //A component that generates a segment for each Limb.
 
 // import './GenderRaceAge.css';
@@ -20,7 +21,7 @@ const VaultSuit = ({ currentState }) => {
 
     const headwear = current_gender === 0 ? male_headwear : female_headwear; //If 0, use male_ ; otherwise use female_
     const clothes = current_gender === 0 ? male_clothes : female_clothes; // Used for shirt and pants
-    const gloves = current_gender === 0 ? male_gloves : female_clothes;
+    const gloves = current_gender === 0 ? male_gloves : female_gloves;
 
     return (
         <div id="vaultSuit">
@@ -29,7 +30,7 @@ const VaultSuit = ({ currentState }) => {
                 <LimbSegment limbClass={genders[current_gender].id + 's_frontarm_upperhalf'} atlas={clothes[current_shirt].atlas} limbId={clothes[current_shirt].id + "_frontarm_upperhalf"} />
                 {(() => {
                     if (current_gloves > 0) { //Checks if there is any gloves selected. Ifso, returns a div for the front-arm glove.
-                        return <LimbSegment limbClass={genders[current_gender].id + 's_frontarm_glove'} atlas={gloves[current_gloves].atlas} limbId={genders[current_gender].id + 's_frontarm_' + gloves[current_gloves].id} />
+                        return <LimbSegment limbClass={genders[current_gender].id + 's_frontarm_glove'} atlas='atlas18' limbId={genders[current_gender].id + 's_frontarm_' + gloves[current_gloves].id} />
                     } //Else, there is no front-arm glove div.
                 })()}
             </div>
