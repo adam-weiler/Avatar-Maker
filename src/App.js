@@ -1,28 +1,10 @@
 import React, { Component } from 'react';
 
-/* All JSON files. */
-import { male_clothes } from './JSON/Male/male_clothes'; //Contains data about Shirts & Pants for Vault Boy.
-import { male_headwear } from './JSON/Male/male_headwear'; //Contains data about Headwear for Vault Boy.
-import { male_hair } from './JSON/Male/male_hair'; //Contains data about Male Hairstyles.
-import { male_features } from './JSON/Male/male_features'; //Contains data about Features for Vault Boy.
-import { male_beards } from './JSON/Male/male_beards'; //Contains data about Male Facial Hair.
-import { male_faces } from './JSON/Male/male_faces'; //Contains data about Male Faces.
-import { male_gloves } from './JSON/Male/male_gloves'; //Contains data about Gloves for Vault Boy.
-
-
-import { female_clothes } from './JSON/Female/female_clothes'; //Contains data about Shirts & Pants for Vault Girl.
-import { female_faces } from './JSON/Female/female_faces'; //Contains data about Female Faces.
-
-
-
-import { all_races } from './JSON/all_races'; //Contains data about skincolor.
-import { hair_colours } from './JSON/hair_colours'; //Contains data about hair Colours.
-import { genders } from './JSON/genders'; //Contains data about Genders.
+import { all_races, genders, hair_colours, male_beards, male_clothes, male_faces, male_features, male_gloves, male_hair, male_hands, male_headwear, female_clothes, female_faces, female_features, female_gloves, female_hair, female_hands, female_headwear } from './imports';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDice } from '@fortawesome/free-solid-svg-icons';
 // import { faLink } from '@fortawesome/free-solid-svg-icons';
-
 
 import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js';
 import LimbSegment from './Components/LimbSegment/LimbSegment.js'; //A component that generates a segment for each Limb.
@@ -33,24 +15,21 @@ import logo from './Images/Fallout_Shelter_logo.png'
 
 import './App.css';
 
-
-
-
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            current_gender: 1, //Initially loads Vault-Boy, 0.
-            current_race: 0, //Stores Skintone id. Initially loads Caucasian skintone, 1.
-            current_headwear: 0, //Stores current Headwear id. Initially loads no headwear, 0.
-            current_feature: 0, //Stores current Facial Feature id. Initially loads no feature, 0.
-            current_hair: 25, //Stores current Hair id. Initially loads Tunnel Snake, 0.
-            current_hair_colour: 0, //Stores current Hair Colour id. Initially loads Blonde, 27.
-            current_beard: 0, //Stores current Beard id. Initially loads no beard, 0.
-            current_shirt: 1, //Stores current Shirt id. Initally loads Vault Suit, 38.
-            current_gloves: 0, //Stores current Glove id. Initially loads no gloves, 0.
-            current_pants: 1, //Stores current Pants id. Initally loads Vaultsuit, 38
-            current_face: 0 //Stores current Face id. Initially loads Happy, 0.
+            current_beard: 0, //Initially loads no Beard, 0.
+            current_face: 0, //Initially loads Happy, 0.
+            current_feature: 0, //Initially loads no Feature, 0.
+            current_gender: 0, //Initially loads male Vault-Boy, 0.
+            current_gloves: 0, //Initially loads no Gloves, 0.
+            current_hair: 0, //Initially loads Tunnel Snake Hairstyle, 0.
+            current_hair_colour: 27, //Initially loads Blonde, 27.
+            current_headwear: 0, //Initially loads no Headwear, 0.
+            current_pants: 1, //Initally loads Vault Suit, 38
+            current_race: 0, //Stores Skintone. Initially loads caucasian Skintone, 1.
+            current_shirt: 1 //Initally loads Vault Suit, 38.
         }
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
         this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selections button.
@@ -98,16 +77,17 @@ class App extends Component {
         let ourGender = (gender === 0 ? 1 : 0); //If gender is male, switch to female. Otherwise, switch to male.
 
         this.setState({
-            current_gender: ourGender, //Updates current_gender with new value.
-            current_headwear: 0,
-            current_feature: 0,
-            current_hair: 0,
-            current_hair_colour: 0,
             current_beard: 0,
-            current_shirt: 0,
+            current_face: 0,
+            current_feature: 0,
+            current_gender: ourGender, //Updates current_gender with new value.
             current_gloves: 0,
-            current_pants: 0,
-            current_face: 0
+            current_hair: 0,
+            current_hair_colour: 27,
+            current_headwear: 0,
+            current_pants: 1,
+            current_race: 0,
+            current_shirt: 1
         });
         console.log ("New gender: " + ourGender);
     }
@@ -119,17 +99,17 @@ class App extends Component {
     	}
 
     	this.setState({
-            current_gender: 0,
-                    current_race: getRandom(all_races.length),
-                    current_headwear: getRandom(male_headwear.length),
-                    current_feature: getRandom(male_features.length),
-                    current_hair: getRandom(male_hair.length),
-                    current_hair_colour: getRandom(hair_colours.length),
-                    current_beard: getRandom(male_beards.length),
-                    current_shirt: getRandom(male_clothes.length),
-                    current_gloves: getRandom(male_gloves.length),
-                    current_face: getRandom(male_faces.length),
-                    current_pants: getRandom(male_clothes.length)
+            current_beard: getRandom(male_beards.length),
+            current_face: getRandom(male_faces.length),
+            current_feature: getRandom(male_features.length),
+            current_gender: 0, //Sets gender to male.. for now.
+            current_gloves: getRandom(male_gloves.length),
+            current_hair: getRandom(male_hair.length),
+            current_hair_colour: getRandom(hair_colours.length),
+            current_headwear: getRandom(male_headwear.length),
+            current_pants: getRandom(male_clothes.length),
+            current_race: getRandom(all_races.length),
+            current_shirt: getRandom(male_clothes.length)
         });
     }
 
@@ -137,25 +117,16 @@ class App extends Component {
 
     const clothes = this.state.current_gender === 0 ? male_clothes : female_clothes;
     const face = this.state.current_gender === 0 ? male_faces : female_faces;
-    // const headwear = this.state.current_gender === 0 ? male_headwear : female_headwear;
+    const feature = this.state.current_gender === 0 ? male_features : female_features;
+    const gloves = this.state.current_gender === 0 ? male_gloves : female_gloves;
+    const hair = this.state.current_gender === 0 ? male_hair : female_hair;
+    const headwear = this.state.current_gender === 0 ? male_headwear : female_headwear;
 
     return (
-      <div className="App">
+        <div className="App">
 
-      <div id="eGuy39"></div>
-      <div id="eGirl3543"></div>
-
-
-
-
-
-
-            {/* 
-            <p>Total Number of Shirts, and Pants: {clothes.length}</p>
-            <p>Total Number of Male Hair: {male_hair.length}</p>
-            <p>Total Number of Hair Colours: {hair_colours.length}</p> 
-            <p>Total Number of Facial Hair: {male_beards.length}</p> 
-            */}
+            <div id="eGuy39"></div>
+            <div id="eGirl3543"></div>
 
             <div id="logo">
                 <img src={logo} alt="Fallout Shelter logo" />
@@ -163,18 +134,6 @@ class App extends Component {
             </div>
 
             <AvatarWindow currentState={this.state} /> {/*A component that generates the entire AvatarWindow. (VaultSuit and VaultPerson.)*/}
-
-
-
-
-
-
-
-
-
-
-
-
 
             <div id="allButtons">
                 <div className="buttonsRow">
@@ -189,9 +148,9 @@ class App extends Component {
                     <Button id={this.state.current_pants} outfitStyle="current_pants" arrayLength={clothes.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
                 <div className="buttonsRow">
-                    <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={male_hair.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={hair.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Hairstyle {this.state.current_hair + 1}</div>
-                    <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={male_hair.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_hair} outfitStyle="current_hair" arrayLength={hair.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
                 <div className="buttonsRow">
                     <Button id={this.state.current_hair_colour} outfitStyle="current_hair_colour" arrayLength={hair_colours.length} label="Previous" clicker={this.handleOptionClick} />
@@ -204,15 +163,15 @@ class App extends Component {
                     <Button id={this.state.current_beard} outfitStyle="current_beard" arrayLength={male_beards.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
                 <div className="buttonsRow">
-                    <Button id={this.state.current_headwear} outfitStyle="current_headwear" arrayLength={male_headwear.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_headwear} outfitStyle="current_headwear" arrayLength={headwear.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Headwear {this.state.current_headwear + 1}</div>
-                    <Button id={this.state.current_headwear} outfitStyle="current_headwear" arrayLength={male_headwear.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_headwear} outfitStyle="current_headwear" arrayLength={headwear.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
 
                 <div className="buttonsRow">
-                    <Button id={this.state.current_feature} outfitStyle="current_feature" arrayLength={male_features.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_feature} outfitStyle="current_feature" arrayLength={feature.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Feature {this.state.current_feature + 1}</div>
-                    <Button id={this.state.current_feature} outfitStyle="current_feature" arrayLength={male_features.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_feature} outfitStyle="current_feature" arrayLength={feature.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
 
                 <div className="buttonsRow">
@@ -222,9 +181,9 @@ class App extends Component {
                 </div>
 
                 <div className="buttonsRow">
-                    <Button id={this.state.current_gloves} outfitStyle="current_gloves" arrayLength={male_gloves.length} label="Previous" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_gloves} outfitStyle="current_gloves" arrayLength={gloves.length} label="Previous" clicker={this.handleOptionClick} />
                     <div className="prevNextType">Gloves {this.state.current_gloves + 1}</div>
-                    <Button id={this.state.current_gloves} outfitStyle="current_gloves" arrayLength={male_gloves.length} label="Next" clicker={this.handleOptionClick} />
+                    <Button id={this.state.current_gloves} outfitStyle="current_gloves" arrayLength={gloves.length} label="Next" clicker={this.handleOptionClick} />
                 </div>
             </div>
 

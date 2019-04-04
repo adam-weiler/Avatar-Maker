@@ -19,7 +19,7 @@ body {
   width: 800px;
   /*max-width: 1200px;*/
   background-color: rgb(0, 0, 0, 0.9);
-  min-height: 1490px;
+  min-height: 1630px;
   padding: 15px 35px;
   color: #00ff2b;
 }
@@ -141,7 +141,6 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 .prevNextButton {
 	width: 80px;
 	font-size: 35px;
-	cursor: url(Images/Cursors/pointer.png), auto;
 }
 
 .genderText, .btnRandom {
@@ -155,5 +154,4 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 	margin: 0 auto;
 	padding: 8px 10px;
 	/*border: 1px #16ce15 solid;*/
-	cursor: url(Images/Cursors/pointer.png), auto;
 }
