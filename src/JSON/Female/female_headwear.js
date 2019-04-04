@@ -6,7 +6,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
     name: 'No headwear' //Show name in textbox.
   },
   {
-    id: 'headwear16',
+    id: 'headwear4',
     atlas: 'atlas17',
     name: 'Knight helmet', /* Knight armor */
     disable_hair: 1

@@ -9,8 +9,8 @@ export const female_hair = [ //An array of each Female hairstyle's ID, Atlas fil
     id: 'hair2',
     atlas: 'atlas17',
     name: '#2' 		/* NAME ME!! */
-  },
-]
+  }
+];
 
 /* Dr. Li hair is called "HairDrLi" in Fallout 3? Doesn't say Fallout 4. */
 
