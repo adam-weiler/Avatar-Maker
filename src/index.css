@@ -22,6 +22,7 @@ body {
   min-height: 1630px;
   padding: 15px 35px;
   color: #00ff2b;
+  overflow: hidden;
 }
 
 .atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas10, .atlas17, .atlas18, .atlas21 {
@@ -54,13 +55,13 @@ body {
 text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #233326;
 }
 
-#allButtons, #genderButtons, #displaySelections {
+#mainButtons, #genderRaceAgeButtons, #mainSelections {
 	font-family: 'Roboto Condensed', monoFonto, futuraCondensedPT, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
-#allButtons {
+#mainButtons {
 	margin: 25px;
 	padding: 16px 8px;
 	position: relative;
@@ -71,7 +72,7 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 	float: right;
 }
 
-#displaySelections {
+#mainSelections {
 	margin: 10px 25px;
 		width: 350px;
 	padding: 16px 8px;
@@ -84,7 +85,7 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 	float: right;
 }
 
-#genderButtons {
+#genderRaceAgeButtons {
   margin: 10px 25px;
   width: 280px;
   padding: 16px 8px;
@@ -96,7 +97,7 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
   float: left;
 }
 
-#genderRaceAgeSelection {
+#genderRaceAgeSelections {
 	  margin: 10px 25px;
   width: 280px;
   padding: 16px 8px;

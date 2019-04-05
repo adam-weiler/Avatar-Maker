@@ -1,3 +1,9 @@
+/* Font Awesome */
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDice } from '@fortawesome/free-solid-svg-icons';
+// import { faLink } from '@fortawesome/free-solid-svg-icons';
+
+
 /* All JSON files. */
 /* Male and Female JSONs */
 import { all_races } from './JSON/all_races'; //Contains data about skincolor.
@@ -24,10 +30,29 @@ import { female_hands } from './JSON/Female/female_hands'; //Contains data about
 import { female_headwear } from './JSON/Female/female_headwear'; //Contains data about Headwear.
 
 
+/* Components */
+import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js'; //The div where the avatar is shown.
+import Button from './Components/Button/Button.js'; //Generates a "Previous" or "Next" button.
+import GenderRaceAge from './Components/GenderRaceAge/GenderRaceAge.js'; //The div where the Gender, Race, Age buttons live.
+import Logo from './Components/Logo/Logo.js'; //The div which displays the Logo.
+import MainButtons from './Components/MainButtons/MainButtons.js'; //The div where the majority of the Buttons live.
+import SegmentPiece from './Components/SegmentPiece/SegmentPiece.js'; //Generates a segment piece for the Vault Person or Suit.
 
+/* Images */
+import LogoImage from './Images/Fallout_Shelter_logo.png'; //The Logo image itself.
+
+/* CSS files */
+import './App.css'; //Store CSS with Relative or Absolute paths here.
+import './index.css'; //Store other CSS here.
+
+
+
+/* SASS files */
 
 
 export {
+	faDice,
+
 	all_races,
 	genders,
 	hair_colours,
@@ -48,4 +73,13 @@ export {
 	female_hair,
 	female_hands,
 	female_headwear,
+
+	AvatarWindow,
+	Button,
+	GenderRaceAge,
+	Logo,
+	MainButtons,
+	SegmentPiece,
+
+	LogoImage
 }
