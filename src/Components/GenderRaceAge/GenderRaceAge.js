@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '../Button/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +8,7 @@ import './GenderRaceAge.css';
 
 const GenderRaceAge = ({ gender, race, raceLength, handleRandomClick, handleGenderClick, handleOptionClick }) => {
     return (
-        <div id="genderButtons">
+        <div id="genderRaceAgeButtons">
             <div className="buttonsRow">
                 <div className="leftCol genderText">Gender:</div>
                 <div className="rightCol">
@@ -20,9 +20,9 @@ const GenderRaceAge = ({ gender, race, raceLength, handleRandomClick, handleGend
             </div>
 
             <div className="buttonsRow">
-                <Button outfitStyle="current_race" arrayLength={raceLength} label="Previous" clicker={handleOptionClick}/>
+                <Button outfitStyle="race" arrayLength={raceLength} label="Prev" clicker={handleOptionClick}/>
                 <div className="prevNextType">Race {race + 1}</div>
-                <Button outfitStyle="current_race" arrayLength={raceLength} label="Next" clicker={handleOptionClick}/>
+                <Button outfitStyle="race" arrayLength={raceLength} label="Next" clicker={handleOptionClick}/>
             </div>
 
             <div className="buttonsRow">

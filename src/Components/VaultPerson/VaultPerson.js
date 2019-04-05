@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 /* All JSON files. */
 import { genders } from '../../JSON/genders'; //Contains data about Genders.
@@ -21,7 +21,7 @@ import { female_faces } from '../../JSON/Female/female_faces'; //Contains data a
 import { female_hands } from '../../JSON/Female/female_hands'; //Contains data about Hands. (No gloves.)
 
 /* Components */
-import LimbSegment from '../LimbSegment/LimbSegment.js'; //A component that generates a segment for each Limb.
+import SegmentPiece from '../SegmentPiece/SegmentPiece.js'; //A component that generates a body piece segment.
 
 // import './GenderRaceAge.css';
 
@@ -77,7 +77,7 @@ const VaultPerson = ({ currentState }) => {
                 {(() => {
                     if (current_feature > 0) { //Checks if there is any Facial Features selected.
                         if (!male_headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
-                            return <LimbSegment limbClass={genders[current_gender].id + '_feature'} atlas='atlas01' limbId={genders[current_gender].id + '_' + feature[current_feature].id} /> //Returns a div for the feature.
+                            return <SegmentPiece segClass={genders[current_gender].id + '_feature'} atlas='atlas01' segId={genders[current_gender].id + '_' + feature[current_feature].id} /> //Returns a div for the feature.
                     }
                     } //Else, there is no feature div.   clothes[current_pants].id
                 })()}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import VaultSuit from '../VaultSuit/VaultSuit.js'; //A component that generates the entire Vault Suit outfit. (Shirt, Pants, Headwear, Gloves.)
 import VaultPerson from '../VaultPerson/VaultPerson.js'; //A component that generates the entire Vault Person. (Body, Face, Hair, Features, and Beard.)
