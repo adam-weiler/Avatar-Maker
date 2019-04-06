@@ -252,3 +252,93 @@
 	-webkit-transform: scaleX(-1) rotate(-81deg);
 	transform: scaleX(-1) rotate(-81deg);
 }
+
+
+
+
+/* Z-Index values */
+#vaultSuit, #vaultBoy, #vaultGirl { /* Don't give z-index. */
+}
+
+/* Vault Suit Limbs */
+#vbs_frontArm, #vgs_frontArm {
+	z-index: 60;
+}
+
+#vbs_head, #vgs_head {
+	z-index: 70;
+}
+
+#vbs_torso, #vgs_torso {
+	z-index: 50;
+}
+
+#vbs_frontLeg, #vgs_frontLeg {
+	z-index: 40;
+}
+
+#vbs_trunk, #vgs_trunk {
+	z-index: 30;
+}
+
+#vbs_backLeg, #vgs_backLeg {
+	z-index: 20;
+}
+
+#vbs_backArm, #vgs_backArm {
+	z-index: 10;
+}
+
+
+/* Vault Person Limbs */
+#vb_frontArm, #vg_frontArm {
+	z-index: 59;
+}
+
+#vb_head, #vg_head {
+	z-index: 69;
+}
+
+#vb_torso, #vg_torso {
+	z-index: 49;
+}
+
+#vb_frontLeg, #vg_frontLeg {
+	z-index: 39;
+}
+
+#vb_trunk, #vg_trunk {
+	z-index: 29;
+}
+
+#vb_backLeg, #vg_backLeg {
+	z-index: 19;
+}
+
+#vb_backArm, #vg_backArm {
+	z-index: 9;
+}
+
+
+/* Vault Suit Segments */
+.vbs_hat, .vgs_hat {
+	z-index: 77;
+}
+
+
+/* Vault Person Segments */
+#vb_frontarm_lowerhalf {
+	z-index: 63;
+}
+
+#vb_frontarm_upperhalf {
+	z-index: 62;
+}
+
+.vb_frontarm_hand {
+	z-index: 61;
+}
+
+.vbs_feature, .vgs_feature {
+	// z-index: 76;
+}

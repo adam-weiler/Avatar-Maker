@@ -11,37 +11,7 @@ $arm_upperhalf_top: 45px;
 $arm_lowerhalf_top: 90px;
 */
 
-#vaultSuit { /* Don't give z-index. */
-	background-color: green;
-}
 
-#vbs_frontArm, #vgs_frontArm {
-	z-index: 60;
-}
-
-#vbs_head, #vgs_head {
-	z-index: 70;
-}
-
-#vbs_torso, #vgs_torso {
-	z-index: 50;
-}
-
-#vbs_frontLeg, #vgs_frontLeg {
-	z-index: 40;
-}
-
-#vbs_trunk, #vgs_trunk {
-	z-index: 30;
-}
-
-#vbs_backLeg, #vgs_backLeg {
-	z-index: 20;
-}
-
-#vbs_backArm, #vgs_backArm {
-	z-index: 10;
-}
 
 
 /* This is each piece of Vault Boy's Suit. */
@@ -55,24 +25,20 @@ $arm_lowerhalf_top: 90px;
 }
 
 .vbs_frontarm_lowerhalf, .vgs_frontarm_lowerhalf {
-	z-index: 63;
+	z-index: 64;
 }
 
 .vbs_frontarm_upperhalf, .vgs_frontarm_upperhalf {
-	z-index: 62;
+	z-index: 63;
 }
 
 .vbs_frontarm_glove, .vgs_frontarm_glove {
-	z-index: 61;
+	z-index: 62;
 }
 
-.vbs_hat, .vgs_hat {
-	z-index: 76;
-}
 
-.vbs_feature, .vgs_feature {
-	z-index: 75;
-}
+
+
 
 .vbs_chest, .vgs_chest {
 	z-index: 53;
@@ -144,16 +110,18 @@ $arm_lowerhalf_top: 90px;
 }
 
 .vbs_backarm_lowerhalf, .vgs_backarm_lowerhalf {
-	z-index: 13;
+	z-index: 14;
 }
 
 .vbs_backarm_upperhalf, .vgs_backarm_upperhalf {
-	z-index: 12;
+	z-index: 13;
 }
 
 .vbs_backarm_glove, .vgs_backarm_glove {
-	z-index: 11;
+	z-index: 12;
 }
+
+
 
 
 
