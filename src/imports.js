@@ -1,6 +1,6 @@
 /* Font Awesome */
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDice } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //The Font Awesome component for icons.
+import { faDice } from '@fortawesome/free-solid-svg-icons'; //A single Dice icon.
 // import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -31,26 +31,63 @@ import { female_headwear } from './JSON/Female/female_headwear'; //Contains data
 
 
 /* Components */
-import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js'; //The div where the avatar is shown.
+import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js'; //Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.)
 import Button from './Components/Button/Button.js'; //Generates a "Previous" or "Next" button.
-import GenderRaceAge from './Components/GenderRaceAge/GenderRaceAge.js'; //The div where the Gender, Race, Age buttons live.
 import Logo from './Components/Logo/Logo.js'; //The div which displays the Logo.
 import MainButtons from './Components/MainButtons/MainButtons.js'; //The div where the majority of the Buttons live.
-import SegmentPiece from './Components/SegmentPiece/SegmentPiece.js'; //Generates a segment piece for the Vault Person or Suit.
+import MinorButtons from './Components/MinorButtons/MinorButtons.js'; //The div where the Gender, Race, Age buttons live.
+import SegmentPiece from './Components/AvatarWindow/SegmentPiece/SegmentPiece.js'; //Generates a segment piece for the Vault Person or Suit.
+import VaultPerson from './Components/AvatarWindow/VaultPerson/VaultPerson.js';
+import VaultSuit from './Components/AvatarWindow/VaultSuit/VaultSuit.js';
+
 
 /* Images */
 import LogoImage from './Images/Fallout_Shelter_logo.png'; //The Logo image itself.
 
+
 /* CSS files */
 import './App.css'; //Store CSS with Relative or Absolute paths here.
 import './index.css'; //Store other CSS here.
-
+import './Components/MinorButtons/MinorButtons.css'; //Styles for MinorButton div; Gender, Race, Age, Random.
 
 
 /* SASS files */
+/* Atlas sheets */
+import './SASS/Atlas01.scss'; //Faces and Features for Vault Girl. Beards, Faces, and Features for Vault Boy.
+import './SASS/Atlas02.scss'; //Outfits and Skintone for Vault Boy.
+import './SASS/Atlas03.scss'; //Outfits for Vault Boy.
+import './SASS/Atlas04.scss'; //Outfits for Vault Boy.
+import './SASS/Atlas05.scss'; //Outfits for Vault Boy.
+import './SASS/Atlas06.scss'; //Outfits for Vault Boy.
+import './SASS/Atlas07.scss'; //Outfits for Vault Boy.
+import './SASS/Atlas08.scss'; //Outfits for Vault Boy.
+import './SASS/Atlas09.scss'; //Outfits and Skintone for Vault Girl. Outfits for Vault Boy.
+import './SASS/Atlas10.scss'; //Outfits for Vault Girl.
+
+//import './SASS/Atlas11.scss'; //Outfits for Vault Girl.
+//import './SASS/Atlas12.scss'; //Outfits for Vault Girl.
+//import './SASS/Atlas13.scss'; //Outfits for Vault Girl.
+//import './SASS/Atlas14.scss'; //Outfits for Vault Girl.
+//import './SASS/Atlas15.scss'; //Outfits for Vault Girl.
+//import './SASS/Atlas16.scss'; //Hair, Headwear, and Outfit for Vault Girl.				//Features?
+
+import './SASS/Atlas17.scss'; //Headwear for Vault Girl. Hair and Headwear for Vault Boy.		//Features?
+import './SASS/Atlas18.scss'; //Gloves and Hand Skintone for Vault Girl. Gloves, Hand Skintone and Headwear for Vault Boy.		//Features?
+import './SASS/Atlas21.scss'; //Headwear and Objects.
+import './SASS/FeralGhoul.scss'; //Feral Ghoul Skintone/Outfit.
+import './SASS/Mysterious.scss'; //Mysterious Stranger Skintone/Outfit.
+
+/* Various Avatar sheets */
+import './SASS/allRaces.scss'; //In-game and custom Skintone filters.
+import './SASS/FalloutPerson.scss'; //Styles shared between Vault Boy, Vault Girl, and Vault Suit.
+import './SASS/hairColours.scss'; //In-game and custome Hair Colour filters.
+import './SASS/VaultBoy.scss'; //Styles for Vault Boy.
+import './SASS/VaultGirl.scss'; //Styles for Vault Girl.
+import './SASS/VaultSuit.scss'; //Styles for Vault Suit.
 
 
 export {
+	FontAwesomeIcon,
 	faDice,
 
 	all_races,
@@ -76,10 +113,12 @@ export {
 
 	AvatarWindow,
 	Button,
-	GenderRaceAge,
 	Logo,
 	MainButtons,
+	MinorButtons,
 	SegmentPiece,
+	VaultSuit,
+	VaultPerson,
 
 	LogoImage
 }

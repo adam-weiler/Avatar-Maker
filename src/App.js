@@ -4,7 +4,7 @@ import {
     all_races, genders, hair_colours, 
     male_beards, male_clothes, male_faces, male_features, male_gloves, male_hair, male_hands, male_headwear, 
     female_clothes, female_faces, female_features, female_gloves, female_hair, female_hands, female_headwear, 
-    AvatarWindow, Button, GenderRaceAge, MainButtons,
+    AvatarWindow, Button, MinorButtons, MainButtons, VaultPerson, VaultSuit, 
     Logo
 } from './imports';
 
@@ -29,21 +29,21 @@ class App extends Component {
         this.handleRandomClick = this.handleRandomClick.bind(this); //This method is for Random button.
     }
 
-    handleOptionClick(outfitStyle, arrayLength, label) { //This method triggers when the user clicks "Prev" or "Next" buttons.
-        outfitStyle = "current_" + outfitStyle;
-        console.log("outfitStyle: ", outfitStyle);
-        // console.log("arrayLength: ", arrayLength);
+    handleOptionClick(limbStyle, arrLength, label) { //This method triggers when the user clicks "Prev" or "Next" buttons.
+        limbStyle = "current_" + limbStyle; //Adds "current_" to the front of the limbStyle.
+        console.log("limbStyle: ", limbStyle);
+        console.log("arrLength: ", arrLength);
         console.log("label: ", label);
-        //console.log("length: ", this.state[outfitStyle].length)   //this won't work.
+        //console.log("length: ", this.state[limbStyle].length)   //this won't work.
 
         console.log("current_gender: ", this.state.current_gender);
 
-        let ourStyle = this.state[outfitStyle]; //Temporarily stores the current_[outfitStyle] from state.
+        let ourStyle = this.state[limbStyle]; //Temporarily stores the current_[limbStyle] from state.
         console.log("ourStyle: ", ourStyle)
 
         if (label === "Next") { //If user clicked "Next" button.
             console.log("Next - ", ourStyle);
-            if (ourStyle < arrayLength - 1) { //If ourStyle is less than number of items in [outfitStyle] array, add 1.
+            if (ourStyle < arrLength - 1) { //If ourStyle is less than number of items in [limbStyle] array, add 1.
                 ourStyle = ourStyle + 1;
             } else { //Otherwise, go back to 0.
                 ourStyle = 0;
@@ -52,18 +52,18 @@ class App extends Component {
 
         if (label === "Prev") { //If user clicked "Previous" button.
             console.log("Prev", ourStyle);
-            if (ourStyle === 0) { //If ourStyle is 0, go to end of [outfitStyle] array.
-                ourStyle = arrayLength -1;
+            if (ourStyle === 0) { //If ourStyle is 0, go to end of [limbStyle] array.
+                ourStyle = arrLength -1;
             } else { //Otherwise, subtract 1.
                 ourStyle = ourStyle - 1;
             }
         }
 
         this.setState({
-            [outfitStyle]: ourStyle //Updates current_[outfitStyle] with new value.
+            [limbStyle]: ourStyle //Updates current_[limbStyle] with new value.
         });
-        console.log ([outfitStyle] + ":" + ourStyle);
-        // console.log (this.state[outfitStyle])
+        console.log ([limbStyle] + ":" + ourStyle);
+        // console.log (this.state[limbStyle])
     }
 
     handleGenderClick(gender) { //This method triggers when the user clicks on the "Gender" button.
@@ -122,67 +122,13 @@ class App extends Component {
             <div id="eGuy39"></div>
             <div id="eGirl3543"></div>
 
-            <Logo />
+            <Logo /> {/*The div which displays the Logo. */}
+            <AvatarWindow currentState={this.state} /> {/* Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.) */}
+            <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} /> {/* Generates the div where most of the buttons live. */}
+            <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} /> {/* Generates the div where a few of the buttons live. */}
 
-            <AvatarWindow currentState={this.state} /> {/*A component that generates the entire AvatarWindow. (VaultSuit and VaultPerson.)*/}
 
-            <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} />
 
-            <div id="mainButtons">
-                <div className="buttonsRow">
-                    <Button id={this.state.current_shirt} outfitStyle="shirt" arrayLength={clothes.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Shirt {this.state.current_shirt + 1}</div>
-                    <Button id={this.state.current_shirt} outfitStyle="shirt" arrayLength={clothes.length} label="Next" clicker={this.handleOptionClick} />
-                <br/>{/*<FontAwesomeIcon icon={faLink} />*/}
-                </div>
-                <div className="buttonsRow">
-                    <Button id={this.state.current_pants} outfitStyle="pants" arrayLength={clothes.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Pants {this.state.current_pants + 1}</div>
-                    <Button id={this.state.current_pants} outfitStyle="pants" arrayLength={clothes.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-                <div className="buttonsRow">
-                    <Button id={this.state.current_hair} outfitStyle="hair" arrayLength={hair.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Hairstyle {this.state.current_hair + 1}</div>
-                    <Button id={this.state.current_hair} outfitStyle="hair" arrayLength={hair.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-                <div className="buttonsRow">
-                    <Button id={this.state.current_hair_colour} outfitStyle="hair_colour" arrayLength={hair_colours.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Hair Colour {this.state.current_hair_colour + 1}</div>
-                    <Button id={this.state.current_hair_colour} outfitStyle="hair_colour" arrayLength={hair_colours.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-                <div className="buttonsRow">
-                    <Button id={this.state.current_beard} outfitStyle="beard" arrayLength={male_beards.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Beard {this.state.current_beard + 1}</div>
-                    <Button id={this.state.current_beard} outfitStyle="beard" arrayLength={male_beards.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-                <div className="buttonsRow">
-                    <Button id={this.state.current_headwear} outfitStyle="headwear" arrayLength={headwear.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Headwear {this.state.current_headwear + 1}</div>
-                    <Button id={this.state.current_headwear} outfitStyle="headwear" arrayLength={headwear.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-
-                <div className="buttonsRow">
-                    <Button id={this.state.current_feature} outfitStyle="feature" arrayLength={feature.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Feature {this.state.current_feature + 1}</div>
-                    <Button id={this.state.current_feature} outfitStyle="feature" arrayLength={feature.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-
-                <div className="buttonsRow">
-                    <Button id={this.state.current_face} outfitStyle="face" arrayLength={face.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Face {this.state.current_face + 1}</div>
-                    <Button id={this.state.current_face} outfitStyle="face" arrayLength={face.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-
-                <div className="buttonsRow">
-                    <Button id={this.state.current_gloves} outfitStyle="gloves" arrayLength={gloves.length} label="Prev" clicker={this.handleOptionClick} />
-                    <div className="prevNextType">Gloves {this.state.current_gloves + 1}</div>
-                    <Button id={this.state.current_gloves} outfitStyle="gloves" arrayLength={gloves.length} label="Next" clicker={this.handleOptionClick} />
-                </div>
-            </div>
-
-            <GenderRaceAge gender={this.state.current_gender} race={this.state.current_race}
-raceLength={all_races.length} handleRandomClick={this.handleRandomClick}
-             handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} />
 
             <div id="mainSelections">
                 <div className="displayRow">
