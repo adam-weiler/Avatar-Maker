@@ -58,7 +58,7 @@ const VaultPerson = ({ currentState }) => {
                 {(() => {
                     if (current_feature > 0) { //Checks if there is any Facial Features selected.
                         if (!male_headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
-                            return <SegmentPiece segClass={genders[current_gender].id + '_feature'} atlas='atlas01' segId={genders[current_gender].id + '_' + feature[current_feature].id} /> //Returns a div for the feature.
+                            return <SegmentPiece segClass={genders[current_gender].id + '_feature' + feature[current_feature].layer} atlas={feature[current_feature].atlas} segId={genders[current_gender].id + '_' + feature[current_feature].id} /> //Returns a div for the feature.
                     }
                     } //Else, there is no feature div.   clothes[current_pants].id
                 })()}
