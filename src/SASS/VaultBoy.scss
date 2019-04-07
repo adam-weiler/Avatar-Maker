@@ -1,36 +1,6 @@
 @import 'mixins';
 
-#vaultBoy { /* Don't give z-index. */
 
-}
-
-#vb_frontArm {
-	z-index: 59;
-}
-
-#vb_head {
-	z-index: 69;
-}
-
-#vb_torso {
-	z-index: 49;
-}
-
-#vb_frontLeg {
-	z-index: 39;
-}
-
-#vb_trunk {
-	z-index: 29;
-}
-
-#vb_backLeg {
-	z-index: 19;
-}
-
-#vb_backArm {
-	z-index: 9;
-}
 
 
 /* This is Vault Boy's skin. */
@@ -38,25 +8,6 @@
 	position: absolute;
 }
 
-#vb_frontarm_lowerhalf {
-	z-index: 63;
-}
-
-#vb_frontarm_upperhalf {
-	z-index: 62;
-}
-
-.vb_frontarm_hand {
-	z-index: 61;
-}
-
-.vb_hair {
-	left: -3px;
-  	top: -10px;
-  	width: 110px;
-  	height: 110px;
-	z-index: 74;
-}
 
 .vb_beard {
 	/*left: -4px;*/
@@ -67,6 +18,11 @@
 	z-index: 73;
 	/*background-color: rgba(255,255,255,1);*/
 }
+
+.vbs_frontarm_glove, .vb_frontarm_hand { //Keep this seperate from Vault-Girl classes.
+
+
+	}
 
 
 

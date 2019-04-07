@@ -134,6 +134,21 @@
 		/*opacity: .5;*/
 }
 
+.vb_hair, .vg_hair {
+	left: -3px;
+  	top: -10px;
+  	width: 110px;
+  	height: 110px;
+	z-index: 74;
+}
+
+.vb_feature, .vg_feature { //Facial Features.
+	left: 0px;
+	top: 0px;
+  	width: 95px;
+    height: 105px;
+}
+
 .vb_face, .vg_face {
 	left: -1px;
 	top: 0px;
@@ -341,4 +356,16 @@
 
 .vbs_feature, .vgs_feature {
 	// z-index: 76;
+}
+
+.vb_featureLow, .vg_featureLow {
+	z-index: 10;
+}
+
+.vb_featureMed, .vg_featureMed {
+	z-index: 50;
+}
+
+.vb_featureHigh, .vg_featureHigh {
+	z-index: 80;
 }
