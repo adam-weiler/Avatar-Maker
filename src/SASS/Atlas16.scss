@@ -1,0 +1,180 @@
+@import 'mixins';
+
+$firstCol: -5px;
+$secondCol: -135px;
+$thirdCol: -275px;
+$forthCol: -410px;
+$fifthCol: -550px;
+$sixthCol: -685px;
+$seventhCol: -820px;
+
+$firstRow: -10px;
+$secondRow: -135px;
+$thirdRow: -260px;
+$forthRow: -385px;
+$fifthRow: -520px;
+$sixthRow: -650px;
+
+.vg_hair {
+						// background-color: rgba(0,0,0,.1);
+	width: 130px;
+	height: 120px;
+						z-index: 74;
+	
+}
+
+#vg_hair1 {
+	left: -11px;
+	top: -10px;
+	background-position: $firstCol $firstRow;
+}
+
+#vg_hair2 {
+	left: -10px;
+	top: -15px;
+	background-position: $firstCol $secondRow;
+}
+
+#vg_hair3 {
+	left: -10px;
+	top: -15px;
+	background-position: $firstCol $thirdRow;
+}
+
+#vg_hair4 {
+	left: -11px;
+	top: -18px;
+	background-position: $firstCol $forthRow;
+}
+
+#vg_hair5 {
+	left: -10px;
+	top: -10px;
+	background-position: $firstCol $fifthRow;
+}
+
+#vg_hair6 {
+	left: -10px;
+	top: -15px;
+	background-position: $firstCol ($sixthRow + 10); //Needs to be close to upper border.
+}
+
+#vg_hair7 {
+	left: -15px;
+	top: -10px;
+		background-position: $secondCol $firstRow;
+}
+
+#vg_hair8 {
+		left: -17px;
+	top: -13px;
+		background-position: $secondCol $secondRow;
+}
+
+#vg_hair9 {
+		left: -16px;
+	top: -16px;
+		background-position: $secondCol $thirdRow;
+}
+
+#vg_hair10 {
+		left: -17px;
+	top: -21px;
+		background-position: $secondCol $forthRow;
+}
+
+#vg_hair11 {
+	left: -15px;
+	top: -15px;
+		background-position: $secondCol $fifthRow;
+}
+
+#vg_hair12 {
+	left: -17px;
+	top: -10px;
+		background-position: $secondCol $sixthRow;
+}
+
+#vg_hair13 {
+	left: -13px;
+	top: -10px;
+		background-position: $thirdCol $firstRow;
+}
+
+#vg_hair14 {
+	left: -14px;
+	top: -13px;
+		background-position: $thirdCol $secondRow;
+}
+
+#vg_hair15 {
+	left: -13px;
+	top: -18px;
+		background-position: $thirdCol $thirdRow;
+}
+
+#vg_hair16 {
+	left: -13px;
+	top: -21px;
+		background-position: $thirdCol $forthRow;
+}
+
+#vg_hair17 {
+	left: -13px;
+	top: -12px;
+		background-position: $thirdCol $fifthRow;
+}
+
+#vg_hair18 {
+	left: -12px;
+	top: -10px;
+		background-position: $thirdCol $sixthRow;
+}
+
+#vg_hair19 {
+	left: -15px;
+	top: -12px;
+		background-position: $forthCol $fifthRow;
+}
+
+#vg_hair20 {
+	left: -15px;
+	top: -15px;
+		background-position: $forthCol $sixthRow;
+}
+
+#vg_hair21 {
+	left: -10px;
+	top: -10px;
+		background-position: $fifthCol $fifthRow;
+}
+
+#vg_hair22 {
+	left: -10px;
+	top: -10px;
+		background-position: $fifthCol $sixthRow;
+}
+
+#vg_hair23 {
+	left: -12px;
+	top: -12px;
+		background-position: $sixthCol $fifthRow;
+}
+
+#vg_hair24 {
+	left: -12px;
+	top: -10px;
+		background-position: $sixthCol $sixthRow;
+}
+
+#vg_hair25 {
+	left: -13px;
+	top: -10px;
+		background-position: $seventhCol $fifthRow;
+}
+
+#vg_hair26 {
+	left: -13px;
+	top: -10px;
+		background-position: $seventhCol $sixthRow;
+}

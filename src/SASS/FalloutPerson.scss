@@ -134,7 +134,9 @@
 		/*opacity: .5;*/
 }
 
-.vb_hair, .vg_hair {
+.vb_hair 
+// , .vg_hair 
+{
 	left: -3px;
   	top: -10px;
   	width: 110px;
@@ -142,7 +144,8 @@
 	z-index: 74;
 }
 
-.vb_feature, .vg_feature { //Facial Features.
+.vb_feature, .vg_feature,
+.vb_featureLow, .vg_featureLow, .vb_featureMed, .vg_featureMed, .vb_featureHigh, .vg_featureHigh { //Facial Features.
 	left: 0px;
 	top: 0px;
   	width: 95px;
@@ -360,12 +363,15 @@
 
 .vb_featureLow, .vg_featureLow {
 	z-index: 10;
+	position: absolute;
 }
 
 .vb_featureMed, .vg_featureMed {
-	z-index: 50;
+	z-index: 73; //Higher than 72, Lower than 74
+	position: absolute;
 }
 
 .vb_featureHigh, .vg_featureHigh {
 	z-index: 80;
+	position: absolute;
 }
