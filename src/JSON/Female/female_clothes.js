@@ -1,5 +1,5 @@
 export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name, and Hem (if available).
-    {
+  {
     id: 'outfit72',
     atlas: 'atlas10',
     name: 'Advanced BoS uniform'

@@ -129,6 +129,11 @@ export const female_hair = [ //An array of each Female hairstyle's ID, Atlas fil
     id: 'hair26',
     atlas: 'atlas16',
     name: '#26'    /* NAME ME!! */
+  },
+  {
+    id: 'hair27',
+    atlas: '',
+    name: 'Balding' /* HairBalding */
   }
 ];
 
