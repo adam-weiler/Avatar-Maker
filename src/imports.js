@@ -7,6 +7,7 @@ import { faDice } from '@fortawesome/free-solid-svg-icons'; //A single Dice icon
 /* All JSON files. */
 /* Male and Female JSONs */
 import { all_races } from './JSON/all_races'; //Contains data about skincolor.
+import { all_styles } from './JSON/all_styles'; //Contains data about each style. (Clothes, hair, beard, headwear, feature, face, gloves.)
 import { genders } from './JSON/genders'; //Contains data about Genders.
 import { hair_colours } from './JSON/hair_colours'; //Contains data about hair Colours.
 
@@ -69,7 +70,7 @@ import './SASS/Atlas10.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas13.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas14.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas15.scss'; //Outfits for Vault Girl.
-//import './SASS/Atlas16.scss'; //Hair, Headwear, and Outfit for Vault Girl.				//Features?
+import './SASS/Atlas16.scss'; //Hair, Headwear, and Outfit for Vault Girl.				//Features?
 
 import './SASS/Atlas17.scss'; //Headwear for Vault Girl. Hair and Headwear for Vault Boy.		//Features?
 import './SASS/Atlas18.scss'; //Gloves and Hand Skintone for Vault Girl. Gloves, Hand Skintone and Headwear for Vault Boy.		//Features?
@@ -91,6 +92,7 @@ export {
 	faDice,
 
 	all_races,
+	all_styles,
 	genders,
 	hair_colours,
 

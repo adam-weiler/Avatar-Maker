@@ -20,12 +20,14 @@ class App extends Component {
             current_hair: 0, //Initially loads Tunnel Snake Hairstyle, 0.
             current_hair_colour: 27, //Initially loads Blonde, 27.
             current_headwear: 0, //Initially loads no Headwear, 0.
+            current_mode: 0, //Initially loads Basic mode, 0.
             current_pants: 40, //Initally loads Vault Suit, 38
             current_race: 0, //Stores Skintone. Initially loads caucasian Skintone, 1.
             current_shirt: 1 //Initally loads Vault Suit, 38.
         }
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
         this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selection button.
+        this.handleModeToggle = this.handleModeToggle.bind(this); //This method is for Basic or Advanced mode toggle.
         this.handleRandomClick = this.handleRandomClick.bind(this); //This method is for Random button.
     }
 
@@ -66,10 +68,8 @@ class App extends Component {
         // console.log (this.state[limbStyle])
     }
 
-    handleGenderClick(gender) { //This method triggers when the user clicks on the "Gender" button.
-        console.log("Current Gender: ", gender);
-
-        let ourGender = (gender === 0 ? 1 : 0); //If gender is male, switch to female. Otherwise, switch to male.
+    handleGenderClick() { //This method triggers when the user clicks on the "Gender" button.
+        let ourGender = (this.state.current_gender === 0 ? 1 : 0); //If gender is male, switch to female. Otherwise, switch to male.
 
         this.setState({
             current_beard: 0,
@@ -107,6 +107,15 @@ class App extends Component {
         });
     }
 
+
+    handleModeToggle() { //This method triggers when user clicks the Basic-Advanced toggle. 
+        let ourMode = (this.state.current_mode === 0 ? 1 : 0); //If mode is basic, switch to advanced. Otherwise, switch to basic.
+        this.setState({
+            current_mode: ourMode
+        });
+        console.log(ourMode);
+    }
+    
     render() {
 
     const clothes = this.state.current_gender === 0 ? male_clothes : female_clothes;
@@ -124,7 +133,7 @@ class App extends Component {
 
             <Logo /> {/*The div which displays the Logo. */}
             <AvatarWindow currentState={this.state} /> {/* Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.) */}
-            <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} /> {/* Generates the div where most of the buttons live. */}
+            <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
             <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} /> {/* Generates the div where a few of the buttons live. */}
 
 
