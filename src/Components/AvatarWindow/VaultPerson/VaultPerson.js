@@ -30,7 +30,7 @@ const VaultPerson = ({ currentState }) => {
                 {(() => {
                     if ((!headwear[current_headwear].disable_hair) && (!feature[current_feature].disable_hair)) { //Confirms there is no flag for current _headwear or _feature to disable Hairstyle.
                         return <div className={genders[current_gender].id + '_hair ' 
-                                    + male_hair[current_hair].atlas 
+                                    + hair[current_hair].atlas 
                                     + ' hair_' + hair_colours[current_hair_colour].id} 
                                     id={genders[current_gender].id + '_' + hair[current_hair].id}>
                                 </div>
@@ -38,7 +38,7 @@ const VaultPerson = ({ currentState }) => {
                         if ((headwear[current_headwear].disable_hair === .5) || (feature[current_feature].disable_hair === .5)) { //Checks if flag says to partially disable hairstyle.
                             return <div 
                                     className={genders[current_gender].id + '_hair '
-                                    + male_hair[current_hair].atlas 
+                                    + hair[current_hair].atlas 
                                     + ' hair_' + hair_colours[current_hair_colour].id} 
                                     id={genders[current_gender].id + '_hair13'}>
                                 </div>

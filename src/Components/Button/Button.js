@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Button.css';
 
-const Button = ({ limbStyle, arrLength, label, clicker }) => {
+const Button = ({ styleId, arrLength, label, clicker }) => {
 	return (
-		<div className="prevNextButton" onClick={() => clicker(limbStyle, arrLength, label)}>
+		<div className="prevNextButton" onClick={() => clicker(styleId, arrLength, label)}>
 		{label === 'Prev'? "◀": "▶" }
 		</div>
 	);
