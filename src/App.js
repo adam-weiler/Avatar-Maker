@@ -4,7 +4,7 @@ import {
     all_races, genders, hair_colours, 
     male_beards, male_clothes, male_faces, male_features, male_gloves, male_hair, male_hands, male_headwear, 
     female_clothes, female_faces, female_features, female_gloves, female_hair, female_hands, female_headwear, 
-    AvatarWindow, Button, MinorButtons, MainButtons, VaultPerson, VaultSuit, 
+    AvatarWindow, Button, MinorButtons, MainButtons, MainSelections, VaultPerson, VaultSuit, 
     Logo
 } from './imports';
 
@@ -136,47 +136,48 @@ class App extends Component {
             <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
             <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} /> {/* Generates the div where a few of the buttons live. */}
 
+            <MainSelections currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
 
 
 
-            <div id="mainSelections">
-                <div className="displayRow">
-                    <div className="labelType">Shirt:</div>
-                    <div className="styleType">{clothes[this.state.current_shirt]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Pants:</div>
-                    <div className="styleType">{clothes[this.state.current_pants]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Hairstyle:</div>
-                    <div className="styleType">{hair[this.state.current_hair]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Hair Colour:</div>
-                    <div className="styleType">{hair_colours[this.state.current_hair_colour]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Beard:</div>
-                    <div className="styleType">{male_beards[this.state.current_beard]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Headwear:</div>
-                    <div className="styleType">{headwear[this.state.current_headwear]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Feature:</div>
-                    <div className="styleType">{feature[this.state.current_feature]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Face:</div>
-                    <div className="styleType">{face[this.state.current_face]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Gloves:</div>
-                    <div className="styleType">{male_gloves[this.state.current_gloves]['name']}</div>
-                </div>
-            </div>
+            {/*<div id="mainSelections">
+                            <div className="displayRow">
+                                <div className="labelType">Shirt:</div>
+                                <div className="styleType">{clothes[this.state.current_shirt]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Pants:</div>
+                                <div className="styleType">{clothes[this.state.current_pants]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Hairstyle:</div>
+                                <div className="styleType">{hair[this.state.current_hair]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Hair Colour:</div>
+                                <div className="styleType">{hair_colours[this.state.current_hair_colour]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Beard:</div>
+                                <div className="styleType">{male_beards[this.state.current_beard]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Headwear:</div>
+                                <div className="styleType">{headwear[this.state.current_headwear]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Feature:</div>
+                                <div className="styleType">{feature[this.state.current_feature]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Face:</div>
+                                <div className="styleType">{face[this.state.current_face]['name']}</div>
+                            </div>
+                            <div className="displayRow">
+                                <div className="labelType">Gloves:</div>
+                                <div className="styleType">{male_gloves[this.state.current_gloves]['name']}</div>
+                            </div>
+                        </div>*/ }
 
            	<div id="genderRaceAgeSelections">
                 <div className="displayRow">

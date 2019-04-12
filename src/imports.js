@@ -36,6 +36,7 @@ import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js'; //Generate
 import Button from './Components/Button/Button.js'; //Generates a "Previous" or "Next" button.
 import Logo from './Components/Logo/Logo.js'; //The div which displays the Logo.
 import MainButtons from './Components/MainButtons/MainButtons.js'; //The div where the majority of the Buttons live.
+import MainSelections from './Components/MainSelections/MainSelections.js'; //The div that shows the names for the majority of the Selections.
 import MinorButtons from './Components/MinorButtons/MinorButtons.js'; //The div where the Gender, Race, Age buttons live.
 import SegmentPiece from './Components/AvatarWindow/SegmentPiece/SegmentPiece.js'; //Generates a segment piece for the Vault Person or Suit.
 import VaultPerson from './Components/AvatarWindow/VaultPerson/VaultPerson.js';
@@ -117,6 +118,7 @@ export {
 	Button,
 	Logo,
 	MainButtons,
+	MainSelections,
 	MinorButtons,
 	SegmentPiece,
 	VaultSuit,
