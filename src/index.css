@@ -18,8 +18,8 @@ body {
   text-align: center;
   width: 800px;
   /*max-width: 1200px;*/
-  background-color: rgb(0, 0, 0, 0.9);
-  min-height: 1630px;
+  /*background-color: rgb(0, 0, 0, 0.9);*/
+  /*min-height: 1630px;*/
   padding: 15px 35px;
   color: #00ff2b;
   overflow: hidden;
@@ -36,8 +36,9 @@ body {
 #logo img {
   max-width: 300px;
   height:auto;
-  background-color: #FFF;
+ /*background: rgb(13,66,8, .8);*/
   padding: 25px;
+  transition: 0.5s;
 }
 
 #logo h1 {
@@ -53,6 +54,7 @@ body {
     sans-serif;
 	color: #00ff2b;
 text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #233326;
+transition: 0.5s;
 }
 
 #mainButtons, #genderRaceAgeButtons, #mainSelections {
@@ -65,19 +67,62 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 	margin: 25px;
 	padding: 16px 8px;
 	position: relative;
-	border: 3px #16ce15 solid;
+	/*border: #00ff2b solid;*/
+  /*border-right: 0px;
+  border-left: 0px;*/
 	/*background: rgb(3,27,1, .6);*/
 	background: rgb(13,66,8, .8);
 	color: #00ff2b;
 	float: right;
 }
 
+
+
+
+.mainTopSideBorders, .mainBottomSideBorders {
+  width: 360px;
+  height: 20px;
+}
+
+.minorTopSideBorders, .minorBottomSideBorders {
+  width: 290px;
+  height: 20px;
+}
+
+
+
+
+.mainTopSideBorders, .mainBottomSideBorders, .minorTopSideBorders, .minorBottomSideBorders {
+  margin: 0px;
+  padding: 0px;
+  /*background-color: rgba(200,50,50,.5);*/
+  position: absolute;
+  border: 3px #00ff2b solid;
+}
+
+.mainTopSideBorders, .minorTopSideBorders {
+  left: 0px;
+  top: 0px;
+  border-bottom: 0px;
+}
+
+
+
+.mainBottomSideBorders, .minorBottomSideBorders {
+  left: 0px;
+  bottom: 0px;
+  border-top: 0px;
+}
+
+
+
 #mainSelections {
 	margin: 10px 25px;
-		width: 350px;
+  min-width: 350px;
+		/*width: 350px;*/
 	padding: 16px 8px;
 	position: relative;
-	border: 3px #16ce15 solid;
+	/*border: 3px #16ce15 solid;*/
 	background: rgb(13,66,8, .8);
 	color: #00ff2b;
 	font-size: 20px;
@@ -85,24 +130,15 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 	float: right;
 }
 
-#genderRaceAgeButtons {
-  margin: 10px 25px;
-  width: 280px;
-  padding: 16px 8px;
-  position: relative;
-  border: 3px #16ce15 solid;
-  /*background: rgb(3,27,1, .6);*/
-  background: rgb(13,66,8, .8);
-  color: #00ff2b;
-  float: left;
-}
+
 
 #genderRaceAgeSelections {
 	  margin: 10px 25px;
-  width: 280px;
+  /*width: 280px;*/
+  min-width: 280px;
   padding: 16px 8px;
   position: relative;
-  border: 3px #16ce15 solid;
+  /*border: 3px #16ce15 solid;*/
   /*background: rgb(3,27,1, .6);*/
   background: rgb(13,66,8, .8);
   color: #00ff2b;
@@ -155,4 +191,119 @@ text-shadow: 0 0 5px #003308, 0 0 10px #003308, 0 0 15px #B2FFBF, 0 0 20px #2333
 	margin: 0 auto;
 	padding: 8px 10px;
 	/*border: 1px #16ce15 solid;*/
+}
+
+
+
+
+
+#avatarWindow {
+  margin: 25px;
+
+  position: relative;
+  width: 200px;
+  height: 350px;
+  
+  /*//left: 500px;*/
+  z-index: 60;
+  /*opacity: 1;*/
+  border: cyan 1px solid;
+  background: transparentize(#083d42, 0.2);
+  float: left;
+  
+  width: 300px;
+  text-align: center;
+  /*background: white;*/
+  height: 500px;
+
+
+}
+
+#falloutPerson {
+  position: relative;
+/*  width: 500px;
+  height: 500px;
+  left: -8px;
+*/  z-index: 50;
+  opacity: 1;
+  margin: 0 auto;
+  width: 175px;
+  height: 375px;
+    top: 50px;
+    border: 1px solid pink;
+    padding: 10px;
+    background-color: white;
+
+}
+
+#minorButtons {
+  margin: 10px 25px;
+  max-width: 280px;
+  padding: 16px 8px;
+  position: relative;
+  /*border: 3px #16ce15 solid;*/
+  /*background: rgb(3,27,1, .6);*/
+  background: rgb(13,66,8, .8);
+  color: #00ff2b;
+  float: left;
+}
+
+
+#mainSelections, #minorButtons, #genderRaceAgeSelections {
+  margin: 10px 25px;
+}
+
+
+ #mainButtons {
+margin: 25px 25px 10px 25px;
+  }
+
+
+
+
+@media  all and (max-width:850px) {
+  .App {
+    max-width: 80%;
+  }
+
+  #logo {
+    margin: 0px;
+  }
+
+  #logo img {
+  max-width: 280px;
+  padding: 0px;
+  transition: 0.5s;
+}
+
+#logo h1 {
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+  #avatarWindow, #mainButtons, #mainSelections, #minorButtons, #genderRaceAgeSelections {
+    margin: 20px auto;
+    float: none;
+    transition: 0.5s;
+  }
+
+  #mainButtons, #mainSelections, #minorButtons, #genderRaceAgeSelections {
+    min-width: 280px;
+    max-width: 80%;
+    transition: 0.5s;
+  }
+
+
+  .mainTopSideBorders, .mainBottomSideBorders, .minorTopSideBorders, .minorBottomSideBorders {
+    width: 98.5%;
+  }
+
+  .styleType {
+    font-size: 20px;
+    transition: 0.5s;
+  }
+
+  .App, #avatarWindow, #mainButtons {
+    transition: 0.5s;
+  }
 }

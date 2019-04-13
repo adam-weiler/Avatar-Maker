@@ -1,1 +1,1 @@
-	const modes = [1, 1, 1, 0, 0, 1, 1, 0, 0];
+const face = current_gender === 0 ? male_faces : female_faces;
