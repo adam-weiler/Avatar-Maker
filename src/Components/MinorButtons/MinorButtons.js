@@ -10,7 +10,8 @@ const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, hand
     const { current_gender, current_race } = currentState; //Declares all the values from state.
 
     return (
-        <div id="genderRaceAgeButtons">
+        <div id="minorButtons">
+            <div class="minorTopSideBorders"></div>
             <div className="buttonsRow">
                 <div className="leftCol genderText">Gender:</div>
                 <div className="rightCol">
@@ -22,14 +23,15 @@ const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, hand
             </div>
 
             <div className="buttonsRow">
-                <Button limbStyle="race" arrLength={all_races.length} label="Prev" clicker={handleOptionClick}/>
+                <Button styleId="race" arrLength={all_races.length} label="Prev" clicker={handleOptionClick}/>
                 <div className="prevNextType">Race {current_race + 1}</div>
-                <Button limbStyle="race" arrLength={all_races.length} label="Next" clicker={handleOptionClick}/>
+                <Button styleId="race" arrLength={all_races.length} label="Next" clicker={handleOptionClick}/>
             </div>
 
             <div className="buttonsRow">
                 <div className="btnRandom" onClick={() => handleRandomClick()}>Random <FontAwesomeIcon icon={faDice} /></div>
             </div>
+            <div class="minorBottomSideBorders"></div>
         </div>
     );
 } 
