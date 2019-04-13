@@ -41,6 +41,9 @@ const MainButtons = ({ currentState, handleOptionClick, handleModeToggle }) => {
 
 	return (
         <div id="mainButtons">
+        	<div class="mainTopSideBorders"></div>
+
+
         	<div className="buttonsRow">
                 <div className="leftCol genderText">{mode}:</div>
                 <div className="rightCol">
@@ -51,6 +54,8 @@ const MainButtons = ({ currentState, handleOptionClick, handleModeToggle }) => {
                 </div>
             </div>
             {mainButtons}
+
+            <div class="mainBottomSideBorders"></div>
         </div>
 	);
 }

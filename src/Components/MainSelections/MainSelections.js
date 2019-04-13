@@ -44,7 +44,9 @@ const MainSelections = ({ currentState, handleOptionClick, handleModeToggle }) =
 
 	return (
         <div id="mainSelections">
+        	<div class="mainTopSideBorders"></div>
             {mainSelections}
+            <div class="mainBottomSideBorders"></div>
         </div>
 	);
 }
