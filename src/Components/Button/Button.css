@@ -1,5 +1,5 @@
 .buttonsRow {
-	height: 80px;
+	height: 44px;
 	position: relative;
 	display: flex;
     align-items: center;
@@ -11,6 +11,7 @@
 	width: 190px;
 	float: left;
 	font-size: 28px;
+  transition: 0.5s font-size;
 }
 
 .displayRow {
@@ -19,6 +20,24 @@
 	display: flex;
     align-items: center;
 }
+
+
+.prevNextButton:hover, .btnRandom:hover {
+  color: #00d8ff;
+  transition: color .3s;
+}
+.prevNextButton:active, .btnRandom:active {
+  color: #FFF;
+  font-size: 30px;
+  transition: font-size color .3s;
+}
+
+.prevNextButton {
+  width: 80px;
+  font-size: 30px;
+}
+
+
 
 .labelType, .styleType {
 	
@@ -75,7 +94,7 @@
 	background-color: #2ecafb;
 }
 
-.basicSlider { /* Basic -  */
+.basicSlider { /* Basic - green */
 	background-color: #00ff2b;
 }
 
@@ -95,7 +114,7 @@ input:checked + .genderSlider { /* Female - baby pink. */
   background-color: #fc7fff;
 }
 
-input:checked + .basicSlider { /* Advanced -  */
+input:checked + .basicSlider { /* Advanced - red */
   background-color: #fb2e2e;
 }
 
@@ -117,3 +136,15 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+
+
+@media  all and (max-width:850px) {
+  .prevNextType {
+    font-size: 25px;
+    transition: 0.5s;
+  }
+
+
+  }

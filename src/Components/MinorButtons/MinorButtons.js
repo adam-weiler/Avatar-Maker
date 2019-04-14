@@ -16,7 +16,7 @@ const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, hand
                 <div className="leftCol genderText">Gender:</div>
                 <div className="rightCol">
                     <label class="switch">
-                        <input type="checkbox" />
+                        <input id="genderInput" type="checkbox" />
                         <span class="slider genderSlider round" onClick={() => handleGenderClick()}></span>
                     </label>
                 </div>
