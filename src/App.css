@@ -1,10 +1,21 @@
 body {
-  background-color: lightgray;
+  /*background-color: lightgray;*/
   /*background-image: url('./Images/Wiki-background.jpg');*/
-  background-image: url('./Images/atlas_2_day.jpeg');
-  background-repeat: repeat-x;
-  background-color: #151212;
+ 
+  background-color: #000;
+  background-image: linear-gradient(to bottom, #151212, #151212, #151212, #000);
+  /*background-image: linear-gradient(to bottom, #151212 65%, #000);*/
   cursor: url('./Cursors/default.png'), auto;
+  height: 1200px;
+    /*background:-moz-linear-gradient(bottom, red, blue) no-repeat orange;*/
+  /*background:-webkit-gradient(linear, left top, left bottom, from(red), to(blue)) no-repeat orange;*/
+  background-repeat: no-repeat;
+
+}
+
+.App {
+   background-image: url('./Images/atlas_2_day.jpeg');
+  background-repeat: repeat-x;
 }
 
 .text, .prevNextType, .labelType, .styleType, .genderText {

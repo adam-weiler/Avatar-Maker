@@ -11,10 +11,12 @@ body {
   text-align: center;
 }
 
-.App {
+
+
+#container {
   top: 2em;
   position: relative;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 30px auto;
   text-align: center;
   width: 800px;
   /*max-width: 1200px;*/
@@ -23,6 +25,10 @@ body {
   padding: 15px 35px;
   color: #00ff2b;
   overflow: hidden;
+
+
+
+
 }
 
 .atlas01, .atlas02, .atlas03, .atlas04, .atlas05, .atlas06, .atlas07, .atlas08, .atlas09, .atlas10, .atlas16, .atlas17, .atlas18, .atlas21 {
@@ -128,6 +134,7 @@ transition: 0.5s;
 	font-size: 20px;
 	right: 0px;
 	float: right;
+    margin: 10px 25px 70px 25px;
 }
 
 
@@ -165,20 +172,7 @@ transition: 0.5s;
 
 
 
-.prevNextButton:hover, .btnRandom:hover {
-	color: #00d8ff;
-	transition: color .3s;
-}
-.prevNextButton:active, .btnRandom:active {
-	color: #FFF;
-	font-size: 30px;
-	transition: font-size color .3s;
-}
 
-.prevNextButton {
-	width: 80px;
-	font-size: 35px;
-}
 
 .genderText, .btnRandom {
 	font-size: 30px;
@@ -249,7 +243,7 @@ transition: 0.5s;
 }
 
 
-#mainSelections, #minorButtons, #genderRaceAgeSelections {
+#minorButtons, #genderRaceAgeSelections {
   margin: 10px 25px;
 }
 
@@ -262,7 +256,7 @@ margin: 25px 25px 10px 25px;
 
 
 @media  all and (max-width:850px) {
-  .App {
+  #container {
     max-width: 80%;
   }
 
@@ -303,7 +297,7 @@ margin: 25px 25px 10px 25px;
     transition: 0.5s;
   }
 
-  .App, #avatarWindow, #mainButtons {
+  #container, #avatarWindow, #mainButtons {
     transition: 0.5s;
   }
 }

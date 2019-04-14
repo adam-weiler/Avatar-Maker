@@ -21,7 +21,7 @@ class App extends Component {
             current_hair_colour: 27, //Initially loads Blonde, 27.
             current_headwear: 0, //Initially loads no Headwear, 0.
             current_mode: 0, //Initially loads Basic mode, 0.
-            current_pants: 40, //Initally loads Vault Suit, 38
+            current_pants: 3, //Initally loads Vault Suit, 38
             current_race: 0, //Stores Skintone. Initially loads caucasian Skintone, 1.
             current_shirt: 1 //Initally loads Vault Suit, 38.
         }
@@ -71,6 +71,9 @@ class App extends Component {
     handleGenderClick() { //This method triggers when the user clicks on the "Gender" button.
         let ourGender = (this.state.current_gender === 0 ? 1 : 0); //If gender is male, switch to female. Otherwise, switch to male.
 
+
+
+
         this.setState({
             current_beard: 0,
             current_face: 0,
@@ -92,71 +95,84 @@ class App extends Component {
     		return Math.floor((Math.random() * maxVal) + 0);
     	}
 
+        let ourGender = getRandom(2);
+
+        if (ourGender === 0) { //If ourGender is Male.
+            document.getElementById("genderInput").checked = false; //Sets slider to blue.
+        } else { //Else ourGender is Female.
+            document.getElementById("genderInput").checked = true; //Sets slider to pink.
+        }
+
+        const clothes = ourGender === 0 ? male_clothes : female_clothes;
+        const face = ourGender === 0 ? male_faces : female_faces;
+        const feature = ourGender === 0 ? male_features : female_features;
+        const gloves = ourGender === 0 ? male_gloves : female_gloves;
+        const hair = ourGender === 0 ? male_hair : female_hair;
+        const headwear = ourGender === 0 ? male_headwear : female_headwear;
+
+     //    console.log(ourGender)
+
+        // var x = document.getElementById("genderInput").checked;
+        // console.log(x);
+
+        // document.getElementById("genderInput").checked = false;
+
     	this.setState({
             current_beard: getRandom(male_beards.length),
-            current_face: getRandom(male_faces.length),
-            current_feature: getRandom(male_features.length),
-            current_gender: 0, //Sets gender to male.. for now.
-            current_gloves: getRandom(male_gloves.length),
-            current_hair: getRandom(male_hair.length),
+            current_face: getRandom(face.length),
+            current_feature: getRandom(feature.length),
+            current_gender: ourGender, //Sets gender to male.. for now.
+            current_gloves: getRandom(gloves.length),
+            current_hair: getRandom(hair.length),
             current_hair_colour: getRandom(hair_colours.length),
-            current_headwear: getRandom(male_headwear.length),
-            current_pants: getRandom(male_clothes.length),
+            // current_headwear: getRandom(headwear.length),
+            current_pants: getRandom(clothes.length),
             current_race: getRandom(all_races.length),
-            current_shirt: getRandom(male_clothes.length)
+            current_shirt: getRandom(clothes.length)
         });
     }
 
-
     handleModeToggle() { //This method triggers when user clicks the Basic-Advanced toggle. 
         let ourMode = (this.state.current_mode === 0 ? 1 : 0); //If mode is basic, switch to advanced. Otherwise, switch to basic.
+
+        if (ourMode === 0) { //If ourGender is Basic.
+            document.getElementById("basicInput").checked = true; //Sets slider to red.
+        } else { //Else ourGender is Advanced.
+            document.getElementById("basicInput").checked = false; //Sets slider to green.
+        }
+
         this.setState({
             current_mode: ourMode
         });
-        console.log(ourMode);
     }
     
     render() {
 
-    const clothes = this.state.current_gender === 0 ? male_clothes : female_clothes;
-    const face = this.state.current_gender === 0 ? male_faces : female_faces;
-    const feature = this.state.current_gender === 0 ? male_features : female_features;
-    const gloves = this.state.current_gender === 0 ? male_gloves : female_gloves;
-    const hair = this.state.current_gender === 0 ? male_hair : female_hair;
-    const headwear = this.state.current_gender === 0 ? male_headwear : female_headwear;
+
 
     return (
         <div className="App">
-
+            {/*
             <div id="eGuy39"></div>
             <div id="eGirl3543"></div>
-
-            <Logo /> {/*The div which displays the Logo. */}
-            <AvatarWindow currentState={this.state} /> {/* Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.) */}
-            <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
-            <MainSelections currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
-            <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} /> {/* Generates the div where a few of the buttons live. */}
+            */}
 
 
-<MinorSelections currentState={this.state} />
-            
-{/*
-           	<div id="genderRaceAgeSelections">
-                <div class="minorTopSideBorders"></div>
-                <div className="displayRow">
-                    <div className="labelType">Gender:</div>
-                    <div className="styleType">{genders[this.state.current_gender]['name']}</div>
-                </div>
-                <div className="displayRow">
-                    <div className="labelType">Race:</div>
-                    <div className="styleType">{all_races[this.state.current_race]['name']}</div>
-                </div>
-                <div class="minorBottomSideBorders"></div>
+
+           
+
+            <div id="container">
+                <Logo /> {/*The div which displays the Logo. */}
+                <AvatarWindow currentState={this.state} /> {/* Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.) */}
+                <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
+                <MainSelections currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div that shows the names for most of the Selections. */}
+                <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} /> {/* The div where the Gender, Race, Age buttons live. */}
+                <MinorSelections currentState={this.state} /> {/* The div that shows the names for the Gender, Race, and Age Selections. */}
+                {/*
+                    <img id="iphoto" src={iphoto} alt="Hey!"/>
+                    <img id="guy35" src={Guy35} alt="Hey!"/>
+                */}
             </div>
-
-        <img id="iphoto" src={iphoto} alt="Hey!"/>
-
-        <img id="guy35" src={Guy35} alt="Hey!"/>*/}
       </div>
     );
   }
