@@ -213,3 +213,216 @@
 #outfit60_frontarm_lowerhalf {
   background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitC_y);
 }
+
+
+
+
+/* Outfit 61 - Armored vault suit - Male */
+#outfit61_backleg_upperhalf {
+  background-position: $leg_upperhalf_x ($backleg_y - $outfitE_y);
+}
+
+#outfit61_backleg_lowerhalf {
+  background-position: $leg_lowerhalf_x ($backleg_y - $outfitE_y);
+}
+
+#outfit61_backleg_foot {
+  background-position: $foot_x ($backleg_y - $outfitE_y);
+}
+
+#outfit61_frontleg_upperhalf {
+  background-position: $leg_upperhalf_x ($frontleg_y - $outfitE_y);
+}
+
+#outfit61_frontleg_lowerhalf {
+  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitE_y);
+}
+
+#outfit61_frontleg_foot {
+  background-position: $foot_x (($frontleg_y + 10) - $outfitE_y);
+}
+
+#outfit61_chest {
+  background-position: $chest_x ($chest_y - $outfitE_y);
+}
+
+#outfit61_crotch {
+  background-position: $crotch_x ($crotch_y - $outfitE_y);
+}
+
+#outfit61_backarm_lowerhalf {
+  background-position: $arm_lowerhalf_x ($backarm_y - $outfitE_y);
+}
+
+#outfit61_backarm_upperhalf {
+  background-position: $arm_upperhalf_x ($backarm_y - $outfitE_y);
+}
+
+#outfit61_frontarm_lowerhalf {
+  background-position: $arm_lowerhalf_x ($frontarm_y - $outfitE_y);
+}
+
+#outfit61_frontarm_upperhalf {
+  background-position: $arm_upperhalf_x ($frontarm_y - $outfitE_y);
+}
+
+
+
+/* Outfit 62 - Leather armor - Male */
+#outfit62_backleg_upperhalf {
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
+}
+
+#outfit62_backleg_lowerhalf {
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
+}
+
+#outfit62_backleg_foot {
+  background-position: ($foot_x - $outfit_BDFH_x) ($backleg_y - $outfitE_y);
+}
+
+#outfit62_frontleg_upperhalf {
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
+}
+
+#outfit62_frontleg_lowerhalf {
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitE_y);
+}
+
+#outfit62_frontleg_foot {
+  background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitE_y);
+}
+
+#outfit62_chest {
+  background-position: ($chest_x - $outfit_BDFH_x) ($chest_y - $outfitE_y);
+}
+
+#outfit62_crotch {
+  background-position: ($crotch_x - $outfit_BDFH_x) ($crotch_y - $outfitE_y);
+}
+
+#outfit62_backarm_lowerhalf {
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitE_y);
+}
+
+#outfit62_backarm_upperhalf {
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitE_y);
+}
+
+#outfit62_frontarm_lowerhalf {
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitE_y);
+}
+
+#outfit62_frontarm_upperhalf {
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitE_y);
+}
+
+
+
+/* Outfit 63 - Three Dog's outfit - male */
+#outfit63_backleg_upperhalf, #outfit52-B_backleg_upperhalf {
+  background-position: $leg_upperhalf_x ($backleg_y - $outfitG_y);
+}
+
+#outfit63_backleg_lowerhalf, #outfit52-B_backleg_lowerhalf {
+  background-position: $leg_lowerhalf_x ($backleg_y - $outfitG_y);
+}
+
+#outfit63_backleg_foot, #outfit52-B_backleg_foot {
+  background-position: $foot_x ($backleg_y - $outfitG_y);
+}
+
+#outfit63_frontleg_upperhalf, #outfit52-B_frontleg_upperhalf {
+  background-position: $leg_upperhalf_x ($frontleg_y - $outfitG_y);
+}
+
+#outfit63_frontleg_lowerhalf, #outfit52-B_frontleg_lowerhalf {
+  background-position: $leg_lowerhalf_x ($frontleg_y - $outfitG_y);
+}
+
+#outfit63_frontleg_foot, #outfit52-B_frontleg_foot {
+  background-position: $foot_x (($frontleg_y + 10) - $outfitG_y);
+}
+
+#outfit63_chest, #outfit52-B_chest {
+  background-position: $chest_x ($chest_y - $outfitG_y);
+}
+
+#outfit63_crotch, #outfit52-B_crotch {
+  background-position: $crotch_x ($crotch_y - $outfitG_y);
+}
+
+#outfit63_backarm_lowerhalf, #outfit52-B_backarm_lowerhalf {
+  background-position: $arm_lowerhalf_x ($backarm_y - $outfitG_y);
+}
+
+#outfit63_backarm_upperhalf, #outfit52-B_backarm_upperhalf {
+  background-position: $arm_upperhalf_x ($backarm_y - $outfitG_y);
+}
+
+#outfit63_frontarm_lowerhalf, #outfit52-B_frontarm_lowerhalf {
+  background-position: $arm_lowerhalf_x ($frontarm_y - $outfitG_y);
+}
+
+#outfit63_frontarm_upperhalf, #outfit52-B_frontarm_upperhalf {
+  background-position: $arm_upperhalf_x ($frontarm_y - $outfitG_y);
+}
+
+
+
+/* Outfit 64 - Treasure Hunter gear - male */
+#outfit64_backleg_upperhalf {
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
+}
+
+#outfit64_backleg_lowerhalf {
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
+}
+
+#outfit64_backleg_foot {
+  background-position: ($foot_x - $outfit_BDFH_x) ($backleg_y - $outfitG_y);
+}
+
+#outfit64_frontleg_upperhalf {
+  background-position: ($leg_upperhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
+}
+
+#outfit64_frontleg_lowerhalf {
+  background-position: ($leg_lowerhalf_x - $outfit_BDFH_x) ($frontleg_y - $outfitG_y);
+}
+
+#outfit64_frontleg_foot {
+  background-position: ($foot_x - $outfit_BDFH_x) (($frontleg_y + 10) - $outfitG_y);
+}
+
+#outfit64_backhem {
+  background-position: ($back_hem_x - $outfit_BDFH_x - 10) (10 - $outfitG_y);
+}
+
+#outfit64_fronthem {
+  background-position: ($front_hem_x - $outfit_BDFH_x) (5 - $outfitG_y);
+}
+
+#outfit64_chest {
+  background-position: ($chest_x - $outfit_BDFH_x) ($chest_y - $outfitG_y);
+}
+
+#outfit64_crotch {
+  background-position: ($crotch_x - $outfit_BDFH_x) ($crotch_y - $outfitG_y);
+}
+
+#outfit64_backarm_lowerhalf {
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitG_y);
+}
+
+#outfit64_backarm_upperhalf {
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($backarm_y - $outfitG_y);
+}
+
+#outfit64_frontarm_lowerhalf {
+  background-position: ($arm_lowerhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitG_y);
+}
+
+#outfit64_frontarm_upperhalf {
+  background-position: ($arm_upperhalf_x - $outfit_BDFH_x) ($frontarm_y - $outfitG_y);
+}
