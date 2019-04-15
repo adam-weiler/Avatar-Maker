@@ -69,61 +69,57 @@ export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name,
     atlas: 'atlas10',
     name: 'BoS uniform'
   },
-  // {
-  //   id: 'outfit72',
-  //   atlas: 'atlas10',
-  //   name: 'Advanced BoS uniform'
-  // }
 
 
 
-  // ,
-  // {
-  //   id: 'outfit73',
-  //   atlas: 'atlas11',
-  //   name: 'Agent provocateur',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit74',
-  //   atlas: 'atlas11',
-  //   name: 'Elf outfit',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit75',
-  //   atlas: 'atlas11',
-  //   name: 'Waitress uniform',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit76',
-  //   atlas: 'atlas11',
-  //   name: 'Movie fan outfit',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit77',
-  //   atlas: 'atlas11',
-  //   name: 'Soda fountain dress',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit78',
-  //   atlas: 'atlas11',
-  //   name: 'Swing dress',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit79',
-  //   atlas: 'atlas11',
-  //   name: 'Country girl'
-  // },
-  // {
-  //   id: 'outfit80',
-  //   atlas: 'atlas11',
-  //   name: 'Motorcyle jacket'
-  // }
+
+  
+  {
+    id: 'outfit73',
+    atlas: 'atlas11',
+    name: 'Agent provocateur',
+    skirt: 1
+  },
+  {
+    id: 'outfit74',
+    atlas: 'atlas11',
+    name: 'Elf outfit',
+    skirt: 1
+  },
+  {
+    id: 'outfit75',
+    atlas: 'atlas11',
+    name: 'Waitress uniform',
+    skirt: 1
+  },
+  {
+    id: 'outfit76',
+    atlas: 'atlas11',
+    name: 'Movie fan outfit',
+    skirt: 1
+  },
+  {
+    id: 'outfit77',
+    atlas: 'atlas11',
+    name: 'Soda fountain dress',
+    skirt: 1
+  },
+  {
+    id: 'outfit78',
+    atlas: 'atlas11',
+    name: 'Swing dress',
+    skirt: 1
+  },
+  {
+    id: 'outfit79',
+    atlas: 'atlas11',
+    name: 'Country girl'
+  },
+  {
+    id: 'outfit80',
+    atlas: 'atlas11',
+    name: 'Motorcycle jacket'
+  }
 
 
   // ,
@@ -309,6 +305,12 @@ export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name,
   //   id: 'outfit112',
   //   atlas: 'atlas15',
   //   name: 'Initiate robe',
+  //   hem: 1
+  // },
+  // {
+  //   id: 'outfit113',
+  //   atlas: 'atlas16',
+  //   name: 'Leather armor',
   //   hem: 1
   // }
 ]

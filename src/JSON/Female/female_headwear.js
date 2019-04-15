@@ -148,4 +148,12 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
     name: 'Swimcap and goggles', /* Swimsuit outfit */
     disable_hair: 1
   },
+  {
+    id: 'headwear23',
+    atlas: 'atlas17',
+    name: 'Skeleton mask', /* Skeleton costume */
+    disable_hair: 1,
+    disable_beard: 1,
+    disable_feature: 1
+  },
 ]
