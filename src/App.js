@@ -15,15 +15,15 @@ class App extends Component {
             current_beard: 0, //Initially loads no Beard, 0.
             current_face: 0, //Initially loads Happy, 0.
             current_feature: 0, //Initially loads no Feature, 0.
-            current_gender: 0, //Initially loads male Vault-Boy, 0.
+            current_gender: 1, //Initially loads male Vault-Boy, 0.
             current_gloves: 0, //Initially loads no Gloves, 0.
             current_hair: 0, //Initially loads Tunnel Snake Hairstyle, 0.
             current_hair_colour: 27, //Initially loads Blonde, 27.
             current_headwear: 0, //Initially loads no Headwear, 0.
-            current_mode: 0, //Initially loads Basic mode, 0.
-            current_pants: 3, //Initally loads Vault Suit, 38
+            current_mode: 1, //Initially loads Basic mode, 0.
+            current_pants: 10, //Initally loads Vault Suit, 38
             current_race: 0, //Stores Skintone. Initially loads caucasian Skintone, 1.
-            current_shirt: 1 //Initally loads Vault Suit, 38.
+            current_shirt: 10 //Initally loads Vault Suit, 38.
         }
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
         this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selection button.

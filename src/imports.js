@@ -35,8 +35,8 @@ import { female_headwear } from './JSON/Female/female_headwear'; //Contains data
 import AvatarWindow from './Components/AvatarWindow/AvatarWindow.js'; //Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.)
 import Button from './Components/Button/Button.js'; //Generates a "Previous" or "Next" button.
 import Logo from './Components/Logo/Logo.js'; //The div which displays the Logo.
-import MainButtons from './Components/MainButtons/MainButtons.js'; //The div where the majority of the Buttons live.
-import MainSelections from './Components/MainSelections/MainSelections.js'; //The div that shows the names for the majority of the Selections.
+import MainButtons from './Components/MainButtons/MainButtons.js'; //Generates the div where most of the buttons live.
+import MainSelections from './Components/MainSelections/MainSelections.js'; //Generates the div that shows the names for most of the Selections.
 import MinorButtons from './Components/MinorButtons/MinorButtons.js'; //The div where the Gender, Race, Age buttons live.
 import MinorSelections from './Components/MinorSelections/MinorSelections.js'; //The div that shows the names for the Gender, Race, and Age Selections.
 import SegmentPiece from './Components/AvatarWindow/SegmentPiece/SegmentPiece.js'; //Generates a segment piece for the Vault Person or Suit.
@@ -64,10 +64,11 @@ import './SASS/Atlas05.scss'; //Outfits for Vault Boy.
 import './SASS/Atlas06.scss'; //Outfits for Vault Boy.
 import './SASS/Atlas07.scss'; //Outfits for Vault Boy.
 import './SASS/Atlas08.scss'; //Outfits for Vault Boy.
-import './SASS/Atlas09.scss'; //Outfits and Skintone for Vault Girl. Outfits for Vault Boy.
-import './SASS/Atlas10.scss'; //Outfits for Vault Girl.
 
-//import './SASS/Atlas11.scss'; //Outfits for Vault Girl.
+import './SASS/Atlas09.scss'; //Outfits and Skintone for Vault Girl. Outfits for Vault Boy.
+
+import './SASS/Atlas10.scss'; //Outfits for Vault Girl.
+import './SASS/Atlas11.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas12.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas13.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas14.scss'; //Outfits for Vault Girl.
