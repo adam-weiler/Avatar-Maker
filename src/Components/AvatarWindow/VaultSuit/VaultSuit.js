@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { 
-    all_races, genders, hair_colours, 
-    male_beards, male_clothes, male_faces, male_features, male_gloves, male_hair, male_hands, male_headwear, 
-    female_clothes, female_faces, female_features, female_gloves, female_hair, female_hands, female_headwear, 
+    genders,
+    male_clothes, male_gloves, male_headwear, 
+    female_clothes, female_gloves, female_headwear, 
     SegmentPiece
 } from '../../../imports';
 

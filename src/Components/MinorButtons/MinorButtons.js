@@ -2,12 +2,12 @@ import React from 'react';
 
 import { 
     FontAwesomeIcon, faDice, 
-    all_races, genders, 
+    all_races,
     Button
 } from '../../imports';
 
 const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, handleRandomClick }) => {
-    const { current_gender, current_race } = currentState; //Declares all the values from state.
+    const { current_race } = currentState; //Declares all the values from state.
 
     return (
         <div id="minorButtons">
