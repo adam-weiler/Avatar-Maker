@@ -122,51 +122,51 @@ export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name,
   }
 
 
-  // ,
-  // {
-  //   id: 'outfit81',
-  //   atlas: 'atlas12',
-  //   name: 'Wasteland gear'
-  // },
-  // {
-  //   id: 'outfit82',
-  //   atlas: 'atlas12',
-  //   name: 'Institute jumper'
-  // },
-  // {
-  //   id: 'outfit83',
-  //   atlas: 'atlas12',
-  //   name: 'Ghost costume',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit84',
-  //   atlas: 'atlas12',
-  //   name: 'Handyman jumpsuit'
-  // },
-  // {
-  //   id: 'outfit85',
-  //   atlas: 'atlas12',
-  //   name: 'Flight suit'
-  // },
-  // {
-  //   id: 'outfit86',
-  //   atlas: 'atlas12',
-  //   name: '???',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit87',
-  //   atlas: 'atlas12',
-  //   name: 'Republic robes',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit88',
-  //   atlas: 'atlas12',
-  //   name: 'Radiation suit',
-  //   hem: 1
-  // }
+  ,
+  {
+    id: 'outfit81',
+    atlas: 'atlas12',
+    name: 'Wasteland gear'
+  },
+  {
+    id: 'outfit82',
+    atlas: 'atlas12',
+    name: 'Institute jumper'
+  },
+  {
+    id: 'outfit83',
+    atlas: 'atlas12',
+    name: 'Ghost costume',
+    skirt: 1
+  },
+  {
+    id: 'outfit84',
+    atlas: 'atlas12',
+    name: 'Handyman jumpsuit'
+  },
+  {
+    id: 'outfit85',
+    atlas: 'atlas12',
+    name: 'Flight suit'
+  },
+  {
+    id: 'outfit86',
+    atlas: 'atlas12',
+    name: 'Formal wear',
+    skirt: 1
+  },
+  {
+    id: 'outfit87',
+    atlas: 'atlas12',
+    name: 'Republic robes',
+    skirt: 1
+  },
+  {
+    id: 'outfit88',
+    atlas: 'atlas12',
+    name: 'Radiation suit',
+    hem: 1
+  }
 
 
 
