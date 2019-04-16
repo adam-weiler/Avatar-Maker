@@ -69,7 +69,7 @@ import './SASS/Atlas09.scss'; //Outfits and Skintone for Vault Girl. Outfits for
 
 import './SASS/Atlas10.scss'; //Outfits for Vault Girl.
 import './SASS/Atlas11.scss'; //Outfits for Vault Girl.
-//import './SASS/Atlas12.scss'; //Outfits for Vault Girl.
+import './SASS/Atlas12.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas13.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas14.scss'; //Outfits for Vault Girl.
 //import './SASS/Atlas15.scss'; //Outfits for Vault Girl.
