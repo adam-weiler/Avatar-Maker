@@ -39,6 +39,14 @@
   height: 0px;
 }
 
+#vbs_backarm_glovex { //???
+  background-position: -10px -100px;
+}
+
+#vbs_frontarm_glovex { //??
+ background-position: -5px -160px;
+}
+
 
 #vbs_backarm_glove1 {        /* Closed, Male, Gloves */
 background-position: -75px -95px;
@@ -58,11 +66,11 @@ background-position: -75px -95px;
   background-position: -145px -200px
 }
 
-      #vg_back_handzz { /* Fingerless Gloves? Male? */
+      #vbs_backarm_glovey { /* Fingerless Gloves? Male? */
         background-position: -10px -225px;
       }
 
-      #vg_front_handzz { /* Fingerless Gloves? Male? */
+      #vbs_frontarm_glovey { /* Fingerless Gloves? Male? */
        background-position: -5px -285px;
       }
 
@@ -179,59 +187,51 @@ background-position: -75px -95px;
 
 
 /* VaultGirl female hands and gloves. */
-#vgs_backarm_glove1 { /* Closed, Female, Gloves */
+#vgs_backarm_glove1 { //BoS uniform, Advanced BoS uniform, Expert BoS uniform. Closed gloves.
   background-position: -5px -40px;
 }
 
-#vgs_frontarm_glove1 { /* Closed, Female, Gloves */
+#vgs_frontarm_glove1 { //BoS uniform, Advanced BoS uniform, Expert BoS uniform. Closed gloves.
   background-position: -75px -40px;
 }
 
-#vgs_backarm_glove2 { /* Metal armor. Closed gloves. */
+#vgs_backarm_glove2 { //Metal armor. Closed gloves.
   background-position: -155px -25px;
 }
 
-#vgs_frontarm_glove2 { /* Metal armor. Closed gloves. */
+#vgs_frontarm_glove2 { //Metal armor. Closed gloves.
   background-position: -225px -20px;
 }
 
-#vgs_back_hand3 { /* Open, Female, Gloves */
+#vgs_backarm_glove3 { //Minuteman uniform, Radiation suit, Wasteland gear. Open gloves.
   background-position: -300px -15px;
 }
 
-#vgs_frontarm_glove3 { /* Open, Female, Gloves */
+#vgs_frontarm_glove3 { //Minuteman uniform, Radiation suit, Wasteland gear. Open gloves.
   background-position: -370px -15px;
 }
 
-#vgs_backarm_glove4 { /* Fingerless Gloves? Female? */
-  background-position: -10px -100px;
-}
-
-#vgs_frontarm_glove4 { /* Fingerless Gloves? Female? */
- background-position: -5px -160px;
-}
-
-#vgs_backarm_glove6 { /* Open, Female, Gloves */
+#vgs_backarm_glove6 { //BoS uniform, Advanced BoS uniform, Expert BoS uniform. Open gloves.
   background-position: -155px -80px;
 }
 
-#vgs_frontarm_glove6 { /* Open, Female, Gloves */
+#vgs_frontarm_glove6 { //BoS uniform, Advanced BoS uniform, Expert BoS uniform. Open gloves.
   background-position: -225px -85px;
 }
 
-#vgs_backarm_glove7 { /* Closed, Female, Gloves */
+#vgs_backarm_glove7 { //Minuteman uniform, Radiation suit, Wasteland gear. Closed gloves.
   background-position: -300px -70px;
 }
 
-#vgs_frontarm_glove7 { /* Closed, Female, Gloves */
+#vgs_frontarm_glove7 { //Minuteman uniform, Radiation suit, Wasteland gear. Closed gloves.
   background-position: -370px -70px;
 }
 
-#vgs_backarm_glove9 { /* T-51 power armor. Open gloves. */
+#vgs_backarm_glove9 { //T-60 power armor, X-01 Mk VI power armor, T-45 power armor, T-51 power armor. Open gloves.
   background-position: -300px -125px;
 }
 
-#vgs_frontarm_glove9 { /* T-51 power armor. Open gloves. */
+#vgs_frontarm_glove9 { //T-60 power armor, X-01 Mk VI power armor, T-45 power armor, T-51 power armor. Open gloves.
   background-position: -370px -125px;
 }
 
@@ -243,11 +243,11 @@ background-position: -75px -95px;
   background-position: -505px -125px;
 }
 
-#vgs_backarm_glove11 { /* T-51 power armor. Closed gloves. */
+#vgs_backarm_glove11 { //T-60 power armor, X-01 Mk VI power armor, T-45 power armor, T-51 power armor. Closed gloves.
   background-position: -220px -175px;
 }
 
-#vgs_frontarm_glove11 { /* T-51 power armor. Closed gloves. */
+#vgs_frontarm_glove11 { //T-60 power armor, X-01 Mk VI power armor, T-45 power armor, T-51 power armor. Closed gloves.
   background-position: -285px -180px;
 }
 
@@ -260,59 +260,59 @@ background-position: -75px -95px;
   background-position: -420px -180px;
 }
 
-#vgs_backarm_glove16 { /* Piper's outfit. Open gloves. */
+#vgs_backarm_glove16 { //Piper's outfit. Open gloves.
   background-position: -215px -230px;
 }
 
-#vgs_frontarm_glove16 { /* Piper's outfit. Open gloves. */
+#vgs_frontarm_glove16 { //Piper's outfit. Open gloves.
   background-position: -285px -235px;
 }
 
-#vgs_backarm_glove17 { /* Female Boxing Gloves */
+#vgs_backarm_glove17 { //Boxing Gloves.
   background-position: -350px -225px;
 }
 
-#vgs_frontarm_glove17 { /* Female Boxing Gloves */
+#vgs_frontarm_glove17 { //Boxing Gloves.
   background-position: -420px -225px;
 }
 
-#vgs_backarm_glove18 { /* Piper's outfit. Closed gloves. */
+#vgs_backarm_glove18 { //Piper's outfit. Closed gloves.
   background-position: -215px -285px;
 }
 
-#vgs_frontarm_glove18 { /* Piper's outfit. Closed gloves. */
+#vgs_frontarm_glove18 { //Piper's outfit. Closed gloves.
   background-position: -285px -285px;
 }
 
-#vgs_backarm_glove19 { /* Female Baseball glove */
+#vgs_backarm_glove19 { //Baseball Gloves.
   background-position: -350px -275px;
 }
 
-#vgs_frontarm_glove19 { /* Female Baseball glove */
+#vgs_frontarm_glove19 { //Baseball Gloves.
   background-position: -420px -285px;
 }
 
-#vgs_backarm_glove23 { /* Open lady skeleton gloves. */
+#vgs_backarm_glove23 { //Skeleton costume. Open gloves.
   background-position: -220px -345px;
 }
 
-#vgs_frontarm_glove23 { /* Open lady skeleton gloves. */
+#vgs_frontarm_glove23 { //Skeleton costume. Open gloves.
   background-position: -290px -350px;
 }
 
-#vgs_backarm_glove24 { /* Closed lady skeleton gloves. */
+#vgs_backarm_glove24 { //Skeleton costume. Closed gloves.
   background-position: -220px -405px;
 }
 
-#vgs_frontarm_glove24 { /* Closed lady skeleton gloves. */
+#vgs_frontarm_glove24 { //Skeleton costume. Closed gloves.
   background-position: -290px -405px;
 }
 
-#vgs_backarm_glove25 { /* Metal armor. Open gloves. */
+#vgs_backarm_glove25 { //Metal armor. Open gloves.
   background-position: -220px -460px;
 }
 
-#vgs_frontarm_glove25 { /* Metal armor. Open gloves. */
+#vgs_frontarm_glove25 { //Metal armor. Open gloves.
   background-position: -290px -460px;
 }
 
