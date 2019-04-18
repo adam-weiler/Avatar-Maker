@@ -78,7 +78,7 @@ const VaultSuit = ({ currentState }) => {
                 <SegmentPiece segClass={gender + 's_backarm_upperhalf'} atlas={clothes[current_shirt].atlas} segId={clothes[current_shirt].id + "_backarm_upperhalf"} />
                 {(() => {
                     if (current_gloves > 0) { //Checks if there is any gloves selected. Ifso, returns a div for the back-arm glove.
-                        return <SegmentPiece segClass={gender + 's_backarm_glove'} atlas={gloves[current_gloves].atlas} segId={gender + 's_backarm_' + gloves[current_gloves].id} />
+                        return <SegmentPiece segClass={gender + 's_backarm_glove'} atlas='atlas18' segId={gender + 's_backarm_' + gloves[current_gloves].id} />
                     } //Else, there is no back-arm glove div.
                 })()}
             </div>

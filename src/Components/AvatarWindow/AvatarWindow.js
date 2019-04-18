@@ -9,7 +9,7 @@ const AvatarWindow = ({ currentState }) => {
         <div id="avatarWindow">
             <div id="falloutPerson">
                 <VaultSuit currentState={currentState} />
-                <VaultPerson currentState={currentState} />
+                <VaultPerson currentState={currentState} />{/* */}
             </div>
         </div>
     );
