@@ -1,444 +1,454 @@
 @import 'mixins';
 
-/* Outfit 81 - Wasteland gear */
-#outfit81_backarm_upperhalf {
+/* Outfit 89 - Pilgrim outfit */
+#outfit89_backarm_upperhalf {
   background-position: 0px 0px;
 }
 
-#outfit81_backleg_foot {
+#outfit89_backleg_foot {
   background-position: $vg_backleg_foot_x 0px;
 }
 
-#outfit81_frontleg_foot {
+#outfit89_frontleg_foot {
   background-position: $vg_frontleg_foot_x 0px;
 }
 
-#outfit81_backleg_upperhalf {
+#outfit89_backleg_upperhalf {
   background-position: $vg_backleg_upperhalf_x 0px;
 }
 
-#outfit81_backleg_lowerhalf {
+#outfit89_backleg_lowerhalf {
     background-position: $vg_leg_lowerhalf_x 0px;
 }
 
-#outfit81_frontarm_upperhalf {
+#outfit89_frontarm_upperhalf {
   background-position: 0px $vg_frontarm_upperhalf_y;
 }
 
-#outfit81_frontleg_upperhalf {
+#outfit89_frontleg_upperhalf { /* This one doesn't look right. */
   background-position: $vg_frontleg_upperhalf_x $vg_secondrow_y;
 }
 
-#outfit81_frontleg_lowerhalf {
+#outfit89_frontleg_lowerhalf {
   background-position: $vg_leg_lowerhalf_x $vg_secondrow_y;
 }
 
-#outfit81_chest {
+#outfit89_chest {
   background-position: $vg_chest_x $vg_chest_y;
 }
 
-// #outfit81_crotch {
+// #outfit89_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitC_y);
 // }
 
-#outfit81_backarm_lowerhalf {
+#outfit89_backarm_lowerhalf {
   background-position: $vg_backarm_lowerhalf_x $vg_backarm_lowerhalf_y;
 }
 
-#outfit81_frontarm_lowerhalf {
+#outfit89_frontarm_lowerhalf {
   background-position: $vg_frontarm_lowerhalf_x $vg_frontarm_lowerhalf_y;
 }
 
+#outfit89_skirt {
+  background-position: $vg_skirt_x $vg_skirt_y;
+}
 
 
-/* Outfit 82 - Institute jumper */
-#outfit82_backarm_upperhalf {
+
+
+/* Outfit 90 - Piper's outfit */
+#outfit90_backarm_upperhalf {
   background-position: (0px - $outfit_BDFH_x) 0px;
 }
 
-#outfit82_backleg_foot {
+#outfit90_backleg_foot {
   background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) 0px;
 }
 
-#outfit82_frontleg_foot {
+#outfit90_frontleg_foot {
   background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) 0px;
 }
 
-#outfit82_backleg_upperhalf {
+#outfit90_backhem {
+  background-position: ($vg_back_hem_x - $outfit_BDFH_x - 10) -125px;
+  width: 70px;
+  left: 45px;
+  transform: scaleY(-1) rotate(188deg);
+}
+
+#outfit90_fronthem {
+  background-position: ($vg_front_hem_x - $outfit_BDFH_x) -130px;
+  left: -4px;
+  transform: scaleY(-1) rotate(172deg);
+}
+
+#outfit90_backleg_upperhalf {
   background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) 0px;
 }
 
-#outfit82_backleg_lowerhalf {
+#outfit90_backleg_lowerhalf {
     background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) 0px;
 }
 
-#outfit82_frontarm_upperhalf {
+#outfit90_frontarm_upperhalf {
   background-position: (0px - $outfit_BDFH_x) $vg_frontarm_upperhalf_y;
 }
 
-#outfit82_frontleg_upperhalf {
+#outfit90_frontleg_upperhalf {
   background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) $vg_secondrow_y;
 }
 
-#outfit82_frontleg_lowerhalf {
+#outfit90_frontleg_lowerhalf {
   background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) $vg_secondrow_y;
 }
 
-#outfit82_chest {
-  background-position: ($vg_chest_x - $outfit_BDFH_x) $vg_chest_y;
+#outfit90_chest {
+  background-position: ($vg_chest_x - $outfit_BDFH_x + 2) ($vg_chest_y + 1);
 }
 
-// #outfit82_crotch {
+// #outfit90_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitC_y);
 // }
 
-#outfit82_backarm_lowerhalf {
+#outfit90_backarm_lowerhalf {
   background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) $vg_backarm_lowerhalf_y;
 }
 
-#outfit82_frontarm_lowerhalf {
+#outfit90_frontarm_lowerhalf {
   background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) $vg_frontarm_lowerhalf_y;
 }
 
 
 
 
-/* Outfit 83 - Ghost costume */
-#outfit83_backarm_upperhalf {
+/* Outfit 91 - Military fatigues */
+#outfit91_backarm_upperhalf {
   background-position: -2px (-$outfitC_y - 1);
 }
 
-#outfit83_backleg_foot {
+#outfit91_backleg_foot {
   background-position: $vg_backleg_foot_x (-$outfitC_y);
 }
 
-#outfit83_frontleg_foot {
+#outfit91_frontleg_foot {
   background-position: $vg_frontleg_foot_x (-$outfitC_y);
 }
 
-#outfit83_backleg_upperhalf {
+#outfit91_backleg_upperhalf {
   background-position: -266px (-$outfitC_y - 2);
 }
 
-#outfit83_backleg_lowerhalf {
+#outfit91_backleg_lowerhalf {
     background-position: $vg_leg_lowerhalf_x (-$outfitC_y - 1);
 }
 
-#outfit83_frontarm_upperhalf {
+#outfit91_frontarm_upperhalf {
   background-position: 0px ($vg_frontarm_upperhalf_y - $outfitC_y - 1);
 }
 
-#outfit83_frontleg_upperhalf {
+#outfit91_frontleg_upperhalf {
   background-position: -276px ($vg_secondrow_y - $outfitC_y - 2);
 }
 
-#outfit83_frontleg_lowerhalf {
+#outfit91_frontleg_lowerhalf {
   background-position: -399px ($vg_secondrow_y - $outfitC_y - 2);
 }
 
-#outfit83_chest {
+#outfit91_chest {
   background-position: $vg_chest_x ($vg_chest_y - $outfitC_y);
 }
 
-// #outfit83_crotch {
+// #outfit91_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitC_y);
 // }
 
-#outfit83_backarm_lowerhalf {
+#outfit91_backarm_lowerhalf {
   background-position: $vg_backarm_lowerhalf_x ($vg_backarm_lowerhalf_y - $outfitC_y);
 }
 
-#outfit83_frontarm_lowerhalf {
+#outfit91_frontarm_lowerhalf {
   background-position: $vg_frontarm_lowerhalf_x ($vg_frontarm_lowerhalf_y - $outfitC_y);
 }
 
-#outfit83_skirt {
-  background-position: $vg_skirt_x ($vg_skirt_y - $outfitC_y);
-}
 
 
 
-/* Outfit 84 - Handyman jumpsuit */
-#outfit84_backarm_upperhalf {
+
+/* Outfit 92 - Nightwear */
+#outfit92_backarm_upperhalf {
   background-position: (0px - $outfit_BDFH_x) (-$outfitC_y);
 }
 
-#outfit84_backleg_foot {
+#outfit92_backleg_foot {
   background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) (-$outfitC_y);
 }
 
-#outfit84_frontleg_foot {
+#outfit92_frontleg_foot {
   background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) (-$outfitC_y);
 }
 
-#outfit84_backleg_upperhalf {
+#outfit92_backleg_upperhalf {
   background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) (-$outfitC_y);
 }
 
-#outfit84_backleg_lowerhalf {
+#outfit92_backleg_lowerhalf {
     background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) (-$outfitC_y);
 }
 
-#outfit84_frontarm_upperhalf {
+#outfit92_frontarm_upperhalf {
   background-position: (0px - $outfit_BDFH_x) ($vg_frontarm_upperhalf_y - $outfitC_y);
 }
 
-#outfit84_frontleg_upperhalf {
+#outfit92_frontleg_upperhalf {
   background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitC_y);
 }
 
-#outfit84_frontleg_lowerhalf {
+#outfit92_frontleg_lowerhalf {
   background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitC_y);
 }
 
-#outfit84_chest {
+#outfit92_chest {
   background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitC_y);
 }
 
-// #outfit84_crotch {
+// #outfit92_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitC_y);
 // }
 
-#outfit84_backarm_lowerhalf {
+#outfit92_backarm_lowerhalf {
   background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) ($vg_backarm_lowerhalf_y - $outfitC_y);
 }
 
-#outfit84_frontarm_lowerhalf {
+#outfit92_frontarm_lowerhalf {
   background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitC_y);
 }
 
 
 
-/* Outfit 85 - Expert BoS uniform */
-#outfit85_backarm_upperhalf {
-  background-position: -2px (-$outfitE_y - 1);
+
+
+/* Outfit 93 - Lifeguard outfit */
+#outfit93_backarm_upperhalf {
+  width: 0px;
+  height: 0px;
 }
 
-#outfit85_backleg_foot {
-  background-position: $vg_backleg_foot_x (-$outfitE_y);
+#outfit93_backleg_foot {
+  width: 0px;
+  height: 0px;
 }
 
-#outfit85_frontleg_foot {
-  background-position: $vg_frontleg_foot_x (-$outfitE_y);
+#outfit93_frontleg_foot {
+  width: 0px;
+  height: 0px;
 }
 
-#outfit85_backleg_upperhalf {
+#outfit93_backleg_upperhalf {
   background-position: -266px (-$outfitE_y - 2);
 }
 
-#outfit85_backleg_lowerhalf {
-    background-position: $vg_leg_lowerhalf_x (-$outfitE_y - 1);
+#outfit93_backleg_lowerhalf {
+    width: 0px;
+  height: 0px;
 }
 
-#outfit85_frontarm_upperhalf {
-  background-position: 0px ($vg_frontarm_upperhalf_y - $outfitE_y - 1);
+#outfit93_frontarm_upperhalf {
+  width: 0px;
+  height: 0px;
 }
 
-#outfit85_frontleg_upperhalf {
+#outfit93_frontleg_upperhalf {
   background-position: -276px ($vg_secondrow_y - $outfitE_y - 2);
 }
 
-#outfit85_frontleg_lowerhalf {
-  background-position: -399px ($vg_secondrow_y - $outfitE_y - 2);
+#outfit93_frontleg_lowerhalf {
+  width: 0px;
+  height: 0px;
 }
 
-#outfit85_chest {
+#outfit93_chest {
   background-position: $vg_chest_x ($vg_chest_y - $outfitE_y);
 }
 
-// #outfit85_crotch {
+// #outfit93_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitE_y);
 // }
 
-#outfit85_backarm_lowerhalf {
-  background-position: $vg_backarm_lowerhalf_x ($vg_backarm_lowerhalf_y - $outfitE_y);
-}
-
-#outfit85_frontarm_lowerhalf {
-  background-position: $vg_frontarm_lowerhalf_x ($vg_frontarm_lowerhalf_y - $outfitE_y);
-}
-
-
-
-
-/* Outfit 86 - Formal wear */
-#outfit86_backarm_upperhalf {
+#outfit93_backarm_lowerhalf {
   width: 0px;
   height: 0px;
 }
 
-#outfit86_backleg_foot {
+#outfit93_frontarm_lowerhalf {
+  width: 0px;
+  height: 0px;
+}
+
+
+
+
+/* Outfit 94 - Metal armor */
+#outfit94_backarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) (-$outfitE_y);
+}
+
+#outfit94_backleg_foot {
   background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) (-$outfitE_y);
 }
 
-#outfit86_frontleg_foot {
+#outfit94_frontleg_foot {
   background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) (-$outfitE_y);
 }
 
-#outfit86_backleg_upperhalf {
-    width: 0px;
-  height: 0px;
+#outfit94_backleg_upperhalf {
+  background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) (-$outfitE_y);
 }
 
-#outfit86_backleg_lowerhalf {
-      width: 0px;
-  height: 0px;
+#outfit94_backleg_lowerhalf {
+    background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) (-$outfitE_y);
 }
 
-#outfit86_frontarm_upperhalf {
-    width: 0px;
-  height: 0px;
+#outfit94_frontarm_upperhalf {
+  background-position: (0px - $outfit_BDFH_x) ($vg_frontarm_upperhalf_y - $outfitE_y);
 }
 
-#outfit86_frontleg_upperhalf {
-    width: 0px;
-  height: 0px;
+#outfit94_frontleg_upperhalf {
+  background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitE_y);
 }
 
-#outfit86_frontleg_lowerhalf {
-    width: 0px;
-  height: 0px;
+#outfit94_frontleg_lowerhalf {
+  background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitE_y);
 }
 
-#outfit86_chest {
+#outfit94_chest {
   background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitE_y);
 }
 
-// #outfit86_crotch {
+// #outfit94_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitE_y);
 // }
 
-#outfit86_backarm_lowerhalf {
+#outfit94_backarm_lowerhalf {
   background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) ($vg_backarm_lowerhalf_y - $outfitE_y);
 }
 
-#outfit86_frontarm_lowerhalf {
+#outfit94_frontarm_lowerhalf {
   background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitE_y);
 }
 
-#outfit86_skirt {
-  background-position: ($vg_skirt_x - $outfit_BDFH_x) ($vg_skirt_y - $outfitE_y);
+
+
+
+/* Outfit 95 - Vault suit */
+#outfit95_backarm_upperhalf {
+  background-position: -2px (-$outfitG_y - 1);
 }
 
-
-
-/* Outfit 83 - Republic robes */
-#outfit87_backarm_upperhalf {
-  width: 0px;
-  height: 0px;
-}
-
-#outfit87_backleg_foot {
+#outfit95_backleg_foot {
   background-position: $vg_backleg_foot_x (-$outfitG_y);
 }
 
-#outfit87_frontleg_foot {
+#outfit95_frontleg_foot {
   background-position: $vg_frontleg_foot_x (-$outfitG_y);
 }
 
-#outfit87_backleg_upperhalf {
-    width: 0px;
-  height: 0px;
+#outfit95_backleg_upperhalf {
+  background-position: -266px (-$outfitG_y - 2);
 }
 
-#outfit87_backleg_lowerhalf {
+#outfit95_backleg_lowerhalf {
     background-position: $vg_leg_lowerhalf_x (-$outfitG_y - 1);
 }
 
-#outfit87_frontarm_upperhalf {
+#outfit95_frontarm_upperhalf {
   background-position: 0px ($vg_frontarm_upperhalf_y - $outfitG_y - 1);
 }
 
-#outfit87_frontleg_upperhalf {
-  width: 0px;
-  height: 0px;
+#outfit95_frontleg_upperhalf {
+  background-position: -276px ($vg_secondrow_y - $outfitG_y - 2);
 }
 
-#outfit87_frontleg_lowerhalf {
+#outfit95_frontleg_lowerhalf {
   background-position: -399px ($vg_secondrow_y - $outfitG_y - 2);
 }
 
-#outfit87_chest {
+#outfit95_chest {
   background-position: $vg_chest_x ($vg_chest_y - $outfitG_y);
 }
 
-// #outfit87_crotch {
+// #outfit95_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitG_y);
 // }
 
-#outfit87_backarm_lowerhalf {
+#outfit95_backarm_lowerhalf {
   background-position: $vg_backarm_lowerhalf_x ($vg_backarm_lowerhalf_y - $outfitG_y);
 }
 
-#outfit87_frontarm_lowerhalf {
+#outfit95_frontarm_lowerhalf {
   background-position: $vg_frontarm_lowerhalf_x ($vg_frontarm_lowerhalf_y - $outfitG_y);
 }
 
-#outfit87_skirt {
-  background-position: $vg_skirt_x ($vg_skirt_y - $outfitG_y);
-}
 
 
 
-
-/* Outfit 88 - Radiation suit */
-#outfit88_backarm_upperhalf {
+/* Outfit 88 - Lab coat */
+#outfit96_backarm_upperhalf {
   background-position: (0px - $outfit_BDFH_x) (-$outfitG_y);
 }
 
-#outfit88_backleg_foot {
+#outfit96_backleg_foot {
   background-position: ($vg_backleg_foot_x - $outfit_BDFH_x) (-$outfitG_y);
 }
 
-#outfit88_frontleg_foot {
+#outfit96_frontleg_foot {
   background-position: ($vg_frontleg_foot_x - $outfit_BDFH_x) (-$outfitG_y);
 }
 
-#outfit88_backhem {
-  background-position: ($vg_back_hem_x - $outfit_BDFH_x - 10) (-$outfitG_y - 120);
+#outfit96_backhem {
+  background-position: ($vg_back_hem_x - $outfit_BDFH_x - 10) (-$outfitG_y - 130);
   width: 70px;
   left: 45px;
   transform: scaleY(-1) rotate(188deg);
 }
 
-#outfit88_fronthem {
-  background-position: ($vg_front_hem_x - $outfit_BDFH_x) (-$outfitG_y - 120);
+#outfit96_fronthem {
+  background-position: ($vg_front_hem_x - $outfit_BDFH_x) (-$outfitG_y - 130);
   left: -4px;
   transform: scaleY(-1) rotate(172deg);
 }
 
-#outfit88_backleg_upperhalf {
+#outfit96_backleg_upperhalf {
   background-position: ($vg_backleg_upperhalf_x - $outfit_BDFH_x) (-$outfitG_y);
 }
 
-#outfit88_backleg_lowerhalf {
+#outfit96_backleg_lowerhalf {
     background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) (-$outfitG_y);
 }
 
-#outfit88_frontarm_upperhalf {
+#outfit96_frontarm_upperhalf {
   background-position: (0px - $outfit_BDFH_x) ($vg_frontarm_upperhalf_y - $outfitG_y);
 }
 
-#outfit88_frontleg_upperhalf {
+#outfit96_frontleg_upperhalf {
   background-position: ($vg_frontleg_upperhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitG_y);
 }
 
-#outfit88_frontleg_lowerhalf {
+#outfit96_frontleg_lowerhalf {
   background-position: ($vg_leg_lowerhalf_x - $outfit_BDFH_x) ($vg_secondrow_y - $outfitG_y);
 }
 
-#outfit88_chest {
+#outfit96_chest {
   background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitG_y);
 }
 
-// #outfit88_crotch {
+// #outfit96_crotch {
 //   background-position: $crotch_x ($crotch_y - $outfitG_y);
 // }
 
-#outfit88_backarm_lowerhalf {
+#outfit96_backarm_lowerhalf {
   background-position: ($vg_backarm_lowerhalf_x - $outfit_BDFH_x) ($vg_backarm_lowerhalf_y - $outfitG_y);
 }
 
-#outfit88_frontarm_lowerhalf {
+#outfit96_frontarm_lowerhalf {
   background-position: ($vg_frontarm_lowerhalf_x - $outfit_BDFH_x) ($vg_frontarm_lowerhalf_y - $outfitG_y);
 }
