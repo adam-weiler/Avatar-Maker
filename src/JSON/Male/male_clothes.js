@@ -55,7 +55,7 @@ export const male_clothes = [ //An array of each Shirt's ID, Atlas file, name, a
   {
     id: 'outfit12',
     atlas: 'atlas03',
-    name: 'Flight Suit'
+    name: 'Not a Flight Suit'
   },
   {
     id: 'outfit13',

@@ -61,7 +61,7 @@ export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name,
   {
     id: 'outfit70',
     atlas: 'atlas10',
-    name: '???',
+    name: '???', //Little Girl dress
     skirt: 1
   },
   {
@@ -171,146 +171,145 @@ export const female_clothes = [ //An array of each Shirt's ID, Atlas file, name,
 
 
 
-  // ,
-  // {
-  //   id: 'outfit89',
-  //   atlas: 'atlas13',
-  //   name: 'Pilgrim outfit',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit90',
-  //   atlas: 'atlas13',
-  //   name: 'Piper\'s outfit',
-  //   hem: 1
-  // },
-  // {
-  //   id: 'outfit91',
-  //   atlas: 'atlas13',
-  //   name: 'Military fatigues'
-  // },
+  ,
+  {
+    id: 'outfit89',
+    atlas: 'atlas13',
+    name: 'Pilgrim outfit',
+    skirt: 1
+  },
+  {
+    id: 'outfit90',
+    atlas: 'atlas13',
+    name: 'Piper\'s outfit',
+    hem: 1
+  },
+  {
+    id: 'outfit91',
+    atlas: 'atlas13',
+    name: 'Military fatigues'
+  },
   // {
   //   id: 'outfit92',
   //   atlas: 'atlas13',
   //   name: 'Nightwear'
   // },
-  // {
-  //   id: 'outfit93',
-  //   atlas: 'atlas13',
-  //   name: 'Lifeguard outfit'
-  // },
-  // {
-  //   id: 'outfit94',
-  //   atlas: 'atlas13',
-  //   name: 'Metal armor'
-  // },
-  // {
-  //   id: 'outfit95',
-  //   atlas: 'atlas13',
-  //   name: 'Vault suit'
-  // },
-  // {
-  //   id: 'outfit96',
-  //   atlas: 'atlas13',
-  //   name: 'Lab coat',
-  //   hem: 1
-  // }
+  {
+    id: 'outfit93',
+    atlas: 'atlas13',
+    name: 'Lifeguard outfit'
+  },
+  {
+    id: 'outfit94',
+    atlas: 'atlas13',
+    name: 'Metal armor'
+  },
+  {
+    id: 'outfit95',
+    atlas: 'atlas13',
+    name: 'Vault suit'
+  },
+  {
+    id: 'outfit96',
+    atlas: 'atlas13',
+    name: 'Lab coat',
+    hem: 1
+  }
 
 
 
-  // ,
-  // {
-  //   id: 'outfit97',
-  //   atlas: 'atlas14',
-  //   name: 'Merc gear',
-  //   hem: 1
-  // },
-  // {
-  //   id: 'outfit98',
-  //   atlas: 'atlas14',
-  //   name: 'Santa suit',
-  //   skirt: 1
-  // },
-  // {
-  //   id: 'outfit99',
-  //   atlas: 'atlas14',
-  //   name: 'Maternity clothes'
-  // },
-  // {
-  //   id: 'outfit100',
-  //   atlas: 'atlas14',
-  //   name: 'Raider armor'
-  // },
-  // {
-  //   id: 'outfit101',
-  //   atlas: 'atlas14',
-  //   name: 'T-60 power armor'
-  // },
-  // {
-  //   id: 'outfit102',
-  //   atlas: 'atlas14',
-  //   name: 'X-01 Mk VI power armor'
-  // },
-  // {
-  //   id: 'outfit103',
-  //   atlas: 'atlas14',
-  //   name: 'T-45 power armor'
-  // },
-  // {
-  //   id: 'outfit104',
-  //   atlas: 'atlas14',
-  //   name: 'T-51 power armor'
-  // }
+  ,
+  {
+    id: 'outfit97',
+    atlas: 'atlas14',
+    name: 'Merc gear',
+    hem: 1
+  },
+  {
+    id: 'outfit98',
+    atlas: 'atlas14',
+    name: 'Santa suit',
+    skirt: 1
+  },
+  {
+    id: 'outfit99',
+    atlas: 'atlas14',
+    name: 'Maternity clothes'
+  },
+  {
+    id: 'outfit100',
+    atlas: 'atlas14',
+    name: 'Raider armor'
+  },
+  {
+    id: 'outfit101',
+    atlas: 'atlas14',
+    name: 'T-60 power armor'
+  },
+  {
+    id: 'outfit102',
+    atlas: 'atlas14',
+    name: 'X-01 Mk VI power armor'
+  },
+  {
+    id: 'outfit103',
+    atlas: 'atlas14',
+    name: 'T-45 power armor'
+  },
+  {
+    id: 'outfit104',
+    atlas: 'atlas14',
+    name: 'T-51 power armor'
+  }
 
 
 
-  // ,
-  // {
-  //   id: 'outfit105',
-  //   atlas: 'atlas15',
-  //   name: 'Treasure hunter gear',
-  //   hem: 1
-  // },
-  // {
-  //   id: 'outfit106',
-  //   atlas: 'atlas15',
-  //   name: 'Armored vault suit'
-  // },
-  // {
-  //   id: 'outfit107',
-  //   atlas: 'atlas15',
-  //   name: 'Swimsuit'
-  // },
-  // {
-  //   id: 'outfit108',
-  //   atlas: 'atlas15',
-  //   name: 'Synth armor'
-  // },
-  // {
-  //   id: 'outfit109',
-  //   atlas: 'atlas15',
-  //   name: 'Skeleton costume'
-  // },
-  // {
-  //   id: 'outfit110',
-  //   atlas: 'atlas15',
-  //   name: 'Wasteland medic'
-  // },
-  // {
-  //   id: 'outfit111',
-  //   atlas: 'atlas15',
-  //   name: 'Junior officer uniform'
-  // },
-  // {
-  //   id: 'outfit112',
-  //   atlas: 'atlas15',
-  //   name: 'Initiate robe',
-  //   hem: 1
-  // },
-  // {
-  //   id: 'outfit113',
-  //   atlas: 'atlas16',
-  //   name: 'Leather armor',
-  //   hem: 1
-  // }
+  ,
+  {
+    id: 'outfit105',
+    atlas: 'atlas15',
+    name: 'Treasure hunter gear',
+    hem: 1
+  },
+  {
+    id: 'outfit106',
+    atlas: 'atlas15',
+    name: 'Armored vault suit'
+  },
+  {
+    id: 'outfit107',
+    atlas: 'atlas15',
+    name: 'Swimsuit'
+  },
+  {
+    id: 'outfit108',
+    atlas: 'atlas15',
+    name: 'Synth armor'
+  },
+  {
+    id: 'outfit109',
+    atlas: 'atlas15',
+    name: 'Skeleton costume'
+  },
+  {
+    id: 'outfit110',
+    atlas: 'atlas15',
+    name: 'Wasteland medic'
+  },
+  {
+    id: 'outfit111',
+    atlas: 'atlas15',
+    name: 'Junior officer uniform'
+  },
+  {
+    id: 'outfit112',
+    atlas: 'atlas15',
+    name: 'Initiate robe',
+    hem: 1
+  },
+  {
+    id: 'outfit113',
+    atlas: 'atlas16',
+    name: 'Leather armor',
+  }
 ]
