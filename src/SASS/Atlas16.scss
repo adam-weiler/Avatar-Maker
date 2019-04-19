@@ -23,6 +23,7 @@ $sixthRow: -650px;
 	
 }
 
+/* Vault Girl Hairstyles */
 #vg_hair1 {
 	left: -11px;
 	top: -10px;
@@ -178,6 +179,110 @@ $sixthRow: -650px;
 	top: -10px;
 		background-position: $seventhCol $sixthRow;
 }
+
+
+
+
+.vgs_hat {
+	background-color: rgba(255,0,255,.5);
+	left: -105px;
+  	top: -16px;
+}
+
+
+
+/* Vault Girl Headwear */
+
+#vgs_headwear1 { //Combat armor helmet
+	background-position: ($forthCol - 10) ($firstRow + 10);
+}
+
+#vgs_headwear2 { //Cat ears
+	background-position: ($forthCol - 10) ($secondRow + 5);
+}
+
+#vgs_headwear3 { //Baseball cap
+	background-position: ($forthCol - 5) ($thirdRow + 5);
+}
+
+#vgs_headwear4 { //Aviator cap
+	width: 120px;
+	height: 125px;
+	background-position: ($forthCol - 10) ($forthRow);
+}
+
+#vgs_headwear5 { //Shower cap
+  background-position: ($fifthCol) ($firstRow + 10);
+}
+
+#vgs_headwear6 { //Wasteland darklight cowl
+		width: 120px;
+	height: 120px;
+  background-position: ($fifthCol) ($secondRow);
+}
+
+#vgs_headwear7 { //Hard hat - Engineer outfit
+  background-position: ($fifthCol) ($thirdRow + 8); //Close to top edge.
+}
+
+#vgs_headwear8 { //Elf hat
+  background-position: ($fifthCol + 5) ($forthRow + 5);
+}
+
+
+
+
+#vgs_headwear9 { //Mascot head
+	width: 145px;
+	height: 133px; //Needs to be close to the edge.
+   background-position: -675px 5px;
+}
+
+#vgs_headwear10 { //Sailor hat - Lifeguard outfit
+  background-position: -690px -125px;
+}
+
+#vgs_headwear11 { //Surgery bandages
+  background-position: -690px -270px;
+}
+
+#vgs_headwear12 { //Radiation suit helmet
+		width: 130px;
+	height: 135px;
+   background-position: -680px -385px;
+}
+
+
+
+#vgs_headwear13 { 
+  background-position: -825px 0px;
+}
+
+#vgs_headwear14 { //Metal helmet
+	top: -15px;
+  background-position: -820px -135px;
+}
+
+#vgs_headwear15 { //Laurel wreath - Republic robes
+  background-position: -820px -270px;
+}
+
+#vgs_headwear16 { //Ghost costume
+  background-position: -820px -400px;
+}
+
+
+
+#vgs_headwear { //
+  background-position: -825px 0px;
+}
+
+
+
+
+
+
+
 
 
 
