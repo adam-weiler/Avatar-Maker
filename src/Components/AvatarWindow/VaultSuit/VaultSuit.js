@@ -30,7 +30,7 @@ const VaultSuit = ({ currentState }) => {
             {(() => {
                 if (current_headwear > 0) { //Checks if there is any Headwear selected. Ifso, returns a div for the headwear.
                     return <div id={gender + 's_head'}>
-                                <SegmentPiece segClass={gender + 's_hat'} atlas={headwear[current_headwear].atlas} segId={headwear[current_headwear].id} />
+                                <SegmentPiece segClass={gender + 's_hat'} atlas={headwear[current_headwear].atlas} segId={gender + 's_' + headwear[current_headwear].id} />
                             </div>
                 } //Else, there is no headwear div.
             })()}
