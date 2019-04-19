@@ -59,7 +59,7 @@ export const male_gloves = [ //An array of each Male Glove's ID and name. There 
   },
   {
     id: 'glovey',
-    name: '??? - Closed?' // 1 2 3 6 7 9 16 17 19
+    name: '??? - Closed?'
   },
 
   /* Closed gloves */

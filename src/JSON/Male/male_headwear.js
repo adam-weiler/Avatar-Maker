@@ -91,7 +91,7 @@ export const male_headwear = [ //An array of each Male Headwear ID, Atlas, and n
   {
     id: 'headwear29',
     atlas: 'atlas18',
-    name: 'Silver Shroud hat' /* Alternatively Fedora, Formal Hat, or Trilby. */
+    name: 'Silver Shroud hat' //Alternatively Fedora, Formal Hat, or Trilby.
   },
   {
     id: 'headwear28',

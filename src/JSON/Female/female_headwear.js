@@ -8,7 +8,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear1',
     atlas: 'atlas16',
-    name: 'Combat armor helmet' /* Combat armor */
+    name: 'Combat armor helmet' //Combat armor
   },
   {
     id: 'headwear2',
@@ -51,7 +51,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
     name: 'Elf hat' /* Elf outfit */
   },
   {
-    id: 'headwea9',
+    id: 'headwear9',
     atlas: 'atlas16',
     name: 'Mascot head',
     disable_hair: 1
@@ -88,18 +88,16 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear15',
     atlas: 'atlas16',
-    name: 'Laurel wreath' /* Republic robes */
+    name: 'Laurel wreath' //Republic robes
   },
   {
     id: 'headwear16',
     atlas: 'atlas16',
-    name: 'Ghost costume', /* Ghost costume */
+    name: 'Ghost costume', //Ghost costume
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
   },
-
-
   {
     id: 'headwear17',
     atlas: 'atlas17',
@@ -145,15 +143,77 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear22',
     atlas: 'atlas17',
+    name: 'Military cap' //Soldier uniform
+  },
+  {
+    id: 'headwear23',
+    atlas: 'atlas17',
     name: 'Swimcap and goggles', /* Swimsuit outfit */
     disable_hair: 1
   },
   {
-    id: 'headwear23',
+    id: 'headwear24',
     atlas: 'atlas17',
     name: 'Skeleton mask', /* Skeleton costume */
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
   },
+  {
+    id: 'headwear25',
+    atlas: 'atlas17',
+    name: 'Silver Shroud hat' //Alternatively Fedora, Formal Hat, or Trilby.
+},
+   {
+    id: 'headwear26',
+    atlas: 'atlas17',
+    name: 'Santa hat' //Santa suit
+  },
+
+  {
+    id: 'headwear27',
+    atlas: 'atlas17',
+    name: 'Pirate hat and eyepatch'
+  },
+
+    {
+    id: 'headwear28',
+    atlas: 'atlas17',
+    name: 'Press cap' //Piper's outfit
+  },
+ {
+    id: 'headwear28',
+    atlas: 'atlas17',
+    name: 'Lady\'s bonnet' //Pilgrim outfit
+  },
+
+    {
+    id: 'headwear29',
+    atlas: 'atlas17',
+    name: 'Synth field helmet', /* Synth armor */
+    disable_hair: 1,
+    disable_beard: 1,
+    disable_feature: 1
+  }
 ]
+
+/* Headwear that's available from outfits or are locked. */
+
+
+
+// Hard Hat
+// Rose hat
+// Laurels
+// Military Cap
+// Piper hat
+// Military helmet - camo
+// Military helmet - green
+// Ninja Mask
+// Radaiton helmet
+// Wasteland gear
+// Cat ears
+// Pirate hat
+//   black suave hat
+// Aviator cap
+// Mascot hat
+// Party hat
