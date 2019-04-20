@@ -1,5 +1,109 @@
 @import 'mixins';
 
+$firstCol: -5px;
+$secondCol: -135px;
+$thirdCol: -275px;
+$forthCol: -410px;
+$fifthCol: -550px;
+$sixthCol: -685px;
+$seventhCol: -820px;
+
+$firstRow: -10px;
+$secondRow: -135px;
+$thirdRow: -260px;
+$fourthRow: -385px;
+$fifthRow: -520px;
+$sixthRow: -650px;
+$seventhRow: -780px;
+$eighthRow: -910px;
+
+/* Vault Girl Hairstyles */
+#vgs_headwear17 { //Party hat
+  background-position: $firstCol ($firstRow + 15);
+}
+
+#vgs_headwear18 { //X-01 Mk VI helmet
+  width: 120px;
+  background-position: ($firstCol - 5) ($secondRow - 10);
+}
+
+#vgs_headwear19 { //T-60 helmet
+  background-position: ($firstCol - 5) ($thirdRow - 10);
+}
+
+#vgs_headwear20 { //T-51 helmet
+  background-position: ($firstCol - 5) ($fourthRow - 15);
+}
+
+#vgs_headwear21 { //Flower bonnet
+  background-position: ($firstCol - 20) ($fifthRow + 10); //Needs to be close to top.
+}
+
+#vgs_headwear22 { //Military cap
+  background-position: ($firstCol) ($eighthRow + 13); //Needs to be close to top.
+}
+
+#vgs_headwear23 { //Swimcap and goggles
+  background-position: ($secondCol) ($firstRow);
+}
+
+#vgs_headwear24 { //Skeleton mask
+  background-position: ($secondCol) ($secondRow);
+}
+
+#vgs_headwear25 { //Silver Shroud hat
+    width: 140px;
+  background-position: ($secondCol) ($thirdRow + 10); //Needs to be close to top.
+}
+
+#vgs_headwear26 { //Santa hat
+  background-position: ($secondCol - 20) ($fourthRow + 10); 
+}
+
+#vgs_headwear27 { //T-45 helmet
+  width: 120px;
+  background-position: ($secondCol - 10) ($fifthRow - 10);
+}
+
+#vgs_headwear28 { //Pirate hat and eyepatch
+  width: 135px;
+  background-position: ($secondCol - 5) ($sixthRow + 10); //Needs to be close to top.
+}
+
+#vgs_headwear29 { //Press cap
+  background-position: ($secondCol - 10) ($seventhRow + 15);
+}
+
+#vgs_headwear30 { //Lady's bonnet
+  left: -100px;
+  top: -5px;
+  width: 120px;
+  background-position: ($secondCol - 10) ($eighthRow);
+}
+
+#vgs_headwear31 { //Synth field helmet
+  background-position: ($thirdCol - 10) ($eighthRow);
+}
+
+
+/* Vault Girl Facial Features */
+
+//Comedian
+
+//Ninja
+
+//Skeleton
+
+
+
+
+
+
+
+
+
+
+
 .vb_hair {
   /*background-color: rgba(0,0,0,.3);*/
 }
@@ -110,6 +214,9 @@
 #vb_hair25 {
   background-position: ($vb_hair3_x) ($vb_hairH_y - 16);
 }
+
+
+
 
 
 
@@ -274,7 +381,7 @@
 }
 
 
-
+/* Vault Boy Facial Features */
 
 #vb_feature17 { /* Ninja outfit */
   // left: -104px;

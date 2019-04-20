@@ -3,7 +3,7 @@
 $firstCol: -5px;
 $secondCol: -135px;
 $thirdCol: -275px;
-$forthCol: -410px;
+$fourthCol: -410px;
 $fifthCol: -550px;
 $sixthCol: -685px;
 $seventhCol: -820px;
@@ -11,7 +11,7 @@ $seventhCol: -820px;
 $firstRow: -10px;
 $secondRow: -135px;
 $thirdRow: -260px;
-$forthRow: -385px;
+$fourthRow: -385px;
 $fifthRow: -520px;
 $sixthRow: -650px;
 
@@ -45,7 +45,7 @@ $sixthRow: -650px;
 #vg_hair4 {
 	left: -11px;
 	top: -18px;
-	background-position: $firstCol $forthRow;
+	background-position: $firstCol $fourthRow;
 }
 
 #vg_hair5 {
@@ -81,7 +81,7 @@ $sixthRow: -650px;
 #vg_hair10 {
 		left: -17px;
 	top: -21px;
-		background-position: $secondCol $forthRow;
+		background-position: $secondCol $fourthRow;
 }
 
 #vg_hair11 {
@@ -117,7 +117,7 @@ $sixthRow: -650px;
 #vg_hair16 {
 	left: -13px;
 	top: -21px;
-		background-position: $thirdCol $forthRow;
+		background-position: $thirdCol $fourthRow;
 }
 
 #vg_hair17 {
@@ -135,13 +135,13 @@ $sixthRow: -650px;
 #vg_hair19 {
 	left: -15px;
 	top: -12px;
-		background-position: $forthCol $fifthRow;
+		background-position: $fourthCol $fifthRow;
 }
 
 #vg_hair20 {
 	left: -15px;
 	top: -15px;
-		background-position: $forthCol $sixthRow;
+		background-position: $fourthCol $sixthRow;
 }
 
 #vg_hair21 {
@@ -184,7 +184,7 @@ $sixthRow: -650px;
 
 
 .vgs_hat {
-	background-color: rgba(255,0,255,.5);
+	// background-color: rgba(255,0,255,.5);
 	left: -105px;
   	top: -16px;
 }
@@ -194,21 +194,23 @@ $sixthRow: -650px;
 /* Vault Girl Headwear */
 
 #vgs_headwear1 { //Combat armor helmet
-	background-position: ($forthCol - 10) ($firstRow + 10);
+	background-position: ($fourthCol - 10) ($firstRow + 10);
 }
 
 #vgs_headwear2 { //Cat ears
-	background-position: ($forthCol - 10) ($secondRow + 5);
+	background-position: ($fourthCol - 10) ($secondRow + 5);
 }
 
 #vgs_headwear3 { //Baseball cap
-	background-position: ($forthCol - 5) ($thirdRow + 5);
+	background-position: ($fourthCol - 5) ($thirdRow + 5);
 }
 
 #vgs_headwear4 { //Aviator cap
+	left: -100px;
+	top: -20px;
 	width: 120px;
 	height: 125px;
-	background-position: ($forthCol - 10) ($forthRow);
+	background-position: ($fourthCol - 10) ($fourthRow);
 }
 
 #vgs_headwear5 { //Shower cap
@@ -226,7 +228,7 @@ $sixthRow: -650px;
 }
 
 #vgs_headwear8 { //Elf hat
-  background-position: ($fifthCol + 5) ($forthRow + 5);
+  background-position: ($fifthCol + 5) ($fourthRow + 5);
 }
 
 
@@ -273,9 +275,7 @@ $sixthRow: -650px;
 
 
 
-#vgs_headwear { //
-  background-position: -825px 0px;
-}
+
 
 
 
