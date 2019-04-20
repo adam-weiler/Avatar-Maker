@@ -19,11 +19,11 @@ class App extends Component {
             current_gloves: 0, //Initially loads no Gloves, 0.
             current_hair: 0, //Initially loads Tunnel Snake Hairstyle, 0.
             current_hair_colour: 27, //Initially loads Blonde, 27.
-            current_headwear: 0, //Initially loads no Headwear, 0.
-            current_mode: 1, //Initially loads Basic mode, 0.
-            current_pants: 22, //Initally loads Vault Suit, 38
+            current_headwear: 12, //Initially loads no Headwear, 0.
+            current_mode: 0, //Initially loads Basic mode, 0.
+            current_pants: 42, //Initally loads Vault Suit, 38
             current_race: 0, //Stores Skintone. Initially loads caucasian Skintone, 1.
-            current_shirt: 22 //Initally loads Vault Suit, 38.
+            current_shirt: 42 //Initally loads Vault Suit, 38.
         }
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
         this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selection button.
@@ -125,7 +125,7 @@ class App extends Component {
             current_gloves: getRandom(gloves.length),
             current_hair: getRandom(hair.length),
             current_hair_colour: getRandom(hair_colours.length),
-            // current_headwear: getRandom(headwear.length),
+            current_headwear: getRandom(headwear.length),
             current_pants: getRandom(clothes.length),
             current_race: getRandom(all_races.length),
             current_shirt: getRandom(clothes.length)

@@ -18,11 +18,11 @@ body {
   background-repeat: repeat-x;
 }
 
-.text, .prevNextType, .labelType, .styleType, .genderText {
+/*.text, .prevNextType, .labelType, .styleType, .genderText {
   margin: 0 auto;
   max-width: 350px;
   cursor: url('./Cursors/text.png'), auto;
-}
+}*/
 
 .prevNextButton,
 .slider,
