@@ -12,6 +12,7 @@ const VaultPerson = ({ currentState }) => {
 
     const headwear = current_gender === 0 ? male_headwear : female_headwear;
     const hair = current_gender === 0 ? male_hair : female_hair;
+    const halfHairstyle = current_gender === 0 ? 13 : 22; //Hairstyle to use when Headwear partially covers Hair.
     const feature = current_gender === 0 ? male_features : female_features;
     const face = current_gender === 0 ? male_faces : female_faces;
     const hands = current_gender === 0 ? male_hands : female_hands;
@@ -36,11 +37,15 @@ const VaultPerson = ({ currentState }) => {
                                 </div>
                     } else { //There is a flag to disable Hairstyle.
                         if ((headwear[current_headwear].disable_hair === .5) || (feature[current_feature].disable_hair === .5)) { //Checks if flag says to partially disable hairstyle.
+                            
+
+
+
                             return <div 
                                     className={genders[current_gender].id + '_hair '
                                     + hair[current_hair].atlas 
                                     + ' hair_' + hair_colours[current_hair_colour].id} 
-                                    id={genders[current_gender].id + '_hair13'}>
+                                    id={genders[current_gender].id + '_hair' + halfHairstyle}>
                                 </div>
                         } //Else, flag says to completely disable Hairstyle. There is no hair div.
                     }
