@@ -5,7 +5,7 @@
 	background: transparentize(#083d42, 0.2);
 }
 
-#vaultSuit, #vaultPerson { /* These divs contain all of VaultSuit, and VaultBoy respectively. */
+#vaultSuit, #vaultPerson { /* These divs contain all of VaultSuit, and VaultPerson respectively. */
 	position: absolute;
 }
 
@@ -19,221 +19,119 @@
 	position: absolute;
 }
 
-/* These IDs are for Vault Boy's Suit and limbs, Vault Girl's suit and limbs.*/
-#vbs_frontArm, #vb_frontArm, #vgs_frontArm, #vg_frontArm {
-	left: 0px;
-	top: 89px;
-}
-
+/* These shared IDs are for Vault Boy's Suit and limbs, Vault Girl's suit and limbs. */
 #vbs_head, #vb_head, #vgs_head, #vg_head {
-	left: 43px;
-	top: 25px;
 	-ms-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
 }
 
-#vbs_torso, #vb_torso, #vgs_torso, #vg_torso {
-	left: 46px;
-	top: 107px;
-}
-
-#vbs_frontLeg, #vb_frontLeg, #vgs_frontLeg, #vg_frontLeg {
-	left: 27px;
-	top: 218px;
-}
-
-#vbs_trunk, #vb_trunk, #vgs_trunk, #vg_trunk {
-	left: 45px;
-	top: 105px;
-}
-
-#vbs_backLeg, #vb_backLeg, #vgs_backLeg, #vg_backLeg {
-	left: 65px;
-	top: 208px;
-}
-
-#vbs_backArm, #vb_backArm, #vgs_backArm, #vg_backArm {
-	left: 76px;
-	top: 90px;
-}
 
 
-/* These Classes & IDs are for each of Vault Boy's Suit and body segment, Vault Girl's suit and body segment.*/
+
+/* These shared Classes & IDs are for each of Vault Boy's Suit and body segment, Vault Girl's suit and body segment.*/
 .vbs_frontarm_lowerhalf, #vb_frontarm_lowerhalf, .vgs_frontarm_lowerhalf, #vg_frontarm_lowerhalf {
-	left: 7px;
-	top: 92px;
 	width: 85px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(85deg);
-	-webkit-transform: scaleY(-1) rotate(85deg);
-  	transform: scaleY(-1) rotate(85deg);
+  		// background-color: rgba(0,0,255,.5);
 }
 
 .vbs_frontarm_upperhalf, #vb_frontarm_upperhalf, .vgs_frontarm_upperhalf, #vg_frontarm_upperhalf {
-	left: 0px;
-	top: 40px;
   	width: 110px;
   	height: 60px;
-  	-ms-transform: scaleY(-1) rotate(75deg);
-	-webkit-transform: scaleY(-1) rotate(75deg);
-  	transform: scaleY(-1) rotate(75deg);
+  		// background-color: rgba(0,0,255,.5);
 }
 
 .vbs_frontarm_glove, .vb_frontarm_hand, .vgs_frontarm_glove, .vg_frontarm_hand {
-	left: 21px;
-	top: 128px;
 	width: 65px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(-81deg);
-	-webkit-transform: scaleY(-1) rotate(-81deg);
-	transform: scaleY(-1) rotate(-81deg);
+  		// background-color: rgba(0,0,255,.5);
 }
 
 .vbs_hat, .vgs_hat {
-	left: -108px;
-	top: -10px;
 	width: 115px;
   	height: 115px;
 		// background-color: rgba(0,0,255,.5);
-		/*opacity: .5;*/
 }
 
-.vb_hair 
-// , .vg_hair 
-{
-	left: -3px;
-  	top: -10px;
-  	width: 110px;
-  	height: 110px;
-	z-index: 74;
+.vb_hair, .vg_hair {
+		// background-color: rgba(0,0,255,.5);
 }
 
 .vb_feature, .vg_feature,
 .vb_featureLow, .vg_featureLow, .vb_featureMed, .vg_featureMed, .vb_featureHigh, .vg_featureHigh { //Facial Features.
-	left: 0px;
-	top: 0px;
   	width: 95px;
     height: 105px;
+    		// background-color: rgba(0,255,255,.5);
 }
 
 .vb_face, .vg_face {
-	left: -1px;
-	top: 0px;
   	width: 95px;
     height: 105px;
-    z-index: 49;
-    z-index: 72;
+    		// background-color: rgba(0,0,0,.10);
 }
 
+
 .vbs_chest, #vb_chest, .vgs_chest, #vg_chest {
-	left: 0px;
-	top: 0px;
 	width: 100px;
   	height: 120px;
   	-ms-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
+  			// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_frontleg_upperhalf, #vb_frontleg_upperhalf, .vgs_frontleg_upperhalf, #vg_frontleg_upperhalf {
-	left: 0px;
-	top: 0px;
 	width: 100px;
   	height: 60px;
-  	-ms-transform: scaleY(-1) rotate(-90deg);
-	-webkit-transform: scaleY(-1) rotate(-90deg);
-	transform: scaleY(-1) rotate(-90deg);
+  	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_frontleg_lowerhalf, #vb_frontleg_lowerhalf, .vgs_frontleg_lowerhalf, #vg_frontleg_lowerhalf {
-	left: 0px;
-	top: 55px;
 	width: 87px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(-105deg);
-	-webkit-transform: scaleY(-1) rotate(-105deg);
-	transform: scaleY(-1) rotate(-105deg);
+	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_frontleg_foot, #vb_frontleg_foot, .vgs_frontleg_foot, #vg_frontleg_foot {
-	left: 11px;
-	top: 101px;
 	width: 60px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(180deg);
-	-webkit-transform: scaleY(-1) rotate(180deg);
-  	transform: scaleY(-1) rotate(180deg);
-}
-
-.vbs_crotch, #vb_crotch { //Vault Girl does not have crotch segment.
-	left: 3px;
-	top: 50px;
-	width: 90px;
-	height: 90px;
-	-ms-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(-1);
+  	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_backleg_upperhalf, #vb_backleg_upperhalf, .vgs_backleg_upperhalf, #vg_backleg_upperhalf {
-	left: 0px;
-	top: 0px;
 	width: 105px;
   	height: 65px;
-  	-ms-transform: scaleY(-1) rotate(95deg);
-	-webkit-transform: scaleY(-1) rotate(95deg);
-  	transform: scaleY(-1) rotate(95deg);
+  	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_backleg_lowerhalf, #vb_backleg_lowerhalf, .vgs_backleg_lowerhalf, #vg_backleg_lowerhalf {
-	left: 5px;
-	top: 60px;
 	width: 87px;
   	height: 60px;
-  	-ms-transform: scaleY(-1) rotate(-105deg);
-	-webkit-transform: scaleY(-1) rotate(-105deg);
-	transform: scaleY(-1) rotate(-105deg);
+	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_backleg_foot, #vb_backleg_foot, .vgs_backleg_foot, #vg_backleg_foot {
-	left: 22px;
-	top: 101px;
 	width: 60px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(180deg);
-	-webkit-transform: scaleY(-1) rotate(180deg);
-  	transform: scaleY(-1) rotate(180deg);
+  	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_backarm_lowerhalf, #vb_backarm_lowerhalf, .vgs_backarm_lowerhalf, #vg_backarm_lowerhalf {
-	left: 20px;
-	top: 84px;
   	width: 80px;
   	height: 50px;
-  	-ms-transform: scaleY(-1) rotate(-85deg);
-	-webkit-transform: scaleY(-1) rotate(-85deg);
-	transform: scaleY(-1) rotate(-85deg);
+	  		 // background-color: rgba(0,255,0,.50);
 }
 
 .vbs_backarm_upperhalf, #vb_backarm_upperhalf, .vgs_backarm_upperhalf, #vg_backarm_upperhalf {
-	left: 0px;
-	top: 40px;
   	width: 90px;
   	height: 50px;
-  	-ms-transform: scaleY(-1) rotate(75deg);
-	-webkit-transform: scaleY(-1) rotate(75deg);
-	transform: scaleY(1) rotate(75deg);
+	  		// background-color: rgba(0,0,0,.10);
 }
 
 .vbs_backarm_glove, .vb_backarm_hand, .vgs_backarm_glove, .vg_backarm_hand {
-	left: 28px;
-	top: 126px;
 	width: 65px;
   	height: 55px;
-  	-ms-transform: scaleY(-1) rotate(-81deg);
-	-webkit-transform: scaleX(-1) rotate(-81deg);
-	transform: scaleX(-1) rotate(-81deg);
 }
 
 
@@ -260,7 +158,7 @@
 	z-index: 40;
 }
 
-#vbs_trunk, #vgs_trunk {
+#vbs_trunk { //Vault Girl does not have a trunk limb.
 	z-index: 30;
 }
 
@@ -290,7 +188,7 @@
 	z-index: 39;
 }
 
-#vb_trunk, #vg_trunk {
+#vb_trunk { //Vault Girl does not have a trunk limb.
 	z-index: 29;
 }
 
@@ -322,6 +220,10 @@
 	z-index: 61;
 }
 
+.vb_hair, .vg_hair {
+	z-index: 74;
+}
+
 .vbs_feature, .vgs_feature {
 	// z-index: 76;
 }
@@ -339,4 +241,10 @@
 .vb_featureHigh, .vg_featureHigh {
 	z-index: 80;
 	position: absolute;
+}
+
+.vb_face, .vg_face {
+  	width: 95px;
+    height: 105px;
+    z-index: 72;
 }

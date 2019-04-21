@@ -1,5 +1,112 @@
 @import 'mixins';
 
+$firstCol: -5px;
+    $secondCol: -140px;
+$thirdCol: -275px;
+$fourthCol: -410px;
+$fifthCol: -550px;
+$sixthCol: -685px;
+$seventhCol: -820px;
+
+$firstRow: -10px;
+$secondRow: -135px;
+$thirdRow: -260px;
+$fourthRow: -385px;
+$fifthRow: -520px;
+$sixthRow: -650px;
+    $seventhRow: -780px;
+    $eighthRow: -910px;
+
+
+
+/* Female pieces */
+
+/* Features */
+#vg_feature1 { //Blush makeup
+  background-position: $firstCol $firstRow;
+}
+
+#vg_feature2 { //Titania makeup
+  background-position: $firstCol $secondRow;
+}
+
+#vg_feature3 { //Eyeglasses
+  background-position: $firstCol $thirdRow;
+}
+
+#vg_feature4 { //Reading Glasses
+  background-position: $firstCol $fourthRow;
+}
+
+#vg_feature5 { //Cat Eyeglasses - Big pink glasses
+  background-position: $firstCol $fifthRow;
+}
+
+#vg_feature6 { //Ghoulish
+  width: 120px;
+  height: 120px;
+  background-position: $firstCol $sixthRow;
+}
+
+#vg_feature7 { //Raider makeup
+  background-position: $firstCol $seventhRow;
+}
+
+#vg_feature8 { //Clown nose
+  background-position: $firstCol $eighthRow;
+}
+
+#vg_feature9 { //Cheek & Forehead scars
+  background-position: $secondCol $firstRow;
+}
+
+#vg_feature10 { //Pince-nez goggles - Round Goggles
+  background-position: $secondCol $secondRow;
+}
+
+#vg_feature11 { //Monocle
+  background-position: $secondCol $thirdRow;
+}
+
+#vg_feature12 { //Lashes on fleek
+  background-position: ($secondCol - 1) ($fourthRow - 8);
+  transform: scale(.9, 1);
+}
+
+#vg_feature13 { //Beauty mark
+  background-position: $secondCol $fifthRow;
+}
+
+#vg_feature14 { //Red warpaint
+  background-position: $secondCol $sixthRow;
+}
+
+#vg_feature15 { //Freckles
+  background-position: $secondCol $seventhRow;
+}
+
+#vg_feature16 { //Green tears
+  background-position: $secondCol $eighthRow;
+}
+
+#vg_feature17 { //Wrinkles
+  background-position: $thirdCol $fifthRow;
+}
+
+#vg_feature18 { //Lone Ranger - Thief mask
+  background-position: $thirdCol $sixthRow;
+}
+
+#vg_feature19 { //Surgical mask
+  background-position: $thirdCol $seventhRow;
+}
+
+#vg_feature20 { //Skull makeup
+  background-position: $thirdCol ($eighthRow + 4);
+}
+
+
+
 /* Male pieces */
 /* Faces */
 #vb_face1 { //Dead
@@ -70,7 +177,7 @@
     // z-index: 10;
 }
 
-#vb_feature6 { //Thief mask
+#vb_feature6 { //Lone Ranger - Thief mask
     background-position: -784px -590px;
     // z-index: 74;
 }
@@ -186,6 +293,11 @@
 
 
 
+.vg_face {
+  //background-color: rgba(255,0,255,.5)
+}
+
+
 /* Female pieces */
 /* Faces */
 #vg_face1 { //Dead
@@ -209,6 +321,7 @@
 }
 
 #vg_face5 { //Happy
+
   background-position: -420px -405px;
   position: absolute;
 }
