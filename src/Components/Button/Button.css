@@ -26,7 +26,13 @@
   color: #00d8ff;
   transition: color .3s;
 }
-.prevNextButton:active, .btnRandom:active {
+
+.btnReset:hover {
+  color: #FB2E2E;
+  transition: color .3s;
+}
+
+.prevNextButton:active, .btnRandom:active, .btnReset:active {
   color: #FFF;
   font-size: 30px;
   transition: font-size color .3s;

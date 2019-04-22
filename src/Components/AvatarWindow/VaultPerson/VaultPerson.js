@@ -52,7 +52,7 @@ const VaultPerson = ({ currentState }) => {
                 })()}
 
                 {(() => {
-                    if ((current_beard > 0) && (!male_headwear[current_headwear].disable_beard) && (!male_features[current_feature].disable_beard)) { //Checks if there is any Beard selected. Also confirms there is no flag for current _headwear or _feature to disable Beard.
+                    if ((current_beard > 0) && (!headwear[current_headwear].disable_beard) && (!feature[current_feature].disable_beard)) { //Checks if there is any Beard selected. Also confirms there is no flag for current _headwear or _feature to disable Beard.
                         return <div 
                                     className={'vb_beard atlas01 hair_' + hair_colours[current_hair_colour].id} 
                                     id={'vb_beard' + male_beards[current_beard].id}>
@@ -62,7 +62,7 @@ const VaultPerson = ({ currentState }) => {
 
                 {(() => {
                     if (current_feature > 0) { //Checks if there is any Facial Features selected.
-                        if (!male_headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
+                        if (!headwear[current_headwear].disable_feature) { //Confirms there is no flag for current_headwear to disable Feature.
                             return <SegmentPiece segClass={genders[current_gender].id + '_feature' + feature[current_feature].layer} atlas={feature[current_feature].atlas} segId={genders[current_gender].id + '_' + feature[current_feature].id} /> //Returns a div for the feature.
                     }
                     } //Else, there is no feature div.   clothes[current_pants].id

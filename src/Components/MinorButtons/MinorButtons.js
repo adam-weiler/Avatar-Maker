@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { 
-    FontAwesomeIcon, faDice, 
     all_races,
-    Button
+    Button,
+    FontAwesomeIcon, faDice, faPowerOff
 } from '../../imports';
 
-const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, handleRandomClick }) => {
+const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, handleRandomClick, handleResetClick }) => {
     const { current_race } = currentState; //Declares all the values from state.
 
     return (
@@ -30,6 +30,9 @@ const MinorButtons = ({ currentState, handleGenderClick, handleOptionClick, hand
 
             <div className="buttonsRow">
                 <div className="btnRandom" onClick={() => handleRandomClick()}>Random <FontAwesomeIcon icon={faDice} /></div>
+            </div>
+            <div className="buttonsRow">
+                <div className="btnReset" onClick={() => handleResetClick()}>Reset <FontAwesomeIcon icon={faPowerOff} /></div>
             </div>
             <div class="minorBottomSideBorders"></div>
         </div>
