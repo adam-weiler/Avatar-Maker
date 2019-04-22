@@ -14,31 +14,31 @@ export const female_features = [ //An array of each Femle Facial Feature's ID, A
     id: 'feature16',
     atlas: 'atlas01',
     name: 'Green tears',
-    layer: 'Low' //???
+    layer: 'Low'
   },
   {
     id: 'feature15',
     atlas: 'atlas01',
     name: 'Freckles',
-    layer: 'Low' //???
+    layer: 'Low'
   },
   {
     id: 'feature14',
     atlas: 'atlas01',
     name: 'Red warpaint',
-    layer: 'Low' //???
+    layer: 'Low'
   },
   {
     id: 'feature13',
     atlas: 'atlas01',
     name: 'Beauty mark',
-    layer: 'Low' //???
+    layer: 'Low'
   },
   {
     id: 'feature12',
     atlas: 'atlas01',
     name: 'Lashes on fleek',
-    layer: 'Low' //???
+    layer: 'Low'
   },
   {
     id: 'feature2',
@@ -86,19 +86,19 @@ export const female_features = [ //An array of each Femle Facial Feature's ID, A
     id: 'feature5',
     atlas: 'atlas01',
     name: 'Cat Eyeglasses', //Big pink glasses
-    layer: 'Low' //???
+    layer: 'High'
   },
   {
     id: 'feature4',
     atlas: 'atlas01',
     name: 'Reading Glasses',
-    layer: 'Low' //???
+    layer: 'High'
   },
   {
     id: 'feature3',
     atlas: 'atlas01',
-    name: 'Eyeglasses', //???
-    layer: 'Low' //???
+    name: 'Eyeglasses',
+    layer: 'High'
   },
   {
     id: 'feature10',
@@ -112,10 +112,15 @@ export const female_features = [ //An array of each Femle Facial Feature's ID, A
     name: 'Monocle',
     layer: 'Med'
   },  
-  
+  {
+    id: 'feature21',
+    atlas: 'atlas17',
+    name: 'Nose glasses', //Comedian outfit
+    layer: 'High'
+  },  
   
 
-
+    
 
 
   {
@@ -128,8 +133,18 @@ export const female_features = [ //An array of each Femle Facial Feature's ID, A
     id: 'feature19',
     atlas: 'atlas01',
     name: 'Surgical mask',
-    layer: 'Low' //???
+    layer: 'Med' //???
   },
+
+// Caesar laurels ??
+{
+    id: 'feature22',
+    atlas: 'atlas17',
+    name: 'Ninja mask', //Ninja outfit
+    disable_hair: 1,
+    disable_beard: 1,
+    layer: 'High'
+  }
 
 ]
 

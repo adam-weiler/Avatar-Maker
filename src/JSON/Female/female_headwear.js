@@ -19,7 +19,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear3',
     atlas: 'atlas16',
-    name: 'Baseball cap' /* Baseball uniform */
+    name: 'Baseball cap' //Baseball uniform
   },
   {
     id: 'headwear4',
@@ -36,7 +36,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear6',
     atlas: 'atlas16',
-    name: 'Wasteland darklight cowl', /* Wasteland gear */
+    name: 'Wasteland darklight cowl', //Wasteland gear
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
@@ -49,7 +49,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear8',
     atlas: 'atlas16',
-    name: 'Elf hat' /* Elf outfit */
+    name: 'Elf hat' //Elf outfit
   },
   {
     id: 'headwear9',
@@ -60,7 +60,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear10',
     atlas: 'atlas16',
-    name: 'Sailor hat' /* Lifeguard outfit */
+    name: 'Sailor hat' //Lifeguard outfit
   },
   {
     id: 'headwear11',
@@ -73,18 +73,18 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear12',
     atlas: 'atlas16',
-    name: 'Radiation suit helmet', /* Radiation suit */
+    name: 'Radiation suit helmet', //Radiation suit
     disable_hair: .5
   },
   {
     id: 'headwear13',
     atlas: 'atlas16',
-    name: 'Military helmet' /* Military fatigues */
+    name: 'Military helmet' //Military fatigues
   },
   {
     id: 'headwear14',
     atlas: 'atlas16',
-    name: 'Metal helmet' /* Metal armor */
+    name: 'Metal helmet' //Metal armor
   },
   {
     id: 'headwear15',
@@ -107,7 +107,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear27',
     atlas: 'atlas17',
-    name: 'T-45 helmet', /* T-45 power armor */
+    name: 'T-45 helmet', //T-45 power armor
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
@@ -115,7 +115,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear20',
     atlas: 'atlas17',
-    name: 'T-51 helmet', /* T-51 power armor */
+    name: 'T-51 helmet', //T-51 power armor
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
@@ -123,7 +123,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear19',
     atlas: 'atlas17',
-    name: 'T-60 helmet', /* T-60 power armor */
+    name: 'T-60 helmet', //T-60 power armor
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
@@ -131,7 +131,7 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear18',
     atlas: 'atlas17',
-    name: 'X-01 Mk VI helmet', /* X-01 Mk VI power armor */
+    name: 'X-01 Mk VI helmet', //X-01 Mk VI power armor
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
@@ -149,13 +149,13 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear23',
     atlas: 'atlas17',
-    name: 'Swimcap and goggles', /* Swimsuit outfit */
+    name: 'Swimcap and goggles', //Swimsuit outfit
     disable_hair: 1
   },
   {
     id: 'headwear24',
     atlas: 'atlas17',
-    name: 'Skeleton mask', /* Skeleton costume */
+    name: 'Skeleton mask', //Skeleton costume
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1
@@ -183,13 +183,13 @@ export const female_headwear = [ //An array of each Female Headwear ID, Atlas, a
   {
     id: 'headwear30',
     atlas: 'atlas17',
-    name: 'Lady\'s bonnet', //Pilgrim outfit
+    name: 'Pilgrim\'s bonnet', //Pilgrim outfit
     disable_hair: 1
   },
   {
     id: 'headwear31',
     atlas: 'atlas17',
-    name: 'Synth field helmet', /* Synth armor */
+    name: 'Synth field helmet', //Synth armor
     disable_hair: 1,
     disable_beard: 1,
     disable_feature: 1

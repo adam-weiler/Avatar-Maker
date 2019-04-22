@@ -91,7 +91,7 @@ export const male_features = [ //An array of each Male Facial Feature's ID, Atla
   {
     id: 'feature3',
     atlas: 'atlas01',
-    name: 'Monocle', //Monocle
+    name: 'Monocle',
     layer: 'Med'
   },
   {
@@ -103,7 +103,7 @@ export const male_features = [ //An array of each Male Facial Feature's ID, Atla
   {
     id: 'feature16',
     atlas: 'atlas01',
-    name: 'Clown nose', //Clown nose
+    name: 'Clown nose',
     layer: 'High'
   },
   {
