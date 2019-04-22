@@ -1,7 +1,4 @@
-/* Font Awesome */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //The Font Awesome component for icons.
-import { faDice } from '@fortawesome/free-solid-svg-icons'; //A single Dice icon.
-// import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { default_state } from './constants.js';
 
 
 /* All JSON files. */
@@ -48,6 +45,12 @@ import VaultSuit from './Components/AvatarWindow/VaultSuit/VaultSuit.js';
 import LogoImage from './Images/Fallout_Shelter_logo.png'; //The Logo image itself.
 
 
+/* Font Awesome */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //The Font Awesome component for icons.
+import { faDice, faPowerOff } from '@fortawesome/free-solid-svg-icons'; //Icons for Dice, and Power-Off.
+// import { faLink } from '@fortawesome/free-solid-svg-icons';
+
+
 /* CSS files */
 import './App.css'; //Store CSS with Relative or Absolute paths here.
 import './index.css'; //Store other CSS here.
@@ -75,9 +78,9 @@ import './SASS/Atlas14.scss'; //Outfits for Vault Girl.
 import './SASS/Atlas15.scss'; //Outfits for Vault Girl.
 import './SASS/Atlas16.scss'; //Hair, Headwear, and Outfit for Vault Girl.				//Features?
 
-import './SASS/Atlas17.scss'; //Headwear for Vault Girl. Hair and Headwear for Vault Boy.		//Features?
-import './SASS/Atlas18.scss'; //Gloves and Hand Skintone for Vault Girl. Gloves, Hand Skintone and Headwear for Vault Boy.		//Features?
-import './SASS/Atlas21.scss'; //Headwear and Objects.
+import './SASS/Atlas17.scss'; //Headwear and Features for Vault Girl. Hair, Headwear, and Features for Vault Boy.
+import './SASS/Atlas18.scss'; //Gloves and Hand Skintone for Vault Girl. Gloves, Hand Skintone and Headwear for Vault Boy.
+import './SASS/Atlas21.scss'; //Headwear for Vault Boy, and Objects.
 import './SASS/FeralGhoul.scss'; //Feral Ghoul Skintone/Outfit.
 import './SASS/Mysterious.scss'; //Mysterious Stranger Skintone/Outfit.
 
@@ -90,9 +93,11 @@ import './SASS/VaultGirl.scss'; //Styles for Vault Girl.
 import './SASS/VaultSuit.scss'; //Styles for Vault Suit.
 
 
+
+
+
 export {
-	FontAwesomeIcon,
-	faDice,
+	default_state,
 
 	all_races,
 	all_styles,
@@ -127,5 +132,9 @@ export {
 	VaultSuit,
 	VaultPerson,
 
-	LogoImage
+	LogoImage,
+
+	FontAwesomeIcon,
+	faDice,
+	faPowerOff
 }

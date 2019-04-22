@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { 
+    default_state,
     all_races, genders, hair_colours, 
     male_beards, male_clothes, male_faces, male_features, male_gloves, male_hair, male_hands, male_headwear, 
     female_clothes, female_faces, female_features, female_gloves, female_hair, female_hands, female_headwear, 
@@ -11,24 +12,29 @@ import {
 class App extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            current_beard: 0, //Initially loads no Beard, 0.
-            current_face: 1, //Initially loads Happy, 1.
-            current_feature: 0, //Initially loads no Feature, 0.
-            current_gender: 1, //Initially loads male Vault-Boy, 0.
-            current_gloves: 0, //Initially loads no Gloves, 0.
-            current_hair: 0, //Initially loads Tunnel Snake Hairstyle, 0.
-            current_hair_colour: 27, //Initially loads Blonde, 27.
-            current_headwear: 12, //Initially loads no Headwear, 0.
-            current_mode: 0, //Initially loads Basic mode, 0.
-            current_pants: 42, //Initally loads Vault Suit, 38
-            current_race: 0, //Stores Skintone. Initially loads caucasian Skintone, 1.
-            current_shirt: 42 //Initally loads Vault Suit, 38.
-        }
+        default_state.current_gender = 0; //Initially loads male Vault-Boy, 0.
+        default_state.current_mode = 0; //Initially loads Basic mode, 0.
+        this.state = default_state; //Initially loads standard Vault-Tec uniform.
+
         this.handleOptionClick = this.handleOptionClick.bind(this); //This method is for "Prev" and "Next" buttons.
         this.handleGenderClick = this.handleGenderClick.bind(this); //This method is for Gender selection button.
         this.handleModeToggle = this.handleModeToggle.bind(this); //This method is for Basic or Advanced mode toggle.
         this.handleRandomClick = this.handleRandomClick.bind(this); //This method is for Random button.
+        this.handleResetClick = this.handleResetClick.bind(this); //This method is for Reset button.
+    }
+
+    handleModeToggle() { //This method triggers when user clicks the Basic-Advanced toggle. 
+        let ourMode = (this.state.current_mode === 0 ? 1 : 0); //If mode is basic, switch to advanced. Otherwise, switch to basic.
+
+        if (ourMode === 0) { //If ourGender is Basic.
+            document.getElementById("basicInput").checked = true; //Sets slider to red.
+        } else { //Else ourGender is Advanced.
+            document.getElementById("basicInput").checked = false; //Sets slider to green.
+        }
+
+        this.setState({
+            current_mode: ourMode
+        });
     }
 
     handleOptionClick(limbStyle, arrLength, label) { //This method triggers when the user clicks "Prev" or "Next" buttons.
@@ -77,11 +83,11 @@ class App extends Component {
         this.setState({
             current_beard: 0,
             current_face: 0,
-            current_feature: 0,
+            // current_feature: 0,
             current_gender: ourGender, //Updates current_gender with new value.
             current_gloves: 0,
             current_hair: 0,
-            current_hair_colour: 27,
+            // current_hair_colour: 27,
             current_headwear: 0,
             current_pants: 1,
             current_race: 0,
@@ -130,32 +136,35 @@ class App extends Component {
             current_race: getRandom(all_races.length),
             current_shirt: getRandom(clothes.length)
         });
+
+        console.log(this.state);
     }
 
-    handleModeToggle() { //This method triggers when user clicks the Basic-Advanced toggle. 
-        let ourMode = (this.state.current_mode === 0 ? 1 : 0); //If mode is basic, switch to advanced. Otherwise, switch to basic.
 
-        if (ourMode === 0) { //If ourGender is Basic.
-            document.getElementById("basicInput").checked = true; //Sets slider to red.
-        } else { //Else ourGender is Advanced.
-            document.getElementById("basicInput").checked = false; //Sets slider to green.
-        }
 
-        this.setState({
-            current_mode: ourMode
-        });
+    handleResetClick() { //Resets the outfit to default. Keeps current Gender and current Mode.
+        default_state.current_gender = this.state.current_gender;
+        default_state.current_mode = this.state.current_mode;
+
+        this.setState(
+            default_state
+        );
     }
+
+    
     
     render() {
+
+
 
 
 
     return (
         <div className="App">
             {/*
-            <div id="eGuy39"></div>
+            <div id="eGuy39"></div>*/}
             <div id="eGirl3543"></div>
-            */}
+            
 
 
 
@@ -166,7 +175,7 @@ class App extends Component {
                 <AvatarWindow currentState={this.state} /> {/* Generates the div where the avatar is shown. (Includes VaultSuit and VaultPerson.) */}
                 <MainButtons currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div where most of the buttons live. */}
                 <MainSelections currentState={this.state} handleOptionClick={this.handleOptionClick} handleModeToggle={this.handleModeToggle} /> {/* Generates the div that shows the names for most of the Selections. */}
-                <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} /> {/* The div where the Gender, Race, Age buttons live. */}
+                <MinorButtons currentState={this.state} handleGenderClick={this.handleGenderClick} handleOptionClick={this.handleOptionClick} handleRandomClick={this.handleRandomClick} handleResetClick={this.handleResetClick} /> {/* The div where the Gender, Race, Age buttons live. */}
                 <MinorSelections currentState={this.state} /> {/* The div that shows the names for the Gender, Race, and Age Selections. */}
                 {/*
                     <img id="iphoto" src={iphoto} alt="Hey!"/>

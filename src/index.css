@@ -174,14 +174,14 @@ transition: 0.5s;
 
 
 
-.genderText, .btnRandom {
+.genderText, .btnRandom, .btnReset {
 	font-size: 30px;
 	font-family: monoFonto, futuraCondensedPT, 'Roboto Condensed', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
-.btnRandom {
+.btnRandom, .btnReset {
 	margin: 0 auto;
 	padding: 8px 10px;
 	/*border: 1px #16ce15 solid;*/
