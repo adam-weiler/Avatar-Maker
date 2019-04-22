@@ -50,7 +50,7 @@
   	transform: scaleY(-1) rotate(75deg);
 }
 
-.vbs_frontarm_glove, .vb_frontarm_hand, .vgs_frontarm_glove, .vg_frontarm_hand {
+.vbs_frontarm_glove, .vb_frontarm_hand {
 	left: 21px;
 	top: 128px;
   	-ms-transform: scaleY(-1) rotate(-81deg);
@@ -58,7 +58,7 @@
 	transform: scaleY(-1) rotate(-81deg);
 }
 
-.vbs_hat, .vgs_hat {
+.vbs_hat {
 	left: -108px;
 	top: -10px;
 }

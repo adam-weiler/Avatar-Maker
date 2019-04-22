@@ -262,6 +262,8 @@
 }
 
 #outfit101_chest {
+  left: 0px;
+  top: 28px;
   background-position: $vg_chest_x ($vg_chest_y - $outfitE_y);
 }
 
@@ -314,6 +316,8 @@
 }
 
 #outfit102_chest {
+  left: 3px;
+  top: 28px;
   background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitE_y);
 }
 
@@ -366,6 +370,8 @@
 }
 
 #outfit103_chest {
+  left: -1px;
+  top: 28px;
   background-position: $vg_chest_x ($vg_chest_y - $outfitG_y);
 }
 
@@ -418,6 +424,8 @@
 }
 
 #outfit104_chest {
+  left: -1px;
+  top: 28px;
   background-position: ($vg_chest_x - $outfit_BDFH_x) ($vg_chest_y - $outfitG_y);
 }
 

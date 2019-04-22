@@ -177,25 +177,28 @@ $sixthRow: -650px;
 
 
 
-.vgs_hat {
-	// background-color: rgba(255,0,255,.5);
-	left: -105px;
-  	top: -16px;
-}
+
 
 
 
 /* Vault Girl Headwear */
 
 #vgs_headwear1 { //Combat armor helmet
+	left: -105px;
+	top: -15px;
 	background-position: ($fourthCol - 10) ($firstRow + 10);
 }
 
 #vgs_headwear2 { //Cat ears
+	left: -100px;
+	top: -20px;
+	height: 120px;
 	background-position: ($fourthCol - 10) ($secondRow + 5);
 }
 
 #vgs_headwear3 { //Baseball cap
+	left: -100px;
+	top: -20px;
 	background-position: ($fourthCol - 5) ($thirdRow + 5);
 }
 
@@ -208,20 +211,28 @@ $sixthRow: -650px;
 }
 
 #vgs_headwear5 { //Shower cap
+		left: -105px;
+	top: -22px;
   background-position: ($fifthCol) ($firstRow + 10);
 }
 
 #vgs_headwear6 { //Wasteland darklight cowl
+		left: -110px;
+	top: -15px;
 		width: 120px;
 	height: 120px;
   background-position: ($fifthCol) ($secondRow);
 }
 
 #vgs_headwear7 { //Hard hat - Engineer outfit
+		left: -105px;
+	top: -20px;
   background-position: ($fifthCol) ($thirdRow + 8); //Close to top edge.
 }
 
 #vgs_headwear8 { //Elf hat
+		left: -110px;
+	top: -20px;
   background-position: ($fifthCol + 5) ($fourthRow + 5);
 }
 
@@ -229,20 +240,28 @@ $sixthRow: -650px;
 
 
 #vgs_headwear9 { //Mascot head
+		left: -116px;
+	top: -26px;
 	width: 145px;
 	height: 133px; //Needs to be close to the edge.
    background-position: -675px 5px;
 }
 
 #vgs_headwear10 { //Sailor hat - Lifeguard outfit
+	left: -110px;
+	top: -20px;
   background-position: -690px -125px;
 }
 
 #vgs_headwear11 { //Surgery bandages
+	left: -100px;
+	top: -6px;
   background-position: -690px -270px;
 }
 
 #vgs_headwear12 { //Radiation suit helmet
+		left: -115px;
+	top: -12px;
 		width: 130px;
 	height: 135px;
    background-position: -680px -385px;
@@ -251,6 +270,8 @@ $sixthRow: -650px;
 
 
 #vgs_headwear13 { 
+	left: -105px;
+	top: -15px;
   background-position: -825px 0px;
 }
 
@@ -260,10 +281,14 @@ $sixthRow: -650px;
 }
 
 #vgs_headwear15 { //Laurel wreath - Republic robes
+		left: -110px;
+	top: 0px;
   background-position: -820px -270px;
 }
 
 #vgs_headwear16 { //Ghost costume
+		left: -110px;
+	top: -10px;
   background-position: -820px -400px;
 }
 
